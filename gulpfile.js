@@ -14,8 +14,8 @@ const runTimestamp = Math.round(Date.now() / 1000);
 const paths = {
   root: "./dist",
   templates: {
-    pages: "./src/views/pages/*.pug",
-    src: "./src/views/**/*.pug",
+    pages: "./src/views/pages/*.html",
+    src: "./src/views/**/*.html",
     dest: "./dist",
   },
   styles: {
@@ -60,6 +60,13 @@ function templates() {
     .pipe(gulp.dest(paths.root));
 }
 
+// html
+function templatesHtml() {
+  return gulp
+    .src(paths.templates.pages)
+    .pipe(gulp.dest(paths.root));
+}
+
 // scss
 function styles() {
   return gulp
@@ -99,6 +106,7 @@ function scripts() {
 // icons
 
 exports.templates = templates;
+exports.templatesHtml = templatesHtml;
 exports.styles = styles;
 exports.scripts = scripts;
 exports.clean = clean;
@@ -107,7 +115,7 @@ gulp.task(
   "default",
   gulp.series(
     clean,
-    gulp.parallel(styles, templates, scripts, ),
+    gulp.parallel(styles, templatesHtml, scripts, ),
     gulp.parallel(watch, server)
   )
 );
