@@ -1,3 +1,3 @@
 import slider from "./modules/slider"
 
-slider();
+console.log('sidebar');

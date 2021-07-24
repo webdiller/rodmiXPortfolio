@@ -1,23 +1,93 @@
-body, html {
-    height: 100%;
+body,
+html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
 }
 
 body {
-    font-family: 'Roboto', Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.42;
-    color: $text-color;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  min-width: 320px;
+  font-family: 'TT Commons', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: $text-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.wrapper {
-    overflow: hidden;
-    min-height: 100%;
-    position: relative;
+.btn {
+  @include reset-btn();
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: $red;
+  border-radius: 5px;
+  transition: all .3s ease;
+  &:hover {
+    background-color: $redHover;
+  }
+  :disabled {
+    background-color: $grey;
+  }
+}
+
+.title1 {
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 46px;
+  color: #454545;
+}
+
+.title2 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 41px;
+
+  color: #454545;
+}
+
+.title3 {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 34px;
+  color: #454545;
+}
+
+.title4 {
+  font-size: 24px;
+  line-height: 28px;
+  color: #454545;
 }
 
 .container {
-    margin: 0 auto;
-    width: 95%;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: 640px) and (max-width: 767px) {
+    width: 604px;
+  }
+  @media (min-width: 768px) and (max-width: 1019px) {
+    width: 735px;
+  }
+  @media (min-width: 1020px) and (max-width: 1199px) {
+    width: 1000px;
+  }
+  @media (min-width: 1200px) and (max-width: 1429px) {
+    width: 1140px;
+  }
+  @media (min-width: 1430px) {
+    width: 1400px;
+  }
 }

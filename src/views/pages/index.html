@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index page</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./assets/fonts/fonts.css" />
+    <link rel="stylesheet" href="./assets/styles/main.min.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="header" class="header">
+
+      <!-- HEADER TOP MENU -->
+      <div class="container header__top">
+        <a href="#" class="header__logo"><img src="./assets/images/logo_red.svg" alt="" class="header__logo-img" /></a>
+        <nav class="header__nav">
+          <a href="#" class="header__nav-item">О НАС</a>
+          <a href="#" class="header__nav-item">НАША ПРОДУКЦИЯ</a>
+          <a href="#" class="header__nav-item">НАШИ ПУБЛИКАЦИИ</a>
+          <a href="#" class="header__nav-item">ГДЕ КУПИТЬ</a>
+          <a href="#" class="header__nav-item">КОНТАКТЫ</a>
+        </nav>
+        <a href="tel:+7 (499) 444-06-25" class="header__phone">+7 (499) 444-06-25</a>
+        <button href="#" class="header__callback">ПЕРЕЗВОНИТЬ МНЕ</button>
+        <button id="menuBar" class="header__bar">
+          <img src="./assets/icons/menu_open.svg" alt="" class="header__bar-open" />
+          <img src="./assets/icons/menu_close.svg" alt="" class="header__bar-close" />
+        </button>
+      </div>
+
+      <!-- HEADER SIDEBAR -->
+      <div id="sidebar" class="header__sidebar active">
+        <div class="header__menu">
+          <p class="header__menu-title">Меню</p>
+          <nav class="header__menu-list">
+            <a href="#" class="header__menu-item">О Нас</a>
+            <a href="#" class="header__menu-item">Наша продукция</a>
+            <a href="#" class="header__menu-item">Наши публикации</a>
+            <a href="#" class="header__menu-item">Где купить</a>
+            <a href="#" class="header__menu-item">Контакты</a>
+          </nav>
+          <p class="header__menu-title">Наша продукция</p>
+          <nav class="header__menu-list header__menu-list_last">
+            <a href="#" class="header__menu-item">Сверла</a>
+            <a href="#" class="header__menu-item">Борфрезы</a>
+            <a href="#" class="header__menu-item">Твердосплавные диски</a>
+            <a href="#" class="header__menu-item">Адаптеры</a>
+            <a href="#" class="header__menu-item">Концферзы</a>
+            <a href="#" class="header__menu-item">Метчики</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <script src="./assets/scripts/default.bundle.js"></script>
+  </body>
 </html>

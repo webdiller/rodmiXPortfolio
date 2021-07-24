@@ -43,6 +43,7 @@ function watch() {
 function server() {
   browserSync.init({
     server: paths.root,
+    notify: false
   });
   browserSync.watch(paths.root + "/**/*.*", browserSync.reload);
 }
