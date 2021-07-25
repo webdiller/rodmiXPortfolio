@@ -97,21 +97,21 @@ function scripts() {
     .pipe(gulp.dest(paths.scripts.dest));
 }
 
-// fonts 
+// fonts (экспорт в dist)
 function replaceFonts () {
   return gulp
   .src(paths.fonts.src)
   .pipe(gulp.dest(paths.fonts.dest))
 }
 
-// images 
+// images (экспорт в dist)
 function replaceImages () {
   return gulp
   .src(paths.images.src)
   .pipe(gulp.dest(paths.images.dest))
 }
 
-// imagesAddWebp
+// imagesAddWebp (генерация в webp и экспорт в dist)
 function replaceImagesWithWebp () {
   return gulp
   .src(paths.images.src)
@@ -119,31 +119,19 @@ function replaceImagesWithWebp () {
   .pipe(gulp.dest(paths.images.dest))
 }
 
-// icons 
+// icons (экспорт в dist)
 function replaceIcons () {
   return gulp
   .src(paths.icons.src)
   .pipe(gulp.dest(paths.icons.dest))
 }
 
-// icons
-// function icons() {
-//   return gulp
-//     .src(["src/assets/images/*.svg"])
-//     .pipe(
-//       iconfont({
-//         fontName: 'fontName',
-//         prependUnicode: true,
-//         formats: ["ttf", "eot", "woff"],
-//         timestamp: runTimestamp,
-//       })
-//     )
-//     .on("glyphs", function (glyphs, options) {
-//       console.log(glyphs, options);
-//     })
-//     .pipe(gulp.dest(paths.fonts.dist));
-// }
-// icons
+// TODO: сделать генерацию иконок, чтобы в dist/assets/fonts/ бии отдельные файлы шрифтовых иконок
+// icons (генерация шрифтовых иконок из svg) еще не готово
+function createIconsFromSvg () {
+  return gulp
+  .src(path.icon.src)
+}
 
 // exports.templates = templates;
 exports.templatesHtml = templatesHtml;

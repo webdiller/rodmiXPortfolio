@@ -23,7 +23,7 @@
         </nav>
         <a href="tel:+7 (499) 444-06-25" class="header__phone">+7 (499) 444-06-25</a>
         <button href="#" class="header__callback">ПЕРЕЗВОНИТЬ МНЕ</button>
-        <button id="menuBar" class="header__bar">
+        <button aria-label="Открыть меню" id="menuBar" class="header__bar">
           <img src="./assets/icons/menu_open.svg" alt="" class="header__bar-open" />
           <img src="./assets/icons/menu_close.svg" alt="" class="header__bar-close" />
         </button>
@@ -120,7 +120,7 @@
     </div>
 
     <div class="our-production">
-      <div class="container our-production__wrapper">
+      <div class="container container_with-paddings our-production__wrapper">
         <div class="our-production__content">
           <p class="our-production__subtitle subtitle">Надежность проверенная делом</p>
           <p class="our-production__title title1">Наша продукция</p>
@@ -133,52 +133,193 @@
       <div class="container container_with-paddings production-list__wrapper">
         <a href="#" class="production-list__item">
           <span class="production-list__title">Корончатые сверла</span>
-          <span class="production-list__icon"></span>
+          <span class="production-list__description">Небольшое описание товара или его характеристика</span>
+          <span class="production-list__icon-wrapper">
+            <img class="production-list__icon" src="./assets/icons/icon-arrow-right-short_white.svg" alt="" />
+          </span>
+
+          <picture class="production-list__picture">
+            <source srcset="./assets/images/production-list__item@4x.webp" media="(min-width: 1920px)" type="image/webp" />
+            <source srcset="./assets/images/production-list__item@4x.png" media="(min-width: 1920px)" />
+
+            <source srcset="./assets/images/production-list__item@3x.webp" media="(min-width: 1400px)" type="image/webp" />
+            <source srcset="./assets/images/production-list__item@3x.png" media="(min-width: 1400px)" />
+
+            <source srcset="./assets/images/production-list__item@2x.webp" media="(min-width: 1000px)" type="image/webp" />
+            <source srcset="./assets/images/production-list__item@2x.png" media="(min-width: 1000px)" />
+
+            <source srcset="./assets/images/production-list__item.webp" type="image/webp" />
+            <img class="production-list__image" src="./assets/images/production-list__item.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" type="image/png" />
+          </picture>
         </a>
 
         <a href="#" class="production-list__item">
           <span class="production-list__title">Борфрезы</span>
-          <span class="production-list__icon"></span>
+          <span class="production-list__description">Небольшое описание товара или его характеристика</span>
+          <span class="production-list__icon-wrapper">
+            <img class="production-list__icon" src="./assets/icons/icon-arrow-right-short_white.svg" alt="" />
+          </span>
+
+          <picture class="production-list__picture">
+            <source srcset="./assets/images/production-list__item2@4x.webp" media="(min-width: 1920px)" type="image/webp" />
+            <source srcset="./assets/images/production-list__item2@4x.png" media="(min-width: 1920px)" />
+
+            <source srcset="./assets/images/production-list__item2@3x.webp" media="(min-width: 1400px)" type="image/webp" />
+            <source srcset="./assets/images/production-list__item2@3x.png" media="(min-width: 1400px)" />
+
+            <source srcset="./assets/images/production-list__item2@2x.webp" media="(min-width: 1000px)" type="image/webp" />
+            <source srcset="./assets/images/production-list__item2@2x.png" media="(min-width: 1000px)" />
+
+            <source srcset="./assets/images/production-list__item2.webp" type="image/webp" />
+            <img class="production-list__image" src="./assets/images/production-list__item2.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" type="image/png" />
+          </picture>
         </a>
 
         <a href="#" class="production-list__item">
           <span class="production-list__title">Твердосплавные диски</span>
-          <span class="production-list__icon"></span>
+          <span class="production-list__description">Небольшое описание товара или его характеристика</span>
+          <span class="production-list__icon-wrapper">
+            <img class="production-list__icon" src="./assets/icons/icon-arrow-right-short_white.svg" alt="" />
+          </span>
+
+          <picture class="production-list__picture">
+            <source srcset="./assets/images/production-list__item3@4x.webp" media="(min-width: 1920px)" type="image/webp" />
+            <source srcset="./assets/images/production-list__item3@4x.png" media="(min-width: 1920px)" />
+
+            <source srcset="./assets/images/production-list__item3@3x.webp" media="(min-width: 1400px)" type="image/webp" />
+            <source srcset="./assets/images/production-list__item3@3x.png" media="(min-width: 1400px)" />
+
+            <source srcset="./assets/images/production-list__item3@2x.webp" media="(min-width: 1000px)" type="image/webp" />
+            <source srcset="./assets/images/production-list__item3@2x.png" media="(min-width: 1000px)" />
+
+            <source srcset="./assets/images/production-list__item3.webp" type="image/webp" />
+            <img class="production-list__image" src="./assets/images/production-list__item3.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" type="image/png" />
+          </picture>
         </a>
 
         <a href="#" class="production-list__item">
           <span class="production-list__title">Адаптеры</span>
-          <span class="production-list__icon"></span>
+
+          <span class="production-list__description">Небольшое описание товара или его характеристика</span>
+          <span class="production-list__icon-wrapper">
+            <img class="production-list__icon" src="./assets/icons/icon-arrow-right-short_white.svg" alt="" />
+          </span>
+
+          <picture class="production-list__picture">
+            <source srcset="./assets/images/production-list__item4@4x.webp" media="(min-width: 1920px)" type="image/webp" />
+            <source srcset="./assets/images/production-list__item4@4x.png" media="(min-width: 1920px)" />
+
+            <source srcset="./assets/images/production-list__item4@3x.webp" media="(min-width: 1400px)" type="image/webp" />
+            <source srcset="./assets/images/production-list__item4@3x.png" media="(min-width: 1400px)" />
+
+            <source srcset="./assets/images/production-list__item4@2x.webp" media="(min-width: 1000px)" type="image/webp" />
+            <source srcset="./assets/images/production-list__item4@2x.png" media="(min-width: 1000px)" />
+
+            <source srcset="./assets/images/production-list__item4.webp" type="image/webp" />
+            <img class="production-list__image" src="./assets/images/production-list__item4.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" type="image/png" />
+          </picture>
         </a>
 
         <a href="#" class="production-list__item">
           <span class="production-list__title">Концферзы</span>
-          <span class="production-list__icon"></span>
+
+          <span class="production-list__description">Небольшое описание товара или его характеристика</span>
+          <span class="production-list__icon-wrapper">
+            <img class="production-list__icon" src="./assets/icons/icon-arrow-right-short_white.svg" alt="" />
+          </span>
+
+          <picture class="production-list__picture">
+            <source srcset="./assets/images/production-list__item5@4x.webp" media="(min-width: 1920px)" type="image/webp" />
+            <source srcset="./assets/images/production-list__item5@4x.png" media="(min-width: 1920px)" />
+
+            <source srcset="./assets/images/production-list__item5@3x.webp" media="(min-width: 1400px)" type="image/webp" />
+            <source srcset="./assets/images/production-list__item5@3x.png" media="(min-width: 1400px)" />
+
+            <source srcset="./assets/images/production-list__item5@2x.webp" media="(min-width: 1000px)" type="image/webp" />
+            <source srcset="./assets/images/production-list__item5@2x.png" media="(min-width: 1000px)" />
+
+            <source srcset="./assets/images/production-list__item5.webp" type="image/webp" />
+            <img class="production-list__image" src="./assets/images/production-list__item5.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" type="image/png" />
+          </picture>
         </a>
 
         <a href="#" class="production-list__item">
           <span class="production-list__title">Метчики</span>
-          <span class="production-list__icon"></span>
+
+          <span class="production-list__description">Небольшое описание товара или его характеристика</span>
+          <span class="production-list__icon-wrapper">
+            <img class="production-list__icon" src="./assets/icons/icon-arrow-right-short_white.svg" alt="" />
+          </span>
+
+          <picture class="production-list__picture">
+            <source srcset="./assets/images/production-list__item6@4x.webp" media="(min-width: 1920px)" type="image/webp" />
+            <source srcset="./assets/images/production-list__item6@4x.png" media="(min-width: 1920px)" />
+
+            <source srcset="./assets/images/production-list__item6@3x.webp" media="(min-width: 1400px)" type="image/webp" />
+            <source srcset="./assets/images/production-list__item6@3x.png" media="(min-width: 1400px)" />
+
+            <source srcset="./assets/images/production-list__item6@2x.webp" media="(min-width: 1000px)" type="image/webp" />
+            <source srcset="./assets/images/production-list__item6@2x.png" media="(min-width: 1000px)" />
+
+            <source srcset="./assets/images/production-list__item6.webp" type="image/webp" />
+            <img class="production-list__image" src="./assets/images/production-list__item6.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" type="image/png" />
+          </picture>
         </a>
-        
+
         <a href="#" class="production-list__item">
           <span class="production-list__title">Ступенчатые сверла</span>
-          <span class="production-list__icon"></span>
+          <span class="production-list__description">Небольшое описание товара или его характеристика</span>
+          <span class="production-list__icon-wrapper">
+            <img class="production-list__icon" src="./assets/icons/icon-arrow-right-short_white.svg" alt="" />
+          </span>
+
+          <picture class="production-list__picture">
+            <source srcset="./assets/images/production-list__item7@4x.webp" media="(min-width: 1920px)" type="image/webp" />
+            <source srcset="./assets/images/production-list__item7@4x.png" media="(min-width: 1920px)" />
+
+            <source srcset="./assets/images/production-list__item7@3x.webp" media="(min-width: 1400px)" type="image/webp" />
+            <source srcset="./assets/images/production-list__item7@3x.png" media="(min-width: 1400px)" />
+
+            <source srcset="./assets/images/production-list__item7@2x.webp" media="(min-width: 1000px)" type="image/webp" />
+            <source srcset="./assets/images/production-list__item7@2x.png" media="(min-width: 1000px)" />
+
+            <source srcset="./assets/images/production-list__item7.webp" type="image/webp" />
+            <img class="production-list__image" src="./assets/images/production-list__item7.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" type="image/png" />
+          </picture>
         </a>
-        
+
         <a href="#" class="production-list__item">
           <span class="production-list__title">Магнитные станки</span>
-          <span class="production-list__icon"></span>
+          <span class="production-list__description">Небольшое описание товара или его характеристика</span>
+          <span class="production-list__icon-wrapper">
+            <img class="production-list__icon" src="./assets/icons/icon-arrow-right-short_white.svg" alt="" />
+          </span>
         </a>
-        
+
         <a href="#" class="production-list__item">
           <span class="production-list__title">Зенкер</span>
-          <span class="production-list__icon"></span>
+
+          <span class="production-list__description">Небольшое описание товара или его характеристика</span>
+          <span class="production-list__icon-wrapper">
+            <img class="production-list__icon" src="./assets/icons/icon-arrow-right-short_white.svg" alt="" />
+          </span>
+
+          <picture class="production-list__picture">
+            <source srcset="./assets/images/production-list__item9@4x.webp" media="(min-width: 1920px)" type="image/webp" />
+            <source srcset="./assets/images/production-list__item9@4x.png" media="(min-width: 1920px)" />
+
+            <source srcset="./assets/images/production-list__item9@3x.webp" media="(min-width: 1400px)" type="image/webp" />
+            <source srcset="./assets/images/production-list__item9@3x.png" media="(min-width: 1400px)" />
+
+            <source srcset="./assets/images/production-list__item9@2x.webp" media="(min-width: 1000px)" type="image/webp" />
+            <source srcset="./assets/images/production-list__item9@2x.png" media="(min-width: 1000px)" />
+
+            <source srcset="./assets/images/production-list__item9.webp" type="image/webp" />
+            <img class="production-list__image" src="./assets/images/production-list__item9.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" type="image/png" />
+          </picture>
         </a>
-        
-        <a href="#" class="production-list__item production-list__item_order">
-          <span class="production-list__title">запросить цены</span>
-        </a>
+
+        <a href="#" class="btn-outline production-list__btn">запросить цены </a>
       </div>
     </div>
 
