@@ -1,0 +1,27 @@
+.production-list {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-row-gap: 10px;
+    justify-items: stretch;
+    align-items: stretch;
+  }
+  &__item {
+      position: relative;
+      border-radius: 5px;
+      height: 130px;
+      background-color: #EFEFEF;
+    &_order {
+    }
+  }
+
+  &__title {
+  }
+
+  &__icon {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+  }
+}

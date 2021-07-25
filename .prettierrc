@@ -3,7 +3,7 @@
   "tabWidth": 2,
   "semi": true,
   "arrowParens": "always",
-  "printWidth": 600,
+  "printWidth": 400,
   "bracketSpacing": true,
   "insertPragma": false,
   "jsxBracketSameLine": true,

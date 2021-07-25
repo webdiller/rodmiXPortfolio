@@ -20,6 +20,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+button,
+input,
+input::placeholder,
+textarea,
+textarea::placeholder {
+  font-family: 'TT Commons', sans-serif;
+  font-size: 14px;
+}
+
 .btn {
   @include reset-btn();
   display: flex;
@@ -45,9 +54,66 @@ body {
 
 .title1 {
   font-weight: bold;
-  font-size: 46px;
-  line-height: 46px;
+  font-size: 24px;
+  line-height: 28px;
   color: #454545;
+  @media (min-width: 480px) {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  @media (min-width: 640px) {
+    font-size: 36px;
+    line-height: 41px;
+  }
+  @media (min-width: 1920px) {
+    font-size: 46px;
+    line-height: 53px;
+  }
+}
+
+.btn-outline {
+  @include reset-btn;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding-left: 35px;
+  padding-right: 35px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  color: $red;
+  border: 1px solid $red;
+  border-radius: 5px;
+  @media (min-width: 480px) {
+  }
+  @media (min-width: 540px) {
+  }
+  @media (min-width: 640px) {
+  }
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 1000px) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  @media (min-width: 1920px) {
+    font-size: 14px;
+    height: 50px;
+  }
+}
+
+.subtitle {
+  font-size: 12px;
+  line-height: 14px;
+  @media (min-width: 480px) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  @media (min-width: 1920px) {
+    font-size: 18px;
+    line-height: 21px;
+  }
 }
 
 .title2 {
