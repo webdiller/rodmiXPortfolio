@@ -28,7 +28,16 @@ const paths = {
     dest: "./dist/assets/scripts/",
   },
   fonts: {
-    dist: "./assets/fonts/icons/"
+    src: "./src/assets/fonts/*",
+    dest: "./dist/assets/fonts/"
+  },
+  images: {
+    src: "./src/assets/images/*",
+    dest: "./dist/assets/images/"
+  },
+  icons: {
+    src: "./src/assets/icons/*",
+    dest: "./dist/assets/icons/"
   }
 };
 
@@ -87,6 +96,27 @@ function scripts() {
     .pipe(gulp.dest(paths.scripts.dest));
 }
 
+// fonts 
+function replaceFonts () {
+  return gulp
+  .src(paths.fonts.src)
+  .pipe(gulp.dest(paths.fonts.dest))
+}
+
+// images 
+function replaceImages () {
+  return gulp
+  .src(paths.images.src)
+  .pipe(gulp.dest(paths.images.dest))
+}
+
+// icons 
+function replaceIcons () {
+  return gulp
+  .src(paths.icons.src)
+  .pipe(gulp.dest(paths.icons.dest))
+}
+
 // icons
 // function icons() {
 //   return gulp
@@ -110,13 +140,16 @@ function scripts() {
 exports.templatesHtml = templatesHtml;
 exports.styles = styles;
 exports.scripts = scripts;
+exports.replaceFonts = replaceFonts;
+exports.replaceImages = replaceImages;
+exports.replaceIcons = replaceIcons;
 exports.clean = clean;
 
 gulp.task(
   "default",
   gulp.series(
     clean,
-    gulp.parallel(styles, templatesHtml, scripts, ),
+    gulp.parallel(styles, templatesHtml, scripts, replaceFonts, replaceImages, replaceIcons),
     gulp.parallel(watch, server)
   )
 );
