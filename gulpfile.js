@@ -9,6 +9,7 @@ const webpack = require("webpack");
 const webpackConfig = require("./webpack.config.js");
 const browserSync = require("browser-sync").create();
 const iconfont = require("gulp-iconfont");
+const webp = require('gulp-webp');
 const runTimestamp = Math.round(Date.now() / 1000);
 
 const paths = {
@@ -110,6 +111,14 @@ function replaceImages () {
   .pipe(gulp.dest(paths.images.dest))
 }
 
+// imagesAddWebp
+function replaceImagesWithWebp () {
+  return gulp
+  .src(paths.images.src)
+  .pipe(webp())
+  .pipe(gulp.dest(paths.images.dest))
+}
+
 // icons 
 function replaceIcons () {
   return gulp
@@ -142,6 +151,7 @@ exports.styles = styles;
 exports.scripts = scripts;
 exports.replaceFonts = replaceFonts;
 exports.replaceImages = replaceImages;
+exports.replaceImagesWithWebp = replaceImagesWithWebp;
 exports.replaceIcons = replaceIcons;
 exports.clean = clean;
 
@@ -149,7 +159,9 @@ gulp.task(
   "default",
   gulp.series(
     clean,
-    gulp.parallel(styles, templatesHtml, scripts, replaceFonts, replaceImages, replaceIcons),
+    replaceImages,
+    replaceImagesWithWebp,
+    gulp.parallel(styles, templatesHtml, scripts, replaceFonts,replaceIcons),
     gulp.parallel(watch, server)
   )
 );

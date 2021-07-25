@@ -55,11 +55,17 @@
 
     <!-- FIRST SCREEN -->
     <div class="welcome">
-
       <picture class="welcome__bg-picture">
+        <source srcset="./assets/images/welcome-bg@4x.webp" media="(min-width: 1920px)" type="image/webp" />
         <source srcset="./assets/images/welcome-bg@4x.jpg" media="(min-width: 1920px)" />
+
+        <source srcset="./assets/images/welcome-bg@3x.webp" media="(min-width: 1400px)" type="image/webp" />
         <source srcset="./assets/images/welcome-bg@3x.jpg" media="(min-width: 1400px)" />
+
+        <source srcset="./assets/images/welcome-bg@2x.webp" media="(min-width: 1000px)" type="image/webp" />
         <source srcset="./assets/images/welcome-bg@2x.jpg" media="(min-width: 1000px)" />
+
+        <source srcset="./assets/images/welcome-bg.webp" type="image/webp" />
         <img class="welcome__bg-image" src="./assets/images/welcome-bg.jpg" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
       </picture>
 
@@ -70,10 +76,17 @@
           <p class="welcome__description">Надежный инструмент по доступной цене</p>
         </div>
         <picture class="welcome__picture">
+          <source srcset="./assets/images/welcome-drill@4x.webp" media="(min-width: 1920px)" type="image/webp" />
           <source srcset="./assets/images/welcome-drill@4x.png" media="(min-width: 1920px)" />
+
+          <source srcset="./assets/images/welcome-drill@3x.webp" media="(min-width: 1400px)" type="image/webp" />
           <source srcset="./assets/images/welcome-drill@3x.png" media="(min-width: 1400px)" />
+
+          <source srcset="./assets/images/welcome-drill@2x.webp" media="(min-width: 1000px)" type="image/webp" />
           <source srcset="./assets/images/welcome-drill@2x.png" media="(min-width: 1000px)" />
-          <img class="welcome__drill-image" src="./assets/images/welcome-drill.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+          
+          <source srcset="./assets/images/welcome-drill.webp" type="image/webp" />
+          <img class="welcome__drill-image" src="./assets/images/welcome-drill.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента"  type="image/png" />
         </picture>
 
         <div class="welcome__features">
@@ -94,7 +107,8 @@
         </div>
 
         <div class="welcome__actions">
-          <button class="welcome__action welcome__action_red">Просмотреть продукцию
+          <button class="welcome__action welcome__action_red">
+            Просмотреть продукцию
             <img src="" alt="" class="welcome__action-img" />
           </button>
           <button class="welcome__action welcome__action_grey">

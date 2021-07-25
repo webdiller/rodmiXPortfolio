@@ -115,6 +115,11 @@
       font-size: 30px;
       line-height: 34px;
     }
+    @media (min-width: 1920px) {
+      max-width: 370px;
+      font-size: 36px;
+      line-height: 41px;
+    }
   }
 
   &__picture {
