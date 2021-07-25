@@ -35,7 +35,7 @@ const paths = {
 // слежка
 function watch() {
   gulp.watch(paths.styles.src, styles);
-  gulp.watch(paths.templates.src, templates);
+  gulp.watch(paths.templates.src, templatesHtml);
   gulp.watch(paths.scripts.src, scripts);
 }
 
@@ -106,7 +106,7 @@ function scripts() {
 // }
 // icons
 
-exports.templates = templates;
+// exports.templates = templates;
 exports.templatesHtml = templatesHtml;
 exports.styles = styles;
 exports.scripts = scripts;

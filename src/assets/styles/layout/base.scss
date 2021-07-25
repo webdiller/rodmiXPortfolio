@@ -31,10 +31,10 @@ body {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   background: $red;
   border-radius: 5px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   &:hover {
     background-color: $redHover;
   }
@@ -74,6 +74,11 @@ body {
 .container {
   width: 100%;
   margin: 0 auto;
+
+  &_with-paddings {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
   @media (min-width: 640px) and (max-width: 767px) {
     width: 604px;

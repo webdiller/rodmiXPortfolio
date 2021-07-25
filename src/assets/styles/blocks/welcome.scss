@@ -1,0 +1,235 @@
+.welcome {
+  position: relative;
+  &__bg-picture {
+  }
+  &__bg-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__wrapper {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text-content {
+    position: relative;
+    order: 1;
+    max-width: 260px;
+    margin: 35px auto 0 auto;
+    text-align: center;
+    @media (min-width: 480px) {
+      margin-top: 48px;
+      max-width: none;
+    }
+    @media (min-width: 540px) {
+      margin-top: 40px;
+    }
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+    @media (min-width: 1000px) {
+      margin-left: 0;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 27px;
+    color: #e31e25;
+    @media (min-width: 480px) {
+      font-size: 32px;
+      line-height: 36px;
+    }
+    @media (min-width: 540px) {
+      font-size: 38px;
+      line-height: 44px;
+    }
+    @media (min-width: 640px) {
+      white-space: nowrap;
+      font-size: 44px;
+      line-height: 53px;
+    }
+    @media (min-width: 768px) {
+      font-size: 54px;
+      line-height: 62px;
+    }
+    @media (min-width: 1000px) {
+    }
+    @media (min-width: 1920px) {
+      font-size: 70px;
+      line-height: 80px;
+    }
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 27px;
+    color: #454545;
+    margin-bottom: 20px;
+    @media (min-width: 480px) {
+      font-size: 25px;
+    }
+    @media (min-width: 540px) {
+      font-size: 29px;
+    }
+    @media (min-width: 640px) {
+      font-size: 34px;
+    }
+    @media (min-width: 768px) {
+      font-size: 38px;
+    }
+    @media (min-width: 1920px) {
+      font-size: 54px;
+      line-height: 54px;
+    }
+  }
+
+  &__description {
+    max-width: 200px;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #454545;
+    @media (min-width: 480px) {
+      position: absolute;
+      margin-left: 0;
+      text-align: left;
+      max-width: 240px;
+      font-size: 24px;
+      line-height: 28px;
+    }
+    @media (min-width: 768px) {
+      max-width: 300px;
+      font-size: 30px;
+      line-height: 34px;
+    }
+  }
+
+  &__picture {
+    order: 2;
+  }
+
+  &__drill-image {
+    display: block;
+    width: 67%;
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width: 480px) {
+      width: 85%;
+    }
+  }
+
+  &__features {
+    order: 4;
+    display: flex;
+  }
+
+  &__feature {
+    display: flex;
+    align-items: flex-start;
+    &:not(:last-child) {
+      margin-right: 7px;
+    }
+  }
+
+  &__feature-img {
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 22px;
+    @media (min-width: 480px) {
+      margin-right: 26px;
+      width: 36px;
+    }
+  }
+
+  &__feature-content {
+  }
+
+  &__feature-title {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #454545;
+
+    @media (min-width: 480px) {
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    &-hidden {
+      display: none;
+    }
+  }
+
+  &__feature-subtitle {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    color: #9c8c8d;
+    @media (min-width: 480px) {
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
+
+  &__actions {
+    order: 3;
+    @media (min-width: 480px) {
+      display: flex;
+      margin-bottom: 36px;
+      background-color: #efefef;
+    }
+  }
+
+  &__action {
+    @include reset-btn();
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 14px;
+    height: 37px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: -1px;
+    margin-bottom: 26px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    @media (min-width: 480px) {
+      height: 60px;
+      margin-bottom: 0;
+    }
+    &-hidden {
+      display: none;
+    }
+    &_red {
+      background-color: $red;
+      margin-bottom: 9px;
+      @media (min-width: 480px) {
+        margin-bottom: 0;
+      }
+    }
+    &_grey {
+      background-color: #efefef;
+      color: $text-color;
+    }
+  }
+
+  &__action-img {
+  }
+}
