@@ -18,6 +18,10 @@ body {
   color: $text-color;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FAFAFA;
+  &.hidden {
+    overflow-y: hidden;
+  }
 }
 
 button,
@@ -59,6 +63,15 @@ textarea::placeholder {
   }
   @media (min-width: 640px) {
     height: 50px;
+  }
+  &_arrow {
+    justify-content: space-between;
+    min-width: 290px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  &__arrow-icon {
+    width: 13px;
   }
 }
 
@@ -172,4 +185,7 @@ textarea::placeholder {
   @media (min-width: 1430px) {
     width: 1400px;
   }
+}
+
+.title-with-subtitle {
 }

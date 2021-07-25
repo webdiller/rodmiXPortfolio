@@ -1,0 +1,41 @@
+.tapbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 90;
+  background-color: #fff;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+  
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px 0 40px;
+    height: 70px;
+  }
+
+  &__item {
+    @include reset-link();
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__item-icon {
+    width: 20px;
+  }
+  &__item-text {
+    position: absolute;
+    top: 25px;
+    text-align: center;
+    max-width: 60px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #e31e25;
+  }
+}

@@ -1,7 +1,6 @@
 .header {
   position: relative;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  background-color: #fafafa;
 
   &__top {
     display: flex;
@@ -277,10 +276,10 @@
     .header__sidebar {
       opacity: 1;
       visibility: visible;
-      z-index: 100;
+      z-index: 300;
     }
     .header__bar {
-      z-index: 200;
+      z-index: 400;
       border-left: 0;
     }
     .header__bar-open {
