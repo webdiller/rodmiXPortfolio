@@ -325,56 +325,60 @@
 
     <div class="producer">
       <div class="container container_with-paddings producer__wrapper">
-        <div class="title-with-subtitle producer__top">
+        <div class="title-with-subtitle producer__title-with-subtitle">
           <p class="subtitle">Как мы занимаемся разработкой</p>
           <p class="title1">О производителе</p>
         </div>
 
-        <div class="producer__author">
-          <picture class="producer__picture">
-            <source srcset="./assets/images/producer@4x.webp" media="(min-width: 1920px)" type="image/webp" />
-            <source srcset="./assets/images/producer@4x.jpg" media="(min-width: 1920px)" />
+        <div class="producer__body">
+          <!-- TODO: проверить картинки на различных экранах и заменить -->
+          <div class="producer__author">
+            <picture class="producer__picture">
+              <source srcset="./assets/images/producer@4x.webp" media="(min-width: 1920px)" type="image/webp" />
+              <source srcset="./assets/images/producer@4x.jpg" media="(min-width: 1920px)" />
 
-            <source srcset="./assets/images/producer@3x.webp" media="(min-width: 1400px)" type="image/webp" />
-            <source srcset="./assets/images/producer@3x.jpg" media="(min-width: 1400px)" />
+              <source srcset="./assets/images/producer@3x.webp" media="(min-width: 1400px)" type="image/webp" />
+              <source srcset="./assets/images/producer@3x.jpg" media="(min-width: 1400px)" />
 
-            <source srcset="./assets/images/producer@2x.webp" media="(min-width: 1000px)" type="image/webp" />
-            <source srcset="./assets/images/producer@2x.jpg" media="(min-width: 1000px)" />
+              <source srcset="./assets/images/producer@2x.webp" media="(min-width: 1000px)" type="image/webp" />
+              <source srcset="./assets/images/producer@2x.jpg" media="(min-width: 1000px)" />
 
-            <source srcset="./assets/images/producer.webp" type="image/webp" />
-            <img loading="lazy" class="producer__image" src="./assets/images/producer.jpg" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
-          </picture>
+              <source srcset="./assets/images/producer.webp" type="image/webp" />
+              <img loading="lazy" class="producer__image" src="./assets/images/producer.jpg" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+            </picture>
 
-          <div class="producer__btn-with-name">
-            <button class="btn btn_arrow producer__btn">Написать директору <img src="./assets/icons/icon-arrow-right-short_white.svg" alt="Написать директору" class="btn__arrow-icon" /></button>
-            <div class="producer__name-with-role">
-              <p class="producer__name">Мулеев А.В</p>
-              <p class="producer__role">Генеральный Директор ООО «РОДМИКС»</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="producer__content">
-          <p class="producer__text">
-            Инструмент под брендом RODMIX объединяет отличное качество и доступность. Ежедневно мы работаем как над качеством нашей продукции, так и над качеством обслуживания. Мы идем в ногу со временем, прислушиваемся к потребителям и постоянно расширяем ассортимент новыми позициями.
-          </p>
-          <p class="producer__text">
-            Мы работаем по всей РФ и Таможенному союзу. Организовали гибкую систему доставки и оплаты. Вы в любой момент сможете найти представителей торговой марки RODMIX в вашем регионе. А наши менеджеры без проблем проконсультируют по любым вопросам и помогут c выбором.
-          </p>
-
-          <div class="producer__certifications">
-            <div class="producer__certification">
-              <img src="./assets/icons/icon-pdf.svg" alt="" class="producer__certification-img" />
-              <div class="producer__certification-content">
-                <p class="producer__certification-title">Скачать каталог с товарами</p>
-                <p class="producer__certification-size">PDF (45МB)</p>
+            <div class="producer__btn-with-name">
+              <button class="btn btn_arrow producer__btn">Написать директору <img src="./assets/icons/icon-arrow-right-short_white.svg" alt="Написать директору" class="btn__arrow-icon" /></button>
+              <div class="producer__name-with-role">
+                <p class="producer__name">Мулеев А.В</p>
+                <p class="producer__role">Генеральный Директор ООО «РОДМИКС»</p>
               </div>
             </div>
-            <div class="producer__certification">
-              <img src="./assets/icons/icon-certificate.svg" alt="" class="producer__certification-img" />
-              <div class="producer__certification-content">
-                <p class="producer__certification-title">Наши Сертификаты</p>
-                <p class="producer__certification-size">PDF (120МB)</p>
+          </div>
+
+          <div class="producer__content">
+            <p class="producer__text">
+              Инструмент под брендом <strong>RODMIX</strong> объединяет отличное качество и доступность. Ежедневно мы работаем как над качеством нашей продукции, так и над качеством обслуживания. Мы идем в ногу со временем, прислушиваемся к потребителям и постоянно расширяем ассортимент новыми
+              позициями.
+            </p>
+            <p class="producer__text">
+              Мы работаем по всей РФ и Таможенному союзу. Организовали гибкую систему доставки и оплаты. Вы в любой момент сможете найти представителей <strong>торговой марки RODMIX</strong> в вашем регионе. А наши менеджеры без проблем проконсультируют по любым вопросам и помогут c выбором.
+            </p>
+
+            <div class="producer__certifications">
+              <div class="producer__certification">
+                <img src="./assets/icons/icon-pdf.svg" alt="" class="producer__certification-img" />
+                <div class="producer__certification-content">
+                  <p class="producer__certification-title">Скачать каталог с товарами</p>
+                  <p class="producer__certification-size">PDF (45МB)</p>
+                </div>
+              </div>
+              <div class="producer__certification">
+                <img src="./assets/icons/icon-certificate.svg" alt="" class="producer__certification-img" />
+                <div class="producer__certification-content">
+                  <p class="producer__certification-title">Наши Сертификаты</p>
+                  <p class="producer__certification-size">PDF (120МB)</p>
+                </div>
               </div>
             </div>
           </div>
@@ -435,10 +439,10 @@
 
     <div class="tapbar">
       <nav class="tapbar__wrapper">
-        <a href="#" class="tapbar__item"> <img class="tapbar__item-icon" src="./assets/icons/production.svg" alt=""> <span class="tapbar__item-text">Продукция</span> </a>
-        <a href="#" class="tapbar__item"> <img class="tapbar__item-icon" src="./assets/icons/warranty.svg" alt=""> <span class="tapbar__item-text">Гарантия</span> </a>
-        <a href="#" class="tapbar__item"> <img class="tapbar__item-icon" src="./assets/icons/order.svg" alt=""> <span class="tapbar__item-text">Заказать звонок</span> </a>
-        <a href="#" class="tapbar__item"> <img class="tapbar__item-icon" src="./assets/icons/contacts.svg" alt=""> <span class="tapbar__item-text">Контакты</span> </a>
+        <a href="#" class="tapbar__item"> <img class="tapbar__item-icon" src="./assets/icons/production.svg" alt="" /> <span class="tapbar__item-text">Продукция</span> </a>
+        <a href="#" class="tapbar__item"> <img class="tapbar__item-icon" src="./assets/icons/warranty.svg" alt="" /> <span class="tapbar__item-text">Гарантия</span> </a>
+        <a href="#" class="tapbar__item"> <img class="tapbar__item-icon" src="./assets/icons/order.svg" alt="" /> <span class="tapbar__item-text">Заказать звонок</span> </a>
+        <a href="#" class="tapbar__item"> <img class="tapbar__item-icon" src="./assets/icons/contacts.svg" alt="" /> <span class="tapbar__item-text">Контакты</span> </a>
       </nav>
     </div>
 

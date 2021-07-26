@@ -31,7 +31,9 @@
     "webpack-cli": "^3.0.2"
   },
   "dependencies": {
+    "browsersync-ssi": "^0.2.4",
     "normalize.css": "^8.0.0",
+    "ssi": "^0.3.0",
     "vue": "^2.5.16"
   }
 }

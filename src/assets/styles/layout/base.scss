@@ -24,6 +24,10 @@ body {
   }
 }
 
+strong {
+  font-weight: 600;
+}
+
 button,
 input,
 input::placeholder,
@@ -69,6 +73,10 @@ textarea::placeholder {
     min-width: 290px;
     padding-left: 25px;
     padding-right: 25px;
+    @media (min-width: 1920px) {
+      height: 60px;
+      font-size: 24px;
+    }
   }
   &__arrow-icon {
     width: 13px;
@@ -188,4 +196,5 @@ textarea::placeholder {
 }
 
 .title-with-subtitle {
+  text-align: center;
 }

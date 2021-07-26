@@ -32,6 +32,9 @@ const paths = {
     src: "./src/assets/fonts/*",
     dest: "./dist/assets/fonts/"
   },
+  fontsIcons: {
+    dest: "./dist/assets/fontsIcons/"
+  },
   images: {
     src: "./src/assets/images/*",
     dest: "./dist/assets/images/"
@@ -126,11 +129,21 @@ function replaceIcons () {
   .pipe(gulp.dest(paths.icons.dest))
 }
 
-// TODO: сделать генерацию иконок, чтобы в dist/assets/fonts/ бии отдельные файлы шрифтовых иконок
+// TODO: сделать генерацию иконок, чтобы в dist/assets/fonts/ бии отдельные файлы шрифтовых иконокы
 // icons (генерация шрифтовых иконок из svg) еще не готово
 function createIconsFromSvg () {
   return gulp
-  .src(path.icon.src)
+  .src(paths.icons.src)
+  .pipe(iconfont({
+    fontName: 'myfont', // required
+    prependUnicode: true, // recommended option
+    formats: ['ttf', 'eot', 'woff'], // default, 'woff2' and 'svg' are available
+    timestamp: runTimestamp, // recommended to get consistent builds when watching files
+  }))
+  .on('glyphs', function(glyphs, options) {
+    console.log(glyphs, options);
+  })
+  .pipe(gulp.dest(paths.fontsIcons.dest))
 }
 
 // exports.templates = templates;
