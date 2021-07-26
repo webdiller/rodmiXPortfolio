@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/fonts/fonts.css" />
     <link rel="stylesheet" href="./assets/styles/main.min.css" />
+
   </head>
   <body>
     <!-- HEADER -->
@@ -323,6 +325,7 @@
       </div>
     </div>
 
+    <!-- О производителе -->
     <div class="producer">
       <div class="container container_with-paddings producer__wrapper">
         <div class="title-with-subtitle producer__title-with-subtitle">
@@ -382,6 +385,68 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Наши преимущества -->
+    <div class="features">
+      <div class="container container_with-paddings features__wrapper">
+        <div class="title-with-subtitle features__title-with-subtitle">
+          <p class="subtitle">Почему стоит выбрать именно нас</p>
+          <p class="title1">Наши преимущества</p>
+        </div>
+
+        <div id="featuresSwiper" class="swiper-container features__swiper-container">
+          <div class="swiper-wrapper features__swiper-wrapper">
+            <div class="swiper-slide features__item">
+              <img src="./assets/images/icon-help.svg" alt="" class="features__item-icon">
+              <p class="features__item-title">Персональный менеджер 
+                и помощь в подборе продукции
+                </p>
+              <p class="features__item-description">Индивидуальный подход и забота</p>
+            </div>
+  
+            <div class="swiper-slide features__item">
+              <img src="./assets/images/icon-stock.svg" alt="" class="features__item-icon">
+              <p class="features__item-title">Вся продукция в наличии 
+                у дилеров в вашем городе</p>
+              <p class="features__item-description">Вы всегда знаете куда обратиться</p>
+            </div>
+  
+            <div class="swiper-slide features__item">
+              <img src="./assets/images/icon-delivery.svg" alt="" class="features__item-icon">
+              <p class="features__item-title">Бесплатная доставка
+                по РФ и Таможенному союзу</p>
+              <p class="features__item-description">Отправка в день заказа в любую точку</p>
+            </div>
+  
+            <div class="swiper-slide features__item">
+              <img src="./assets/images/icon-process.svg" alt="" class="features__item-icon">
+              <p class="features__item-title">Любые образцы 
+                для тестирования по запросу
+                </p>
+              <p class="features__item-description">Проверьте качество и надежность лично
+              </p>
+            </div>
+  
+            <div class="swiper-slide features__item">
+              <img src="./assets/images/icon-education.svg" alt="" class="features__item-icon">
+              <p class="features__item-title">Качественное Обучение работе 
+                с инструментом</p>
+              <p class="features__item-description">Делимся полезной информацией и опытом
+              </p>
+            </div>
+  
+            <div class="swiper-slide features__item">
+              <img src="./assets/images/icon-award.svg" alt="" class="features__item-icon">
+              <p class="features__item-title">Независимая экспертиза 
+                качества продукции
+                </p>
+              <p class="features__item-description">Надежность подтверждена экспертами</p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </div>
@@ -446,6 +511,8 @@
       </nav>
     </div>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="./assets/scripts/home.bundle.js"></script>
     <script src="./assets/scripts/default.bundle.js"></script>
   </body>
 </html>

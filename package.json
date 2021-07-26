@@ -34,6 +34,7 @@
     "browsersync-ssi": "^0.2.4",
     "normalize.css": "^8.0.0",
     "ssi": "^0.3.0",
+    "swiper": "^6.8.0",
     "vue": "^2.5.16"
   }
 }

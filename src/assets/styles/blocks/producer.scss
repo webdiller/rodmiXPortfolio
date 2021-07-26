@@ -3,6 +3,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
     @media (min-width: 640px) {
       align-items: flex-start;
     }
@@ -146,7 +148,6 @@
 
   &__content {
     max-width: 810px;
-    margin-bottom: 40px;
     @media (min-width: 640px) {
       margin-left: auto;
     }
