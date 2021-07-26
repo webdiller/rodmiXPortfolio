@@ -1,3 +1,6 @@
+
+import Swiper from 'swiper';
+
 const featuresSwiper = document.getElementById('featuresSwiper');
 if (featuresSwiper) {
   const swiperOptions = {
@@ -6,7 +9,12 @@ if (featuresSwiper) {
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets'
-    }
+    },
+    on: {
+      init: function () {
+        console.log('swiper initialized');
+      },
+    },
   };
 
   const featuresSwiperSlider = new Swiper('#featuresSwiper', swiperOptions);
