@@ -1,10 +1,31 @@
 .contacts {
   &__wrapper {
-      padding-left: 0;
-      padding-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1000px) {
+    }
+    @media (min-width: 1400px) {
+    }
+    @media (min-width: 1920px) {
+    }
   }
 
   &__title-with-subtitle {
+    @media (min-width: 640px) {
+      text-align: left;
+    }
   }
 
   &__top {
@@ -13,57 +34,295 @@
 
     padding-left: 15px;
     padding-right: 15px;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1000px) {
+    }
+    @media (min-width: 1400px) {
+    }
+    @media (min-width: 1920px) {
+    }
   }
 
   &__top-title {
     margin-bottom: 15px;
     font-size: 12px;
     line-height: 18px;
+    @media (min-width: 480px) {
+      max-width: 420px;
+      font-size: 14px;
+      line-height: 21px;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      max-width: none;
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      font-size: 16px;
+      line-height: 18px;
+    }
+    @media (min-width: 1000px) {
+    }
+    @media (min-width: 1400px) {
+    }
+    @media (min-width: 1920px) {
+      font-size: 20px;
+      line-height: 23px;
+    }
   }
 
   &__top-subtitle {
     color: #454545;
+    font-weight: 300;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1000px) {
+    }
+    @media (min-width: 1400px) {
+    }
+    @media (min-width: 1920px) {
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
     a {
+      // TODO: узнать цвет
       @include reset-link();
       display: block;
-      font-weight: bold;color: #454545;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #454545;
+      @media (min-width: 480px) {
+      }
+      @media (min-width: 540px) {
+      }
+      @media (min-width: 640px) {
+        display: inline-block;
+      }
+      @media (min-width: 768px) {
+      }
+      @media (min-width: 1000px) {
+      }
+      @media (min-width: 1400px) {
+      }
+      @media (min-width: 1920px) {
+      }
     }
   }
 
   &__bottom {
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      position: relative;
+      display: flex;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1000px) {
+    }
+    @media (min-width: 1400px) {
+    }
+    @media (min-width: 1920px) {
+    }
   }
 
   &__addresses {
     padding-left: 15px;
     padding-right: 15px;
+    @media (min-width: 480px) {
+      display: flex;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      flex-direction: column;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1000px) {
+      margin-top: 30px;
+    }
+    @media (min-width: 1400px) {
+    }
+    @media (min-width: 1920px) {
+    }
   }
 
   &__address {
+    margin-bottom: 20px;
+    @media (min-width: 480px) {
+      max-width: 200px;
+      &:first-child {
+        margin-right: 15px;
+      }
+    }
+    @media (min-width: 540px) {
+      max-width: 250px;
+    }
+    @media (min-width: 640px) {
+      max-width: none;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1000px) {
+    }
+    @media (min-width: 1400px) {
+    }
+    @media (min-width: 1920px) {
+    }
   }
 
   &__address-title {
     font-weight: bold;
+    margin-bottom: 5px;
     font-size: 14px;
     line-height: 24px;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+      font-size: 18px;
+      line-height: 31px;
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+      font-size: 20px;
+      line-height: 34px;
+    }
+    @media (min-width: 1000px) {
+    }
+    @media (min-width: 1400px) {
+    }
+    @media (min-width: 1920px) {
+    }
   }
 
   &__address-street {
     max-width: 220px;
     font-size: 12px;
     line-height: 20px;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+      font-size: 16px;
+      line-height: 27px;
+      max-width: 250px;
+    }
+    @media (min-width: 640px) {
+      font-size: 14px;
+      line-height: 24px;
+    }
+    @media (min-width: 768px) {
+      font-size: 16px;
+      line-height: 27px;
+    }
+    @media (min-width: 1000px) {
+    }
+    @media (min-width: 1400px) {
+    }
+    @media (min-width: 1920px) {
+      font-size: 20px;
+      line-height: 34px;
+    }
   }
 
   &__address-phone {
+    display: block;
     text-transform: uppercase;
     font-size: 12px;
     line-height: 24px;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+      font-size: 16px;
+      line-height: 27px;
+    }
+    @media (min-width: 640px) {
+      font-size: 14px;
+      line-height: 28px;
+    }
+    @media (min-width: 768px) {
+      font-size: 16px;
+      line-height: 32px;
+    }
+    @media (min-width: 1000px) {
+    }
+    @media (min-width: 1400px) {
+    }
+    @media (min-width: 1920px) {
+    }
   }
 
   &__btn-form {
-      display: none;
+    display: none;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      @include reset-btn();
+      display: block;
+      text-align: left;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 14px;
+      text-transform: uppercase;
+      color: #e31e25;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1000px) {
+    }
+    @media (min-width: 1400px) {
+    }
+    @media (min-width: 1920px) {
+    }
   }
 
   &__map {
-      height: 190px;
+    height: 190px;
+    background-color: #fff;
+    border-radius: 10px;overflow: hidden;
+    @media (min-width: 480px) {
+      height: 240px;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      margin-left: auto;
+      height: 250px;
+    }
+    @media (min-width: 768px) {
+      min-width: 487px;
+      height: 313px;
+    }
+    @media (min-width: 1000px) {
+      min-width: unset;
+      width: 74%;
+    }
+    @media (min-width: 1400px) {
+    }
+    @media (min-width: 1920px) {
+      width: 78%;
+    }
   }
 }
