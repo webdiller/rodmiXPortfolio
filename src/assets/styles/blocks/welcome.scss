@@ -12,6 +12,9 @@
     @media (min-width: 480px) {
       height: 85%;
     }
+    @media (min-width: 640px) {
+      height: 95%;
+    }
   }
   &__wrapper {
     position: relative;
@@ -145,12 +148,22 @@
     max-width: 745px;
     @media (min-width: 480px) {
       width: 85%;
+      margin-right: 0;
+    }
+    @media (min-width: 640px) {
+      margin-top: -100px;
+      max-width: 360px;
+    }
+    @media (min-width: 768px) {
+      max-width: 440px;
     }
     @media (min-width: 1000px) {
+      max-width: 630px;
       margin: -140px -30px 0 auto;
       width: 65%;
     }
-    @media (min-width: 1000px) {
+    @media (min-width: 1920px) {
+      max-width: 730px;
       margin: -280px -60px 0 auto;
     }
   }
@@ -158,6 +171,16 @@
   &__features {
     order: 4;
     display: flex;
+    @media (min-width: 640px) {
+      position: absolute;
+      top: 314px;
+      left: 0;
+      flex-direction: column;
+    }
+    @media (min-width: 1920px) {
+      flex-direction: row;
+      margin-top: 250px;
+    }
   }
 
   &__feature {
@@ -165,6 +188,14 @@
     align-items: flex-start;
     &:not(:last-child) {
       margin-right: 7px;
+      @media (min-width: 640px) {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+      @media (min-width: 1920px) {
+        margin-right: 40px;
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -175,6 +206,10 @@
     @media (min-width: 480px) {
       margin-right: 26px;
       width: 36px;
+    }
+    @media (min-width: 540px) {
+      margin-top: 0;
+      width: 45px;
     }
   }
 
@@ -191,7 +226,19 @@
       font-size: 18px;
       line-height: 21px;
     }
-
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      margin-bottom: 10px;
+    }
+    @media (min-width: 768px) {
+      font-size: 20px;
+      line-height: 23px;
+    }
+    @media (min-width: 1000px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
     &-hidden {
       display: none;
     }
@@ -206,6 +253,20 @@
       font-size: 13px;
       line-height: 15px;
     }
+    @media (min-width: 540px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    @media (min-width: 640px) {
+      max-width: 190px;
+    }
+    @media (min-width: 768px) {
+      max-width: none;
+    }
+    @media (min-width: 1000px) {
+      font-size: 16px;
+      line-height: 18px;
+    }
   }
 
   &__actions {
@@ -214,6 +275,9 @@
       display: flex;
       margin-bottom: 36px;
       background-color: #efefef;
+    }
+    @media (min-width: 640px) {
+      margin-bottom: 0;
     }
   }
 
