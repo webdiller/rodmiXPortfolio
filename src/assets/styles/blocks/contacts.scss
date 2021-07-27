@@ -301,7 +301,6 @@
   &__map {
     height: 190px;
     background-color: #fff;
-    border-radius: 10px;overflow: hidden;
     @media (min-width: 480px) {
       height: 240px;
     }
@@ -310,6 +309,8 @@
     @media (min-width: 640px) {
       margin-left: auto;
       height: 250px;
+      border-radius: 10px;
+      overflow: hidden;
     }
     @media (min-width: 768px) {
       min-width: 487px;

@@ -3,6 +3,8 @@ const pug = require("gulp-pug");
 const postcss = require("gulp-postcss");
 const sourcemaps = require("gulp-sourcemaps");
 const rename = require("gulp-rename");
+const gcmq = require('gulp-group-css-media-queries');
+const cleanCSS = require('gulp-clean-css');
 const del = require("del");
 const gulpWebpack = require("gulp-webpack");
 const webpack = require("webpack");
@@ -87,6 +89,8 @@ function styles() {
     .src(paths.styles.main)
     .pipe(sourcemaps.init())
     .pipe(postcss(require("./postcss.config")))
+    .pipe(gcmq())
+    .pipe(cleanCSS())
     .pipe(sourcemaps.write())
     .pipe(rename("main.min.css"))
     .pipe(gulp.dest(paths.styles.dest));
