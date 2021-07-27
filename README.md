@@ -1,7 +1,7 @@
 nodejs: 14.17.3     
 npm: 6.14.13        
-CLI version: 2.3.0      
-Local version: 4.0.0        
+GULP CLI version: 2.3.0      
+GULP Local version: 4.0.0         
 
 Запуск: gulp    
 

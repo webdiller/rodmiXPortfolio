@@ -18,7 +18,7 @@ body {
   color: $text-color;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   &.hidden {
     overflow-y: hidden;
   }
@@ -138,7 +138,7 @@ textarea::placeholder {
 .subtitle {
   font-size: 12px;
   line-height: 14px;
-  color: #9C8C8D;
+  color: #9c8c8d;
   @media (min-width: 480px) {
     font-size: 14px;
     line-height: 16px;
@@ -197,5 +197,30 @@ textarea::placeholder {
 }
 
 .title-with-subtitle {
+  position: relative;
   text-align: center;
+  width: 100%;
+  margin-bottom: 15px;
+  @media (min-width: 1400px) {
+    margin-bottom: 30px;
+  }
+  &__btn {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      display: inline-flex;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1000px) {
+    }
+    @media (min-width: 1000px) {
+    }
+  }
 }
