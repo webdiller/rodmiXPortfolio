@@ -3,4 +3,5 @@ module.exports = {
     "red": "#E31E25",
     "redHover": "#FF545A",
     "grey": "#D2D2D2",
+    "greyHover": "#e0e0e0",
 };

@@ -28,6 +28,12 @@ strong {
   font-weight: 600;
 }
 
+button {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 button,
 input,
 input::placeholder,

@@ -1,5 +1,12 @@
 .footer {
   background-color: #404040;
+  padding-bottom: 70px;
+  @media (min-width: 540px) {
+    padding-bottom: 75px;
+  }
+  @media (min-width: 768px) {
+    padding-bottom: 0;
+  }
   &__wrapper {
     padding-top: 26px;
     padding-bottom: 30px;

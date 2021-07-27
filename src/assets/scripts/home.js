@@ -1,4 +1,4 @@
-// Наши преимущества
+// Наши преимущества слайдер
 (() => {
   const featuresSwiper = document.getElementById('featuresSwiper');
   if (featuresSwiper) {
@@ -25,19 +25,27 @@
   }
 })();
 
-
-// Наши публикации
-(()=>{
+// Наши публикации слайдер
+(() => {
   const publicationsSwiper = document.getElementById('publicationsSwiper');
   if (publicationsSwiper) {
     const swiperOptions = {
       slidesPerView: 1,
       spaceBetween: 10,
-      loop: true,
+      breakpoints: {
+        1020: {
+          slidesPerView: 2,
+          spaceBetween: 15
+        }
+      },
       pagination: {
         el: '.publications__bottom .swiper-pagination',
         type: 'bullets',
         clickable: true
+      },
+      navigation: {
+        nextEl: '.publications__bottom .swiper-button-next',
+        prevEl: '.publications__bottom .swiper-button-prev'
       },
       on: {
         init: function () {
@@ -45,7 +53,6 @@
         }
       }
     };
-
     const publicationsSwiperSlider = new Swiper(publicationsSwiper, swiperOptions);
   }
-})()
+})();
