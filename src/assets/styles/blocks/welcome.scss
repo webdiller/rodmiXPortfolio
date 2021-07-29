@@ -73,6 +73,7 @@
       line-height: 62px;
     }
     @media (min-width: 1000px) {
+      margin-bottom: 10px;
     }
     @media (min-width: 1920px) {
       font-size: 70px;
@@ -142,28 +143,28 @@
 
   &__drill-image {
     display: block;
-    width: 67%;
+    width: auto;
+    height: 190px;
     margin-left: auto;
     margin-right: auto;
     max-width: 745px;
     @media (min-width: 480px) {
-      width: 85%;
-      margin-right: 0;
+      height: 305px;
+    }
+    @media (min-width: 540px) {
+      height: 390px;
     }
     @media (min-width: 640px) {
       margin-top: -100px;
-      max-width: 360px;
+      margin-right: 0;
+      height: 523px;
     }
     @media (min-width: 768px) {
-      max-width: 440px;
     }
-    @media (min-width: 1000px) {
-      max-width: 630px;
-      margin: -140px -30px 0 auto;
-      width: 65%;
+    @media (min-width: 1020px) {
+      margin: -140px -10px 0 auto;
     }
     @media (min-width: 1920px) {
-      max-width: 730px;
       margin: -280px -60px 0 auto;
     }
   }
@@ -174,8 +175,11 @@
     @media (min-width: 640px) {
       position: absolute;
       top: 314px;
-      left: 0;
+      left: 20px;
       flex-direction: column;
+    }
+    @media (min-width: 1000px) {
+      top: 395px;
     }
     @media (min-width: 1920px) {
       flex-direction: row;
@@ -211,6 +215,9 @@
       margin-top: 0;
       width: 45px;
     }
+    @media (min-width: 640px) {
+      margin-right: 20px;
+    }
   }
 
   &__feature-content {
@@ -236,6 +243,7 @@
       line-height: 23px;
     }
     @media (min-width: 1000px) {
+      margin-bottom: 4px;
       font-size: 24px;
       line-height: 28px;
     }
@@ -271,6 +279,8 @@
 
   &__actions {
     order: 3;
+    border-radius: 5px;
+    overflow: hidden;
     @media (min-width: 480px) {
       display: flex;
       margin-bottom: 36px;
@@ -289,11 +299,11 @@
     width: 100%;
     padding: 0 14px;
     height: 37px;
-    border-radius: 5px;
     text-transform: uppercase;
     color: #fff;
     margin-top: -1px;
     margin-bottom: 26px;
+    border-radius: 5px;
 
     font-weight: 600;
     font-size: 12px;
@@ -310,6 +320,7 @@
       line-height: 21px;
     }
     @media (min-width: 1000px) {
+      height: 80px;
       font-size: 20px;
       line-height: 23px;
       padding-left: 25px;
@@ -338,7 +349,7 @@
   &__action-img {
     width: 13px;
     @media (min-width: 1000px) {
-      width: 20px;
+      width: 25px;
     }
   }
 }
