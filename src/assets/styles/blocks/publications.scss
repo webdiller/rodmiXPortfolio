@@ -479,6 +479,8 @@
     }
     &_640 {
       display: none;
+      text-transform: none;
+      color: $red;
       @media (min-width: 640px) {
         display: inline-block;
       }

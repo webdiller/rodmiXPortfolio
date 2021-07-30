@@ -50,6 +50,9 @@
       height: auto;
       margin-top: 0;
     }
+    @media (min-width: 1000px) {
+      padding-top: 47px;
+    }
   }
 
   &__item-icon {
@@ -106,6 +109,7 @@
     @media (min-width: 1000px) {
       font-size: 16px;
       line-height: 21px;
+      margin-bottom: 15px;
     }
     @media (min-width: 1920px) {
       font-size: 20px;
