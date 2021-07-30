@@ -38,8 +38,15 @@
     @media (min-width: 768px) {
       margin-right: 15px;
     }
+    @media (min-width: 1020px) {
+      width: auto;
+      flex: 1 0 auto;
+      max-width: 313px;
+      min-width: 313px;
+    }
     @media (min-width: 1920px) {
-      margin-right: auto;
+      max-width: 449px;
+      min-width: 449px;
     }
   }
 
@@ -155,24 +162,45 @@
   &__text {
     font-size: 12px;
     line-height: 26px;
-    &:not(:last-child) {
-      margin-bottom: 40px;
+    margin-bottom: 35px;
+    &:last-child {
+      margin-bottom: 50px;
     }
     @media (min-width: 480px) {
       font-size: 13px;
       line-height: 29px;
+      margin-bottom: 40px;
+      &:last-child {
+        margin-bottom: 70px;
+      }
+    }
+    @media (min-width: 540px) {
+      &:last-child {
+        margin-bottom: 60px;
+      }
     }
     @media (min-width: 640px) {
       font-size: 14px;
       line-height: 31px;
     }
+    @media (min-width: 768px) {
+      margin-bottom: 45px;
+    }
     @media (min-width: 1000px) {
       font-size: 16px;
       line-height: 35px;
+      margin-bottom: 45px;
+      &:last-child {
+        margin-bottom: 65px;
+      }
     }
     @media (min-width: 1920px) {
       font-size: 18px;
       line-height: 45px;
+      margin-bottom: 65px;
+      &:last-child {
+        margin-bottom: 100px;
+      }
     }
   }
 

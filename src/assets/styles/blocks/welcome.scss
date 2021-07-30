@@ -22,6 +22,9 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    @media (min-width: 1000px) {
+      margin-bottom: 50px;
+    }
   }
 
   &__text-content {
@@ -165,7 +168,8 @@
       margin: -140px -10px 0 auto;
     }
     @media (min-width: 1920px) {
-      margin: -280px -60px 0 auto;
+      margin: -260px 0 0 auto;
+      height: 590px;
     }
   }
 
@@ -183,7 +187,7 @@
     }
     @media (min-width: 1920px) {
       flex-direction: row;
-      margin-top: 250px;
+      top: 600px;
     }
   }
 

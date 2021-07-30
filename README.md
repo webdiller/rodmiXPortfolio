@@ -27,3 +27,6 @@ NOTES:
 - .container - 735px, разрешение экрана - 768-1019
 - .container - 604px, разрешение экрана - 640-767
 - .container - 100%, разрешение экрана - 320-639
+
+ПРАВКИ:
+* https://docs.google.com/document/d/1ozTYpQxkCiRnp9UqOtgJ-cq_MPfxXwoR1WhGmnqn4BY/edit
