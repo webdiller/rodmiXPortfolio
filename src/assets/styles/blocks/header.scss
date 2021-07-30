@@ -313,6 +313,7 @@
   }
 
   &.active {
+    z-index: 400;
     .header__top {
     }
     .header__sidebar {
