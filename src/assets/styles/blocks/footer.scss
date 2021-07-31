@@ -125,6 +125,7 @@
     @media (min-width: 768px) {
     }
     @media (min-width: 1020px) {
+      margin-bottom: 20px;
     }
     @media (min-width: 1920px) {
       font-size: 24px;
@@ -145,6 +146,7 @@
     @media (min-width: 1020px) {
       font-size: 14px;
       line-height: 18px;
+      margin-bottom: 35px;
     }
     @media (min-width: 1920px) {
       font-size: 16px;
@@ -188,6 +190,9 @@
     @media (min-width: 1020px) {
       font-size: 16px;
       line-height: 34px;
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
     }
   }
 
