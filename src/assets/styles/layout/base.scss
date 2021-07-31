@@ -28,6 +28,13 @@ strong {
   font-weight: 600;
 }
 
+a {
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 button {
   &:hover {
     cursor: pointer;
@@ -46,7 +53,7 @@ textarea::placeholder {
 input:focus {
   outline: none;
   border-color: $red;
-  transition: border-color .3s ease;
+  transition: border-color 0.3s ease;
 }
 
 .btn {
@@ -57,6 +64,7 @@ input:focus {
 
   height: 45px;
   border-radius: 5px;
+  padding-top: 3px;
   padding-left: 50px;
   padding-right: 50px;
 
@@ -121,6 +129,7 @@ input:focus {
   justify-content: center;
   align-items: center;
   height: 40px;
+  padding-top: 3px;
   padding-left: 35px;
   padding-right: 35px;
   text-transform: uppercase;
@@ -157,11 +166,11 @@ input:focus {
   background-color: transparent;
   font-size: 12px;
   font-style: italic;
-  border: 1px solid #DCDCDC;
+  border: 1px solid #dcdcdc;
   &::placeholder {
     font-style: italic;
     font-size: 12px;
-    color: #C8C8C8;
+    color: #c8c8c8;
     @media (min-width: 480px) {
       font-size: 16px;
     }
@@ -169,7 +178,7 @@ input:focus {
       font-size: 12px;
     }
     @media (min-width: 768px) {
-      font-size: 14px;  
+      font-size: 14px;
     }
   }
   @media (min-width: 480px) {
@@ -181,7 +190,6 @@ input:focus {
   @media (min-width: 768px) {
     font-size: 14px;
   }
-  
 }
 
 .subtitle {
@@ -192,9 +200,13 @@ input:focus {
     font-size: 14px;
     line-height: 16px;
   }
+  @media (min-width: 640px) {
+    margin-bottom: 6px;
+  }
   @media (min-width: 1920px) {
     font-size: 18px;
     line-height: 21px;
+    margin-bottom: 13px;
   }
 }
 
@@ -226,6 +238,9 @@ input:focus {
   &_with-paddings {
     padding-left: 15px;
     padding-right: 15px;
+    @media (min-width: 1000px) {
+      margin-bottom: 100px;
+    }
   }
 
   @media (min-width: 640px) and (max-width: 767px) {
@@ -256,7 +271,8 @@ input:focus {
   &__btn {
     display: none;
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     right: 0;
     @media (min-width: 480px) {
     }
