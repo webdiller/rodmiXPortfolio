@@ -28,6 +28,13 @@ strong {
   font-weight: 600;
 }
 
+a {
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 button {
   &:hover {
     cursor: pointer;
