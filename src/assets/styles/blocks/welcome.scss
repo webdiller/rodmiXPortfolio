@@ -2,35 +2,39 @@
   position: relative;
   &::before {
     content: "";
-    // ./assets/images/welcome-bg-1920.jpg
     position: absolute;
-    bottom: 0;
+    top: 0;
     right: 0;
     left: 0;
     width: 100%;
-    height: calc(100% + 50px);
+    height: 390px;
     object-fit: cover;
     background: url('../../assets/images/welcome-bg-320.jpg') no-repeat center / cover;
     @media (min-width: 480px) {
       background-image: url('../../assets/images/welcome-bg-480.jpg');
+      height: 490px;
     }
     @media (min-width: 540px) {
       background-image: url('../../assets/images/welcome-bg-540.jpg');
-      height: calc(100% + 80px);
+      height: 580px;
+      top: -40px;
     }
     @media (min-width: 640px) {
       background-image: url('../../assets/images/welcome-bg-640.jpg');
+      height: 630px;
+      top: -20px;
     }
     @media (min-width: 768px) {
       background-image: url('../../assets/images/welcome-bg-768.jpg');
-      height: calc(100% + 100px);
+      height: 767px;
+      top: -100px;
     }
     @media (min-width: 1020px) {
       background-image: url('../../assets/images/welcome-bg-1000.jpg');
-      height: calc(100% + 120px);
     }
     @media (min-width: 1920px) {
       background-image: url('../../assets/images/welcome-bg-1920.jpg');
+      height: 900px;
     }
   }
   &__wrapper {
@@ -39,8 +43,14 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    @media (min-width: 640px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
     @media (min-width: 1020px) {
       margin-bottom: 50px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
 
@@ -56,6 +66,7 @@
     }
     @media (min-width: 540px) {
       margin-top: 40px;
+      margin-left: 0;
     }
     @media (min-width: 768px) {
       text-align: left;
@@ -199,11 +210,12 @@
     @media (min-width: 640px) {
       position: absolute;
       top: 367px;
-      left: 20px;
+      left: 0;
       flex-direction: column;
     }
     @media (min-width: 1020px) {
       top: 395px;
+      left: 15px;
     }
     @media (min-width: 1920px) {
       flex-direction: row;
