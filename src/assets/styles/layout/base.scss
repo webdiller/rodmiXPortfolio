@@ -103,6 +103,12 @@ input:focus {
   }
 }
 
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .title1 {
   font-weight: bold;
   font-size: 24px;

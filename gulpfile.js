@@ -129,7 +129,8 @@ function createIconsFromSvg() {
     .src(['./src/assets/images/*.svg'])
     .pipe(
       iconfontCss({
-        fontName: fontName,
+        fontName,
+        normalize: true,
         path: './src/assets/styles/_icons.css', // path to config file
         fontPath: './', // path for root path
         targetPath: './iconsfonts.css'
@@ -137,7 +138,9 @@ function createIconsFromSvg() {
     )
     .pipe(
       iconfont({
-        fontName: fontName
+        fontName,
+        normalize: true,
+        prependUnicode: true
       })
     )
     .pipe(gulp.dest('./src/assets/fonts/'));

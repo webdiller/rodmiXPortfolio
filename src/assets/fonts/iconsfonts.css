@@ -21,90 +21,126 @@
 }
 
 
-.icon-icon-arrow-right-short_white:before {
+.icon-arrow-short-grey:before {
 	content: "\E001";
 }
 
-.icon-icon-arrow-right_black:before {
+.icon-arrow-short-white:before {
 	content: "\E002";
 }
 
-.icon-icon-arrow-right_white:before {
+.icon-contacts:before {
 	content: "\E003";
 }
 
-.icon-icon-award:before {
+.icon-icon-arrow-right-short_grey:before {
 	content: "\E004";
 }
 
-.icon-icon-certificate:before {
+.icon-icon-arrow-right-short_white:before {
 	content: "\E005";
 }
 
-.icon-icon-delivery:before {
+.icon-icon-arrow-right_black:before {
 	content: "\E006";
 }
 
-.icon-icon-education:before {
+.icon-icon-arrow-right_white:before {
 	content: "\E007";
 }
 
-.icon-icon-handshake:before {
+.icon-icon-award:before {
 	content: "\E008";
 }
 
-.icon-icon-help:before {
+.icon-icon-certificate:before {
 	content: "\E009";
 }
 
-.icon-icon-instagram:before {
+.icon-icon-delivery:before {
 	content: "\E00A";
 }
 
-.icon-icon-pdf:before {
+.icon-icon-education:before {
 	content: "\E00B";
 }
 
-.icon-icon-process:before {
+.icon-icon-handshake:before {
 	content: "\E00C";
 }
 
-.icon-icon-publications:before {
+.icon-icon-help:before {
 	content: "\E00D";
 }
 
-.icon-icon-shield:before {
+.icon-icon-instagram:before {
 	content: "\E00E";
 }
 
-.icon-icon-stock:before {
+.icon-icon-pdf:before {
 	content: "\E00F";
 }
 
-.icon-icon-youtube:before {
+.icon-icon-process:before {
 	content: "\E010";
 }
 
-.icon-logo_black:before {
+.icon-icon-publications:before {
 	content: "\E011";
 }
 
-.icon-logo_red:before {
+.icon-icon-shield:before {
 	content: "\E012";
 }
 
-.icon-slider-next:before {
+.icon-icon-stock:before {
 	content: "\E013";
 }
 
-.icon-slider-next_disabled:before {
+.icon-icon-youtube:before {
 	content: "\E014";
 }
 
-.icon-slider-prev:before {
+.icon-logo_black:before {
 	content: "\E015";
 }
 
-.icon-slider-prev_disabled:before {
+.icon-logo_red:before {
 	content: "\E016";
+}
+
+.icon-menu_close:before {
+	content: "\E017";
+}
+
+.icon-menu_open:before {
+	content: "\E018";
+}
+
+.icon-order:before {
+	content: "\E019";
+}
+
+.icon-production:before {
+	content: "\E01A";
+}
+
+.icon-slider-next:before {
+	content: "\E01B";
+}
+
+.icon-slider-next_disabled:before {
+	content: "\E01C";
+}
+
+.icon-slider-prev:before {
+	content: "\E01D";
+}
+
+.icon-slider-prev_disabled:before {
+	content: "\E01E";
+}
+
+.icon-warranty:before {
+	content: "\E01F";
 }
