@@ -29,11 +29,12 @@
     }
     @media (min-width: 1020px) {
       width: 100%;
-      height: 120px;
+      height: 102px;
       margin-bottom: 0;
     }
     @media (min-width: 1200px) {
       width: 100%;
+      height: 119px;
     }
     @media (min-width: 1400px) {
       width: 1200px;
@@ -123,15 +124,19 @@
 
   &__phone {
     @include reset-link();
-    margin-right: 17px;
+    padding-right: 17px;
     font-weight: bold;
     font-size: 12px;
     line-height: 14px;
     display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
     align-self: stretch;
     color: $text-color;
+    &:hover {
+      color: $redHover;
+    }
     @media (min-width: 480px) {
       font-size: 14px;
       line-height: 16px;
@@ -148,7 +153,9 @@
     }
 
     @media (min-width: 1020px) {
-      margin-right: 45px;
+      width: 262px;
+      flex: 0 0 262px;
+      padding-right: 0;
       font-weight: 500;
       font-size: 24px;
       line-height: 28px;
@@ -171,6 +178,9 @@
     display: none;
     font-weight: bold;
     white-space: nowrap;
+    &:hover {
+      color: $redHover;
+    }
     @media (min-width: 480px) {
       display: flex;
       justify-content: center;
@@ -187,6 +197,10 @@
     @media (min-width: 540px) {
       border-left-width: 2px;
     }
+    @media (min-width: 640px) {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
     @media (min-width: 768px) {
       font-size: 18px;
       line-height: 21px;
@@ -196,6 +210,8 @@
     @media (min-width: 1020px) {
       padding-left: 35px;
       padding-right: 35px;
+      width: 231px;
+      flex: 0 0 231px;
     }
     @media (min-width: 1920px) {
       position: absolute;
@@ -225,7 +241,7 @@
     }
     @media (min-width: 768px) {
       justify-content: flex-end;
-      padding-right: 23px; 
+      padding-right: 23px;
     }
     @media (min-width: 1020px) and (max-width: 1199px) {
       min-width: 97px;

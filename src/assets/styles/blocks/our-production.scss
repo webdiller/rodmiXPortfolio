@@ -59,6 +59,14 @@
       border-radius: 5px;
       height: 130px;
       background-color: #efefef;
+      &:hover {
+        .our-production__list-title {
+          color: $redHover;
+        }
+        .our-production__list-icon-wrapper {
+          background-color: $redHover;
+        }
+      }
       @media (min-width: 480px) {
         height: 105px;
       }
@@ -95,6 +103,7 @@
       font-size: 20px;
       line-height: 20px;
       color: #e31e25;
+      transition: all .3s ease;
       @media (min-width: 480px) {
       }
       @media (min-width: 540px) {
@@ -143,7 +152,8 @@
       }
     }
 
-    &-icon-wrapper {
+    &-icon {
+
       position: absolute;
       bottom: 0;
       left: 0;
@@ -154,17 +164,16 @@
       background-color: $red;
       width: 26px;
       height: 26px;
+      transition: all .3s ease;
+      font-size: 9px;
+      color: #fff;
+
       @media (min-width: 1920px) {
         width: 40px;
         height: 40px;
+        font-size: 13px;
       }
-    }
 
-    &-icon {
-      width: 12px;
-      @media (min-width: 1920px) {
-        width: 15px;
-      }
     }
 
     &-picture {

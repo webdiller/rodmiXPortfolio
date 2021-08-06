@@ -29,6 +29,7 @@ strong {
 }
 
 a {
+  transition: all .3s ease;
   cursor: pointer;
   &:hover {
     text-decoration: none;
@@ -78,7 +79,7 @@ input:focus {
 
   text-align: center;
   text-transform: uppercase;
-  transition: all 0.3s ease;
+  transition: all .3s ease;
   &:hover {
     background-color: $redHover;
   }
@@ -144,6 +145,11 @@ input:focus {
   color: $red;
   border: 1px solid $red;
   border-radius: 5px;
+  transition: all .3s ease;
+  &:hover {
+    background-color: $redHover;
+    color: #fff;
+  }
   @media (min-width: 480px) {
   }
   @media (min-width: 540px) {

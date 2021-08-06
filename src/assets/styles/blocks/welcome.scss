@@ -48,7 +48,7 @@
       padding-right: 0;
     }
     @media (min-width: 1020px) {
-      margin-bottom: 50px;
+      margin-bottom: 75px;
     }
   }
 
@@ -71,11 +71,11 @@
       margin-top: 50px;
     }
     @media (min-width: 1020px) {
-      margin-top: 55px;
+      margin-top: 62px;
       margin-left: 0;
     }
     @media (min-width: 1920px) {
-      margin-top: 200px;
+      margin-top: 214px;
     }
   }
 
@@ -213,7 +213,7 @@
     }
     @media (min-width: 1020px) {
       top: 395px;
-      left: 15px;
+      left: 0;
     }
     @media (min-width: 1920px) {
       flex-direction: row;
@@ -262,6 +262,9 @@
     font-size: 12px;
     line-height: 14px;
     color: #454545;
+    &-hidden {
+      display: none;
+    }
 
     @media (min-width: 480px) {
       font-size: 18px;
@@ -271,6 +274,9 @@
     }
     @media (min-width: 640px) {
       margin-bottom: 1px;
+      &-hidden {
+        display: inline-block;
+      }
     }
     @media (min-width: 768px) {
       font-size: 20px;
@@ -336,6 +342,10 @@
     border-radius: 5px;
 
     cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: $redHover;
+    }
     @media (min-width: 480px) {
       height: 60px;
       margin-bottom: 0;
@@ -365,9 +375,42 @@
       @media (min-width: 480px) {
         margin-bottom: 0;
       }
+      @media (min-width: 640px) {
+        padding-left: 31px;
+        padding-right: 27px;
+        min-width: 331px;
+      }
+      @media (min-width: 1020px) {
+        max-width: 395px;
+        min-width: 395px;
+        padding-left: 37px;
+        padding-right: 33px;
+      }
+      @media (min-width: 1920px) {
+        max-width: 570px;
+        min-width: 570px;
+        padding-left: 49px;
+        padding-right: 44px;
+      }
     }
     &_grey {
       background-color: #efefef;
+      transition: all 0.3s ease;
+      &:hover {
+        background-color: $greyHover;
+      }
+      @media (min-width: 640px) {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      @media (min-width: 1020px) {
+        padding-left: 36px;
+        padding-right: 37px;
+      }
+      @media (min-width: 1920px) {
+        padding-left: 62px;
+        padding-right: 42px;
+      }
     }
   }
 
@@ -383,8 +426,22 @@
     @media (min-width: 640px) {
       font-size: 18px;
     }
+    @media (min-width: 768px) {
+      &_mobile {
+        display: none;
+      }      
+      &_tablet {
+        display: inline-block;
+      }
+    }
     @media (min-width: 1020px) {
       font-size: 20px;
+      &_tablet {
+        display: none;
+      }
+      &_desktop {
+        display: inline-block;
+      }
     }
     @media (min-width: 1920px) {
       font-size: 24px;

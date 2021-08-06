@@ -19,6 +19,9 @@
       height: 75px;
       padding: 0 20px;
     }
+    @media (min-width: 640px) {
+      box-shadow: 0px -1px 8px rgba(227, 30, 37, 0.17);
+    }
   }
 
   &__item {
@@ -60,6 +63,9 @@
     }
     @media (min-width: 540px) {
       position: static;
+    }
+    @media (min-width: 640px) {
+      font-size: 16px;
     }
   }
 }
