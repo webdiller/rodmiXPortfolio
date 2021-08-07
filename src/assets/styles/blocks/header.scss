@@ -3,6 +3,7 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   z-index: 10;
   overflow: hidden;
+  transition: all .3s ease;
 
   @media (min-width: 540px) {
     border-bottom-width: 2px;
@@ -392,5 +393,6 @@
 
   &.scrolled {
     background-color: #fff;
+    z-index: 100;
   }
 }
