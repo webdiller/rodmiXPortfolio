@@ -1,5 +1,3 @@
-import Swiper from 'swiper';
-
 const defaultScripts = () => {
   const sidebar = document.getElementById('sidebar');
   const header = document.getElementById('header');

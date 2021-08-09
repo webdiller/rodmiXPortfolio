@@ -53,6 +53,18 @@
 
   &__menu-close {
     color: $red;
+    font-size: 16px;
+    @media (min-width: 480px) {
+      font-size: 21px;
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+      font-size: 32px;
+    }
+    @media (min-width: 1020px) {
+      font-size: 36px;
+    }
   }
 
   &__menu-list {
