@@ -53,6 +53,10 @@
     color: #fff;
     font-size: 18px;
     line-height: 21px;
+    transition: all .3s ease;
+    &:hover {
+      color: #ff545a;
+    }
     &:not(:last-child) {
       margin-right: 70px;
     }
@@ -196,6 +200,10 @@
     font-size: 14px;
     line-height: 1;
     color: #ffffff;
+    transition: all .3s ease;
+    &:hover {
+      color: #ff545a;
+    }
     &:not(:last-child) {
       margin-bottom: 15px;
     }
@@ -255,6 +263,10 @@
     text-align: center;
     text-decoration-line: underline;
     color: #e31e25;
+    transition: all .3s ease;
+    &:hover {
+      color: #ff545a;
+    }
     @media (min-width: 1020px) {
       margin-bottom: 39px;
       font-size: 14px;
@@ -283,7 +295,12 @@
     }
   }
 
-  &__address-social-img {
+  &__address-social-icon {
+    color: #fff;
+    transition: all .3s ease;
+    &:hover {
+      color: #ff545a;
+    }
   }
 
   &__rules {
@@ -307,5 +324,9 @@
 
   &__rules-link {
     color: $red;
+    transition: all .3s ease;
+    &:hover {
+      color: #ff545a;
+    }
   }
 }

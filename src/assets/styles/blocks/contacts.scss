@@ -98,7 +98,6 @@
     @media (min-width: 1400px) {
     }
     @media (min-width: 1430px) {
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
     a {
       // TODO: узнать цвет
@@ -285,6 +284,10 @@
 
   &__btn-form {
     display: none;
+    transition: all 0.3s ease;
+    &:hover {
+      color: #ff545a;
+    }
     @media (min-width: 480px) {
     }
     @media (min-width: 540px) {
@@ -313,6 +316,10 @@
   &__map {
     height: 190px;
     background-color: #fff;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
     @media (min-width: 480px) {
       height: 240px;
     }

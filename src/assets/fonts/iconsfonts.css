@@ -100,50 +100,58 @@
 	content: "\E014";
 }
 
-.icon-icon-youtube:before {
+.icon-icon-triangle-left:before {
 	content: "\E015";
 }
 
-.icon-logo_black:before {
+.icon-icon-triangle-right:before {
 	content: "\E016";
 }
 
-.icon-logo_red:before {
+.icon-icon-youtube:before {
 	content: "\E017";
 }
 
-.icon-menu_close:before {
+.icon-logo_black:before {
 	content: "\E018";
 }
 
-.icon-menu_open:before {
+.icon-logo_red:before {
 	content: "\E019";
 }
 
-.icon-order:before {
+.icon-menu_close:before {
 	content: "\E01A";
 }
 
-.icon-production:before {
+.icon-menu_open:before {
 	content: "\E01B";
 }
 
-.icon-slider-next:before {
+.icon-order:before {
 	content: "\E01C";
 }
 
-.icon-slider-next_disabled:before {
+.icon-production:before {
 	content: "\E01D";
 }
 
-.icon-slider-prev:before {
+.icon-slider-next:before {
 	content: "\E01E";
 }
 
-.icon-slider-prev_disabled:before {
+.icon-slider-next_disabled:before {
 	content: "\E01F";
 }
 
-.icon-warranty:before {
+.icon-slider-prev:before {
 	content: "\E020";
+}
+
+.icon-slider-prev_disabled:before {
+	content: "\E021";
+}
+
+.icon-warranty:before {
+	content: "\E022";
 }

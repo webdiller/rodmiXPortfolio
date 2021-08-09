@@ -60,10 +60,11 @@
       height: 130px;
       background-color: #efefef;
       &:hover {
+        background-color: #e0e0e0;
         .our-production__list-title {
           color: $redHover;
         }
-        .our-production__list-icon-wrapper {
+        .our-production__list-icon {
           background-color: $redHover;
         }
       }

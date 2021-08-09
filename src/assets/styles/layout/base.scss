@@ -20,9 +20,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
-  &.hidden {
-    overflow-y: hidden;
-  }
   &::before {
     content: '';
     position: absolute;
@@ -104,7 +101,7 @@ input:focus {
 
   height: 45px;
   border-radius: 5px;
-  padding-top: 3px;
+  padding-top: 5px;
   padding-left: 50px;
   padding-right: 50px;
 
@@ -162,7 +159,7 @@ input:focus {
     font-size: 36px;
     line-height: 41px;
   }
-  @media (min-width: 1920px) {
+  @media (min-width: 1430px) {
     font-size: 46px;
     line-height: 53px;
   }
@@ -175,7 +172,7 @@ input:focus {
   justify-content: center;
   align-items: center;
   height: 40px;
-  padding-top: 3px;
+  padding-top: 5px;
   padding-left: 35px;
   padding-right: 35px;
   text-transform: uppercase;
@@ -187,6 +184,7 @@ input:focus {
   transition: all .3s ease;
   &:hover {
     background-color: $redHover;
+    border-color: $redHover;
     color: #fff;
   }
   @media (min-width: 480px) {
@@ -254,7 +252,7 @@ input:focus {
   @media (min-width: 640px) {
     margin-bottom: 6px;
   }
-  @media (min-width: 1920px) {
+  @media (min-width: 1430px) {
     font-size: 18px;
     line-height: 21px;
     margin-bottom: 13px;

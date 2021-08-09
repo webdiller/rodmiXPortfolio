@@ -1,0 +1,99 @@
+.sidebar {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(15, 15, 15, 0.6);
+  transition: all 0.3s ease;
+
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 300;
+  }
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+  &__menu {
+    width: 74%;
+    margin-left: auto;
+    background-color: #fff;
+    height: 100%;
+    padding-bottom: 37px;
+    overflow-y: scroll;
+  }
+
+  &__menu-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+    padding: 25px 32px 0 32px;
+
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    @media (min-width: 480px) {
+      font-size: 30px;
+      line-height: 30px;
+    }
+    @media (min-width: 640px) {
+      font-size: 36px;
+      line-height: 36px;
+    }
+  }
+
+  &__menu-close {
+    color: $red;
+  }
+
+  &__menu-list {
+    padding: 0 0 0 32px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    columns: 1 88px;
+    column-gap: 13px;
+    &_last {
+      columns: 2 90px;
+      border-bottom: 0;
+    }
+  }
+
+  &__menu-item {
+    @include reset-link();
+    display: block;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1;
+    color: #e31e25;
+    @media (min-width: 480px) {
+      font-size: 20px;
+    }
+    @media (min-width: 540px) {
+      font-size: 24px;
+    }
+    @media (min-width: 640px) {
+      font-size: 20px;
+    }
+    &_small {
+      font-size: 12px;
+      @media (min-width: 480px) {
+        font-size: 16px;
+      }
+      @media (min-width: 540px) {
+        font-size: 18px;
+      }
+      @media (min-width: 640px) {
+        font-size: 16px;
+      }
+    }
+  }
+}

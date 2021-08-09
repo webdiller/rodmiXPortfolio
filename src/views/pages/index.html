@@ -5,16 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная</title>
-    <meta name="description" content="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента"/>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <meta name="description" content="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
     <link rel="stylesheet" href="./assets/fonts/fonts.css" />
     <link rel="stylesheet" href="./assets/fonts/iconsfonts.css" />
     <link rel="stylesheet" href="./assets/styles/main.min.css" />
   </head>
   <body>
+
+    
+
     <!-- HEADER -->
     <header id="header" class="header">
-      <!-- HEADER TOP MENU -->
       <div class="container header__top">
         <a href="#" class="header__logo"><img src="./assets/images/logo_red.svg" alt="" class="header__logo-img" /></a>
         <nav class="header__nav">
@@ -24,40 +26,39 @@
           <a href="#" class="header__nav-item">ГДЕ КУПИТЬ</a>
           <a href="#" class="header__nav-item">КОНТАКТЫ</a>
         </nav>
-        <a href="tel:+7 (499) 444-06-25" class="header__phone">+7 (499) 444-06-25</a>
-        <button href="#" class="header__callback">ПЕРЕЗВОНИТЬ МНЕ</button>
-        <button aria-label="Открыть меню" id="menuBar" class="header__bar">
-          <img src="./assets/images/menu_open.svg" alt="" class="header__bar-open" />
-          <img src="./assets/images/menu_close.svg" alt="" class="header__bar-close" />
+        <a href="tel:+74994440625" class="header__phone">+7 (499) 444-06-25</a>
+        <button class="header__callback">ПЕРЕЗВОНИТЬ МНЕ</button>
+        <button aria-label="Открыть меню" id="menuOpen" class="header__bar">
+          <span class="icon icon-menu_open header__bar-open"></span>
         </button>
-      </div>
-
-      <!-- HEADER SIDEBAR -->
-      <div id="sidebar" class="header__sidebar active">
-        <div class="header__menu">
-          <p class="header__menu-title">Меню</p>
-          <nav class="header__menu-list">
-            <a href="#" class="header__menu-item">О Нас</a>
-            <a href="#" class="header__menu-item">Наша продукция</a>
-            <a href="#" class="header__menu-item">Наши публикации</a>
-            <a href="#" class="header__menu-item">Где купить</a>
-            <a href="#" class="header__menu-item">Контакты</a>
-          </nav>
-          <p class="header__menu-title">Наша продукция</p>
-          <nav class="header__menu-list header__menu-list_last">
-            <a href="#" class="header__menu-item">Сверла</a>
-            <a href="#" class="header__menu-item">Борфрезы</a>
-            <a href="#" class="header__menu-item">Твердосплавные диски</a>
-            <a href="#" class="header__menu-item">Адаптеры</a>
-            <a href="#" class="header__menu-item">Концферзы</a>
-            <a href="#" class="header__menu-item">Метчики</a>
-          </nav>
-        </div>
       </div>
     </header>
 
+    <!-- HEADER SIDEBAR -->
+    <div id="sidebar" class="sidebar">
+      <div class="sidebar__menu">
+        <p class="sidebar__menu-title">Меню <span id="menuClose" class="icon icon-menu_close sidebar__menu-close"></span></p>
+        <nav class="sidebar__menu-list">
+          <a href="#" class="sidebar__menu-item">О Нас</a>
+          <a href="#" class="sidebar__menu-item">Наша продукция</a>
+          <a href="#" class="sidebar__menu-item">Наши публикации</a>
+          <a href="#" class="sidebar__menu-item">Где купить</a>
+          <a href="#" class="sidebar__menu-item">Контакты</a>
+        </nav>
+        <p class="sidebar__menu-title">Наша продукция</p>
+        <nav class="sidebar__menu-list sidebar__menu-list_last">
+          <a href="#" class="sidebar__menu-item">Сверла</a>
+          <a href="#" class="sidebar__menu-item">Борфрезы</a>
+          <a href="#" class="sidebar__menu-item">Твердосплавные диски</a>
+          <a href="#" class="sidebar__menu-item">Адаптеры</a>
+          <a href="#" class="sidebar__menu-item">Концферзы</a>
+          <a href="#" class="sidebar__menu-item">Метчики</a>
+        </nav>
+      </div>
+    </div>
+
     <!-- FIRST SCREEN -->
-    <div class="welcome">
+    <section class="welcome">
       <div class="container welcome__wrapper">
         <div class="welcome__text-content">
           <h1 class="welcome__title">ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ</h1>
@@ -81,7 +82,7 @@
           <source srcset="./assets/images/welcome-drill-640.png" media="(min-width: 640px)" />
 
           <source srcset="./assets/images/welcome-drill.webp" type="image/webp" />
-          <img class="welcome__drill-image" src="./assets/images/welcome-drill.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" type="image/png" />
+          <img class="welcome__drill-image" src="./assets/images/welcome-drill.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
         </picture>
 
         <div class="welcome__features">
@@ -103,25 +104,25 @@
 
         <div class="welcome__actions">
           <div class="welcome__action welcome__action_red">
-            <span class="welcome__action-text">Просмотреть продукцию</span>   
+            <span class="welcome__action-text">Просмотреть продукцию</span>
             <span class="icon icon-arrow-short-white welcome__action-icon"></span>
             <span class="icon icon-icon-arrow-right_white welcome__action-icon_lg"></span>
           </div>
           <div class="welcome__action welcome__action_grey">
-            <span class="welcome__action-text welcome__action-text_mobile">Стать партнером</span> 
-            <span class="welcome__action-text welcome__action-text_tablet">Стать нашим партнером</span>   
-            <span class="welcome__action-text welcome__action-text_desktop">Узнайте как стать нашим партнером</span>   
+            <span class="welcome__action-text welcome__action-text_mobile">Стать партнером</span>
+            <span class="welcome__action-text welcome__action-text_tablet">Стать нашим партнером</span>
+            <span class="welcome__action-text welcome__action-text_desktop">Узнайте как стать нашим партнером</span>
             <span class="icon icon-arrow-short-white welcome__action-icon"></span>
             <span class="icon icon-icon-arrow-right_black welcome__action-icon_lg"></span>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="our-production">
+    <section class="our-production">
       <div class="container our-production__wrapper">
         <div class="title-with-subtitle our-production__title-with-subtitle">
-          <p class="our-production__subtitle subtitle">Надежность проверенная делом</p>
+          <h2 class="our-production__subtitle subtitle">Надежность проверенная делом</h2>
           <p class="our-production__title title1">Наша продукция</p>
           <button class="btn-outline title-with-subtitle__btn">запросить цены</button>
         </div>
@@ -143,7 +144,7 @@
               <source srcset="./assets/images/production-list__item@2x.png" media="(min-width: 1000px)" />
 
               <source srcset="./assets/images/production-list__item.webp" type="image/webp" />
-              <img loading="lazy" class="our-production__list-image" src="./assets/images/production-list__item.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" type="image/png" />
+              <img loading="lazy" class="our-production__list-image" src="./assets/images/production-list__item.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента"/>
             </picture>
           </a>
 
@@ -163,7 +164,7 @@
               <source srcset="./assets/images/production-list__item2@2x.png" media="(min-width: 1000px)" />
 
               <source srcset="./assets/images/production-list__item2.webp" type="image/webp" />
-              <img loading="lazy" class="our-production__list-image" src="./assets/images/production-list__item2.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" type="image/png" />
+              <img loading="lazy" class="our-production__list-image" src="./assets/images/production-list__item2.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
             </picture>
           </a>
 
@@ -183,7 +184,7 @@
               <source srcset="./assets/images/production-list__item3@2x.png" media="(min-width: 1000px)" />
 
               <source srcset="./assets/images/production-list__item3.webp" type="image/webp" />
-              <img loading="lazy" class="our-production__list-image" src="./assets/images/production-list__item3.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" type="image/png" />
+              <img loading="lazy" class="our-production__list-image" src="./assets/images/production-list__item3.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
             </picture>
           </a>
 
@@ -204,7 +205,7 @@
               <source srcset="./assets/images/production-list__item4@2x.png" media="(min-width: 1000px)" />
 
               <source srcset="./assets/images/production-list__item4.webp" type="image/webp" />
-              <img loading="lazy" class="our-production__list-image" src="./assets/images/production-list__item4.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" type="image/png" />
+              <img loading="lazy" class="our-production__list-image" src="./assets/images/production-list__item4.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
             </picture>
           </a>
 
@@ -225,7 +226,7 @@
               <source srcset="./assets/images/production-list__item5@2x.png" media="(min-width: 1000px)" />
 
               <source srcset="./assets/images/production-list__item5.webp" type="image/webp" />
-              <img loading="lazy" class="our-production__list-image" src="./assets/images/production-list__item5.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" type="image/png" />
+              <img loading="lazy" class="our-production__list-image" src="./assets/images/production-list__item5.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
             </picture>
           </a>
 
@@ -246,7 +247,7 @@
               <source srcset="./assets/images/production-list__item6@2x.png" media="(min-width: 1000px)" />
 
               <source srcset="./assets/images/production-list__item6.webp" type="image/webp" />
-              <img loading="lazy" class="our-production__list-image" src="./assets/images/production-list__item6.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" type="image/png" />
+              <img loading="lazy" class="our-production__list-image" src="./assets/images/production-list__item6.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
             </picture>
           </a>
 
@@ -266,7 +267,7 @@
               <source srcset="./assets/images/production-list__item7@2x.png" media="(min-width: 1000px)" />
 
               <source srcset="./assets/images/production-list__item7.webp" type="image/webp" />
-              <img loading="lazy" class="our-production__list-image" src="./assets/images/production-list__item7.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" type="image/png" />
+              <img loading="lazy" class="our-production__list-image" src="./assets/images/production-list__item7.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента"/>
             </picture>
           </a>
 
@@ -293,20 +294,20 @@
               <source srcset="./assets/images/production-list__item9@2x.png" media="(min-width: 1000px)" />
 
               <source srcset="./assets/images/production-list__item9.webp" type="image/webp" />
-              <img loading="lazy" class="our-production__list-image" src="./assets/images/production-list__item9.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" type="image/png" />
+              <img loading="lazy" class="our-production__list-image" src="./assets/images/production-list__item9.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента"/>
             </picture>
           </a>
 
           <a href="#" class="btn-outline our-production__list-btn">запросить цены </a>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- О производителе -->
-    <div class="producer">
+    <section class="producer">
       <div class="container producer__wrapper">
         <div class="title-with-subtitle producer__title-with-subtitle">
-          <p class="subtitle">Как мы занимаемся разработкой</p>
+          <h3 class="subtitle">Как мы занимаемся разработкой</h3>
           <p class="title1">О производителе</p>
         </div>
 
@@ -328,7 +329,8 @@
             </picture>
 
             <div class="producer__btn-with-name">
-              <button class="btn btn_arrow producer__btn">Написать директору 
+              <button class="btn btn_arrow producer__btn">
+                Написать директору
                 <span class="icon icon-arrow-short-white producer__btn-icon"></span>
                 <span class="icon icon-icon-arrow-right_white producer__btn-icon"></span>
               </button>
@@ -368,13 +370,13 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Наши преимущества -->
-    <div class="features">
+    <section class="features">
       <div class="container features__wrapper">
         <div class="title-with-subtitle features__title-with-subtitle">
-          <p class="subtitle">Почему стоит выбрать именно нас</p>
+          <h4 class="subtitle">Почему стоит выбрать именно нас</h4>
           <p class="title1">Наши преимущества</p>
         </div>
 
@@ -419,13 +421,13 @@
           <div class="swiper-pagination"></div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Наши публикации -->
-    <div class="publications">
+    <section class="publications">
       <div class="container publications__wrapper">
         <div class="title-with-subtitle publications__title-with-subtitle">
-          <p class="subtitle">Будьте в курсе всех событий</p>
+          <h5 class="subtitle">Будьте в курсе всех событий</h5>
           <p class="title1">Наши публикации</p>
         </div>
 
@@ -446,7 +448,7 @@
             </picture>
 
             <a href="#" class="publications__video-description">
-              <img src="./assets/images/icon-publications.svg" alt="Смотреть все видео на YouTube" class="publications__video-icon" />
+              <span class="icon icon-icon-publications publications__video-icon"></span>
               <span class="publications__video-text">Смотреть все видео на YouTube</span>
             </a>
           </div>
@@ -482,26 +484,26 @@
               <a href="#" class="btn-outline publications__bottom-show-more">все записи </a>
               <a href="#" class="publications__bottom-show-more publications__bottom-show-more_640">Читать все записи в блоге</a>
               <div class="publications__bottom-navigation">
-                <div class="swiper-button-prev"><img src="./assets/images/slider-prev.svg" alt="Назад" /></div>
-                <div class="swiper-button-next"><img src="./assets/images/slider-next.svg" alt="Вперед" /></div>
+                <div class="swiper-button-prev"><span class="icon icon-icon-triangle-left"></span></div>
+                <div class="swiper-button-next"><span class="icon icon-icon-triangle-right"></span></div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- КОНАКТЫ -->
-    <div class="contacts">
+    <section class="contacts">
       <div class="container contacts__wrapper">
         <div class="title-with-subtitle contacts__title-with-subtitle">
-          <p class="subtitle">Работаем по всей стране</p>
+          <h6 class="subtitle">Работаем по всей стране</h6>
           <p class="title1">Контакты</p>
         </div>
 
         <div class="contacts__top">
           <p class="contacts__top-title">Нашу продукцию вы можете приобрести у наших официальных дилеров по всей России:</p>
-          <p class="contacts__top-subtitle">Вы можете уточнить адрес представителя в вашем городе по телефону: <a href="tel:+7 (499) 444-06-25">+7 (499) 444-06-25</a></p>
+          <p class="contacts__top-subtitle">Вы можете уточнить адрес представителя в вашем городе по телефону: <a href="tel:+74994440625">+7 (499) 444-06-25</a></p>
         </div>
 
         <div class="contacts__bottom">
@@ -520,17 +522,17 @@
             <button class="contacts__btn-form">Форма обратной связи</button>
           </div>
           <div class="contacts__map">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae0f461acabc71986d04ed37b6520fc236822805dc2f4d220ab5ce856c9d09b40&amp;source=constructor" width="100%" height="100%" loading="lazy" frameborder="0"></iframe>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae0f461acabc71986d04ed37b6520fc236822805dc2f4d220ab5ce856c9d09b40&amp;source=constructor" loading="lazy"></iframe>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- ГАРАНТИЯ -->
-    <div class="warrancy">
+    <section class="warrancy">
       <div class="container warrancy__wrapper">
         <div class="title-with-subtitle warrancy__title-with-subtitle">
-          <p class="subtitle">У нас - только качественно!</p>
+          <h6 class="subtitle">У нас - только качественно!</h6>
           <p class="title1">Гарантийное обслуживание</p>
         </div>
 
@@ -540,14 +542,15 @@
             <div class="warrancy__contacts">
               <div class="warrancy__contact-item">
                 <p class="warrancy__contact-title">По телефону:</p>
-                <a href="phone:+7(4852) 68-00-21" class="warrancy__contact-subtitle warrancy__contact-subtitle_phone">+7(4852) 68-00-21</a>
+                <a href="phone:+74852680021" class="warrancy__contact-subtitle warrancy__contact-subtitle_phone">+7(4852) 68-00-21</a>
               </div>
               <div class="warrancy__contact-item">
                 <p class="warrancy__contact-title">Электронной почте:</p>
                 <a href="mailto:info@rodmix.ru" class="warrancy__contact-subtitle warrancy__contact-subtitle_email">info@rodmix.ru</a>
               </div>
             </div>
-            <button class="btn btn_arrow warrancy__btn-contact">Связаться по гарантии 
+            <button class="btn btn_arrow warrancy__btn-contact">
+              Связаться по гарантии
               <span class="icon icon-icon-arrow-right-short_white warrancy__btn-icon"></span>
               <span class="icon icon-icon-arrow-right_white warrancy__btn-icon"></span>
             </button>
@@ -561,7 +564,7 @@
           </form>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -575,7 +578,7 @@
             <a href="#" class="footer__nav-item">ГДЕ КУПИТЬ</a>
             <a href="#" class="footer__nav-item">КОНТАКТЫ</a>
           </nav>
-          <a href="tel:+7 (499) 444-06-25" class="footer__phone">+7 (499) 444-06-25</a>
+          <a href="tel:+74994440625" class="footer__phone">+7 (499) 444-06-25</a>
         </div>
         <div class="footer__bottom">
           <div class="footer__questions">
@@ -602,14 +605,14 @@
             <p class="footer__address-location">Россия, г. Калининград, ул. Ленина д.56</p>
             <a href="mailto:pochta@yandex.ru" class="footer__address-email">pochta@yandex.ru</a>
             <div class="footer__address-socials">
-              <a href="#" class="footer__address-social"><img src="./assets/images/icon-instagram.svg" alt="" class="footer__address-social-img" /></a>
-              <a href="#" class="footer__address-social"><img src="./assets/images/icon-youtube.svg" alt="" class="footer__address-social-img" /></a>
+               <a href="#" class="footer__address-social"><span class="icon icon-icon-instagram footer__address-social-icon"></span></a>
+              <a href="#" class="footer__address-social"><span class="icon icon-icon-youtube footer__address-social-icon"></span></a>
             </div>
           </div>
         </div>
         <div class="footer__rules">
-          Все материалы данного сайта являются объектами авторского права (в том числе дизайн). Запрещается копирование, распространение <br> (в том числе путем копирования на другие сайты и ресурсы в Интернете) или любое иное использование информации
-          <a class="footer__rules-link" href="#">Правила сайта</a> и <a class="footer__rules-link" href="#">Политика конфеденциальности</a>
+          Все материалы данного сайта являются объектами авторского права (в том числе дизайн). Запрещается копирование, распространение <br />
+          (в том числе путем копирования на другие сайты и ресурсы в Интернете) или любое иное использование информации <a class="footer__rules-link" href="#">Правила сайта</a> и <a class="footer__rules-link" href="#">Политика конфеденциальности</a>
         </div>
       </div>
     </footer>
@@ -623,8 +626,7 @@
       </nav>
     </div>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="./assets/scripts/home.bundle.js"></script>
-    <script src="./assets/scripts/default.bundle.js"></script>
+    <script defer src="./assets/scripts/vendors.bundle.js"></script>
+    <script defer src="./assets/scripts/default.bundle.js"></script>
   </body>
 </html>
