@@ -1,3 +1,38 @@
+import Swiper from 'swiper/bundle';
+import ymaps from 'ymaps';
+
+let offsetTop = window.scrollY;
+let counterSwiperFeatures = 0;
+let counterSwiper = 0;
+let counterMap = 0;
+
+const yamapScript = async () => {
+  console.log('yamapScript start');
+  const mapWrapper = document.getElementById("mapWrapper");
+  try {
+    const maps = await ymaps.load();
+    const mapContainer = document.createElement("div");
+    mapContainer.style.height = `${mapWrapper.offsetHeight}px`;
+    mapContainer.style.width = `${mapWrapper.offsetWidth}px`;
+    mapWrapper.appendChild(mapContainer);
+    new maps.Map(mapContainer, {
+      center: [-8.369326, 115.166023],
+      zoom: 8
+    });
+  } catch (error) {
+    console.error("Something went wrong", error);
+  }
+}
+
+window.addEventListener('scroll', function (e) {
+  if (window.scrollY > 400 && counterMap <= 0) {
+    counterMap++;
+    yamapScript()
+  } else {
+    return true;
+  }
+})
+
 const defaultScripts = () => {
   const sidebar = document.getElementById('sidebar');
   const header = document.getElementById('header');
@@ -16,24 +51,24 @@ const defaultScripts = () => {
   const orderForm = document.getElementById('orderForm');
   const callbackForm = document.getElementById('callbackForm');
 
-  if(orderForm) {
-    orderForm.addEventListener('submit', function(e){
+  if (orderForm) {
+    orderForm.addEventListener('submit', function (e) {
       e.preventDefault();
       orderModal.classList.remove('active');
       setTimeout(() => {
         callbackSuccess.classList.add('active');
       }, 250);
-    })
+    });
   }
 
-  if(callbackForm) {
-    callbackForm.addEventListener('submit', function(e){
+  if (callbackForm) {
+    callbackForm.addEventListener('submit', function (e) {
       e.preventDefault();
       callbackModal.classList.remove('active');
       setTimeout(() => {
         callbackSuccess.classList.add('active');
       }, 250);
-    })
+    });
   }
 
   // callbackModal
@@ -82,8 +117,6 @@ const defaultScripts = () => {
   }
 
   window.addEventListener('scroll', function (e) {
-    let offsetTop = window.scrollY;
-
     if (offsetTop > 0 && window.innerWidth >= 1915) {
       header.classList.add('scrolled');
     } else {
@@ -124,7 +157,7 @@ const ourFeatures = () => {
         },
         on: {
           init: function () {
-            console.log('swiper initialized');
+            console.log('ourFeatures initialized');
           }
         }
       };
@@ -138,8 +171,22 @@ const ourFeatures = () => {
     console.log('handle error', error);
   }
 };
-ourFeatures();
 
+// TODO: Доработать
+window.addEventListener('scroll', function (e) {
+  if (offsetTop > 10) {
+    window.addEventListener('resize', function (e) {
+      if (counterSwiperFeatures !== 1 && window.innerWidth <= 639) {
+        counterSwiperFeatures = 1;
+        ourFeatures();
+      } else {
+        return true;
+      }
+    });
+  }
+});
+
+// ourPublications start
 const ourPublications = () => {
   try {
     const publicationsSwiper = document.getElementById('publicationsSwiper');
@@ -164,7 +211,7 @@ const ourPublications = () => {
         },
         on: {
           init: function () {
-            console.log('swiper initialized');
+            console.log('ourPublications initialized');
           }
         }
       };
@@ -175,4 +222,14 @@ const ourPublications = () => {
   }
 };
 
-ourPublications();
+window.addEventListener('scroll', function (e) {
+  if (offsetTop > 10) {
+    if (counterSwiper !== 1) {
+      counterSwiper = 1;
+      ourPublications();
+    } else {
+      return true;
+    }
+  }
+});
+// ourPublications end
