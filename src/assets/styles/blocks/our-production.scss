@@ -183,7 +183,8 @@
       position: absolute;
       bottom: 0;
       right: 0;
-      width: 150px;
+      width: auto;
+      height: 110px;
       @media (min-width: 480px) {
         width: 110px;
       }

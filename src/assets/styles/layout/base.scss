@@ -65,7 +65,7 @@ strong {
 }
 
 a {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
   &:hover {
     text-decoration: none;
@@ -115,7 +115,7 @@ input:focus {
 
   text-align: center;
   text-transform: uppercase;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   &:hover {
     background-color: $redHover;
   }
@@ -181,7 +181,7 @@ input:focus {
   color: $red;
   border: 1px solid $red;
   border-radius: 5px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   &:hover {
     background-color: $redHover;
     border-color: $redHover;
@@ -248,6 +248,8 @@ input:focus {
   resize: vertical;
   width: 100%;
   border-radius: 5px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   padding-left: 25px;
   padding-right: 25px;
   background-color: transparent;
@@ -276,6 +278,93 @@ input:focus {
   }
   @media (min-width: 768px) {
     font-size: 14px;
+  }
+}
+
+.modal {
+  padding: 15px;
+  overflow-y: scroll;
+  transition: all .3s ease;
+  @media (min-width: 1430px) {
+    padding: 0;
+  }
+}
+.modal-wrapper {
+  position: relative;
+  padding: 30px 15px 20px 15px;
+  @media (min-width: 480px) {
+  }
+  @media (min-width: 540px) {
+  }
+  @media (min-width: 640px) {
+  }
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 1020px) {
+  }
+  @media (min-width: 1430px) {
+  }
+}
+
+.modal-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: $red;
+  margin-bottom: 20px;
+  @media (min-width: 480px) {
+  }
+  @media (min-width: 540px) {
+  }
+  @media (min-width: 640px) {
+  }
+  @media (min-width: 768px) {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 19px;
+  }
+  @media (min-width: 1020px) {
+  }
+  @media (min-width: 1430px) {
+  }
+}
+.modal-subtitle {
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  color: #1d1d1b;
+  margin-bottom: 20px;
+  @media (min-width: 480px) {
+  }
+  @media (min-width: 540px) {
+  }
+  @media (min-width: 640px) {
+  }
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #1d1d1b;
+    margin-bottom: 43px;
+  }
+  @media (min-width: 1020px) {
+  }
+  @media (min-width: 1430px) {
+  }
+}
+
+.modal-icon-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: $red;
+  font-size: 21px;
+  @media (min-width: 768px) {
+    top: 20px;
+    right: 23px;
+    font-size: 31px;
   }
 }
 

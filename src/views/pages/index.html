@@ -24,7 +24,7 @@
           <a href="#" class="header__nav-item">КОНТАКТЫ</a>
         </nav>
         <a href="tel:+74994440625" class="header__phone">+7 (499) 444-06-25</a>
-        <button class="header__callback">ПЕРЕЗВОНИТЬ МНЕ</button>
+        <button data-id="callbackModal" class="header__callback">ПЕРЕЗВОНИТЬ МНЕ</button>
         <button aria-label="Открыть меню" id="menuOpen" class="header__bar">
           <span class="icon icon-menu_open header__bar-open"></span>
         </button>
@@ -105,7 +105,7 @@
             <span class="icon icon-arrow-short-white welcome__action-icon"></span>
             <span class="icon icon-icon-arrow-right_white welcome__action-icon_lg"></span>
           </div>
-          <div class="welcome__action welcome__action_grey">
+          <div data-id="orderModal" class="welcome__action welcome__action_grey">
             <span class="welcome__action-text welcome__action-text_mobile">Стать партнером</span>
             <span class="welcome__action-text welcome__action-text_tablet">Стать нашим партнером</span>
             <span class="welcome__action-text welcome__action-text_desktop">Узнайте как стать нашим партнером</span>
@@ -121,7 +121,7 @@
         <div class="title-with-subtitle our-production__title-with-subtitle">
           <h2 class="our-production__subtitle subtitle">Надежность проверенная делом</h2>
           <p class="our-production__title title1">Наша продукция</p>
-          <button class="btn-outline title-with-subtitle__btn">запросить цены</button>
+          <button data-id="orderModal" class="btn-outline title-with-subtitle__btn">запросить цены</button>
         </div>
 
         <div class="our-production__list">
@@ -129,19 +129,10 @@
             <span class="our-production__list-title">Корончатые сверла</span>
             <span class="our-production__list-description">Небольшое описание товара или его характеристика</span>
             <span class="icon icon-arrow-short-white our-production__list-icon"></span>
-
+            
             <picture class="our-production__list-picture">
-              <source srcset="./assets/images/production-list__item@4x.webp" media="(min-width: 1920px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item@4x.png" media="(min-width: 1920px)" />
-
-              <source srcset="./assets/images/production-list__item@3x.webp" media="(min-width: 1400px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item@3x.png" media="(min-width: 1400px)" />
-
-              <source srcset="./assets/images/production-list__item@2x.webp" media="(min-width: 1000px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item@2x.png" media="(min-width: 1000px)" />
-
-              <source srcset="./assets/images/production-list__item.webp" type="image/webp" />
-              <img loading="lazy" class="our-production__list-image" src="./assets/images/production-list__item.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+              <source srcset="./assets/images/our-production-1.webp" type="image/webp" />
+              <img loading="lazy" class="our-production__list-image" src="./assets/images/our-production-1.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
             </picture>
           </a>
 
@@ -151,17 +142,8 @@
             <span class="icon icon-arrow-short-white our-production__list-icon"></span>
 
             <picture class="our-production__list-picture">
-              <source srcset="./assets/images/production-list__item2@4x.webp" media="(min-width: 1920px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item2@4x.png" media="(min-width: 1920px)" />
-
-              <source srcset="./assets/images/production-list__item2@3x.webp" media="(min-width: 1400px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item2@3x.png" media="(min-width: 1400px)" />
-
-              <source srcset="./assets/images/production-list__item2@2x.webp" media="(min-width: 1000px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item2@2x.png" media="(min-width: 1000px)" />
-
-              <source srcset="./assets/images/production-list__item2.webp" type="image/webp" />
-              <img loading="lazy" class="our-production__list-image" src="./assets/images/production-list__item2.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+              <source srcset="./assets/images/our-production-2.webp" type="image/webp" />
+              <img loading="lazy" class="our-production__list-image" src="./assets/images/our-production-2.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
             </picture>
           </a>
 
@@ -171,17 +153,8 @@
             <span class="icon icon-arrow-short-white our-production__list-icon"></span>
 
             <picture class="our-production__list-picture">
-              <source srcset="./assets/images/production-list__item3@4x.webp" media="(min-width: 1920px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item3@4x.png" media="(min-width: 1920px)" />
-
-              <source srcset="./assets/images/production-list__item3@3x.webp" media="(min-width: 1400px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item3@3x.png" media="(min-width: 1400px)" />
-
-              <source srcset="./assets/images/production-list__item3@2x.webp" media="(min-width: 1000px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item3@2x.png" media="(min-width: 1000px)" />
-
-              <source srcset="./assets/images/production-list__item3.webp" type="image/webp" />
-              <img loading="lazy" class="our-production__list-image" src="./assets/images/production-list__item3.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+              <source srcset="./assets/images/our-production-3.webp" type="image/webp" />
+              <img loading="lazy" class="our-production__list-image" src="./assets/images/our-production-3.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
             </picture>
           </a>
 
@@ -192,17 +165,8 @@
             <span class="icon icon-arrow-short-white our-production__list-icon"></span>
 
             <picture class="our-production__list-picture">
-              <source srcset="./assets/images/production-list__item4@4x.webp" media="(min-width: 1920px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item4@4x.png" media="(min-width: 1920px)" />
-
-              <source srcset="./assets/images/production-list__item4@3x.webp" media="(min-width: 1400px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item4@3x.png" media="(min-width: 1400px)" />
-
-              <source srcset="./assets/images/production-list__item4@2x.webp" media="(min-width: 1000px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item4@2x.png" media="(min-width: 1000px)" />
-
-              <source srcset="./assets/images/production-list__item4.webp" type="image/webp" />
-              <img loading="lazy" class="our-production__list-image" src="./assets/images/production-list__item4.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+              <source srcset="./assets/images/our-production-4.webp" type="image/webp" />
+              <img loading="lazy" class="our-production__list-image" src="./assets/images/our-production-4.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
             </picture>
           </a>
 
@@ -213,17 +177,8 @@
             <span class="icon icon-arrow-short-white our-production__list-icon"></span>
 
             <picture class="our-production__list-picture">
-              <source srcset="./assets/images/production-list__item5@4x.webp" media="(min-width: 1920px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item5@4x.png" media="(min-width: 1920px)" />
-
-              <source srcset="./assets/images/production-list__item5@3x.webp" media="(min-width: 1400px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item5@3x.png" media="(min-width: 1400px)" />
-
-              <source srcset="./assets/images/production-list__item5@2x.webp" media="(min-width: 1000px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item5@2x.png" media="(min-width: 1000px)" />
-
-              <source srcset="./assets/images/production-list__item5.webp" type="image/webp" />
-              <img loading="lazy" class="our-production__list-image" src="./assets/images/production-list__item5.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+              <source srcset="./assets/images/our-production-5.webp" type="image/webp" />
+              <img loading="lazy" class="our-production__list-image" src="./assets/images/our-production-5.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
             </picture>
           </a>
 
@@ -234,17 +189,8 @@
             <span class="icon icon-arrow-short-white our-production__list-icon"></span>
 
             <picture class="our-production__list-picture">
-              <source srcset="./assets/images/production-list__item6@4x.webp" media="(min-width: 1920px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item6@4x.png" media="(min-width: 1920px)" />
-
-              <source srcset="./assets/images/production-list__item6@3x.webp" media="(min-width: 1400px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item6@3x.png" media="(min-width: 1400px)" />
-
-              <source srcset="./assets/images/production-list__item6@2x.webp" media="(min-width: 1000px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item6@2x.png" media="(min-width: 1000px)" />
-
-              <source srcset="./assets/images/production-list__item6.webp" type="image/webp" />
-              <img loading="lazy" class="our-production__list-image" src="./assets/images/production-list__item6.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+              <source srcset="./assets/images/our-production-6.webp" type="image/webp" />
+              <img loading="lazy" class="our-production__list-image" src="./assets/images/our-production-6.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
             </picture>
           </a>
 
@@ -254,17 +200,8 @@
             <span class="icon icon-arrow-short-white our-production__list-icon"></span>
 
             <picture class="our-production__list-picture">
-              <source srcset="./assets/images/production-list__item7@4x.webp" media="(min-width: 1920px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item7@4x.png" media="(min-width: 1920px)" />
-
-              <source srcset="./assets/images/production-list__item7@3x.webp" media="(min-width: 1400px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item7@3x.png" media="(min-width: 1400px)" />
-
-              <source srcset="./assets/images/production-list__item7@2x.webp" media="(min-width: 1000px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item7@2x.png" media="(min-width: 1000px)" />
-
-              <source srcset="./assets/images/production-list__item7.webp" type="image/webp" />
-              <img loading="lazy" class="our-production__list-image" src="./assets/images/production-list__item7.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+              <source srcset="./assets/images/our-production-7.webp" type="image/webp" />
+              <img loading="lazy" class="our-production__list-image" src="./assets/images/our-production-7.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
             </picture>
           </a>
 
@@ -281,17 +218,8 @@
             <span class="icon icon-arrow-short-white our-production__list-icon"></span>
 
             <picture class="our-production__list-picture">
-              <source srcset="./assets/images/production-list__item9@4x.webp" media="(min-width: 1920px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item9@4x.png" media="(min-width: 1920px)" />
-
-              <source srcset="./assets/images/production-list__item9@3x.webp" media="(min-width: 1400px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item9@3x.png" media="(min-width: 1400px)" />
-
-              <source srcset="./assets/images/production-list__item9@2x.webp" media="(min-width: 1000px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item9@2x.png" media="(min-width: 1000px)" />
-
-              <source srcset="./assets/images/production-list__item9.webp" type="image/webp" />
-              <img loading="lazy" class="our-production__list-image" src="./assets/images/production-list__item9.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+              <source srcset="./assets/images/our-production-9.webp" type="image/webp" />
+              <img loading="lazy" class="our-production__list-image" src="./assets/images/our-production-9.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
             </picture>
           </a>
 
@@ -546,7 +474,7 @@
                 <a href="mailto:info@rodmix.ru" class="warrancy__contact-subtitle warrancy__contact-subtitle_email">info@rodmix.ru</a>
               </div>
             </div>
-            <button class="btn btn_arrow warrancy__btn-contact">
+            <button data-id="orderModal" class="btn btn_arrow warrancy__btn-contact">
               Связаться по гарантии
               <span class="icon icon-icon-arrow-right-short_white warrancy__btn-icon"></span>
               <span class="icon icon-icon-arrow-right_white warrancy__btn-icon"></span>
@@ -581,7 +509,7 @@
           <div class="footer__questions">
             <p class="footer__questions-title">Остались вопросы?</p>
             <p class="footer__questions-subtitle">Оставьте заявку и наш менеджер перезвонит Вам</p>
-            <button class="btn footer__questions-btn">Оставить заявку</button>
+            <button data-id="orderModal" class="btn footer__questions-btn">Оставить заявку</button>
           </div>
           <div class="footer__menus">
             <nav class="footer__menu">
@@ -616,18 +544,18 @@
 
     <div class="tapbar">
       <nav class="tapbar__wrapper">
-        <a href="#" class="tapbar__item"> <img class="tapbar__item-icon" src="./assets/images/production.svg" alt="" /> <span class="tapbar__item-text">Продукция</span> </a>
-        <a href="#" class="tapbar__item"> <img class="tapbar__item-icon" src="./assets/images/warranty.svg" alt="" /> <span class="tapbar__item-text">Гарантия</span> </a>
-        <a href="#" class="tapbar__item"> <img class="tapbar__item-icon" src="./assets/images/order.svg" alt="" /> <span class="tapbar__item-text">Перезвонить</span> </a>
-        <a href="#" class="tapbar__item"> <img class="tapbar__item-icon" src="./assets/images/contacts.svg" alt="" /> <span class="tapbar__item-text">Контакты</span> </a>
+        <button class="tapbar__item"> <img class="tapbar__item-icon" src="./assets/images/production.svg" alt="" /> <span class="tapbar__item-text">Продукция</span> </button>
+        <button class="tapbar__item"> <img class="tapbar__item-icon" src="./assets/images/warranty.svg" alt="" /> <span class="tapbar__item-text">Гарантия</span> </button>
+        <button data-id="callbackModal" class="tapbar__item"> <img class="tapbar__item-icon" src="./assets/images/order.svg" alt="" /> <span class="tapbar__item-text">Перезвонить</span> </button>
+        <button class="tapbar__item"> <img class="tapbar__item-icon" src="./assets/images/contacts.svg" alt="" /> <span class="tapbar__item-text">Контакты</span> </button>
       </nav>
     </div>
 
-    <div id="orderModal" class="order-modal">
-      <div class="order-modal__wrapper">
-        <span class="icon order-modal__close"></span>
-        <p class="order-modal__title"></p>
-        <form class="order-modal__form">
+    <div id="orderModal" class="modal order-modal">
+      <div class="modal-wrapper order-modal__wrapper">
+        <span data-id="orderModal" class="icon icon-menu_close modal-icon-close order-modal__close"></span>
+        <p class="modal-title order-modal__title">Оставьте заявку</p>
+        <form id="orderForm" class="order-modal__form">
 
           <p class="order-modal__label">Ваше имя: <span>*</span></p>
           <input placeholder="Иванов Иван" type="text" class="custom-input order-modal__input" />
@@ -635,35 +563,35 @@
           <p class="order-modal__label">Ваше имя: <span>*</span></p>
           <input placeholder="0975467839" type="text" class="custom-input order-modal__input" />
 
-          <button type="submit" class="order-modal__submit-btn">Отправить</button>
+          <button type="submit" class="btn order-modal__submit-btn">Отправить</button>
         </form>
       </div>
     </div>
 
-    <div id="callbackModal" class="callback-modal">
-      <div class="callback-modal__wrapper">
-        <span class="icon callback-modal__close"></span>
-        <p class="callback-modal__title">Оставьте свой вопрос</p>
-        <p class="callback-modal__description">И наш менеджер свяжется с Вами для уточнения информации</p>
-        <form action="" class="callback-modal__form">
+    <div id="callbackModal" class="modal callback-modal">
+      <div class="modal-wrapper callback-modal__wrapper">
+        <span data-id="callbackModal" class="icon icon-menu_close modal-icon-close callback-modal__close"></span>
+        <p class="modal-title  callback-modal__title">Оставьте свой вопрос</p>
+        <p class="modal-subtitle callback-modal__subtitle">И наш менеджер свяжется с Вами <br> для уточнения информации</p>
+        <form id="callbackForm" class="callback-modal__form">
           <input placeholder="Имя *" type="text" class="custom-input callback-modal__input" />
           <input placeholder="Номер телефона *" type="text" class="custom-input callback-modal__input" />
-          <textarea placeholder="Вопрос *" class="custom-textarea "></textarea>
+          <textarea placeholder="Вопрос *" class="custom-textarea callback-modal__textarea"></textarea>
           <p class="callback-modal__rules">
-            Оставляя вопрос, вы подтверждаете что ознакомлены с
-            <a href="#">политикой конфиденциальности</a> и согласны на обработку персональных данных
+            Оставляя вопрос, вы подтверждаете что ознакомлены <br> с
+            <a href="#">политикой конфиденциальности</a> и согласны на обработку <br> персональных данных
           </p>
-          <button type="submit" class="callback-modal__submit-btn">Оставить вопрос</button>
+          <button type="submit" class="btn callback-modal__submit-btn">Оставить вопрос</button>
         </form>
       </div>
     </div>
 
-    <div id="callbackSuccess" class="callback-success-modal">
-      <div class="callback-success-modal__wrapper">
-        <span class="icon callback-success-modal__close"></span>
-        <img src="" alt="" class="callback-success-modal__img" />
-        <p class="callback-success-modal__title">Спасибо</p>
-        <p class="callback-success-modal__description">
+    <div id="callbackSuccess" class="modal callback-success-modal">
+      <div class="modal-wrapper callback-success-modal__wrapper">
+        <span data-id="callbackSuccess" class="icon icon-menu_close modal-icon-close callback-success-modal__close"></span>
+        <img src="./assets/images/callback-success-icon.svg" alt="Иконка успеха при заполнении формы" class="callback-success-modal__img" />
+        <p class="modal-title callback-success-modal__title">Спасибо</p>
+        <p class="modal-subtitle callback-success-modal__subtitle">
           Ваша заявка принята! <br />
           В ближайшее время с Вами свяжется наш специалист
         </p>

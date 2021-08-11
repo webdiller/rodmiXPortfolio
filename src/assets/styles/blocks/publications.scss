@@ -578,6 +578,7 @@
     border: 1px solid #E31E25;
     border-radius: 5px;
     transition: all .3s ease;
+    -webkit-tap-highlight-color: transparent;
     &:hover {
       border-color: $redHover;
       background-color: $redHover;
@@ -608,6 +609,7 @@
       }
     }
   }
+
   .swiper-button-next {
     position: static;
     display: flex;
@@ -620,6 +622,7 @@
     border: 1px solid #E31E25;
     border-radius: 5px;
     transition: all .3s ease;
+    -webkit-tap-highlight-color: transparent;
     &:hover {
       border-color: $redHover;
       background-color: $redHover;
