@@ -132,7 +132,7 @@ function createIconsFromSvg() {
         fontName,
         normalize: true,
         path: './src/assets/styles/_icons.css', // path to config file
-        fontPath: './', // path for root path
+        fontPath: '../fonts/', // path for root path
         targetPath: './iconsfonts.css'
       })
     )
@@ -157,4 +157,4 @@ exports.replaceImagesWithWebp = replaceImagesWithWebp;
 exports.replaceIcons = replaceIcons;
 exports.clean = clean;
 
-gulp.task('default', gulp.series(clean, replaceImages, replaceImagesWithWebp, gulp.parallel(styles, templatesHtml, scripts, replaceFonts, replaceIcons), gulp.parallel(watch, server)));
+gulp.task('default', gulp.series(clean, createIconsFromSvg, replaceImages, replaceImagesWithWebp, gulp.parallel(styles, templatesHtml, scripts, replaceFonts, replaceIcons), gulp.parallel(watch, server)));

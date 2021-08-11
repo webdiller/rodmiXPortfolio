@@ -1,5 +1,7 @@
+@import '../fonts/fonts.css';
+@import '../fonts/iconsfonts.css';
 @import 'reset.css';
-// @import 'swiper/swiper-bundle.css';
+@import '../../../node_modules/swiper/swiper-bundle.css';
 @import './mixins.scss';
 @import './layout/base.scss';
 @import './blocks/*.scss';

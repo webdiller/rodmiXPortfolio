@@ -1,10 +1,11 @@
 @font-face {
 	font-family: "Icons";
-	src: url('./Icons.eot');
-	src: url('./Icons.eot?#iefix') format('eot'),
-		url('./Icons.woff') format('woff'),
-		url('./Icons.ttf') format('truetype'),
-		url('./Icons.svg#Icons') format('svg');
+	src: url('../fonts/Icons.eot');
+	src: url('../fonts/Icons.eot?#iefix') format('eot'),
+		url('../fonts/Icons.woff') format('woff'),
+		url('../fonts/Icons.ttf') format('truetype'),
+		url('../fonts/Icons.svg#Icons') format('svg');
+	font-display: swap;
 }
 
 .icon:before {
@@ -28,130 +29,134 @@
 	content: "\E002";
 }
 
-.icon-contacts:before {
+.icon-callback-success-icon:before {
 	content: "\E003";
 }
 
-.icon-icon-arrow-right-short_grey:before {
+.icon-contacts:before {
 	content: "\E004";
 }
 
-.icon-icon-arrow-right-short_white:before {
+.icon-icon-arrow-right-short_grey:before {
 	content: "\E005";
 }
 
-.icon-icon-arrow-right_black:before {
+.icon-icon-arrow-right-short_white:before {
 	content: "\E006";
 }
 
-.icon-icon-arrow-right_white:before {
+.icon-icon-arrow-right_black:before {
 	content: "\E007";
 }
 
-.icon-icon-award:before {
+.icon-icon-arrow-right_white:before {
 	content: "\E008";
 }
 
-.icon-icon-certificate:before {
+.icon-icon-award:before {
 	content: "\E009";
 }
 
-.icon-icon-delivery:before {
+.icon-icon-certificate:before {
 	content: "\E00A";
 }
 
-.icon-icon-education:before {
+.icon-icon-delivery:before {
 	content: "\E00B";
 }
 
-.icon-icon-handshake-alt:before {
+.icon-icon-education:before {
 	content: "\E00C";
 }
 
-.icon-icon-handshake:before {
+.icon-icon-handshake-alt:before {
 	content: "\E00D";
 }
 
-.icon-icon-help:before {
+.icon-icon-handshake:before {
 	content: "\E00E";
 }
 
-.icon-icon-instagram:before {
+.icon-icon-help:before {
 	content: "\E00F";
 }
 
-.icon-icon-pdf:before {
+.icon-icon-instagram:before {
 	content: "\E010";
 }
 
-.icon-icon-process:before {
+.icon-icon-pdf:before {
 	content: "\E011";
 }
 
-.icon-icon-publications:before {
+.icon-icon-process:before {
 	content: "\E012";
 }
 
-.icon-icon-shield:before {
+.icon-icon-publications:before {
 	content: "\E013";
 }
 
-.icon-icon-stock:before {
+.icon-icon-shield:before {
 	content: "\E014";
 }
 
-.icon-icon-triangle-left:before {
+.icon-icon-stock:before {
 	content: "\E015";
 }
 
-.icon-icon-triangle-right:before {
+.icon-icon-triangle-left:before {
 	content: "\E016";
 }
 
-.icon-icon-youtube:before {
+.icon-icon-triangle-right:before {
 	content: "\E017";
 }
 
-.icon-logo_black:before {
+.icon-icon-youtube:before {
 	content: "\E018";
 }
 
-.icon-logo_red:before {
+.icon-logo_black:before {
 	content: "\E019";
 }
 
-.icon-menu_close:before {
+.icon-logo_red:before {
 	content: "\E01A";
 }
 
-.icon-menu_open:before {
+.icon-menu_close:before {
 	content: "\E01B";
 }
 
-.icon-order:before {
+.icon-menu_open:before {
 	content: "\E01C";
 }
 
-.icon-production:before {
+.icon-order:before {
 	content: "\E01D";
 }
 
-.icon-slider-next:before {
+.icon-production:before {
 	content: "\E01E";
 }
 
-.icon-slider-next_disabled:before {
+.icon-slider-next:before {
 	content: "\E01F";
 }
 
-.icon-slider-prev:before {
+.icon-slider-next_disabled:before {
 	content: "\E020";
 }
 
-.icon-slider-prev_disabled:before {
+.icon-slider-prev:before {
 	content: "\E021";
 }
 
-.icon-warranty:before {
+.icon-slider-prev_disabled:before {
 	content: "\E022";
+}
+
+.icon-warranty:before {
+	content: "\E023";
 }
