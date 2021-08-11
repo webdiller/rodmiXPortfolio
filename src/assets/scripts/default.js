@@ -12,8 +12,8 @@ const yamapScript = async () => {
   try {
     const maps = await ymaps.load();
     const mapContainer = document.createElement("div");
-    mapContainer.style.height = `100%`;
-    mapContainer.style.width = `100%`;
+    mapContainer.style.height = `${mapWrapper.offsetHeight}px`;
+    mapContainer.style.width = `${mapWrapper.offsetWidth}px`;
     mapWrapper.appendChild(mapContainer);
     new maps.Map(mapContainer, {
       center: [-8.369326, 115.166023],
