@@ -157,6 +157,22 @@
 	content: "\E022";
 }
 
-.icon-warranty:before {
+.icon-tapbar-call:before {
 	content: "\E023";
+}
+
+.icon-tapbar-medal:before {
+	content: "\E024";
+}
+
+.icon-tapbar-pin:before {
+	content: "\E025";
+}
+
+.icon-tapbar-settings:before {
+	content: "\E026";
+}
+
+.icon-warranty:before {
+	content: "\E027";
 }
