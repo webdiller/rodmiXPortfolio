@@ -101,82 +101,90 @@
 	content: "\E014";
 }
 
-.icon-icon-shield:before {
+.icon-icon-publications2:before {
 	content: "\E015";
 }
 
-.icon-icon-stock:before {
+.icon-icon-shield:before {
 	content: "\E016";
 }
 
-.icon-icon-triangle-left:before {
+.icon-icon-stock:before {
 	content: "\E017";
 }
 
-.icon-icon-triangle-right:before {
+.icon-icon-success:before {
 	content: "\E018";
 }
 
-.icon-icon-youtube:before {
+.icon-icon-triangle-left:before {
 	content: "\E019";
 }
 
-.icon-logo_black:before {
+.icon-icon-triangle-right:before {
 	content: "\E01A";
 }
 
-.icon-logo_red:before {
+.icon-icon-youtube:before {
 	content: "\E01B";
 }
 
-.icon-menu_close:before {
+.icon-logo_black:before {
 	content: "\E01C";
 }
 
-.icon-menu_open:before {
+.icon-logo_red:before {
 	content: "\E01D";
 }
 
-.icon-order:before {
+.icon-menu_close:before {
 	content: "\E01E";
 }
 
-.icon-production:before {
+.icon-menu_open:before {
 	content: "\E01F";
 }
 
-.icon-slider-next:before {
+.icon-order:before {
 	content: "\E020";
 }
 
-.icon-slider-next_disabled:before {
+.icon-production:before {
 	content: "\E021";
 }
 
-.icon-slider-prev:before {
+.icon-slider-next:before {
 	content: "\E022";
 }
 
-.icon-slider-prev_disabled:before {
+.icon-slider-next_disabled:before {
 	content: "\E023";
 }
 
-.icon-tapbar-call:before {
+.icon-slider-prev:before {
 	content: "\E024";
 }
 
-.icon-tapbar-medal:before {
+.icon-slider-prev_disabled:before {
 	content: "\E025";
 }
 
-.icon-tapbar-pin:before {
+.icon-tapbar-call:before {
 	content: "\E026";
 }
 
-.icon-tapbar-settings:before {
+.icon-tapbar-medal:before {
 	content: "\E027";
 }
 
-.icon-warranty:before {
+.icon-tapbar-pin:before {
 	content: "\E028";
+}
+
+.icon-tapbar-settings:before {
+	content: "\E029";
+}
+
+.icon-warranty:before {
+	content: "\E02A";
 }

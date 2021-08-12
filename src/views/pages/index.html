@@ -109,7 +109,7 @@
             <span class="icon icon-arrow-short-white welcome__action-icon"></span>
             <span class="icon icon-icon-arrow-right_white welcome__action-icon_lg"></span>
           </div>
-          <div data-id="orderModal" class="welcome__action welcome__action_grey">
+          <div data-id="callbackModal" class="welcome__action welcome__action_grey">
             <span class="welcome__action-text welcome__action-text_mobile">Стать партнером</span>
             <span class="welcome__action-text welcome__action-text_tablet">Стать нашим партнером</span>
             <span class="welcome__action-text welcome__action-text_desktop">Узнайте как стать нашим партнером</span>
@@ -133,7 +133,7 @@
             <span class="our-production__list-title">Корончатые сверла</span>
             <span class="our-production__list-description">Небольшое описание товара или его характеристика</span>
             <span class="icon icon-arrow-short-white our-production__list-icon"></span>
-            
+
             <picture class="our-production__list-picture">
               <!--<source srcset="./assets/images/production-list__item@4x.webp" media="(min-width: 1920px)" type="image/webp" />
               <source srcset="./assets/images/production-list__item@4x.png" media="(min-width: 1920px)" />
@@ -368,14 +368,14 @@
             </div>
             <div class="producer__certifications">
               <a href="#" class="producer__certification producer__certification_certificate">
-                <img src="./assets/images/icon-pdf.svg" alt="" class="producer__certification-img" loading="lazy" decoding="async"/>
+                <img src="./assets/images/icon-pdf.svg" alt="" class="producer__certification-img" loading="lazy" decoding="async" />
                 <div class="producer__certification-content">
                   <p class="producer__certification-title">Скачать каталог с товарами</p>
                   <p class="producer__certification-size">PDF (45МB)</p>
                 </div>
               </a>
               <a href="#" class="producer__certification">
-                <img src="./assets/images/icon-certificate.svg" alt="" class="producer__certification-img" loading="lazy" decoding="async"/>
+                <img src="./assets/images/icon-certificate.svg" alt="" class="producer__certification-img" loading="lazy" decoding="async" />
                 <div class="producer__certification-content">
                   <p class="producer__certification-title">Наши Сертификаты</p>
                   <p class="producer__certification-size">PDF (120МB)</p>
@@ -398,37 +398,43 @@
         <div id="featuresSwiper" class="swiper-container features__swiper-container">
           <div class="swiper-wrapper features__swiper-wrapper">
             <div class="swiper-slide features__item">
-              <img src="./assets/images/icon-help.svg" alt="" class="features__item-icon" />
+              <!-- <img src="./assets/images/icon-help.svg" alt="" class="features__item-icon" /> -->
+              <span class="icon icon-arrow-short-white features__item-icon"></span>
               <p class="features__item-title">Персональный менеджер и помощь в подборе продукции</p>
               <p class="features__item-description">Индивидуальный подход и забота</p>
             </div>
 
             <div class="swiper-slide features__item">
-              <img src="./assets/images/icon-stock.svg" alt="" class="features__item-icon" />
+              <!-- <img src="./assets/images/icon-stock.svg" alt="" class="features__item-icon" /> -->
+              <span class="icon icon-icon-feature-stock features__item-icon"></span>
               <p class="features__item-title">Вся продукция в наличии у дилеров в вашем городе</p>
               <p class="features__item-description">Вы всегда знаете куда обратиться</p>
             </div>
 
             <div class="swiper-slide features__item">
-              <img src="./assets/images/icon-delivery.svg" alt="" class="features__item-icon" />
+              <!-- <img src="./assets/images/icon-delivery.svg" alt="" class="features__item-icon" /> -->
+              <span class="icon icon-icon-feature-delivery features__item-icon"></span>
               <p class="features__item-title">Бесплатная доставка по РФ и Таможенному союзу</p>
               <p class="features__item-description">Отправка в день заказа в любую точку</p>
             </div>
 
             <div class="swiper-slide features__item">
-              <img src="./assets/images/icon-process.svg" alt="" class="features__item-icon" />
+              <!-- <img src="./assets/images/icon-process.svg" alt="" class="features__item-icon" /> -->
+              <span class="icon icon-icon-feature-process features__item-icon"></span>
               <p class="features__item-title">Любые образцы для тестирования по запросу</p>
               <p class="features__item-description">Проверьте качество и надежность лично</p>
             </div>
 
             <div class="swiper-slide features__item">
-              <img src="./assets/images/icon-education.svg" alt="" class="features__item-icon" />
+              <!-- <img src="./assets/images/icon-education.svg" alt="" class="features__item-icon" /> -->
+              <span class="icon icon-icon-feature-education features__item-icon"></span>
               <p class="features__item-title">Качественное Обучение работе с инструментом</p>
               <p class="features__item-description">Делимся полезной информацией и опытом</p>
             </div>
 
             <div class="swiper-slide features__item">
-              <img src="./assets/images/icon-award.svg" alt="" class="features__item-icon" />
+              <!-- <img src="./assets/images/icon-award.svg" alt="" class="features__item-icon" /> -->
+              <span class="icon icon-icon-feature-award features__item-icon"></span>
               <p class="features__item-title">Независимая экспертиза качества продукции</p>
               <p class="features__item-description">Надежность подтверждена экспертами</p>
             </div>
@@ -449,15 +455,6 @@
         <div class="publications__video-with-blog">
           <div class="publications__video">
             <picture class="publications__picture">
-              <source srcset="./assets/images/publications@4x.webp" media="(min-width: 1920px)" type="image/webp" />
-              <source srcset="./assets/images/publications@4x.jpg" media="(min-width: 1920px)" />
-
-              <source srcset="./assets/images/publications@3x.webp" media="(min-width: 1000px)" type="image/webp" />
-              <source srcset="./assets/images/publications@3x.jpg" media="(min-width: 1000px)" />
-
-              <source srcset="./assets/images/publications@2x.webp" media="(min-width: 768px)" type="image/webp" />
-              <source srcset="./assets/images/publications@2x.jpg" media="(min-width: 768px)" />
-
               <source srcset="./assets/images/publications.webp" type="image/webp" />
               <img loading="lazy" decoding="async" class="publications__image" src="./assets/images/publications.jpg" alt="Смотреть все видео на YouTube" />
             </picture>
@@ -466,6 +463,7 @@
               <span class="icon icon-icon-publications publications__video-icon"></span>
               <span class="publications__video-text">Смотреть все видео на YouTube</span>
             </a>
+            <span class="icon icon-icon-publications2 publications__picture-icon"></span>
           </div>
 
           <div class="publications__title-with-slider">
@@ -540,8 +538,7 @@
 
             <button class="contacts__btn-form">Форма обратной связи</button>
           </div>
-          <div id="mapWrapper" class="contacts__map">
-          </div>
+          <div id="mapWrapper" class="contacts__map"></div>
         </div>
       </div>
     </section>
@@ -637,63 +634,50 @@
 
     <div class="tapbar">
       <nav class="tapbar__wrapper">
-        <button class="tapbar__item"> <span class="icon icon-tapbar-settings tapbar__item-icon"></span> <span class="tapbar__item-text">Продукция</span> </button>
-        <button class="tapbar__item"> <span class="icon icon-tapbar-medal tapbar__item-icon"></span> <span class="tapbar__item-text">Гарантия</span> </button>
-        <button data-id="callbackModal" class="tapbar__item"> <span class="icon icon-tapbar-call tapbar__item-icon"></span> <span class="tapbar__item-text">Перезвонить</span> </button>
-        <button class="tapbar__item"> <span class="icon icon-tapbar-pin tapbar__item-icon"></span> <span class="tapbar__item-text">Контакты</span> </button>
+        <button class="tapbar__item"><span class="icon icon-tapbar-settings tapbar__item-icon"></span> <span class="tapbar__item-text">Продукция</span></button>
+        <button class="tapbar__item"><span class="icon icon-tapbar-medal tapbar__item-icon"></span> <span class="tapbar__item-text">Гарантия</span></button>
+        <button data-id="callbackModal" class="tapbar__item"><span class="icon icon-tapbar-call tapbar__item-icon"></span> <span class="tapbar__item-text">Перезвонить</span></button>
+        <button class="tapbar__item"><span class="icon icon-tapbar-pin tapbar__item-icon"></span> <span class="tapbar__item-text">Контакты</span></button>
       </nav>
-    </div>
-
-    <div id="orderModal" class="modal order-modal">
-      <div class="modal-wrapper order-modal__wrapper">
-        <span data-id="orderModal" class="icon icon-menu_close modal-icon-close order-modal__close"></span>
-        <p class="modal-title order-modal__title">Оставьте заявку</p>
-        <form id="orderForm" class="order-modal__form">
-
-          <p class="order-modal__label">Ваше имя: <span>*</span></p>
-          <input placeholder="Иванов Иван" type="text" class="custom-input order-modal__input" />
-          
-          <p class="order-modal__label">Ваше имя: <span>*</span></p>
-          <input placeholder="0975467839" type="text" class="custom-input order-modal__input" />
-
-          <button type="submit" class="btn order-modal__submit-btn">Отправить</button>
-        </form>
-      </div>
     </div>
 
     <div id="callbackModal" class="modal callback-modal">
       <div class="modal-wrapper callback-modal__wrapper">
+        <!-- callback -->
         <span data-id="callbackModal" class="icon icon-menu_close modal-icon-close callback-modal__close"></span>
         <p class="modal-title  callback-modal__title">Оставьте свой вопрос</p>
-        <p class="modal-subtitle callback-modal__subtitle">И наш менеджер свяжется с Вами <br> для уточнения информации</p>
+        <p class="modal-subtitle callback-modal__subtitle">
+          И наш менеджер свяжется с Вами <br />
+          для уточнения информации
+        </p>
         <form id="callbackForm" class="callback-modal__form">
           <input placeholder="Имя *" type="text" class="custom-input callback-modal__input" />
           <input placeholder="Номер телефона *" type="text" class="custom-input callback-modal__input" />
           <textarea placeholder="Вопрос *" class="custom-textarea callback-modal__textarea"></textarea>
           <button type="submit" class="btn callback-modal__submit-btn">Оставить вопрос</button>
           <p class="callback-modal__rules">
-            Оставляя вопрос, вы подтверждаете что ознакомлены <br> с
-            <a href="#">политикой конфиденциальности</a> и согласны на обработку <br> персональных данных
+            Оставляя вопрос, вы подтверждаете что ознакомлены <br />
+            с <a href="#">политикой конфиденциальности</a> и согласны на обработку <br />
+            персональных данных
           </p>
         </form>
+        <!-- Success -->
+        <div id="callbackSuccess" class="modal-wrapper callback-success-modal__wrapper">
+          <span id="callbackModalClose" class="icon icon-menu_close modal-icon-close callback-success-modal__close"></span>
+          <span class="icon icon-icon-success callback-success-modal__img"></span>
+          <p class="modal-title callback-success-modal__title">Спасибо</p>
+          <p class="modal-subtitle callback-success-modal__subtitle">
+            Ваша заявка принята! <br />
+            В ближайшее время с Вами свяжется наш специалист
+          </p>
+        </div>
       </div>
-    </div>
-
-    <div id="callbackSuccess" class="modal callback-success-modal">
-      <div class="modal-wrapper callback-success-modal__wrapper">
-        <span data-id="callbackSuccess" class="icon icon-menu_close modal-icon-close callback-success-modal__close"></span>
-        <img src="./assets/images/callback-success-icon.svg" alt="Иконка успеха при заполнении формы" class="callback-success-modal__img" />
-        <p class="modal-title callback-success-modal__title">Спасибо</p>
-        <p class="modal-subtitle callback-success-modal__subtitle">
-          Ваша заявка принята! <br />
-          В ближайшее время с Вами свяжется наш специалист
-        </p>
-      </div>
+      
     </div>
 
     <!-- <script defer src="./assets/scripts/vendors.bundle.js"></script> -->
     <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-    
+
     <!--<script src="./assets/scripts/vendors.bundle.js"></script>-->
     <script src="./assets/scripts/default.bundle.js"></script>
   </body>

@@ -76,23 +76,50 @@
     left: 50%;
     transform: translateX(-50%);
     width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    border: 2px solid $red;
+    border-radius: 50%;
+    background-color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
     @media (min-width: 480px) {
       top: -36px;
+      // TODO: Поменять font-size после добавления иконки
       width: 72px;
+      height: 72px;
+      min-width: 72px;
+      min-height: 72px;
     }
     @media (min-width: 640px) {
       top: -23px;
+      // TODO: Поменять font-size после добавления иконки
       width: 46px;
+      height: 46px;
+      min-width: 46px;
+      min-height: 46px;
     }
     @media (min-width: 768px) {
     }
     @media (min-width: 1020px) {
       top: -25px;
+      // TODO: Поменять font-size после добавления иконки
       width: 50px;
+      height: 50px;
+      min-width: 50px;
+      min-height: 50px;
     }
     @media (min-width: 1430px) {
       top: -36px;
+      // TODO: Поменять font-size после добавления иконки
       width: 72px;
+      height: 72px;
+      min-width: 72px;
+      min-height: 72px;
     }
   }
 

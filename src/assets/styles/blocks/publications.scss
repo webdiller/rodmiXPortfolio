@@ -39,6 +39,12 @@
   &__video {
     position: relative;
     margin-bottom: 59px;
+    cursor: pointer;
+    &:hover {
+      .publications__picture-icon {
+        color: #fff;
+      }
+    }
     @media (min-width: 480px) {
       margin-bottom: 75px;
     }
@@ -108,6 +114,25 @@
     @media (min-width: 1400px) {
     }
     @media (min-width: 1430px) {
+    }
+  }
+
+  &__picture-icon {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    font-size: 35px;
+    color: rgba(255, 255, 255, 0.65);
+    transition: all .3s ease;
+    @media (min-width: 540px) {
+      font-size: 53px;
+    }    
+    @media (min-width: 640px) {
+      font-size: 53px;
+    }    
+    @media (min-width: 1020px) {
+      font-size: 50px;
     }
   }
 
@@ -575,9 +600,9 @@
     margin-top: 0;
     width: 24px;
     height: 24px;
-    border: 1px solid #E31E25;
+    border: 1px solid #e31e25;
     border-radius: 5px;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     -webkit-tap-highlight-color: transparent;
     &:hover {
       border-color: $redHover;
@@ -587,9 +612,9 @@
       }
     }
     &.swiper-button-disabled {
-      border-color: #E1E1E1;
+      border-color: #e1e1e1;
       span {
-        color: #CDCDCD;
+        color: #cdcdcd;
       }
     }
     @media (min-width: 1020px) {
@@ -602,8 +627,8 @@
     }
     span {
       font-size: 10.5px;
-      color: #E31E25;
-      transition: all .3s ease;
+      color: #e31e25;
+      transition: all 0.3s ease;
       @media (min-width: 1020px) {
         font-size: 12px;
       }
@@ -619,9 +644,9 @@
     margin-top: 0;
     width: 24px;
     height: 24px;
-    border: 1px solid #E31E25;
+    border: 1px solid #e31e25;
     border-radius: 5px;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     -webkit-tap-highlight-color: transparent;
     &:hover {
       border-color: $redHover;
@@ -631,9 +656,9 @@
       }
     }
     &.swiper-button-disabled {
-      border-color: #E1E1E1;
+      border-color: #e1e1e1;
       span {
-        color: #CDCDCD;
+        color: #cdcdcd;
       }
     }
     @media (min-width: 1020px) {
@@ -645,8 +670,8 @@
     }
     span {
       font-size: 10.5px;
-      color: #E31E25;
-      transition: all .3s ease;
+      color: #e31e25;
+      transition: all 0.3s ease;
       @media (min-width: 1020px) {
         font-size: 12px;
       }
