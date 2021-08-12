@@ -86,14 +86,16 @@
 
         <div class="welcome__features">
           <div class="welcome__feature">
-            <img src="./assets/images/icon-shield.svg" alt="" class="welcome__feature-img" />
+            <!-- <img src="./assets/images/icon-shield.svg" alt="" class="welcome__feature-img" /> -->
+            <span class="icon icon-icon-shield welcome__feature-icon"></span>
             <div class="welcome__feature-content">
               <p class="welcome__feature-title">8 лет на рынке</p>
               <p class="welcome__feature-subtitle">Репутация, проверенная временем</p>
             </div>
           </div>
           <div class="welcome__feature">
-            <img src="./assets/images/icon-handshake.svg" alt="" class="welcome__feature-img" />
+            <!-- <img src="./assets/images/icon-handshake.svg" alt="" class="welcome__feature-img" /> -->
+            <span class="icon icon-icon-handshake-alt welcome__feature-icon"></span>
             <div class="welcome__feature-content">
               <p class="welcome__feature-title">90+ <span class="welcome__feature-title-hidden">торговых</span> партнеров</p>
               <p class="welcome__feature-subtitle">Простая покупка и удобный сервис</p>
@@ -631,10 +633,10 @@
 
     <div class="tapbar">
       <nav class="tapbar__wrapper">
-        <button class="tapbar__item"> <img class="tapbar__item-icon" src="./assets/images/production.svg" alt="" /> <span class="tapbar__item-text">Продукция</span> </button>
-        <button class="tapbar__item"> <img class="tapbar__item-icon" src="./assets/images/warranty.svg" alt="" /> <span class="tapbar__item-text">Гарантия</span> </button>
-        <button data-id="callbackModal" class="tapbar__item"> <img class="tapbar__item-icon" src="./assets/images/order.svg" alt="" /> <span class="tapbar__item-text">Перезвонить</span> </button>
-        <button class="tapbar__item"> <img class="tapbar__item-icon" src="./assets/images/contacts.svg" alt="" /> <span class="tapbar__item-text">Контакты</span> </button>
+        <button class="tapbar__item"> <span class="icon icon-tapbar-settings tapbar__item-icon"></span> <span class="tapbar__item-text">Продукция</span> </button>
+        <button class="tapbar__item"> <span class="icon icon-tapbar-medal tapbar__item-icon"></span> <span class="tapbar__item-text">Гарантия</span> </button>
+        <button data-id="callbackModal" class="tapbar__item"> <span class="icon icon-tapbar-call tapbar__item-icon"></span> <span class="tapbar__item-text">Перезвонить</span> </button>
+        <button class="tapbar__item"> <span class="icon icon-tapbar-pin tapbar__item-icon"></span> <span class="tapbar__item-text">Контакты</span> </button>
       </nav>
     </div>
 
@@ -664,11 +666,11 @@
           <input placeholder="Имя *" type="text" class="custom-input callback-modal__input" />
           <input placeholder="Номер телефона *" type="text" class="custom-input callback-modal__input" />
           <textarea placeholder="Вопрос *" class="custom-textarea callback-modal__textarea"></textarea>
+          <button type="submit" class="btn callback-modal__submit-btn">Оставить вопрос</button>
           <p class="callback-modal__rules">
             Оставляя вопрос, вы подтверждаете что ознакомлены <br> с
             <a href="#">политикой конфиденциальности</a> и согласны на обработку <br> персональных данных
           </p>
-          <button type="submit" class="btn callback-modal__submit-btn">Оставить вопрос</button>
         </form>
       </div>
     </div>

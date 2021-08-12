@@ -30,16 +30,15 @@ body {
     height: 390px;
     object-fit: cover;
     background: url('../../assets/images/welcome-bg-320.webp') no-repeat center / cover;
-    @media not all and (min-resolution:.001dpcm){ 
-      @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    @media not all and (min-resolution: 0.001dpcm) {
+      @supports (-webkit-appearance: none) and (stroke-color: transparent) {
         background-image: image-set(url('../../assets/images/welcome-bg-320.jpg') 1x);
       }
     }
     @media (min-width: 480px) {
       background-image: url('../../assets/images/welcome-bg-480.webp');
-      @media not all and (min-resolution:.001dpcm)
-      { 
-        @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+      @media not all and (min-resolution: 0.001dpcm) {
+        @supports (-webkit-appearance: none) and (stroke-color: transparent) {
           background-image: image-set(url('../../assets/images/welcome-bg-480.jpg') 1x);
         }
       }
@@ -47,9 +46,8 @@ body {
     }
     @media (min-width: 540px) {
       background-image: url('../../assets/images/welcome-bg-540.webp');
-      @media not all and (min-resolution:.001dpcm)
-      { 
-        @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+      @media not all and (min-resolution: 0.001dpcm) {
+        @supports (-webkit-appearance: none) and (stroke-color: transparent) {
           background-image: image-set(url('../../assets/images/welcome-bg-540.jpg') 1x);
         }
       }
@@ -58,9 +56,8 @@ body {
     }
     @media (min-width: 640px) {
       background-image: url('../../assets/images/welcome-bg-640.webp');
-      @media not all and (min-resolution:.001dpcm)
-      { 
-        @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+      @media not all and (min-resolution: 0.001dpcm) {
+        @supports (-webkit-appearance: none) and (stroke-color: transparent) {
           background-image: image-set(url('../../assets/images/welcome-bg-640.jpg') 1x);
         }
       }
@@ -68,9 +65,8 @@ body {
     }
     @media (min-width: 768px) {
       background-image: url('../../assets/images/welcome-bg-768.webp');
-      @media not all and (min-resolution:.001dpcm)
-      { 
-        @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+      @media not all and (min-resolution: 0.001dpcm) {
+        @supports (-webkit-appearance: none) and (stroke-color: transparent) {
           background-image: image-set(url('../../assets/images/welcome-bg-768.jpg') 1x);
         }
       }
@@ -79,9 +75,8 @@ body {
     }
     @media (min-width: 1020px) {
       background-image: url('../../assets/images/welcome-bg-1000.webp');
-      @media not all and (min-resolution:.001dpcm)
-      { 
-        @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+      @media not all and (min-resolution: 0.001dpcm) {
+        @supports (-webkit-appearance: none) and (stroke-color: transparent) {
           background-image: image-set(url('../../assets/images/welcome-bg-1000.jpg') 1x);
         }
       }
@@ -90,7 +85,7 @@ body {
       height: 900px;
     }
   }
-  @media (min-width: 1915px) {
+  @media (min-width: 1920px) {
     padding-top: 112px;
   }
 }
@@ -229,7 +224,7 @@ input:focus {
   }
   @media (min-width: 768px) {
   }
-  @media (min-width: 1000px) {
+  @media (min-width: 1020px) {
     padding-left: 25px;
     padding-right: 25px;
   }
@@ -318,7 +313,7 @@ input:focus {
 .modal {
   padding: 15px;
   overflow-y: scroll;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   @media (min-width: 1430px) {
     padding: 0;
   }
@@ -326,7 +321,10 @@ input:focus {
 .modal-wrapper {
   position: relative;
   padding: 30px 15px 20px 15px;
+  min-height: 600px;
   @media (min-width: 480px) {
+    padding-left: 25px;
+    padding-right: 25px;
   }
   @media (min-width: 540px) {
   }
@@ -348,6 +346,7 @@ input:focus {
   color: $red;
   margin-bottom: 20px;
   @media (min-width: 480px) {
+    font-size: 30px;
   }
   @media (min-width: 540px) {
   }
@@ -395,6 +394,12 @@ input:focus {
   right: 10px;
   color: $red;
   font-size: 21px;
+  cursor: pointer;
+  @media (min-width: 480px) {
+    top: 20px;
+    right: 23px;
+    font-size: 31px;
+  }
   @media (min-width: 768px) {
     top: 20px;
     right: 23px;
@@ -471,7 +476,7 @@ input:focus {
   text-align: center;
   width: 100%;
   margin-bottom: 15px;
-  @media (min-width: 1400px) {
+  @media (min-width: 1430px) {
     margin-bottom: 30px;
   }
   &__btn {
