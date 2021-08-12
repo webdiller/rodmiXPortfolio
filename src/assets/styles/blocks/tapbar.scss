@@ -18,7 +18,8 @@
     box-shadow: 0px -1px 8px rgba(227, 30, 37, 0.17);
 
     @media (min-width: 480px) {
-      height: 65px;
+      height: 50px;
+      padding: 5px 40px 0 40px;
     }
 
     @media (min-width: 540px) {
@@ -46,11 +47,9 @@
   &__item-icon {
     font-size: 20px;
     color: $red;
-    @media (min-width: 480px) {
-      font-size: 25px;
-    }
     @media (min-width: 540px) {
       margin-right: 10px;
+      font-size: 25px;
     }
   }
   &__item-text {
@@ -63,13 +62,13 @@
     line-height: 14px;
     color: #e31e25;
     @media (min-width: 480px) {
-      top: 30px;
       font-size: 14px;
       line-height: 16px;
       max-width: unset;
       white-space: nowrap;
     }
     @media (min-width: 540px) {
+      top: 30px;
       position: static;
     }
     @media (min-width: 640px) {

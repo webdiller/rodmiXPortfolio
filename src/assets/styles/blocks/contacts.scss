@@ -253,6 +253,14 @@
     }
   }
 
+  &__address-phone-link{
+    text-decoration: none;
+    color: #454545;
+    &:hover{
+      color: #ff545a;
+    }
+  }
+
   &__address-phone {
     display: block;
     text-transform: uppercase;

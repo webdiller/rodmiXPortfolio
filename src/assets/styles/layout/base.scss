@@ -321,7 +321,6 @@ input:focus {
 .modal-wrapper {
   position: relative;
   padding: 30px 15px 20px 15px;
-  min-height: 600px;
   @media (min-width: 480px) {
     padding-left: 25px;
     padding-right: 25px;
@@ -356,7 +355,7 @@ input:focus {
     font-weight: bold;
     font-size: 36px;
     line-height: 43px;
-    margin-bottom: 19px;
+    margin-bottom: 15px;
   }
   @media (min-width: 1020px) {
   }
@@ -380,7 +379,7 @@ input:focus {
     line-height: 30px;
     text-align: center;
     color: #1d1d1b;
-    margin-bottom: 43px;
+    margin-bottom: 20px;
   }
   @media (min-width: 1020px) {
   }

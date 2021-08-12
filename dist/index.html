@@ -65,14 +65,14 @@
           <p class="welcome__description">Надежный инструмент по доступной цене</p>
         </div>
         <picture class="welcome__picture">
-          <source srcset="./assets/images/welcome-drill@4x.webp" media="(min-width: 1920px)" type="image/webp" />
+          <!--<source srcset="./assets/images/welcome-drill@4x.webp" media="(min-width: 1920px)" type="image/webp" />
           <source srcset="./assets/images/welcome-drill@4x.png" media="(min-width: 1920px)" />
 
           <source srcset="./assets/images/welcome-drill@3x.webp" media="(min-width: 1400px)" type="image/webp" />
-          <source srcset="./assets/images/welcome-drill@3x.png" media="(min-width: 1400px)" />
+          <source srcset="./assets/images/welcome-drill@3x.png" media="(min-width: 1400px)" />-->
 
-          <source srcset="./assets/images/welcome-drill@2x.webp" media="(min-width: 1020px)" type="image/webp" />
-          <source srcset="./assets/images/welcome-drill@2x.png" media="(min-width: 1020px)" />
+          <source srcset="./assets/images/welcome-drill.webp" media="(min-width: 1020px)" type="image/webp" />
+          <source srcset="./assets/images/welcome-drill.png" media="(min-width: 1020px)" />
 
           <source srcset="./assets/images/welcome-drill-768.webp" media="(min-width: 768px)" type="image/webp" />
           <source srcset="./assets/images/welcome-drill-768.png" media="(min-width: 768px)" />
@@ -530,8 +530,12 @@
 
             <div class="contacts__address">
               <p class="contacts__address-title">Телефоны:</p>
-              <a class="contacts__address-phone" title="номер телефона" href="tel://+78006540088">+7 (800) 654 - 00 - 88</a>
-              <a class="contacts__address-phone" title="номер телефона" href="tel://+79542306464">+7 (954) 230 - 64 - 64</a>
+              <div class="contacts__address-phone">
+                <a title="номер телефона" class="contacts__address-phone-link" href="tel://+78006540088">+7 (800) 654 - 00 - 88</a>
+              </div>
+              <div class="contacts__address-phone">
+                <a title="номер телефона" class="contacts__address-phone-link" href="tel://+79542306464">+7 (954) 230 - 64 - 64</a>
+              </div>
             </div>
 
             <button class="contacts__btn-form">Форма обратной связи</button>
