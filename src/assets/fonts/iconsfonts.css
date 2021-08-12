@@ -73,106 +73,110 @@
 	content: "\E00D";
 }
 
-.icon-icon-handshake:before {
+.icon-icon-handshake-alt2:before {
 	content: "\E00E";
 }
 
-.icon-icon-help:before {
+.icon-icon-handshake:before {
 	content: "\E00F";
 }
 
-.icon-icon-instagram:before {
+.icon-icon-help:before {
 	content: "\E010";
 }
 
-.icon-icon-pdf:before {
+.icon-icon-instagram:before {
 	content: "\E011";
 }
 
-.icon-icon-process:before {
+.icon-icon-pdf:before {
 	content: "\E012";
 }
 
-.icon-icon-publications:before {
+.icon-icon-process:before {
 	content: "\E013";
 }
 
-.icon-icon-shield:before {
+.icon-icon-publications:before {
 	content: "\E014";
 }
 
-.icon-icon-stock:before {
+.icon-icon-shield:before {
 	content: "\E015";
 }
 
-.icon-icon-triangle-left:before {
+.icon-icon-stock:before {
 	content: "\E016";
 }
 
-.icon-icon-triangle-right:before {
+.icon-icon-triangle-left:before {
 	content: "\E017";
 }
 
-.icon-icon-youtube:before {
+.icon-icon-triangle-right:before {
 	content: "\E018";
 }
 
-.icon-logo_black:before {
+.icon-icon-youtube:before {
 	content: "\E019";
 }
 
-.icon-logo_red:before {
+.icon-logo_black:before {
 	content: "\E01A";
 }
 
-.icon-menu_close:before {
+.icon-logo_red:before {
 	content: "\E01B";
 }
 
-.icon-menu_open:before {
+.icon-menu_close:before {
 	content: "\E01C";
 }
 
-.icon-order:before {
+.icon-menu_open:before {
 	content: "\E01D";
 }
 
-.icon-production:before {
+.icon-order:before {
 	content: "\E01E";
 }
 
-.icon-slider-next:before {
+.icon-production:before {
 	content: "\E01F";
 }
 
-.icon-slider-next_disabled:before {
+.icon-slider-next:before {
 	content: "\E020";
 }
 
-.icon-slider-prev:before {
+.icon-slider-next_disabled:before {
 	content: "\E021";
 }
 
-.icon-slider-prev_disabled:before {
+.icon-slider-prev:before {
 	content: "\E022";
 }
 
-.icon-tapbar-call:before {
+.icon-slider-prev_disabled:before {
 	content: "\E023";
 }
 
-.icon-tapbar-medal:before {
+.icon-tapbar-call:before {
 	content: "\E024";
 }
 
-.icon-tapbar-pin:before {
+.icon-tapbar-medal:before {
 	content: "\E025";
 }
 
-.icon-tapbar-settings:before {
+.icon-tapbar-pin:before {
 	content: "\E026";
 }
 
-.icon-warranty:before {
+.icon-tapbar-settings:before {
 	content: "\E027";
+}
+
+.icon-warranty:before {
+	content: "\E028";
 }
