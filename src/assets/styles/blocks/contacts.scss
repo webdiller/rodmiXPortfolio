@@ -106,6 +106,10 @@
       margin-top: 10px;
       font-weight: bold;
       color: #9c8c8d;
+      &:hover{
+        color: #ff545a;
+      }
+
       @media (min-width: 480px) {
       }
       @media (min-width: 540px) {
