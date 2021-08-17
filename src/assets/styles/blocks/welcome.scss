@@ -70,7 +70,6 @@
     }
     @media (min-width: 640px) {
       order: 1;
-      white-space: nowrap;
       font-size: 44px;
       line-height: 53px;
     }
@@ -486,6 +485,20 @@
         display: flex;
         font-size: 15px;
       }
+    }
+  }
+  &__hidden {
+    display: none;
+    &_sverla {
+      display: none;
+      @media (min-width: 1430px) {
+        display: inline-block;
+      }
+    }
+  }
+  &_alt {
+    .welcome__text-content {
+      max-width: unset;
     }
   }
 }

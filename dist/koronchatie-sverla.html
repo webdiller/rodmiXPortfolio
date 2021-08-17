@@ -4,11 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Главная</title>
+    <title>Корончатые сверла</title>
     <meta name="description" content="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
-    <!--<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="./assets/fonts/iconsfonts.css" />-->
     <link rel="stylesheet" href="./assets/styles/main.min.css" />
   </head>
   <body>
@@ -59,21 +56,14 @@
       <div class="container welcome__wrapper">
         <div class="welcome__text-content">
           <h1>
-            <span class="welcome__title">ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ</span>
+            <span class="welcome__title">КОРОНЧАТЫЕ СВЕРЛА HSS И TCT ОТ ПРОИЗВОДИТЕЛЯ </span>
             <span class="welcome__subtitle">металлорежущего инструмента</span>
           </h1>
           <p class="welcome__description">Надежный инструмент по доступной цене</p>
         </div>
         <picture class="welcome__picture">
-
-          <source srcset="./assets/images/welcome-drill-768.webp" media="(min-width: 768px)" type="image/webp" />
-          <source srcset="./assets/images/welcome-drill-768.png" media="(min-width: 768px)" />
-
-          <source srcset="./assets/images/welcome-drill-640.webp" media="(min-width: 640px)" type="image/webp" />
-          <source srcset="./assets/images/welcome-drill-640.png" media="(min-width: 640px)" />
-
           <source srcset="./assets/images/welcome-drill.webp" type="image/webp" />
-          <img class="welcome__drill-image" src="./assets/images/welcome-drill.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" loading="lazy" decoding="async" />
+          <img class="welcome__drill-image" src="./assets/images/welcome-drill.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" decoding="async" />
         </picture>
 
         <div class="welcome__features">
@@ -102,18 +92,139 @@
             
             <span class="icon icon-arrow-wide welcome__action-icon_lg"></span>
           </div>
-          <div data-id="callbackModal" class="welcome__action welcome__action_grey">
-            <span class="welcome__action-text welcome__action-text_mobile">Стать партнером</span>
-            <span class="welcome__action-text welcome__action-text_tablet">Стать нашим партнером</span>
-            <span class="welcome__action-text welcome__action-text_desktop">Узнайте как стать нашим партнером</span>
-            <span class="icon icon-arrow-short welcome__action-icon"></span>
-            
-            <span class="icon icon-arrow-wide welcome__action-icon_lg"></span>
-          </div>
         </div>
       </div>
     </section>
 
+    <!-- Наши преимущества -->
+    <!-- TODO: Добавить стили для alt -->
+    <section class="features features_alt">
+      <div class="container features__wrapper">
+        <div class="title-with-subtitle features__title-with-subtitle">
+          <h4 class="subtitle">Почему стоит выбрать именно нас</h4>
+          <p class="title1">Наши преимущества</p>
+        </div>
+
+        <div id="featuresSwiper" class="swiper-container features__swiper-container">
+          <div class="swiper-wrapper features__swiper-wrapper">
+            <div class="swiper-slide features__item">
+              <!-- <img src="./assets/images/icon-help.svg" alt="" class="features__item-icon" /> -->
+              <span class="icon icon-icon-feature-help features__item-icon"></span>
+              <p class="features__item-title">Персональный менеджер и помощь в подборе продукции</p>
+              <p class="features__item-description">Индивидуальный подход и забота</p>
+            </div>
+
+            <div class="swiper-slide features__item">
+              <!-- <img src="./assets/images/icon-stock.svg" alt="" class="features__item-icon" /> -->
+              <span class="icon icon-icon-feature-stock features__item-icon"></span>
+              <p class="features__item-title">Вся продукция в наличии у дилеров в вашем городе</p>
+              <p class="features__item-description">Вы всегда знаете куда обратиться</p>
+            </div>
+
+            <div class="swiper-slide features__item">
+              <!-- <img src="./assets/images/icon-delivery.svg" alt="" class="features__item-icon" /> -->
+              <span class="icon icon-icon-feature-delivery features__item-icon"></span>
+              <p class="features__item-title">Бесплатная доставка по РФ и Таможенному союзу</p>
+              <p class="features__item-description">Отправка в день заказа в любую точку</p>
+            </div>
+
+            <div class="swiper-slide features__item">
+              <!-- <img src="./assets/images/icon-process.svg" alt="" class="features__item-icon" /> -->
+              <span class="icon icon-icon-feature-process features__item-icon"></span>
+              <p class="features__item-title">Любые образцы для тестирования по запросу</p>
+              <p class="features__item-description">Проверьте качество и надежность лично</p>
+            </div>
+
+            <div class="swiper-slide features__item">
+              <!-- <img src="./assets/images/icon-education.svg" alt="" class="features__item-icon" /> -->
+              <span class="icon icon-icon-feature-education features__item-icon"></span>
+              <p class="features__item-title">Качественное Обучение работе с инструментом</p>
+              <p class="features__item-description">Делимся полезной информацией и опытом</p>
+            </div>
+
+            <div class="swiper-slide features__item">
+              <!-- <img src="./assets/images/icon-award.svg" alt="" class="features__item-icon" /> -->
+              <span class="icon icon-icon-feature-award features__item-icon"></span>
+              <p class="features__item-title">Независимая экспертиза качества продукции</p>
+              <p class="features__item-description">Надежность подтверждена экспертами</p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- О производителе -->
+    <section class="producer">
+        <div class="container producer__wrapper">
+          <div class="title-with-subtitle producer__title-with-subtitle">
+            <h3 class="subtitle">Как мы занимаемся разработкой</h3>
+            <p class="title1">О производителе</p>
+          </div>
+  
+          <div class="producer__body">
+            <!-- TODO: проверить картинки на различных экранах и заменить -->
+            <div class="producer__author">
+              <picture class="producer__picture">
+                <source srcset="./assets/images/producer@4x.webp" media="(min-width: 1920px)" type="image/webp" />
+                <source srcset="./assets/images/producer@4x.jpg" media="(min-width: 1920px)" />
+  
+                <source srcset="./assets/images/producer@3x.webp" media="(min-width: 1400px)" type="image/webp" />
+                <source srcset="./assets/images/producer@3x.jpg" media="(min-width: 1400px)" />
+  
+                <source srcset="./assets/images/producer@2x.webp" media="(min-width: 1000px)" type="image/webp" />
+                <source srcset="./assets/images/producer@2x.jpg" media="(min-width: 1000px)" />
+  
+                <source srcset="./assets/images/producer.webp" type="image/webp" />
+                <img loading="lazy" decoding="async" class="producer__image" src="./assets/images/producer.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+              </picture>
+  
+              <div class="producer__btn-with-name">
+                <button class="btn btn_arrow producer__btn">
+                  Написать директору
+                  <span class="icon icon-arrow-short producer__btn-icon"></span>
+                  
+                  <span class="icon icon-arrow-wide producer__btn-icon"></span>
+                </button>
+                <div class="producer__name-with-role">
+                  <p class="producer__name">Мулеев А.В</p>
+                  <p class="producer__role">Генеральный Директор ООО «РОДМИКС»</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="producer__content">
+              <div class="producer__texts">
+                <p class="producer__text">
+                  Инструмент под брендом <strong>RODMIX</strong> объединяет отличное качество и доступность. Ежедневно мы работаем как над качеством нашей продукции, так и над качеством обслуживания. Мы идем в ногу со временем, прислушиваемся к потребителям и постоянно расширяем ассортимент новыми
+                  позициями.
+                </p>
+                <p class="producer__text">
+                  Мы работаем по всей РФ и Таможенному союзу. Организовали гибкую систему доставки и оплаты. Вы в любой момент сможете найти представителей <strong>торговой марки RODMIX</strong> в вашем регионе. А наши менеджеры без проблем проконсультируют по любым вопросам и помогут c выбором.
+                </p>
+              </div>
+              <div class="producer__certifications">
+                <a href="#" class="producer__certification producer__certification_certificate">
+                  <img src="./assets/images/icon-pdf.svg" alt="" class="producer__certification-img" loading="lazy" decoding="async" />
+                  <div class="producer__certification-content">
+                    <p class="producer__certification-title">Скачать каталог с товарами</p>
+                    <p class="producer__certification-size">PDF (45МB)</p>
+                  </div>
+                </a>
+                <a href="#" class="producer__certification">
+                  <img src="./assets/images/icon-certificate.svg" alt="" class="producer__certification-img" loading="lazy" decoding="async" />
+                  <div class="producer__certification-content">
+                    <p class="producer__certification-title">Наши Сертификаты</p>
+                    <p class="producer__certification-size">PDF (120МB)</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- НАША ПРОДУКЦИЯ -->
     <section class="our-production">
       <div class="container our-production__wrapper">
         <div class="title-with-subtitle our-production__title-with-subtitle">
@@ -309,195 +420,6 @@
 
           <a href="#" class="btn-outline our-production__list-btn">запросить цены </a>
         </nav>
-      </div>
-    </section>
-
-    <!-- О производителе -->
-    <section class="producer">
-      <div class="container producer__wrapper">
-        <div class="title-with-subtitle producer__title-with-subtitle">
-          <h3 class="subtitle">Как мы занимаемся разработкой</h3>
-          <p class="title1">О производителе</p>
-        </div>
-
-        <div class="producer__body">
-          <!-- TODO: проверить картинки на различных экранах и заменить -->
-          <div class="producer__author">
-            <picture class="producer__picture">
-              <source srcset="./assets/images/producer@4x.webp" media="(min-width: 1920px)" type="image/webp" />
-              <source srcset="./assets/images/producer@4x.jpg" media="(min-width: 1920px)" />
-
-              <source srcset="./assets/images/producer@3x.webp" media="(min-width: 1400px)" type="image/webp" />
-              <source srcset="./assets/images/producer@3x.jpg" media="(min-width: 1400px)" />
-
-              <source srcset="./assets/images/producer@2x.webp" media="(min-width: 1000px)" type="image/webp" />
-              <source srcset="./assets/images/producer@2x.jpg" media="(min-width: 1000px)" />
-
-              <source srcset="./assets/images/producer.webp" type="image/webp" />
-              <img loading="lazy" decoding="async" class="producer__image" src="./assets/images/producer.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
-            </picture>
-
-            <div class="producer__btn-with-name">
-              <button class="btn btn_arrow producer__btn">
-                Написать директору
-                <span class="icon icon-arrow-short producer__btn-icon"></span>
-                
-                <span class="icon icon-arrow-wide producer__btn-icon"></span>
-              </button>
-              <div class="producer__name-with-role">
-                <p class="producer__name">Мулеев А.В</p>
-                <p class="producer__role">Генеральный Директор ООО «РОДМИКС»</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="producer__content">
-            <div class="producer__texts">
-              <p class="producer__text">
-                Инструмент под брендом <strong>RODMIX</strong> объединяет отличное качество и доступность. Ежедневно мы работаем как над качеством нашей продукции, так и над качеством обслуживания. Мы идем в ногу со временем, прислушиваемся к потребителям и постоянно расширяем ассортимент новыми
-                позициями.
-              </p>
-              <p class="producer__text">
-                Мы работаем по всей РФ и Таможенному союзу. Организовали гибкую систему доставки и оплаты. Вы в любой момент сможете найти представителей <strong>торговой марки RODMIX</strong> в вашем регионе. А наши менеджеры без проблем проконсультируют по любым вопросам и помогут c выбором.
-              </p>
-            </div>
-            <div class="producer__certifications">
-              <a href="#" class="producer__certification producer__certification_certificate">
-                <img src="./assets/images/icon-pdf.svg" alt="" class="producer__certification-img" loading="lazy" decoding="async" />
-                <div class="producer__certification-content">
-                  <p class="producer__certification-title">Скачать каталог с товарами</p>
-                  <p class="producer__certification-size">PDF (45МB)</p>
-                </div>
-              </a>
-              <a href="#" class="producer__certification">
-                <img src="./assets/images/icon-certificate.svg" alt="" class="producer__certification-img" loading="lazy" decoding="async" />
-                <div class="producer__certification-content">
-                  <p class="producer__certification-title">Наши Сертификаты</p>
-                  <p class="producer__certification-size">PDF (120МB)</p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Наши преимущества -->
-    <section class="features">
-      <div class="container features__wrapper">
-        <div class="title-with-subtitle features__title-with-subtitle">
-          <h4 class="subtitle">Почему стоит выбрать именно нас</h4>
-          <p class="title1">Наши преимущества</p>
-        </div>
-
-        <div id="featuresSwiper" class="swiper-container features__swiper-container">
-          <div class="swiper-wrapper features__swiper-wrapper">
-            <div class="swiper-slide features__item">
-              <!-- <img src="./assets/images/icon-help.svg" alt="" class="features__item-icon" /> -->
-              <span class="icon icon-icon-feature-help features__item-icon"></span>
-              <p class="features__item-title">Персональный менеджер и помощь в подборе продукции</p>
-              <p class="features__item-description">Индивидуальный подход и забота</p>
-            </div>
-
-            <div class="swiper-slide features__item">
-              <!-- <img src="./assets/images/icon-stock.svg" alt="" class="features__item-icon" /> -->
-              <span class="icon icon-icon-feature-stock features__item-icon"></span>
-              <p class="features__item-title">Вся продукция в наличии у дилеров в вашем городе</p>
-              <p class="features__item-description">Вы всегда знаете куда обратиться</p>
-            </div>
-
-            <div class="swiper-slide features__item">
-              <!-- <img src="./assets/images/icon-delivery.svg" alt="" class="features__item-icon" /> -->
-              <span class="icon icon-icon-feature-delivery features__item-icon"></span>
-              <p class="features__item-title">Бесплатная доставка по РФ и Таможенному союзу</p>
-              <p class="features__item-description">Отправка в день заказа в любую точку</p>
-            </div>
-
-            <div class="swiper-slide features__item">
-              <!-- <img src="./assets/images/icon-process.svg" alt="" class="features__item-icon" /> -->
-              <span class="icon icon-icon-feature-process features__item-icon"></span>
-              <p class="features__item-title">Любые образцы для тестирования по запросу</p>
-              <p class="features__item-description">Проверьте качество и надежность лично</p>
-            </div>
-
-            <div class="swiper-slide features__item">
-              <!-- <img src="./assets/images/icon-education.svg" alt="" class="features__item-icon" /> -->
-              <span class="icon icon-icon-feature-education features__item-icon"></span>
-              <p class="features__item-title">Качественное Обучение работе с инструментом</p>
-              <p class="features__item-description">Делимся полезной информацией и опытом</p>
-            </div>
-
-            <div class="swiper-slide features__item">
-              <!-- <img src="./assets/images/icon-award.svg" alt="" class="features__item-icon" /> -->
-              <span class="icon icon-icon-feature-award features__item-icon"></span>
-              <p class="features__item-title">Независимая экспертиза качества продукции</p>
-              <p class="features__item-description">Надежность подтверждена экспертами</p>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Наши публикации -->
-    <section class="publications">
-      <div class="container publications__wrapper">
-        <div class="title-with-subtitle publications__title-with-subtitle">
-          <h5 class="subtitle">Будьте в курсе всех событий</h5>
-          <p class="title1">Наши публикации</p>
-        </div>
-
-        <div class="publications__video-with-blog">
-          <div class="publications__video">
-            <picture class="publications__picture">
-              <source srcset="./assets/images/publications.webp" type="image/webp" />
-              <img loading="lazy" decoding="async" class="publications__image" src="./assets/images/publications.jpg" alt="Смотреть все видео на YouTube" />
-            </picture>
-
-            <a href="#" class="publications__video-description">
-              <span class="icon icon-icon-publications publications__video-icon"></span>
-              <span class="publications__video-text">Смотреть все видео на YouTube</span>
-            </a>
-            <span class="icon icon-icon-publications2 publications__picture-icon"></span>
-          </div>
-
-          <div class="publications__title-with-slider">
-            <p class="title1 publications__title1">Новое в нашем блоге</p>
-
-            <div id="publicationsSwiper" class="swiper-container publications__swiper-container">
-              <div class="swiper-wrapper publications__swiper-wrapper">
-                <div class="swiper-slide publications__slide">
-                  <p class="publications__slide-date">21.10.2020</p>
-                  <p class="publications__slide-title">Рекомендации по правильному применению твердосплавных борфрез</p>
-                  <p class="publications__slide-description">Описание как правильно применять твердосплавные борфрезы в две строки идет тут</p>
-                  <a href="#" class="publications__slide-read-more">Читать далее</a>
-                </div>
-                <div class="swiper-slide publications__slide">
-                  <p class="publications__slide-date">21.10.2020</p>
-                  <p class="publications__slide-title">Рекомендации по правильному применению твердосплавных борфрез</p>
-                  <p class="publications__slide-description">Описание как правильно применять твердосплавные борфрезы в две строки идет тут</p>
-                  <a href="#" class="publications__slide-read-more">Читать далее</a>
-                </div>
-                <div class="swiper-slide publications__slide">
-                  <p class="publications__slide-date">21.10.2020</p>
-                  <p class="publications__slide-title">Рекомендации по правильному применению твердосплавных борфрез</p>
-                  <p class="publications__slide-description">Описание как правильно применять твердосплавные борфрезы в две строки идет тут</p>
-                  <a href="#" class="publications__slide-read-more">Читать далее</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="publications__bottom">
-              <div class="swiper-pagination"></div>
-              <a href="#" class="btn-outline publications__bottom-show-more">все записи </a>
-              <a href="#" class="publications__bottom-show-more publications__bottom-show-more_640">Читать все записи в блоге</a>
-              <div class="publications__bottom-navigation">
-                <div class="swiper-button-prev"><span class="icon icon-icon-triangle-left"></span></div>
-                <div class="swiper-button-next"><span class="icon icon-icon-triangle-right"></span></div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
