@@ -1,5 +1,5 @@
 import { yamapInit } from "./modules/yamap.js"
-import {ourFeatures, ourPublications, sverlaSlider} from "./modules/slider.js"
+import {ourFeatures, ourPublications, ourReviewsSlider, sverlaSlider} from "./modules/slider.js"
 import { defaultScripts } from "./modules/base.js"
 
 let counterSwiperFeatures = 0;
@@ -39,3 +39,4 @@ document.addEventListener(`DOMContentLoaded`, () => {
 });
 
 sverlaSlider()
+ourReviewsSlider()

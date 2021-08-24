@@ -106,3 +106,38 @@ export function sverlaSlider() {
     console.log('handle error', error);
   }
 }
+
+export function ourReviewsSlider() {
+  try {
+    const ourReviews = document.getElementById('ourReviews');
+    if (ourReviews) {
+      const swiperOptions = {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        breakpoints: {
+          1430: {
+            slidesPerView: 2,
+            spaceBetween: 32
+          }
+        },
+        pagination: {
+          el: '#ourReviews .swiper-pagination',
+          type: 'bullets',
+          clickable: true
+        },
+        navigation: {
+          nextEl: '.ui-reviews__navigation .swiper-button-next',
+          prevEl: '.ui-reviews__navigation .swiper-button-prev'
+        },
+        on: {
+          init: function () {
+            console.log('ourReviews initialized');
+          }
+        }
+      };
+      return new Swiper(ourReviews, swiperOptions);
+    }
+  } catch (error) {
+    console.log('handle error', error);
+  }
+};
