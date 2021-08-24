@@ -31,7 +31,6 @@ export function ourFeatures() {
   }
 };
 
-// ourPublications start
 export function ourPublications() {
   try {
     const publicationsSwiper = document.getElementById('publicationsSwiper');
@@ -66,3 +65,44 @@ export function ourPublications() {
     console.log('handle error', error);
   }
 };
+
+export function sverlaSlider() {
+  try {
+    const sverlaSlider = document.getElementById('sverlaSlider');
+    if (sverlaSlider) {
+      const swiperOptions = {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        breakpoints: {
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 15
+          },
+          540: {
+            spaceBetween: 20
+          },
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 10
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 15
+          },
+          1020: {
+            slidesPerView: 3, 
+            spaceBetween: 30
+          },
+        },
+        on: {
+          init: function () {
+            console.log('sverlaSlider initialized');
+          }
+        }
+      };
+      return new Swiper(sverlaSlider, swiperOptions);
+    }
+  } catch (error) {
+    console.log('handle error', error);
+  }
+}

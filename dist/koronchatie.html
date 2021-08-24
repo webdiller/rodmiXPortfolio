@@ -62,12 +62,11 @@
         </div>
         <picture class="welcome__picture">
           <source srcset="./assets/images/welcome-sverla.webp" type="image/webp" />
-          <img class="welcome__drill-image" src="./assets/images/welcome-sverla.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" decoding="async" />
+          <img class="welcome__drill-img" src="./assets/images/welcome-sverla.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" decoding="async" />
         </picture>
 
         <div class="welcome__features">
           <div class="welcome__feature">
-            <!-- <img src="./assets/images/icon-shield.svg" alt="" class="welcome__feature-img" /> -->
             <span class="icon icon-icon-shield welcome__feature-icon"></span>
             <div class="welcome__feature-content">
               <p class="welcome__feature-title">8 лет на рынке</p>
@@ -75,7 +74,20 @@
             </div>
           </div>
           <div class="welcome__feature">
-            <!-- <img src="./assets/images/icon-handshake.svg" alt="" class="welcome__feature-img" /> -->
+            <span class="icon icon-icon-handshake-alt welcome__feature-icon"></span>
+            <div class="welcome__feature-content">
+              <p class="welcome__feature-title">90+ <span class="welcome__feature-title-hidden">торговых</span> партнеров</p>
+              <p class="welcome__feature-subtitle">Простая покупка и удобный сервис</p>
+            </div>
+          </div>
+          <div class="welcome__feature">
+            <span class="icon icon-icon-shield welcome__feature-icon"></span>
+            <div class="welcome__feature-content">
+              <p class="welcome__feature-title">8 лет на рынке</p>
+              <p class="welcome__feature-subtitle">Репутация, проверенная временем</p>
+            </div>
+          </div>
+          <div class="welcome__feature">
             <span class="icon icon-icon-handshake-alt welcome__feature-icon"></span>
             <div class="welcome__feature-content">
               <p class="welcome__feature-title">90+ <span class="welcome__feature-title-hidden">торговых</span> партнеров</p>
@@ -88,64 +100,130 @@
           <div class="welcome__action welcome__action_red">
             <span class="welcome__action-text">Просмотреть продукцию</span>
             <span class="icon icon-arrow-short welcome__action-icon"></span>
-            
+
             <span class="icon icon-arrow-wide welcome__action-icon_lg"></span>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- AFTER WELCOME MENU -->
+    <div class="first-menu">
+      <div class="first-menu__wrapper container">
+        <a href="#" class="first-menu__item">Корончатые cверла HSS</a>
+        <a href="#" class="first-menu__item">Спиральные cверла HSS</a>
+        <a href="#" class="first-menu__item">Корончатые cверла TCT</a>
+        <a href="#" class="first-menu__item">Корончатые cверла TCT Rail</a>
+      </div>
+    </div>
+
+    <!-- ОПИСАНИЕ ПРОДУКТА СО СЛАЙДЕРОМ. Исходник в корончатых сверлах -->
+    <div class="product-description">
+      <div class="product-description__wrapper container">
+        <div class="product-description__header">
+          <p class="title2 product-description__title2">Корончатые сверла HSS</p>
+          <p class="product-description__subtitle">Rodmix HSS надежные сверла</p>
+        </div>
+
+        <div class="product-description__body">
+          <picture class="product-description__picture">
+            <!-- TODO: Заменить изображение -->
+            <source srcset="./assets/images/product-sverlo.webp" type="image/webp" />
+            <img src="./assets/images/product-sverlo.png" alt="" class="product-description__img" />
+          </picture>
+
+          <div class="product-description__content">
+            <p class="product-description__text">Это корончатые сверла из быстрорежущей стали. Предназначены для сверления всех видов конструкционных сталей, а также нержавеющей стали.</p>
+            <p class="product-description__list-title">Все виды хвостовиков:</p>
+            <ul class="product-description__list">
+              <li class="product-description__list-item"><strong>One-touch (универсальный)</strong> - подходит к большинству сверлильных магнитных дрелей, в том числе Weldon 19;</li>
+              <li class="product-description__list-item"><strong>Weldon</strong> - до 60 мм диаметр 19 мм, с 61 мм - диаметр 32 мм;</li>
+              <li class="product-description__list-item"><strong>Quick-in</strong> - для сверлильных машин Fein.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- TODO: адаптивность + модалку -->
+        <div id="sverlaSlider" class="product-description__slider swiper-container ui-slider">
+          <div class="swiper-wrapper ui-slider__wrapper">
+            <div class="swiper-slide ui-slider__slide">
+              <picture class="ui-slider__slide-picture">
+                <source srcset="./assets/images/product-sverlo.webp" type="image/webp" />
+                <img src="./assets/images/product-sverlo.png" alt="" class="ui-slider__slide-img" />
+              </picture>
+            </div>
+            <div class="swiper-slide ui-slider__slide">
+              <picture class="ui-slider__slide-picture">
+                <source srcset="./assets/images/product-sverlo.webp" type="image/webp" />
+                <img src="./assets/images/product-sverlo.png" alt="" class="ui-slider__slide-img" />
+              </picture>
+            </div>
+            <div class="swiper-slide ui-slider__slide">
+              <picture class="ui-slider__slide-picture">
+                <source srcset="./assets/images/product-sverlo.webp" type="image/webp" />
+                <img src="./assets/images/product-sverlo.png" alt="" class="ui-slider__slide-img" />
+              </picture>
+            </div>
+          </div>
+        </div>
+
+        <div class="ui-instruction product-description__footer">
+          <a download href="#" class="ui-instruction__item">
+            <span class="ui-instruction__item-parent">Инструкция по эксплуатации</span>
+            <span class="ui-instruction__item-child">(скачать PDF)</span>
+          </a>
+
+          <a download href="#" class="ui-instruction__item">
+            <span class="ui-instruction__item-parent">Протокол испытаний</span>
+            <span class="ui-instruction__item-child">(скачать JPG)</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
     <!-- Наши преимущества -->
-    <!-- TODO: Добавить стили для alt -->
     <section class="features features_alt">
       <div class="container features__wrapper">
         <div class="title-with-subtitle features__title-with-subtitle">
-          <h4 class="subtitle">Почему стоит выбрать именно нас</h4>
-          <p class="title1">Наши преимущества</p>
+          <p class="title1">Преимущества Rodmix HSS</p>
         </div>
 
         <div id="featuresSwiper" class="swiper-container features__swiper-container">
           <div class="swiper-wrapper features__swiper-wrapper">
             <div class="swiper-slide features__item">
-              <!-- <img src="./assets/images/icon-help.svg" alt="" class="features__item-icon" /> -->
               <span class="icon icon-icon-feature-help features__item-icon"></span>
-              <p class="features__item-title">Персональный менеджер и помощь в подборе продукции</p>
-              <p class="features__item-description">Индивидуальный подход и забота</p>
+              <p class="features__item-title">Сделано из высокоэффективной порошковой быстрорежущей стали</p>
+              <p class="features__item-description">Обеспечивает долгий срок службы в любых условиях</p>
             </div>
 
             <div class="swiper-slide features__item">
-              <!-- <img src="./assets/images/icon-stock.svg" alt="" class="features__item-icon" /> -->
               <span class="icon icon-icon-feature-stock features__item-icon"></span>
-              <p class="features__item-title">Вся продукция в наличии у дилеров в вашем городе</p>
-              <p class="features__item-description">Вы всегда знаете куда обратиться</p>
+              <p class="features__item-title">Многоразовая заточка сверел HSS</p>
+              <p class="features__item-description">Продлевает срок службы и экономит ваши деньги</p>
             </div>
 
             <div class="swiper-slide features__item">
-              <!-- <img src="./assets/images/icon-delivery.svg" alt="" class="features__item-icon" /> -->
               <span class="icon icon-icon-feature-delivery features__item-icon"></span>
-              <p class="features__item-title">Бесплатная доставка по РФ и Таможенному союзу</p>
-              <p class="features__item-description">Отправка в день заказа в любую точку</p>
+              <p class="features__item-title">Широкий набор хвостовиков</p>
+              <p class="features__item-description">Подходит для любых магнитных дрелей, в том числе и Weldon 19, Weldon 32, Fein</p>
             </div>
 
             <div class="swiper-slide features__item">
-              <!-- <img src="./assets/images/icon-process.svg" alt="" class="features__item-icon" /> -->
               <span class="icon icon-icon-feature-process features__item-icon"></span>
-              <p class="features__item-title">Любые образцы для тестирования по запросу</p>
-              <p class="features__item-description">Проверьте качество и надежность лично</p>
+              <p class="features__item-title">Выталкивающие штифты</p>
+              <p class="features__item-description">Позволяет делать работу по сверлению еще точнее и быстрее</p>
             </div>
 
             <div class="swiper-slide features__item">
-              <!-- <img src="./assets/images/icon-education.svg" alt="" class="features__item-icon" /> -->
               <span class="icon icon-icon-feature-education features__item-icon"></span>
-              <p class="features__item-title">Качественное Обучение работе с инструментом</p>
-              <p class="features__item-description">Делимся полезной информацией и опытом</p>
+              <p class="features__item-title">Двойная грань лезвия</p>
+              <p class="features__item-description">Обеспечивает высокую скорость сверления, плавную резку и минимальную вибрацию</p>
             </div>
 
             <div class="swiper-slide features__item">
-              <!-- <img src="./assets/images/icon-award.svg" alt="" class="features__item-icon" /> -->
               <span class="icon icon-icon-feature-award features__item-icon"></span>
-              <p class="features__item-title">Независимая экспертиза качества продукции</p>
-              <p class="features__item-description">Надежность подтверждена экспертами</p>
+              <p class="features__item-title">Широкий набор адаптеров</p>
+              <p class="features__item-description">Позволяет использовать сверла для вертикально –сверлильных, радиально-сверлильных, а так же для вертикально –фрезерных станков</p>
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -153,74 +231,281 @@
       </div>
     </section>
 
-    <!-- О производителе -->
-    <section class="producer">
-        <div class="container producer__wrapper">
-          <div class="title-with-subtitle producer__title-with-subtitle">
-            <h3 class="subtitle">Как мы занимаемся разработкой</h3>
-            <p class="title1">О производителе</p>
-          </div>
-  
-          <div class="producer__body">
-            <!-- TODO: проверить картинки на различных экранах и заменить -->
-            <div class="producer__author">
-              <picture class="producer__picture">
-                <source srcset="./assets/images/producer@4x.webp" media="(min-width: 1920px)" type="image/webp" />
-                <source srcset="./assets/images/producer@4x.jpg" media="(min-width: 1920px)" />
-  
-                <source srcset="./assets/images/producer@3x.webp" media="(min-width: 1400px)" type="image/webp" />
-                <source srcset="./assets/images/producer@3x.jpg" media="(min-width: 1400px)" />
-  
-                <source srcset="./assets/images/producer@2x.webp" media="(min-width: 1000px)" type="image/webp" />
-                <source srcset="./assets/images/producer@2x.jpg" media="(min-width: 1000px)" />
-  
-                <source srcset="./assets/images/producer.webp" type="image/webp" />
-                <img loading="lazy" decoding="async" class="producer__image" src="./assets/images/producer.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
-              </picture>
-  
-              <div class="producer__btn-with-name">
-                <button class="btn btn_arrow producer__btn">
-                  Написать директору
-                  <span class="icon icon-arrow-short producer__btn-icon"></span>
-                  
-                  <span class="icon icon-arrow-wide producer__btn-icon"></span>
-                </button>
-                <div class="producer__name-with-role">
-                  <p class="producer__name">Мулеев А.В</p>
-                  <p class="producer__role">Генеральный Директор ООО «РОДМИКС»</p>
+    <!-- Запросить цены форма. Иcходнык в корончатых сверлах -->
+    <div class="order-price">
+      <div class="order-price__wrapper container">
+        <div class="ui-form">
+          <div class="ui-form__wrapper">
+            <p class="ui-form__title">Запросить цены Rodmix HSS</p>
+
+            <form class="ui-form__form">
+              <div class="ui-form__fields">
+                <div class="ui-form__field">
+                  <label required for="orderPriceName" class="ui-form__label">ФИО:</label>
+                  <input id="orderPrice" placeholder="Иванов Иван" type="text" class="custom-input ui-form__input" />
+                </div>
+
+                <div class="ui-form__field">
+                  <label required for="orderPricePhone" class="ui-form__label">Телефон:</label>
+                  <input id="orderPricePhone" placeholder="+7 999 999 99 99" type="text" class="custom-input ui-form__input" />
+                </div>
+
+                <div class="ui-form__field">
+                  <label required for="orderPriceEmail" class="ui-form__label">Электронная почта:</label>
+                  <input id="orderPriceEmail" placeholder="ivanov@mail.ru" type="text" class="custom-input ui-form__input" />
+                </div>
+
+                <div class="ui-form__field">
+                  <label for="orderPriceText" class="ui-form__label">Комментарий:</label>
+                  <textarea class="custom-input ui-form__input ui-form__input_textarea" placeholder="Текст" id="orderPriceText"></textarea>
                 </div>
               </div>
+              <button class="btn ui-form__btn-submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Применение Rodmix HSS -->
+    <div class="ui-application">
+      <div class="ui-application__table">
+        <div class="ui-application__col">
+          <div class="ui-application__col-wrapper">
+            <span class="icon icon-star ui-application__star"></span>
+            <span class="icon icon-star ui-application__star"></span>
+            <span class="icon icon-star ui-application__star"></span>
+            <span class="ui-application__text">Сталь</span>
+            <span class="icon icon-simple-arrow-left ui-application__arrow"></span>
+            <strong>750 N</strong>
+          </div>
+        </div>
+
+        <div class="ui-application__col">
+          <div class="ui-application__col-wrapper">
+            <span class="icon icon-star ui-application__star"></span>
+            <span class="ui-application__text">Сталь</span>
+            <span class="icon icon-simple-arrow-left ui-application__arrow"></span>
+            <strong>900 N</strong>
+          </div>
+        </div>
+
+        <div class="ui-application__col">
+          <div class="ui-application__col-wrapper">
+            <span class="icon icon-star ui-application__star"></span>
+            <span class="ui-application__text">Сталь</span>
+            <span class="icon icon-simple-arrow-left ui-application__arrow"></span>
+            <strong>1100 N</strong>
+          </div>
+        </div>
+
+        <div class="ui-application__col">
+          <div class="ui-application__col-wrapper">
+            <span class="icon icon-star ui-application__star"></span>
+            <span class="ui-application__text">Сталь</span>
+            <span class="icon icon-simple-arrow-left ui-application__arrow"></span>
+            <strong>1400 N</strong>
+          </div>
+        </div>
+
+        <div class="ui-application__col">
+          <div class="ui-application__col-wrapper">
+            <span class="icon icon-star ui-application__star"></span>
+            <span class="ui-application__text">Нерж. сталь</span>
+            <span class="icon icon-simple-arrow-left ui-application__arrow"></span>
+            <strong>900 N</strong>
+          </div>
+        </div>
+
+        <div class="ui-application__col">
+          <div class="ui-application__col-wrapper">
+            <span class="icon icon-star ui-application__star"></span>
+            <span class="ui-application__text">Нерж. сталь</span>
+            <span class="icon simple-arrow-right ui-application__arrow"></span>
+            <strong>900 N</strong>
+          </div>
+        </div>
+
+        <div class="ui-application__col">
+          <div class="ui-application__col-wrapper">
+            <span class="icon icon-star ui-application__star"></span>
+            <span class="icon icon-star ui-application__star"></span>
+            <span class="ui-application__text">Алюминий</span>
+            <span class="icon icon-simple-arrow-left ui-application__arrow"></span>
+            <strong>10% Si</strong>
+          </div>
+        </div>
+
+        <div class="ui-application__col">
+          <div class="ui-application__col-wrapper">
+            <span class="icon icon-star ui-application__star"></span>
+            <span class="icon icon-star ui-application__star"></span>
+            <span class="ui-application__text">Алюминий</span>
+            <span class="icon simple-arrow-right ui-application__arrow"></span>
+            <strong>10% Si</strong>
+          </div>
+        </div>
+
+        <div class="ui-application__col">
+          <div class="ui-application__col-wrapper">
+            <span class="icon icon-star ui-application__star"></span>
+            <span class="icon icon-star ui-application__star"></span>
+            <span class="ui-application__text">Медь</span>
+          </div>
+        </div>
+
+        <div class="ui-application__col">
+          <div class="ui-application__col-wrapper">
+            <span class="icon icon-star ui-application__star"></span>
+            <span class="ui-application__text">Пластик</span>
+          </div>
+        </div>
+
+        <div class="ui-application__col">
+          <div class="ui-application__col-wrapper">
+            <span class="icon icon-star ui-application__star"></span>
+            <span class="ui-application__text">Чугун</span>
+          </div>
+        </div>
+
+        <div class="ui-application__col">
+          <div class="ui-application__col-wrapper">
+            <span class="icon icon-star ui-application__star"></span>
+            <span class="ui-application__text">Ж/д рельсы</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui-application__footer">
+        <div class="ui-application__footer-item">
+          <span class="icon icon-star ui-application__star"></span>
+          <span class="icon icon-star ui-application__star"></span>
+          <span class="icon icon-star ui-application__star"></span>
+          <p class="ui-application__footer-text">- оптимально</p>
+        </div>
+
+        <div class="ui-application__footer-item">
+          <span class="icon icon-star ui-application__star"></span>
+          <span class="icon icon-star ui-application__star"></span>
+          <p class="ui-application__footer-text">- хорошо</p>
+        </div>
+
+        <div class="ui-application__footer-item">
+          <span class="icon icon-star ui-application__star"></span>
+          <p class="ui-application__footer-text">- возможно</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui-reviews">
+      <div class="ui-reviews__swiper swiper-container">
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide">
+            <picture class="ui-reviews__picture">
+              <source srcset="./assets/images/product-sverlo.webp" type="image/webp" />
+              <img class="ui-reviews__img" src="./assets/images/product-sverlo.png" alt="" />
+            </picture>
+            <div class="ui-reviews__slide-content">
+              <p class="ui-reviews__slide-title">ЗАО “АртМеталл”</p>
+              <p class="ui-reviews__slide-subtitle">Ген.директор: <strong>Кучевский Д.В.</strong></p>
+              <p class="ui-reviews__slide-description">“ Повседневная практика показывает, что реализация 
+                намеченных плановых заданий требует определения и уточнения форм воздействия. 
+                Идейные соображения высшего порядка, а также консультация с широким активом 
+                способствует подготовке своём“</p>
             </div>
-  
-            <div class="producer__content">
-              <div class="producer__texts">
-                <p class="producer__text">
-                  Инструмент под брендом <strong>RODMIX</strong> объединяет отличное качество и доступность. Ежедневно мы работаем как над качеством нашей продукции, так и над качеством обслуживания. Мы идем в ногу со временем, прислушиваемся к потребителям и постоянно расширяем ассортимент новыми
-                  позициями.
-                </p>
-                <p class="producer__text">
-                  Мы работаем по всей РФ и Таможенному союзу. Организовали гибкую систему доставки и оплаты. Вы в любой момент сможете найти представителей <strong>торговой марки RODMIX</strong> в вашем регионе. А наши менеджеры без проблем проконсультируют по любым вопросам и помогут c выбором.
-                </p>
+          </div>
+
+          <div class="swiper-slide">
+            <picture class="ui-reviews__picture">
+              <source srcset="./assets/images/product-sverlo.webp" type="image/webp" />
+              <img class="ui-reviews__img" src="./assets/images/product-sverlo.png" alt="" />
+            </picture>
+            <div class="ui-reviews__slide-content">
+              <p class="ui-reviews__slide-title">ЗАО “АртМеталл”</p>
+              <p class="ui-reviews__slide-subtitle">Ген.директор: <strong>Кучевский Д.В.</strong></p>
+              <p class="ui-reviews__slide-description">“ Повседневная практика показывает, что реализация 
+                намеченных плановых заданий требует определения и уточнения форм воздействия. 
+                Идейные соображения высшего порядка, а также консультация с широким активом 
+                способствует подготовке своём“</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <!-- О производителе -->
+    <section class="producer">
+      <div class="container producer__wrapper">
+        <div class="title-with-subtitle producer__title-with-subtitle">
+          <h3 class="subtitle">Как мы занимаемся разработкой</h3>
+          <p class="title1">О производителе</p>
+        </div>
+
+        <div class="producer__body">
+          <div class="producer__author">
+            <picture class="producer__picture">
+              <source srcset="./assets/images/producer@4x.webp" media="(min-width: 1920px)" type="image/webp" />
+              <source srcset="./assets/images/producer@4x.jpg" media="(min-width: 1920px)" />
+
+              <source srcset="./assets/images/producer@3x.webp" media="(min-width: 1400px)" type="image/webp" />
+              <source srcset="./assets/images/producer@3x.jpg" media="(min-width: 1400px)" />
+
+              <source srcset="./assets/images/producer@2x.webp" media="(min-width: 1000px)" type="image/webp" />
+              <source srcset="./assets/images/producer@2x.jpg" media="(min-width: 1000px)" />
+
+              <source srcset="./assets/images/producer.webp" type="image/webp" />
+              <img loading="lazy" decoding="async" class="producer__image" src="./assets/images/producer.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+            </picture>
+
+            <div class="producer__btn-with-name">
+              <button class="btn btn_arrow producer__btn">
+                Написать директору
+                <span class="icon icon-arrow-short producer__btn-icon"></span>
+
+                <span class="icon icon-arrow-wide producer__btn-icon"></span>
+              </button>
+              <div class="producer__name-with-role">
+                <p class="producer__name">Мулеев А.В</p>
+                <p class="producer__role">Генеральный Директор ООО «РОДМИКС»</p>
               </div>
-              <div class="producer__certifications">
-                <a href="#" class="producer__certification producer__certification_certificate">
-                  <img src="./assets/images/icon-pdf.svg" alt="" class="producer__certification-img" loading="lazy" decoding="async" />
-                  <div class="producer__certification-content">
-                    <p class="producer__certification-title">Скачать каталог с товарами</p>
-                    <p class="producer__certification-size">PDF (45МB)</p>
-                  </div>
-                </a>
-                <a href="#" class="producer__certification">
-                  <img src="./assets/images/icon-certificate.svg" alt="" class="producer__certification-img" loading="lazy" decoding="async" />
-                  <div class="producer__certification-content">
-                    <p class="producer__certification-title">Наши Сертификаты</p>
-                    <p class="producer__certification-size">PDF (120МB)</p>
-                  </div>
-                </a>
-              </div>
+            </div>
+          </div>
+
+          <div class="producer__content">
+            <div class="producer__texts">
+              <p class="producer__text">
+                Инструмент под брендом <strong>RODMIX</strong> объединяет отличное качество и доступность. Ежедневно мы работаем как над качеством нашей продукции, так и над качеством обслуживания. Мы идем в ногу со временем, прислушиваемся к потребителям и постоянно расширяем ассортимент новыми
+                позициями.
+              </p>
+              <p class="producer__text">
+                Мы работаем по всей РФ и Таможенному союзу. Организовали гибкую систему доставки и оплаты. Вы в любой момент сможете найти представителей <strong>торговой марки RODMIX</strong> в вашем регионе. А наши менеджеры без проблем проконсультируют по любым вопросам и помогут c выбором.
+              </p>
+            </div>
+            <div class="producer__certifications">
+              <a href="#" class="producer__certification producer__certification_certificate">
+                <img src="./assets/images/icon-pdf.svg" alt="" class="producer__certification-img" loading="lazy" decoding="async" />
+                <div class="producer__certification-content">
+                  <p class="producer__certification-title">Скачать каталог с товарами</p>
+                  <p class="producer__certification-size">PDF (45МB)</p>
+                </div>
+              </a>
+              <a href="#" class="producer__certification">
+                <img src="./assets/images/icon-certificate.svg" alt="" class="producer__certification-img" loading="lazy" decoding="async" />
+                <div class="producer__certification-content">
+                  <p class="producer__certification-title">Наши Сертификаты</p>
+                  <p class="producer__certification-size">PDF (120МB)</p>
+                </div>
+              </a>
             </div>
           </div>
         </div>
+      </div>
     </section>
 
     <!-- НАША ПРОДУКЦИЯ -->
@@ -482,9 +767,9 @@
             </div>
             <button data-id="orderModal" class="btn btn_arrow warrancy__btn-contact">
               Связаться по гарантии
-              
+
               <span class="icon icon-arrow-short warrancy__btn-icon"></span>
-              
+
               <span class="icon icon-arrow-wide warrancy__btn-icon"></span>
             </button>
           </div>
@@ -590,7 +875,6 @@
           </p>
         </div>
       </div>
-      
     </div>
 
     <!-- <script defer src="./assets/scripts/vendors.bundle.js"></script> -->

@@ -27,9 +27,9 @@ body {
     right: 0;
     left: 0;
     width: 100%;
-    height: 390px;
+    height: 375px;
     object-fit: cover;
-    background: url('../../assets/images/welcome-bg-320.webp') no-repeat center / cover;
+    background: #fff url('../../assets/images/welcome-bg-320.webp') no-repeat center / cover;
     @media not all and (min-resolution: 0.001dpcm) {
       @supports (-webkit-appearance: none) and (stroke-color: transparent) {
         background-image: image-set(url('../../assets/images/welcome-bg-320.jpg') 1x);
@@ -444,10 +444,10 @@ input:focus {
 
 .title2 {
   font-weight: 500;
-  font-size: 36px;
-  line-height: 41px;
-
   color: #454545;
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: bold;
 }
 
 .title3 {
@@ -514,6 +514,588 @@ input:focus {
     @media (min-width: 1000px) {
     }
     @media (min-width: 1000px) {
+    }
+  }
+}
+
+// компонент слайдера
+.ui-slider {
+  @media (min-width: 480px) {
+  }
+  @media (min-width: 540px) {
+  }
+  @media (min-width: 640px) {
+  }
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 1020px) {
+  }
+  @media (min-width: 1430px) {
+  }
+  &__wrapper {
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+
+  &__slide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 80px;
+    background: #ffffff;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    @media (min-width: 480px) {
+      height: 115px;
+    }
+    @media (min-width: 540px) {
+      height: 125px;
+    }
+    @media (min-width: 640px) {
+      height: 100px;
+    }
+    @media (min-width: 768px) {
+      height: 120px;
+    }
+    @media (min-width: 1020px) {
+      height: 125px;
+    }
+    @media (min-width: 1430px) {
+      height: 120px;
+    }
+    &:hover {
+      box-shadow: 0px 4px 7px rgba(227, 30, 37, 0.17);
+      border-color: $red;
+      cursor: pointer;
+    }
+    &::before {
+      content: '\E015';
+      position: absolute;
+      font-family: Icons;
+      font-size: 22px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 400;
+      text-decoration: none;
+      text-transform: none;
+      color: $red;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+      z-index: 10;
+      @media (min-width: 480px) {
+      }
+      @media (min-width: 540px) {
+      }
+      @media (min-width: 640px) {
+      }
+      @media (min-width: 768px) {
+      }
+      @media (min-width: 1020px) {
+      }
+      @media (min-width: 1430px) {
+      }
+    }
+  }
+
+  &__slide-picture {
+    max-height: 100%;
+    height: 100%;
+    max-width: 100%;
+    width: auto;
+  }
+
+  &__slide-img {
+    max-height: 100%;
+    height: 100%;
+    max-width: 100%;
+    width: auto;
+    opacity: 0.68;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+}
+
+// компонент инструкции
+.ui-instruction {
+  &__item {
+    @include reset-link();
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    color: $red;
+    @media (min-width: 480px) {
+      font-size: 14px;
+      line-height: 28px;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+      font-size: 16px;
+      line-height: 32px;
+    }
+    @media (min-width: 1430px) {
+      font-size: 14px;
+      line-height: 28px;
+    }
+    &-parent {
+      text-decoration: underline;
+      @media (min-width: 480px) {
+      }
+      @media (min-width: 540px) {
+      }
+      @media (min-width: 640px) {
+      }
+      @media (min-width: 768px) {
+      }
+      @media (min-width: 1020px) {
+      }
+      @media (min-width: 1430px) {
+      }
+    }
+    &-child {
+      color: #c4c4c4;
+      @media (min-width: 480px) {
+      }
+      @media (min-width: 540px) {
+      }
+      @media (min-width: 640px) {
+      }
+      @media (min-width: 768px) {
+      }
+      @media (min-width: 1020px) {
+      }
+      @media (min-width: 1430px) {
+      }
+    }
+  }
+}
+
+// Компонент формы. Иcsходник в корончатых
+.ui-form {
+  &__wrapper {
+    padding: 28px;
+    border-radius: 5px;
+    background-color: #fff;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+      padding: 35px;
+    }
+    @media (min-width: 1430px) {
+      padding: 21px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 29px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #454545;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+      text-align-last: left;
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+      margin-bottom: 40px;
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+      margin-bottom: 35px;
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  &__form {
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+
+  &__fields {
+    margin-bottom: 19px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 16px;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      grid-column-gap: 10px;
+    }
+    @media (min-width: 768px) {
+      margin-bottom: 35px;
+      grid-column-gap: 15px;
+      grid-row-gap: 29px;
+    }
+    @media (min-width: 1020px) {
+      grid-column-gap: 18px;
+    }
+    @media (min-width: 1430px) {
+      margin-bottom: 25px;
+      display: block;
+    }
+  }
+
+  &__field {
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+      &:not(:last-child) {
+        margin-bottom: 29px;
+      }
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #454545;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+      margin-bottom: 10px;
+      font-size: 18px;
+      line-height: 21px;
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+    &[required] {
+      position: relative;
+      &::after {
+        position: relative;
+        content: '*';
+        top: -1px;
+        right: -5px;
+        color: $red;
+      }
+    }
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+    &_textarea {
+      resize: none;
+      overflow: hidden;
+      line-height: 1;
+      padding-top: 15px;
+      @media (min-width: 1430px) {
+        resize: vertical;
+        max-height: 80px;
+        min-height: 80px;
+      }
+    }
+  }
+
+  &__btn-submit {
+    width: 66%;
+    margin: 0 auto;
+    font-size: 16px;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+      height: 60px;
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+      width: 100%;
+      font-size: 18px;
+    }
+  }
+}
+
+// TODO:LAST закончить верстку таблицы
+.ui-application {
+  &__table {
+    display: grid;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    @media (min-width: 480px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (min-width: 640px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @media (min-width: 1020px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (min-width: 1430px) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+
+  &__col {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid #ececec;
+    font-size: 10px;
+
+    // 320-480
+    &:nth-child(2n + 1) {
+      padding-left: 10px;
+      @media (min-width: 480px) {
+        padding-left: 0;
+      }
+    }
+    &:nth-child(2n + 2) {
+      padding-right: 10px;
+      @media (min-width: 480px) {
+        padding-right: 0;
+      }
+    }
+
+    // 480-640
+    &:nth-child(3n + 1) {
+      @media (min-width: 480px) {
+        padding-left: 10px;
+      }
+      @media (min-width: 640px) {
+        padding-left: 0;
+      }
+    }
+    &:nth-child(3n + 3) {
+      @media (min-width: 480px) {
+        padding-right: 10px;
+      }
+      @media (min-width: 640px) {
+        padding-right: 0;
+      }
+    }
+
+    // 640-1020
+    &:nth-child(4n + 1) {
+      @media (min-width: 640px) {
+        padding-left: 10px;
+      }
+      @media (min-width: 1020px) {
+        padding-left: 0;
+      }
+    }
+    &:nth-child(4n + 4) {
+      @media (min-width: 640px) {
+        padding-right: 10px;
+      }
+      @media (min-width: 1020px) {
+        padding-right: 0;
+      }
+    }
+
+    // 1020-1430
+    &:nth-child(3n + 1) {
+      @media (min-width: 1020px) {
+        padding-left: 10px;
+      }
+      @media (min-width: 1430px) {
+        padding-left: 0;
+      }
+    }
+    &:nth-child(3n + 3) {
+      @media (min-width: 1020px) {
+        padding-right: 10px;
+      }
+      @media (min-width: 1430px) {
+        padding-right: 0;
+      }
+    }
+
+    // 1430-4K
+    &:nth-child(6n + 1) {
+      @media (min-width: 1430px) {
+        padding-left: 10px;
+      }
+    }
+    &:nth-child(6n + 6) {
+      @media (min-width: 1430px) {
+        padding-right: 10px;
+      }
+    }
+  }
+
+  &__col-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__star {
+    position: relative;
+    top: -1px;
+    color: $red;
+    font-size: 10px;
+  }
+
+  &__text {
+    margin-left: 10px;
+    @media (min-width: 480px) {
+      font-size: 12px;
+    }
+    @media (min-width: 768px) {
+      font-size: 14px;
+    }
+    @media (min-width: 1020px) {
+      font-size: 16spx;
+    }
+  }
+
+  &__arrow {
+    position: relative;
+    top: -1px;
+    font-size: 5px;
+    margin: 0 5px;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    @media (min-width: 480px) {
+      margin-bottom: 18px;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      margin-bottom: 20px;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+      margin-bottom: 15px;
+    }
+    @media (min-width: 1430px) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__footer-item {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    @media (min-width: 480px) {
+      margin-right: 26px;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      margin-right: 26px;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+
+  &__footer-text {
+    margin-left: 5px;
+    font-size: 11px;
+    line-height: 13px;
+    color: #9c8c8d;
+    @media (min-width: 480px) {
+      font-size: 14px;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
     }
   }
 }

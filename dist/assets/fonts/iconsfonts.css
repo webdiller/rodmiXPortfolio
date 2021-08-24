@@ -101,46 +101,62 @@
 	content: "\E014";
 }
 
-.icon-menu_close:before {
+.icon-loop-plus:before {
 	content: "\E015";
 }
 
-.icon-menu_open:before {
+.icon-menu_close:before {
 	content: "\E016";
 }
 
-.icon-order:before {
+.icon-menu_open:before {
 	content: "\E017";
 }
 
-.icon-slider-next:before {
+.icon-order:before {
 	content: "\E018";
 }
 
-.icon-slider-next_disabled:before {
+.icon-simple-arrow-left:before {
 	content: "\E019";
 }
 
-.icon-slider-prev:before {
+.icon-simple-arrow-right:before {
 	content: "\E01A";
 }
 
-.icon-slider-prev_disabled:before {
+.icon-slider-next:before {
 	content: "\E01B";
 }
 
-.icon-tapbar-call:before {
+.icon-slider-next_disabled:before {
 	content: "\E01C";
 }
 
-.icon-tapbar-medal:before {
+.icon-slider-prev:before {
 	content: "\E01D";
 }
 
-.icon-tapbar-pin:before {
+.icon-slider-prev_disabled:before {
 	content: "\E01E";
 }
 
-.icon-tapbar-settings:before {
+.icon-star:before {
 	content: "\E01F";
+}
+
+.icon-tapbar-call:before {
+	content: "\E020";
+}
+
+.icon-tapbar-medal:before {
+	content: "\E021";
+}
+
+.icon-tapbar-pin:before {
+	content: "\E022";
+}
+
+.icon-tapbar-settings:before {
+	content: "\E023";
 }
