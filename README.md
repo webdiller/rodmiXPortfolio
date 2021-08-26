@@ -44,3 +44,24 @@ GULP Local version: 4.0.0
 
 # ПРАВКИ:
 * https://docs.google.com/document/d/1ozTYpQxkCiRnp9UqOtgJ-cq_MPfxXwoR1WhGmnqn4BY/edit
+
+
+  320
+30 x 5
+24 x 14
+20 x 2
+
+  480
+36 x 5
+30 x 14
+20 x 2
+
+  540
+36 x 5
+30 x 14
+20 x 2
+
+  640
+36 x 9
+30 x 10
+20 x 2

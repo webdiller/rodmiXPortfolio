@@ -54,6 +54,7 @@
   &__menu-close {
     color: $red;
     font-size: 16px;
+    cursor: pointer;
     @media (min-width: 480px) {
       font-size: 21px;
     }

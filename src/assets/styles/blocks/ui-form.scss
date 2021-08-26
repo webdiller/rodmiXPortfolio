@@ -1,0 +1,191 @@
+// Компонент формы. Иcsходник в корончатых
+.ui-form {
+    &__wrapper {
+      padding: 28px;
+      border-radius: 5px;
+      background-color: #fff;
+      @media (min-width: 480px) {
+      }
+      @media (min-width: 540px) {
+      }
+      @media (min-width: 640px) {
+      }
+      @media (min-width: 768px) {
+      }
+      @media (min-width: 1020px) {
+        padding: 35px;
+      }
+      @media (min-width: 1430px) {
+        padding: 21px;
+      }
+    }
+  
+    &__title {
+      margin-bottom: 29px;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+      color: #454545;
+      @media (min-width: 480px) {
+      }
+      @media (min-width: 540px) {
+        text-align-last: left;
+      }
+      @media (min-width: 640px) {
+      }
+      @media (min-width: 768px) {
+        margin-bottom: 40px;
+      }
+      @media (min-width: 1020px) {
+      }
+      @media (min-width: 1430px) {
+        margin-bottom: 35px;
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+  
+    &__form {
+      @media (min-width: 480px) {
+      }
+      @media (min-width: 540px) {
+      }
+      @media (min-width: 640px) {
+      }
+      @media (min-width: 768px) {
+      }
+      @media (min-width: 1020px) {
+      }
+      @media (min-width: 1430px) {
+      }
+    }
+  
+    &__fields {
+      margin-bottom: 19px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 15px;
+      grid-row-gap: 16px;
+      @media (min-width: 480px) {
+      }
+      @media (min-width: 540px) {
+      }
+      @media (min-width: 640px) {
+        grid-column-gap: 10px;
+      }
+      @media (min-width: 768px) {
+        margin-bottom: 35px;
+        grid-column-gap: 15px;
+        grid-row-gap: 29px;
+      }
+      @media (min-width: 1020px) {
+        grid-column-gap: 18px;
+      }
+      @media (min-width: 1430px) {
+        margin-bottom: 25px;
+        display: block;
+      }
+    }
+  
+    &__field {
+      @media (min-width: 480px) {
+      }
+      @media (min-width: 540px) {
+      }
+      @media (min-width: 640px) {
+      }
+      @media (min-width: 768px) {
+      }
+      @media (min-width: 1020px) {
+      }
+      @media (min-width: 1430px) {
+        &:not(:last-child) {
+          margin-bottom: 29px;
+        }
+      }
+    }
+  
+    &__label {
+      display: inline-block;
+      margin-bottom: 15px;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      color: #454545;
+      @media (min-width: 480px) {
+      }
+      @media (min-width: 540px) {
+      }
+      @media (min-width: 640px) {
+      }
+      @media (min-width: 768px) {
+        margin-bottom: 10px;
+        font-size: 18px;
+        line-height: 21px;
+      }
+      @media (min-width: 1020px) {
+      }
+      @media (min-width: 1430px) {
+      }
+      &[required] {
+        position: relative;
+        &::after {
+          position: relative;
+          content: '*';
+          top: -1px;
+          right: -5px;
+          color: $red;
+        }
+      }
+    }
+  
+    &__input {
+      display: block;
+      width: 100%;
+      @media (min-width: 480px) {
+      }
+      @media (min-width: 540px) {
+      }
+      @media (min-width: 640px) {
+      }
+      @media (min-width: 768px) {
+      }
+      @media (min-width: 1020px) {
+      }
+      @media (min-width: 1430px) {
+      }
+      &_textarea {
+        resize: none;
+        overflow: hidden;
+        line-height: 1;
+        padding-top: 15px;
+        @media (min-width: 1430px) {
+          resize: vertical;
+          max-height: 80px;
+          min-height: 80px;
+        }
+      }
+    }
+  
+    &__btn-submit {
+      width: 66%;
+      margin: 0 auto;
+      font-size: 16px;
+      @media (min-width: 480px) {
+      }
+      @media (min-width: 540px) {
+      }
+      @media (min-width: 640px) {
+      }
+      @media (min-width: 768px) {
+        height: 60px;
+      }
+      @media (min-width: 1020px) {
+      }
+      @media (min-width: 1430px) {
+        width: 100%;
+        font-size: 18px;
+      }
+    }
+  }

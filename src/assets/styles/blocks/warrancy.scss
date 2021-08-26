@@ -258,6 +258,17 @@
       padding-right: 31px;
       font-size: 18px;
     }
+    &_hide-640 {
+      @media (min-width: 640px) {
+        display: none;
+      }
+    }
+    &_show-640 {
+      display: none;
+      @media (min-width: 640px) {
+        display: flex;
+      }
+    }
   }
 
   &__btn-icon {
@@ -306,6 +317,137 @@
     }
     @media (min-width: 1430px) {
       max-width: 450px;
+    }
+
+    &_items {
+      flex-direction: row;
+      background-color: transparent;
+      padding: 0;
+      margin-bottom: 27px;
+      @media (min-width: 480px) {
+        padding: 0;
+      }
+      @media (min-width: 540px) {
+        padding: 0;
+      }
+      @media (min-width: 640px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        margin-bottom: 0;
+        padding: 0;
+      }
+      @media (min-width: 768px) {
+        column-gap: 15px;
+        padding: 0;
+      }
+      @media (min-width: 1020px) {
+        max-width: unset;
+        padding: 0;
+      }
+      @media (min-width: 1430px) {
+        max-width: 571px;
+        column-gap: 43px;
+        padding: 0;
+      }
+    }
+  }
+
+  &__registration-form-item {
+    text-align: left;
+    &:not(:last-child) {
+      margin-right: 25px;
+      @media (min-width: 480px) {
+        margin-right: 73px;
+      }
+      @media (min-width: 540px) {
+      }
+      @media (min-width: 640px) {
+        margin-right: 0;
+      }
+    }
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 15px;
+    }
+    @media (min-width: 768px) {
+      min-width: 174px;
+    }
+    @media (min-width: 1020px) {
+      padding: 37px;
+    }
+    @media (min-width: 1430px) {
+      padding: 32px;
+    }
+  }
+  &__registration-form-item-title {
+    margin-bottom: 9px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #9c8c8d;
+    @media (min-width: 480px) {
+      bottom: 21px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      font-size: 11px;
+      line-height: 13px;
+      margin-bottom: 6px;
+    }
+    @media (min-width: 768px) {
+      margin-bottom: 11px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+    @media (min-width: 1020px) {
+      margin-bottom: 17px;
+      font-size: 16px;
+      line-height: 18px;
+    }
+    @media (min-width: 1430px) {
+      margin-bottom: 16px;
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+  &__registration-form-item-link {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #454545;
+    @media (min-width: 480px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    @media (min-width: 768px) {
+      font-size: 18px;
+      line-height: 21px;
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+    &_red {
+      color: $red;
     }
   }
 

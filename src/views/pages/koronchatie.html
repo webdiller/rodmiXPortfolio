@@ -118,33 +118,33 @@
     </div>
 
     <!-- ОПИСАНИЕ ПРОДУКТА СО СЛАЙДЕРОМ. Исходник в корончатых сверлах -->
-    <div class="product-description">
-      <div class="product-description__wrapper container">
-        <div class="product-description__header">
-          <p class="title2 product-description__title2">Корончатые сверла HSS</p>
-          <p class="product-description__subtitle">Rodmix HSS надежные сверла</p>
+    <div class="ui-product">
+      <div class="ui-product__wrapper container">
+        <div class="ui-product__header">
+          <p class="title2 ui-product__title2">Корончатые сверла HSS</p>
+          <p class="ui-product__subtitle">Rodmix HSS надежные сверла</p>
         </div>
 
-        <div class="product-description__body">
-          <picture class="product-description__picture">
+        <div class="ui-product__body">
+          <picture class="ui-product__picture">
             <!-- TODO: Заменить изображение -->
             <source srcset="./assets/images/product-sverlo.webp" type="image/webp" />
-            <img src="./assets/images/product-sverlo.png" alt="" class="product-description__img" />
+            <img src="./assets/images/product-sverlo.png" alt="" class="ui-product__img" />
           </picture>
 
-          <div class="product-description__content">
-            <p class="product-description__text">Это корончатые сверла из быстрорежущей стали. Предназначены для сверления всех видов конструкционных сталей, а также нержавеющей стали.</p>
-            <p class="product-description__list-title">Все виды хвостовиков:</p>
-            <ul class="product-description__list">
-              <li class="product-description__list-item"><strong>One-touch (универсальный)</strong> - подходит к большинству сверлильных магнитных дрелей, в том числе Weldon 19;</li>
-              <li class="product-description__list-item"><strong>Weldon</strong> - до 60 мм диаметр 19 мм, с 61 мм - диаметр 32 мм;</li>
-              <li class="product-description__list-item"><strong>Quick-in</strong> - для сверлильных машин Fein.</li>
+          <div class="ui-product__content">
+            <p class="ui-product__text">Это корончатые сверла из быстрорежущей стали. Предназначены для сверления всех видов конструкционных сталей, а также нержавеющей стали.</p>
+            <p class="ui-product__list-title">Все виды хвостовиков:</p>
+            <ul class="ui-product__list">
+              <li class="ui-product__list-item"><strong>One-touch (универсальный)</strong> - подходит к большинству сверлильных магнитных дрелей, в том числе Weldon 19;</li>
+              <li class="ui-product__list-item"><strong>Weldon</strong> - до 60 мм диаметр 19 мм, с 61 мм - диаметр 32 мм;</li>
+              <li class="ui-product__list-item"><strong>Quick-in</strong> - для сверлильных машин Fein.</li>
             </ul>
           </div>
         </div>
 
         <!-- TODO: адаптивность + модалку -->
-        <div id="sverlaSlider" class="product-description__slider swiper-container ui-slider">
+        <div id="sverlaSlider" class="ui-product__slider swiper-container ui-slider">
           <div class="swiper-wrapper ui-slider__wrapper">
             <div class="swiper-slide ui-slider__slide">
               <picture class="ui-slider__slide-picture">
@@ -167,7 +167,7 @@
           </div>
         </div>
 
-        <div class="ui-instruction product-description__footer">
+        <div class="ui-instruction ui-product__footer">
           <a download href="#" class="ui-instruction__item">
             <span class="ui-instruction__item-parent">Инструкция по эксплуатации</span>
             <span class="ui-instruction__item-child">(скачать PDF)</span>
@@ -230,6 +230,57 @@
         </div>
       </div>
     </section>
+
+    <div class="ui-features-alt">
+      <div class="ui-features-alt__wrapper">
+        <p class="ui-features-alt__title">Преимущества Rodmix HSS</p>
+        <div class="ui-features-alt__items">
+          <div class="ui-features-alt__item">
+            <span class="icon icon-check-feature ui-features-alt__item-icon"></span>
+            <p class="ui-features-alt__item-title">Подходят к магнитным сверлильным станкам</p>
+            <p class="ui-features-alt__item-subtitle">Не требует дополнительных затрат на адаптеры и переходники. Легок в применении</p>
+          </div>
+
+          <div class="ui-features-alt__item">
+            <span class="icon icon-check-feature ui-features-alt__item-icon"></span>
+            <p class="ui-features-alt__item-title">Сделано из высокоэффективной порошковой быстрорежущей стали</p>
+            <p class="ui-features-alt__item-subtitle">Обеспечивает долгий срок службы в любых условиях</p>
+          </div>
+
+          <div class="ui-features-alt__item">
+            <span class="icon icon-check-feature ui-features-alt__item-icon"></span>
+            <p class="ui-features-alt__item-title">Специальный диаметр - 10.2</p>
+            <p class="ui-features-alt__item-subtitle">Профессиональные сверла для нарезки небольших отверстий в рельсах с максимальной эффективностью</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- СОЖ Rodmix -->
+    <!-- TODO: Определиться с отступами и тп шелухой -->
+    <div class="ui-product">
+      <div class="ui-product__wrapper">
+        <div class="ui-product__header">
+          <p class="ui-product__subtitle">СОЖ Rodmix</p>
+        </div>
+
+        <div class="ui-product__body">
+          <div class="ui-product__content">
+            <p class="ui-product__text">Смазочно-охлаждающая жидкость Redmix подходит для всех типов сверлильных, такорных и фрезерных станков, станков на магнитном основании, ленточных пил.</p>
+          </div>
+        </div>
+
+        <div class="ui-instruction ui-product__footer">
+          <a download href="#" class="ui-instruction__item">
+            <span class="ui-instruction__item-parent">Инструкция по эксплуатации (скачать PDF)</span>
+          </a>
+
+          <a download href="#" class="ui-instruction__item">
+            <span class="ui-instruction__item-parent">Когда полезно применят СОЖ?</span>
+          </a>
+        </div>
+      </div>
+    </div>
 
     <!-- Запросить цены форма. Иcходнык в корончатых сверлах -->
     <div class="order-price">
@@ -418,7 +469,6 @@
           <div class="swiper-slide">
             <div class="ui-reviews__img-wrapper">
               <picture class="ui-reviews__picture">
-              
                 <source srcset="./assets/images/doc-img.webp" type="image/webp" />
                 <img class="ui-reviews__img" src="./assets/images/doc-img.png" alt="" />
               </picture>
@@ -747,24 +797,13 @@
     <section class="warrancy">
       <div class="container warrancy__wrapper">
         <div class="title-with-subtitle warrancy__title-with-subtitle">
-          <h6 class="subtitle">У нас - только качественно!</h6>
           <p class="title1">Гарантийное обслуживание</p>
         </div>
 
         <div class="warrancy__content">
           <div class="warrancy__text-with-contacts">
             <p class="warrancy__description">На всю выпускаемую продукцию <strong>RODMIX</strong> предоставляется гарантия согласно законодательству РФ. Узнать контакты сервисного центра в вашем городе или решить проблему вы можете:</p>
-            <div class="warrancy__contacts">
-              <div class="warrancy__contact-item">
-                <p class="warrancy__contact-title">По телефону:</p>
-                <a href="phone:+74852680021" class="warrancy__contact-subtitle warrancy__contact-subtitle_phone">+7(4852) 68-00-21</a>
-              </div>
-              <div class="warrancy__contact-item">
-                <p class="warrancy__contact-title">Электронной почте:</p>
-                <a href="mailto:info@rodmix.ru" class="warrancy__contact-subtitle warrancy__contact-subtitle_email">info@rodmix.ru</a>
-              </div>
-            </div>
-            <button data-id="orderModal" class="btn btn_arrow warrancy__btn-contact">
+            <button class="btn btn_arrow warrancy__btn-contact warrancy__btn-contact_show-640">
               Связаться по гарантии
 
               <span class="icon icon-arrow-short warrancy__btn-icon"></span>
@@ -772,13 +811,62 @@
               <span class="icon icon-arrow-wide warrancy__btn-icon"></span>
             </button>
           </div>
-          <form class="warrancy__registration-form">
-            <p class="warrancy__registration-title">Регистрация инструмента</p>
-            <p class="warrancy__registration-subtitle">Акция!</p>
-            <p class="warrancy__registration-text">2 года гарантии зарегистрированным клиентам</p>
-            <input placeholder="Введите серийный номер" type="text" class="custom-input warrancy__registration-input" />
-            <button class="btn-outline warrancy__registration-submit-btn">Продолжить</button>
-          </form>
+
+          <div class="warrancy__registration-form warrancy__registration-form_items">
+            <div class="warrancy__registration-form-item">
+              <p class="warrancy__registration-form-item-title">По телефону:</p>
+              <a href="tel:+74852680021" class="warrancy__registration-form-item-link">+7(4852) 68-00-21 </a>
+            </div>
+            <div class="warrancy__registration-form-item">
+              <p class="warrancy__registration-form-item-title">Электронной почте:</p>
+              <a href="mailto:info@rodmix.ru" class="warrancy__registration-form-item-link warrancy__registration-form-item-link_red">info@rodmix.ru </a>
+            </div>
+          </div>
+
+          <button class="btn btn_arrow warrancy__btn-contact warrancy__btn-contact_hide-640">
+            Связаться по гарантии
+            <span class="icon icon-arrow-short warrancy__btn-icon"></span>
+            <span class="icon icon-arrow-wide warrancy__btn-icon"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Сервис -->
+    <!-- TODO: Закончить здесь -->
+    <section class="block-section">
+      <div class="block-section__wrapper">
+        <div class="ui-service">
+          <div class="ui-service__wrapper">
+            <div class="ui-service__items">
+              <div class="ui-service__item">
+                <p class="ui-service__item-title">Аренда сверлильных станков</p>
+                <div class="ui-service__item-description">
+                  <p class="ui-service__item-text">Для решения разовых задач по изготовлению отверстий в металле, предлагаем вам воспользоваться услугой «Аренда сверлильного станка». Наши специалисты подберут для вас оптимальное оборудование. Возможна аренда на часы.</p>
+                </div>
+                <div class="ui-service__list">
+                  <p class="ui-service__list-title">Доступные сверлильные станки</p>
+                  <ul class="ui-service__list-items">
+                    <li class="ui-service__list-item"><span class="icon icon-simple-short-arrow-right ui-service__list-item-icon"></span> Kornor MDK-35E</li>
+                    <li class="ui-service__list-item"><span class="icon icon-simple-short-arrow-right ui-service__list-item-icon"></span> Kornor MDK-60E</li>
+                    <li class="ui-service__list-item"><span class="icon icon-simple-short-arrow-right ui-service__list-item-icon"></span> Kornor MDK-60ET</li>
+                    <li class="ui-service__list-item"><span class="icon icon-simple-short-arrow-right ui-service__list-item-icon"></span> Kornor MDK-80E</li>
+                  </ul>
+                </div>
+                <button class="ui-btn ui-service__item-btn">Заказать заточку</button>
+              </div>
+
+              <div class="ui-service__item">
+                <p class="ui-service__item-title">Заточка сверлильных станков</p>
+                <div class="ui-service__item-description">
+                  <p class="ui-service__item-text">Услуга "Заточка сверел HSS" позволяет вам использовать затупившиеся сверла HSS от 5 до 10 раз в зависимости от длины сверла. Благодаря заточке вы снижаете издержки и повышаете свою конкурентоспособность.</p>
+                  <p class="ui-service__item-text">Заточка выполняется на самом новом оборудовании, сертифицированным специалистом, что гарантирует вам высокую точность и надежность использования в дальнейшем!</p>
+                  <p class="ui-service__item-text">Более подробно <a href="#">почитать про заточку корончатых сверл</a> вы можете в нашем <a href="#">блоге</a></p>
+                </div>
+                <button class="ui-btn ui-service__item-btn">Заказать заточку</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

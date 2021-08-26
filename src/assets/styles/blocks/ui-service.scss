@@ -1,0 +1,217 @@
+// TODO: Доработать адаптивность, начиная с 480
+.ui-service {
+  &__wrapper {
+  }
+  &__items {
+    @media (min-width: 480px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 15px;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+  &__item {
+    color: #454545;
+    &:not(:last-child) {
+      margin-bottom: 35px;
+      @media (min-width: 480px) {
+        margin-bottom: 0;
+      }
+      @media (min-width: 540px) {
+      }
+      @media (min-width: 640px) {
+      }
+      @media (min-width: 768px) {
+      }
+      @media (min-width: 1020px) {
+      }
+      @media (min-width: 1430px) {
+      }
+    }
+    @media (min-width: 480px) {
+      display: flex;
+      flex-direction: column;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+  &__item-title {
+    margin-bottom: 11px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    @media (min-width: 480px) {
+      margin-bottom: 23px;
+      font-size: 20px;
+      line-height: 23px;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+  &__item-description {
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 25px;
+    @media (min-width: 480px) {
+      font-size: 12px;
+      line-height: 24px;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+  &__item-text {
+    @media (min-width: 480px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+  &__item-text a {
+    text-decoration: underline;
+    color: $red;
+  }
+  &__list {
+    margin-bottom: 20px;
+    @media (min-width: 480px) {
+      margin-bottom: 30px;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+  &__list-title {
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 200%;
+    color: #454545;
+    @media (min-width: 480px) {
+      margin-bottom: 15px;
+      font-size: 14px;
+      line-height: 28px;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+  &__list-items {
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+  &__list-item {
+    display: flex;
+    font-size: 14px;
+    line-height: 28px;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+  &__list-item-icon {
+    margin-right: 24px;
+    color: $red;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+  &__item-btn {
+    width: 100%;
+    @media (min-width: 480px) {
+      margin-top: auto;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+}
