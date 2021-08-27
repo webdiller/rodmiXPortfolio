@@ -185,3 +185,36 @@ export function allMaterialsSlider() {
     console.log('handle error', error);
   }
 };
+
+export function ourProductionSlider() {
+  try {
+    const ourProduction = document.getElementById('ourProduction');
+    if (ourProduction && window.innerWidth >= 640) {
+      const swiperOptions = {
+        slidesPerView: 3,
+        spaceBetween: 11,
+        breakpoints: {
+          768: {
+            spaceBetween: 15
+          },
+          1430: {
+            spaceBetween: 30
+          }
+        },
+        on: {
+          init: function () {
+            console.log('ourProduction initialized');
+          }
+        },
+        navigation: {
+          nextEl: '.our-production__navigation .swiper-button-next',
+          prevEl: '.our-production__navigation .swiper-button-prev'
+        },
+      };
+      return new Swiper(ourProduction, swiperOptions);
+    }
+  } catch (error) {
+    console.log('handle error', error);
+  }
+};
+

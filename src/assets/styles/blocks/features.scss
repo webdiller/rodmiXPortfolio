@@ -21,19 +21,19 @@
     @media (min-width: 640px) {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 10px;
-      grid-row-gap: 60px;
+      column-gap: 10px;
+      row-gap: 60px;
     }
     @media (min-width: 768px) {
-      grid-column-gap: 15px;
+      column-gap: 15px;
     }
     @media (min-width: 1020px) {
-      grid-column-gap: 20px;
-      grid-row-gap: 50px;
+      column-gap: 20px;
+      row-gap: 50px;
     }
     @media (min-width: 1430px) {
-      grid-column-gap: 30px;
-      grid-row-gap: 80px;
+      column-gap: 30px;
+      row-gap: 80px;
     }
   }
 

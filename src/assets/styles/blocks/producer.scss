@@ -246,23 +246,23 @@
   &__certifications {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 10px;
+    column-gap: 10px;
     @media (min-width: 480px) {
-      grid-column-gap: 15px;
+      column-gap: 15px;
     }
     @media (min-width: 640px) {
       grid-template-columns: 160px 160px;
-      grid-column-gap: 10px;
+      column-gap: 10px;
     }
     @media (min-width: 768px) {
-      grid-column-gap: 40px;
+      column-gap: 40px;
     }
     @media (min-width: 1020px) {
-      grid-column-gap: 15px;
+      column-gap: 15px;
     }
     @media (min-width: 1430px) {
       grid-template-columns: 210px 210px;
-      grid-column-gap: 30px;
+      column-gap: 30px;
       margin-top: 70px;
     }
   }

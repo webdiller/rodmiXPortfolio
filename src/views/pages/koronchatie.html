@@ -318,6 +318,75 @@
       </div>
     </div>
 
+    <div class="ui-sizes">
+      <div class="ui-sizes__wrapper">
+        <div class="ui-sizes__table">
+
+          <div class="ui-sizes__head">
+            <div class="ui-sizes__head-col">Артикул One-touch</div>
+            <div class="ui-sizes__head-col">Артикул Weldon</div>
+            <div class="ui-sizes__head-col"></div>
+            <div class="ui-sizes__head-col">Глубина сверления, мм</div>
+            <div class="ui-sizes__head-col">Диаметр, мм</div>
+            <div class="ui-sizes__head-col"></div>
+          </div>
+
+          <div class="ui-sizes__body">
+
+            <!---------------------------- PARENT ROW ---------------------------->
+            <div class="ui-sizes__body-row">
+              <div class="ui-sizes__body-col">101500XX</div>
+              <div class="ui-sizes__body-col">105300XX</div>
+              <div class="ui-sizes__body-col">
+                <picture class="ui-sizes__picture">
+                  <source srcset="./assets/images/table-img-1.webp" type="image/webp" />
+                  <img class="ui-sizes__img" src="./assets/images/table-img-1.png" alt="" />
+                </picture>
+              </div>
+              <div class="ui-sizes__body-col">30 мм</div>
+              <div class="ui-sizes__body-col">12-100 мм</div>
+              <div class="ui-sizes__body-col"><span class="icon icon-arrow-down ui-sizes__arrow"></span></div>
+            </div>
+
+            <!---------------------------- CHILD ROW ---------------------------->
+            <div class="ui-sizes__body-row ui-sizes__body-row_child">
+              <div class="ui-sizes__head">
+                <div class="ui-sizes__head-col">Артикул One-touch</div>
+                <div class="ui-sizes__head-col">Артикул Weldon</div>
+                <div class="ui-sizes__head-col">Диаметр, мм</div>
+              </div>
+              <div class="ui-sizes__body ui-sizes__body_inner">
+                <div class="ui-sizes__body-row">
+                  <div class="ui-sizes__body-col">10150012</div>
+                  <div class="ui-sizes__body-col">10350012</div>
+                  <div class="ui-sizes__body-col">12 мм</div>
+                </div>
+
+                <div class="ui-sizes__body-row">
+                  <div class="ui-sizes__body-col">10150012</div>
+                  <div class="ui-sizes__body-col">10350012</div>
+                  <div class="ui-sizes__body-col">13 мм</div>
+                </div>
+
+                <div class="ui-sizes__body-row">
+                  <div class="ui-sizes__body-col">10150012</div>
+                  <div class="ui-sizes__body-col">10350012</div>
+                  <div class="ui-sizes__body-col">14 мм</div>
+                </div>
+
+                <div class="ui-sizes__body-row">
+                  <div class="ui-sizes__body-col">10150012</div>
+                  <div class="ui-sizes__body-col">10350012</div>
+                  <div class="ui-sizes__body-col">15 мм</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Применение Rodmix HSS -->
     <div class="ui-application">
       <div class="ui-application__table">
@@ -452,7 +521,7 @@
     <div class="ui-reviews">
       <div id="ourReviews" class="ui-reviews__swiper swiper-container">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide our-production__slide">
             <div class="ui-reviews__img-wrapper">
               <picture class="ui-reviews__picture">
                 <source srcset="./assets/images/doc-img.webp" type="image/webp" />
@@ -466,7 +535,7 @@
             </div>
           </div>
 
-          <div class="swiper-slide">
+          <div class="swiper-slide our-production__slide">
             <div class="ui-reviews__img-wrapper">
               <picture class="ui-reviews__picture">
                 <source srcset="./assets/images/doc-img.webp" type="image/webp" />
@@ -561,117 +630,126 @@
     <section class="our-production">
       <div class="container our-production__wrapper">
         <div class="title-with-subtitle our-production__title-with-subtitle">
-          <h2 class="our-production__subtitle subtitle">Надежность проверенная делом</h2>
-          <p class="our-production__title title1">Наша продукция</p>
-          <button data-id="orderModal" class="btn-outline title-with-subtitle__btn">запросить цены</button>
+          <p class="our-production__title title1 title1_index">Наша продукция</p>
         </div>
 
-        <nav class="our-production__list">
-          <a href="#" class="our-production__list-item">
-            <span class="our-production__list-title">Корончатые сверла</span>
-            <span class="our-production__list-description">Небольшое описание товара или его характеристика</span>
-            <span class="icon icon-arrow-short our-production__list-icon"></span>
+        <div id="ourProduction" class="swiper our-production__swiper">
+          <div class="swiper-wrapper our-production__swiper-wrapper">
+            <a href="#" class="swiper-slide ui-our-product our-production__slide">
+              <span class="ui-our-product__title">Корончатые сверла</span>
+              <span class="ui-our-product__description">Небольшое описание товара или его характеристика</span>
+              <span class="icon icon-arrow-short ui-our-product__icon"></span>
 
-            <picture class="our-production__list-picture">
-              <source srcset="./assets/images/production-list__item.webp" type="image/webp" />
-              <img loading="lazy" decoding="async" class="our-production__list-image" src="./assets/images/production-list__item001.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
-            </picture>
-          </a>
+              <picture class="ui-our-product__picture">
+                <source srcset="./assets/images/production-list__item.webp" type="image/webp" />
+                <img loading="lazy" decoding="async" class="ui-our-product__img" src="./assets/images/production-list__item001.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+              </picture>
+            </a>
 
-          <a href="#" class="our-production__list-item">
-            <span class="our-production__list-title">Борфрезы</span>
-            <span class="our-production__list-description">Небольшое описание товара или его характеристика</span>
-            <span class="icon icon-arrow-short our-production__list-icon"></span>
+            <a href="#" class="swiper-slide ui-our-product our-production__slide">
+              <span class="ui-our-product__title">Борфрезы</span>
+              <span class="ui-our-product__description">Небольшое описание товара или его характеристика</span>
+              <span class="icon icon-arrow-short ui-our-product__icon"></span>
 
-            <picture class="our-production__list-picture">
-              <source srcset="./assets/images/production-list__item002.webp" type="image/webp" />
-              <img loading="lazy" decoding="async" class="our-production__list-image" src="./assets/images/production-list__item0002.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
-            </picture>
-          </a>
+              <picture class="ui-our-product__picture">
+                <source srcset="./assets/images/production-list__item002.webp" type="image/webp" />
+                <img loading="lazy" decoding="async" class="ui-our-product__img" src="./assets/images/production-list__item0002.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+              </picture>
+            </a>
 
-          <a href="#" class="our-production__list-item">
-            <span class="our-production__list-title">Твердосплавные диски</span>
-            <span class="our-production__list-description">Небольшое описание товара или его характеристика</span>
-            <span class="icon icon-arrow-short our-production__list-icon"></span>
+            <a href="#" class="swiper-slide ui-our-product our-production__slide">
+              <span class="ui-our-product__title">Твердосплавные диски</span>
+              <span class="ui-our-product__description">Небольшое описание товара или его характеристика</span>
+              <span class="icon icon-arrow-short ui-our-product__icon"></span>
 
-            <picture class="our-production__list-picture">
-              <source srcset="./assets/images/production-list__item003.webp" type="image/webp" />
-              <img loading="lazy" decoding="async" class="our-production__list-image" src="./assets/images/production-list__item003.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
-            </picture>
-          </a>
+              <picture class="ui-our-product__picture">
+                <source srcset="./assets/images/production-list__item003.webp" type="image/webp" />
+                <img loading="lazy" decoding="async" class="ui-our-product__img" src="./assets/images/production-list__item003.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+              </picture>
+            </a>
 
-          <a href="#" class="our-production__list-item">
-            <span class="our-production__list-title">Адаптеры</span>
+            <a href="#" class="swiper-slide ui-our-product our-production__slide">
+              <span class="ui-our-product__title">Адаптеры</span>
 
-            <span class="our-production__list-description">Небольшое описание товара или его характеристика</span>
-            <span class="icon icon-arrow-short our-production__list-icon"></span>
+              <span class="ui-our-product__description">Небольшое описание товара или его характеристика</span>
+              <span class="icon icon-arrow-short ui-our-product__icon"></span>
 
-            <picture class="our-production__list-picture">
-              <source srcset="./assets/images/production-list__item004.webp" type="image/webp" />
-              <img loading="lazy" decoding="async" class="our-production__list-image" src="./assets/images/production-list__item004.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
-            </picture>
-          </a>
+              <picture class="ui-our-product__picture">
+                <source srcset="./assets/images/production-list__item004.webp" type="image/webp" />
+                <img loading="lazy" decoding="async" class="ui-our-product__img" src="./assets/images/production-list__item004.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+              </picture>
+            </a>
 
-          <a href="#" class="our-production__list-item">
-            <span class="our-production__list-title">Концферзы</span>
+            <a href="#" class="swiper-slide ui-our-product our-production__slide">
+              <span class="ui-our-product__title">Концферзы</span>
 
-            <span class="our-production__list-description">Небольшое описание товара или его характеристика</span>
-            <span class="icon icon-arrow-short our-production__list-icon"></span>
+              <span class="ui-our-product__description">Небольшое описание товара или его характеристика</span>
+              <span class="icon icon-arrow-short ui-our-product__icon"></span>
 
-            <picture class="our-production__list-picture">
-              <source srcset="./assets/images/production-list__item005.webp" type="image/webp" />
-              <img loading="lazy" decoding="async" class="our-production__list-image" src="./assets/images/production-list__item005.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
-            </picture>
-          </a>
+              <picture class="ui-our-product__picture">
+                <source srcset="./assets/images/production-list__item005.webp" type="image/webp" />
+                <img loading="lazy" decoding="async" class="ui-our-product__img" src="./assets/images/production-list__item005.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+              </picture>
+            </a>
 
-          <a href="#" class="our-production__list-item">
-            <span class="our-production__list-title">Метчики</span>
+            <a href="#" class="swiper-slide ui-our-product our-production__slide">
+              <span class="ui-our-product__title">Метчики</span>
 
-            <span class="our-production__list-description">Небольшое описание товара или его характеристика</span>
-            <span class="icon icon-arrow-short our-production__list-icon"></span>
+              <span class="ui-our-product__description">Небольшое описание товара или его характеристика</span>
+              <span class="icon icon-arrow-short ui-our-product__icon"></span>
 
-            <picture class="our-production__list-picture">
-              <source srcset="./assets/images/production-list__item006.webp" type="image/webp" />
-              <img loading="lazy" decoding="async" class="our-production__list-image" src="./assets/images/production-list__item006.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
-            </picture>
-          </a>
+              <picture class="ui-our-product__picture">
+                <source srcset="./assets/images/production-list__item006.webp" type="image/webp" />
+                <img loading="lazy" decoding="async" class="ui-our-product__img" src="./assets/images/production-list__item006.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+              </picture>
+            </a>
 
-          <a href="#" class="our-production__list-item">
-            <span class="our-production__list-title">Ступенчатые сверла</span>
-            <span class="our-production__list-description">Небольшое описание товара или его характеристика</span>
-            <span class="icon icon-arrow-short our-production__list-icon"></span>
+            <a href="#" class="swiper-slide ui-our-product our-production__slide">
+              <span class="ui-our-product__title">Ступенчатые сверла</span>
+              <span class="ui-our-product__description">Небольшое описание товара или его характеристика</span>
+              <span class="icon icon-arrow-short ui-our-product__icon"></span>
 
-            <picture class="our-production__list-picture">
-              <source srcset="./assets/images/production-list__item007.webp" type="image/webp" />
-              <img loading="lazy" decoding="async" class="our-production__list-image" src="./assets/images/production-list__item007.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
-            </picture>
-          </a>
+              <picture class="ui-our-product__picture">
+                <source srcset="./assets/images/production-list__item007.webp" type="image/webp" />
+                <img loading="lazy" decoding="async" class="ui-our-product__img" src="./assets/images/production-list__item007.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+              </picture>
+            </a>
 
-          <a href="#" class="our-production__list-item">
-            <span class="our-production__list-title">Магнитные станки</span>
-            <span class="our-production__list-description">Небольшое описание товара или его характеристика</span>
-            <span class="icon icon-arrow-short our-production__list-icon"></span>
+            <a href="#" class="swiper-slide ui-our-product our-production__slide">
+              <span class="ui-our-product__title">Магнитные станки</span>
+              <span class="ui-our-product__description">Небольшое описание товара или его характеристика</span>
+              <span class="icon icon-arrow-short ui-our-product__icon"></span>
 
-            <picture class="our-production__list-picture">
-              <source srcset="./assets/images/production-list__item008.webp" type="image/webp" />
-              <img loading="lazy" decoding="async" class="our-production__list-image" src="./assets/images/production-list__item008.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
-            </picture>
-          </a>
+              <picture class="ui-our-product__picture">
+                <source srcset="./assets/images/production-list__item008.webp" type="image/webp" />
+                <img loading="lazy" decoding="async" class="ui-our-product__img" src="./assets/images/production-list__item008.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+              </picture>
+            </a>
 
-          <a href="#" class="our-production__list-item">
-            <span class="our-production__list-title">Зенкер</span>
+            <a href="#" class="swiper-slide ui-our-product our-production__slide">
+              <span class="ui-our-product__title">Зенкер</span>
 
-            <span class="our-production__list-description">Небольшое описание товара или его характеристика</span>
-            <span class="icon icon-arrow-short our-production__list-icon"></span>
+              <span class="ui-our-product__description">Небольшое описание товара или его характеристика</span>
+              <span class="icon icon-arrow-short ui-our-product__icon"></span>
 
-            <picture class="our-production__list-picture">
-              <source srcset="./assets/images/production-list__item009.webp" type="image/webp" />
-              <img loading="lazy" decoding="async" class="our-production__list-image" src="./assets/images/production-list__item009.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
-            </picture>
-          </a>
+              <picture class="ui-our-product__picture">
+                <source srcset="./assets/images/production-list__item009.webp" type="image/webp" />
+                <img loading="lazy" decoding="async" class="ui-our-product__img" src="./assets/images/production-list__item009.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+              </picture>
+            </a>
+          </div>
+        </div>
 
-          <a href="#" class="btn-outline our-production__list-btn">запросить цены </a>
-        </nav>
+        <div class="our-production__navigation">
+          <div class="swiper-button-prev"><span class="icon icon-icon-triangle-left"></span></div>
+          <div class="swiper-button-next"><span class="icon icon-icon-triangle-right"></span></div>
+        </div>
+
+        <!-- TODO: Законсить здесь -->
+        <div class="our-production__actions">
+          <button class="our-production__action our-production__action_red">Просмотреть продукцию</button>
+          <button class="our-production__action"><span class="our-production__hidden">Узнайте</span> Как стать нашим партнером</button>
+        </div>
       </div>
     </section>
 
