@@ -589,7 +589,7 @@ input:focus {
 
   &::before {
     position: absolute;
-    content: '\E001';
+    content: '\E002';
     top: 50%;
     right: 30px;
     transform: translateY(-50%);
@@ -603,11 +603,37 @@ input:focus {
     text-transform: none;
     font-size: 12px;
     @media (min-width: 768px) {
-      content: '\E002';
+      content: '\E003';
       font-size: 10px;
     }
     @media (min-width: 1430px) {
       font-size: 15px;
+    }
+  }
+}
+
+.section {
+  &__wrapper {
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__content {
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+      width: 50%;
+      flex: 0 0 50%;
+      margin-right: 15px;
+    }
+  }
+  &__form {
+    @media (min-width: 1430px) {
+      min-width: 450px;
+      flex: 0 0 450px;
     }
   }
 }

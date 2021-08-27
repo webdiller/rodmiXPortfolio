@@ -1,0 +1,152 @@
+.ui-sizes {
+  &__wrapper {
+  }
+
+  &__table {
+    font-size: 12px;
+    @media (min-width: 480px) {
+      font-size: 14px;
+    }
+    &_child {
+      background-color: #f3f3f3;
+
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+
+      &.active {
+        max-height: 100%;
+        overflow: auto;
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .ui-sizes__head {
+        height: 60px;
+        margin-bottom: 0;
+      }
+      .ui-sizes__head-col:nth-child(3) {
+        display: inline-flex;
+      }
+    }
+  }
+
+  &__head {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    margin-bottom: 10px;
+    @media (min-width: 640px) {
+      grid-template-columns: repeat(5, 20%);
+    }
+  }
+
+  &__head-col {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-weight: bold;
+    padding: 0 5px;
+    @media (min-width: 640px) {
+      text-align: left;
+      &:nth-child(1) {
+          padding-left: 30px;
+      }
+    }
+    &:nth-child(3) {
+      display: none;
+      @media (min-width: 640px) {
+        display: inline-flex;
+      }
+    }
+    &:nth-child(5) ~ div {
+      display: none;
+      @media (min-width: 640px) {
+        display: inline-flex;
+      }
+    }
+    &:nth-child(6) ~ div {
+      @media (min-width: 640px) {
+        display: none;
+      }
+    }
+  }
+
+  &__body {
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    &_inner {
+      padding-bottom: 25px;
+      background-color: #f3f3f3;
+      border-radius: 0 0 5px 5px;
+      border: 0;
+      .ui-sizes__body-row {
+        height: 30px;
+        border: 0;
+        &:hover {
+          border-color: transparent;
+          cursor: auto;
+        }
+      }
+      .ui-sizes__body-col:nth-child(3) {
+        display: inline-flex;
+      }
+    }
+  }
+
+  &__body-row {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    height: 60px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    @media (min-width: 640px) {
+      grid-template-columns: repeat(5, 20%);
+    }
+    &.active {
+      border-color: $red;
+    }
+    &:hover {
+      border-color: $red;
+    }
+  }
+
+  &__body-col {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    &:nth-child(3) {
+      display: none;
+      @media (min-width: 640px) {
+        display: inline-flex;
+      }
+    }
+    &:nth-child(5) ~ div {
+      display: none;
+    }
+    &:nth-child(6) ~ div {
+      @media (min-width: 640px) {
+        display: none;
+      }
+    }
+  }
+
+  &__picture {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &__img {
+    max-width: 100%;
+    width: auto;
+    height: 24px;
+  }
+
+  &__arrow {
+  }
+}
