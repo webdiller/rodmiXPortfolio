@@ -4,7 +4,6 @@ export function ourFeatures() {
   console.log("ourFeatures")
   try {
     const featuresSwiper = document.getElementById('featuresSwiper');
-    //console.log(featuresSwiper)
     if (featuresSwiper) {
       const swiperOptions = {
         slidesPerView: 1,
@@ -136,6 +135,51 @@ export function ourReviewsSlider() {
         }
       };
       return new Swiper(ourReviews, swiperOptions);
+    }
+  } catch (error) {
+    console.log('handle error', error);
+  }
+};
+
+export function allMaterialsSlider() {
+  try {
+    const allMaterials = document.getElementById('allMaterials');
+    if (allMaterials) {
+      const swiperOptions = {
+        slidesPerView: 1.3,
+        spaceBetween: 10,
+        breakpoints: {
+          480: {
+            spaceBetween: 19
+          },
+          540: {
+            slidesPerView: 2,
+            spaceBetween: 15
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 10
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 15
+          },
+          1020: {
+            slidesPerView: 3,
+            spaceBetween: 15
+          },
+          1430: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          }
+        },
+        on: {
+          init: function () {
+            console.log('allMaterials initialized');
+          }
+        }
+      };
+      return new Swiper(allMaterials, swiperOptions);
     }
   } catch (error) {
     console.log('handle error', error);

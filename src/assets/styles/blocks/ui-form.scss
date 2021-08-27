@@ -128,7 +128,7 @@
       }
       @media (min-width: 1430px) {
       }
-      &[required] {
+      &[data-required] {
         position: relative;
         &::after {
           position: relative;
