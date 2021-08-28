@@ -11,6 +11,30 @@
     }
   }
 
+  &__header {
+  }
+
+  &__title2 {
+    margin-bottom: 20px;
+    @media (min-width: 480px) {
+      margin-bottom: 26px;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      margin-bottom: 31px;
+    }
+    @media (min-width: 768px) {
+      margin-bottom: 39px;
+    }
+    @media (min-width: 1020px) {
+      margin-bottom: 47px;
+    }
+    @media (min-width: 1430px) {
+      margin-bottom: 58px;
+    }
+  }
+
   &__swiper-container {
     @media (min-width: 640px) {
       overflow: visible;
