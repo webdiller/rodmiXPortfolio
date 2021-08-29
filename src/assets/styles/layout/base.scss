@@ -681,3 +681,14 @@ input:focus {
     }
   }
 }
+
+.show-block-1430 {
+  display: none;
+  @media (min-width: 1430px) {
+    display: block;
+  }
+}
+
+.disable-mb {
+  margin-bottom: 0;
+}

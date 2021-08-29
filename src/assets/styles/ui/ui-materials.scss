@@ -1,17 +1,26 @@
 .ui-materials {
-  overflow-x: hidden;
-  @media (min-width: 480px) {
+  &__title-with-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    @media (min-width: 480px) {
+      margin-bottom: 18px;
+    }
+    @media (min-width: 640px) {
+      justify-content: space-between;
+    }
+    @media (min-width: 768px) {
+      margin-bottom: 16px;
+    }
+    @media (min-width: 1020px) {
+      margin-bottom: 23px;
+    }
   }
-  @media (min-width: 540px) {
+
+  &__title1 {
   }
-  @media (min-width: 640px) {
-  }
-  @media (min-width: 768px) {
-  }
-  @media (min-width: 1020px) {
-  }
-  @media (min-width: 1430px) {
-  }
+
   &__wrapper {
     text-align: left;
     @media (min-width: 480px) {
@@ -27,6 +36,7 @@
     @media (min-width: 1430px) {
     }
   }
+
   &__all-links {
     font-weight: 600;
     font-size: 12px;
@@ -51,6 +61,7 @@
     @media (min-width: 1430px) {
     }
   }
+
   &__all-links_top {
     text-align: right;
     display: none;
@@ -68,6 +79,7 @@
       display: block;
     }
   }
+
   &__all-links_bottom {
     @media (min-width: 480px) {
     }
@@ -83,8 +95,10 @@
     @media (min-width: 1430px) {
     }
   }
+
   &__swiper {
     margin-bottom: 16px;
+    overflow-x: hidden;
     @media (min-width: 480px) {
       margin-bottom: 26px;
     }
