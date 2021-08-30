@@ -1,6 +1,8 @@
 import { yamapInit } from './modules/yamap.js';
 import { ourFeatures, ourPublications, ourReviewsSlider, sverlaSlider, allMaterialsSlider, ourProductionSlider } from './modules/slider.js';
 import { defaultScripts } from './modules/base.js';
+import { uiSizes } from './modules/uiSizes.js';
+import { uiForms } from './modules/uiForm.js';
 
 let counterSwiperFeatures = 0;
 let counterSwiperPublications = 0;
@@ -47,18 +49,5 @@ sverlaSlider();
 ourReviewsSlider();
 allMaterialsSlider();
 ourProductionSlider();
-
-const dataTables = document.querySelectorAll('[data-sizes]');
-if (dataTables.length > 0) {
-  dataTables.forEach((element) => {
-    const rows = element.querySelectorAll('.ui-sizes__body-row');
-    rows.forEach((row) => {
-      if (!row.parentElement.classList.contains('ui-sizes__body_inner')) {
-        row.addEventListener('click', function () {
-          this.classList.toggle('active')
-          row.nextElementSibling.classList.toggle('active');
-        });
-      }
-    });
-  });
-}
+uiSizes()
+uiForms();

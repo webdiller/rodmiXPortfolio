@@ -1,9 +1,32 @@
 // Компонент формы. Иcsходник в корончатых
 .ui-form {
-  @media (min-width: 1430px) {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  @media (min-width: 480px) {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  @media (min-width: 540px) {
+    margin-top: 40px;
+  }
+  @media (min-width: 640px) {
+    margin-top: 60px;
+    margin-bottom: 0;
+  }
+  @media (min-width: 768px) {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  @media (min-width: 1020px) {
     position: sticky;
-    top: calc(119px + 20px);
     margin-top: 129px;
+    top: 10px;
+    margin-bottom: 0;
+  }
+  @media (min-width: 1430px) {
+  }
+  @media (min-width: 1920px) {
+    top: calc(119px + 20px);
   }
   &__wrapper {
     padding: 28px;
@@ -26,6 +49,9 @@
   }
 
   &__title {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 29px;
     font-weight: bold;
     font-size: 20px;
@@ -33,6 +59,7 @@
     text-align: center;
     color: #454545;
     @media (min-width: 480px) {
+      max-width: unset;
     }
     @media (min-width: 540px) {
       text-align-last: left;
@@ -68,12 +95,32 @@
   }
 
   &__fields {
-    margin-bottom: 19px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     column-gap: 15px;
     row-gap: 16px;
+
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: all .3s ease;
+
+    &.active {
+      max-height: 100%;
+      opacity: 1;
+      visibility: visible;
+      overflow: auto;
+      margin-bottom: 19px;
+    }
+
     @media (min-width: 480px) {
+      max-height: 100%;
+      opacity: 1;
+      visibility: visible;
+      overflow: auto;
+      margin-bottom: 19px;
+      grid-template-columns: 1fr 1fr;
     }
     @media (min-width: 540px) {
     }
@@ -87,8 +134,10 @@
     }
     @media (min-width: 1020px) {
       column-gap: 18px;
+      grid-template-columns: 1fr;
     }
     @media (min-width: 1430px) {
+      grid-template-columns: 1fr 1fr;
       margin-bottom: 25px;
       display: block;
     }
@@ -174,11 +223,12 @@
     }
   }
 
-  &__btn-submit {
-    width: 66%;
+  &__btn {
+    width: 100%;
     margin: 0 auto;
     font-size: 16px;
     @media (min-width: 480px) {
+      width: 66%;
     }
     @media (min-width: 540px) {
     }
@@ -188,10 +238,21 @@
       height: 60px;
     }
     @media (min-width: 1020px) {
+      width: 100%;
     }
     @media (min-width: 1430px) {
-      width: 100%;
       font-size: 18px;
+    }
+  }
+  &__btn-hide-480 {
+    @media (min-width: 480px) {
+      display: none;
+    }
+  }
+  &__btn-show-480 {
+    display: none;
+    @media (min-width: 480px) {
+      display: inline-block;
     }
   }
 }
