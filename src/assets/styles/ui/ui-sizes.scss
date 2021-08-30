@@ -5,6 +5,10 @@
     &_mb-0 {
       margin-bottom: 0;
     }
+    &_my-0 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 
   &__title2 {
@@ -317,6 +321,25 @@
         display: inline-flex;
         justify-content: center;
       }
+    }
+  }
+
+  &_four-accessories {
+    .ui-sizes__head {
+      grid-template-columns: repeat(4, 1fr) 30px;
+    }
+    .ui-sizes__body-row {
+      grid-template-columns: repeat(4, 1fr) 30px;
+    }
+  }
+
+  &_seven {
+    .ui-sizes__head {
+      grid-template-columns: repeat(5, 1fr)
+    }
+
+    .ui-sizes__body-row {
+      grid-template-columns: repeat(5, 1fr)
     }
   }
 }

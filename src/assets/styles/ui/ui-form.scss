@@ -2,8 +2,11 @@
 .ui-form {
   @media (min-width: 1430px) {
     position: sticky;
-    top: calc(119px + 20px);
     margin-top: 129px;
+    top: 10px;
+  }
+  @media (min-width: 1920px) {
+    top: calc(119px + 20px);
   }
   &__wrapper {
     padding: 28px;
