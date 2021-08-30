@@ -122,7 +122,7 @@
         <div class="section__content">
           <!-- ОПИСАНИЕ ПРОДУКТА СО СЛАЙДЕРОМ. Исходник в корончатых сверлах -->
           <div class="ui-product">
-            <div class="ui-product__wrapper">
+            <div class="ui-product__wrapper ui-product__wrapper_mt-0">
               <div class="ui-product__header">
                 <p class="title1 ui-product__title1">Корончатые сверла HSS</p>
                 <p class="show-block-1430 title2 ui-product__title2">Rodmix HSS надежные сверла</p>
@@ -562,7 +562,7 @@
             <div class="ui-form__wrapper">
               <p class="ui-form__title">Запросить цены Rodmix HSS</p>
 
-              <form class="ui-form__form">
+              <form data-ui-form class="ui-form__form">
                 <div class="ui-form__fields">
                   <div class="ui-form__field">
                     <label data-required for="orderPriceName" class="ui-form__label">ФИО:</label>
@@ -584,7 +584,7 @@
                     <textarea class="custom-input ui-form__input ui-form__input_textarea" placeholder="Текст" id="orderPriceText"></textarea>
                   </div>
                 </div>
-                <button class="btn ui-form__btn-submit">Отправить</button>
+                <button type="button" class="btn ui-form__btn"><span class="ui-form__btn-hide-480">Заполнить форму</span> <span class="ui-form__btn-show-480">Отправить</span></button>
               </form>
             </div>
           </div>
@@ -880,34 +880,115 @@
           </div>
 
           <article class="ui-sizes ui-sizes_seven">
-            <div class="ui-sizes__wrapper">
+            <div class="ui-sizes__wrapper ui-sizes__wrapper_mb-0">
               <p class="title2 ui-sizes__title2">Держатели Rodmix</p>
-              <div data-sizes="" class="ui-sizes__table">
+              <div class="ui-sizes__scroll-wrapper">
+                <div data-sizes="" class="ui-sizes__table">
+                  <div class="ui-sizes__head">
+                    <div class="ui-sizes__head-col">Артикул</div>
+                    <div class="ui-sizes__head-col"></div>
+                    <div class="ui-sizes__head-col">Наименование</div>
+                    <div class="ui-sizes__head-col">Подключение</div>
+                    <div class="ui-sizes__head-col">Способ охлаждения</div>
+                    <div class="ui-sizes__head-col">Глубина, мм</div>
+                    <div class="ui-sizes__head-col"></div>
+                  </div>
+
+                  <div class="ui-sizes__body">
+                    <!-- 1 -->
+                    <div class="ui-sizes__body-row">
+                      <div class="ui-sizes__body-col">101300XX</div>
+                      <div class="ui-sizes__body-col">
+                        <picture class="ui-sizes__picture">
+                          <source srcset="./assets/images/table-img-7.webp" type="image/webp" />
+                          <img class="ui-sizes__img" src="./assets/images/table-img-7.png" alt="" />
+                        </picture>
+                      </div>
+                      <div class="ui-sizes__body-col">Держатель сверла Weldon 19 MT2*50*19,02</div>
+                      <div class="ui-sizes__body-col">Morse 2/3/4</div>
+                      <div class="ui-sizes__body-col">Внутренее</div>
+                      <div class="ui-sizes__body-col">50 мм</div>
+                      <div class="ui-sizes__body-col"><span class="icon icon-arrow-down ui-sizes__arrow"></span></div>
+                    </div>
+
+                    <div class="ui-sizes__table ui-sizes__table_child">
+                      <div class="ui-sizes__head">
+                        <div class="ui-sizes__head-col">Артикул</div>
+                        <div class="ui-sizes__head-col">Наименование</div>
+                      </div>
+                      <div class="ui-sizes__body ui-sizes__body_inner">
+                        <div class="ui-sizes__body-row">
+                          <div class="ui-sizes__body-col">10150012</div>
+                          <div class="ui-sizes__body-col">10350012</div>
+                        </div>
+
+                        <div class="ui-sizes__body-row">
+                          <div class="ui-sizes__body-col">10150012</div>
+                          <div class="ui-sizes__body-col">10350012</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="ui-sizes__body-row">
+                      <div class="ui-sizes__body-col">101500XX</div>
+                      <div class="ui-sizes__body-col">
+                        <picture class="ui-sizes__picture">
+                          <source srcset="./assets/images/table-img-7.webp" type="image/webp" />
+                          <img class="ui-sizes__img" src="./assets/images/table-img-7.png" alt="" />
+                        </picture>
+                      </div>
+                      <div class="ui-sizes__body-col">Держатель сверла Weldon 19 MT2*50*19,02</div>
+                      <div class="ui-sizes__body-col">Morse 2/3/4</div>
+                      <div class="ui-sizes__body-col">Внутренее</div>
+                      <div class="ui-sizes__body-col">50 мм</div>
+                      <div class="ui-sizes__body-col"><span class="icon icon-arrow-down ui-sizes__arrow"></span></div>
+                    </div>
+
+                    <div class="ui-sizes__table ui-sizes__table_child">
+                      <div class="ui-sizes__head">
+                        <div class="ui-sizes__head-col">Артикул</div>
+                        <div class="ui-sizes__head-col">Наименование</div>
+                      </div>
+                      <div class="ui-sizes__body ui-sizes__body_inner">
+                        <div class="ui-sizes__body-row">
+                          <div class="ui-sizes__body-col">10150012</div>
+                          <div class="ui-sizes__body-col">10350012</div>
+                        </div>
+
+                        <div class="ui-sizes__body-row">
+                          <div class="ui-sizes__body-col">10150012</div>
+                          <div class="ui-sizes__body-col">10350012</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="ui-sizes ui-sizes_three-accessories">
+            <div class="ui-sizes__wrapper ui-sizes__wrapper_mb-0">
+              <p class="title2 ui-sizes__title2">Удленители Rodmix</p>
+              <div data-sizes class="ui-sizes__table">
                 <div class="ui-sizes__head">
                   <div class="ui-sizes__head-col">Артикул</div>
                   <div class="ui-sizes__head-col"></div>
                   <div class="ui-sizes__head-col">Наименование</div>
-                  <div class="ui-sizes__head-col">Подключение</div>
-                  <div class="ui-sizes__head-col">Способ охлаждения</div>
-                  <div class="ui-sizes__head-col">Глубина, мм</div>
                   <div class="ui-sizes__head-col"></div>
                 </div>
 
                 <div class="ui-sizes__body">
-
-                  <!-- 1 -->
                   <div class="ui-sizes__body-row">
                     <div class="ui-sizes__body-col">101300XX</div>
                     <div class="ui-sizes__body-col">
                       <picture class="ui-sizes__picture">
-                        <source srcset="./assets/images/table-img-7.webp" type="image/webp" />
-                        <img class="ui-sizes__img" src="./assets/images/table-img-7.png" alt="" />
+                        <source srcset="./assets/images/table-img-8.webp" type="image/webp" />
+                        <img class="ui-sizes__img" src="./assets/images/table-img-8.png" alt="" />
                       </picture>
                     </div>
-                    <div class="ui-sizes__body-col">Держатель сверла Weldon 19 MT2*50*19,02</div>
-                    <div class="ui-sizes__body-col">Morse 2/3/4</div>
-                    <div class="ui-sizes__body-col">Внутренее</div>
-                    <div class="ui-sizes__body-col">50 мм</div>
+                    <div class="ui-sizes__body-col">Удленитель на Weldon</div>
                     <div class="ui-sizes__body-col"><span class="icon icon-arrow-down ui-sizes__arrow"></span></div>
                   </div>
 
@@ -915,65 +996,34 @@
                     <div class="ui-sizes__head">
                       <div class="ui-sizes__head-col">Артикул</div>
                       <div class="ui-sizes__head-col">Наименование</div>
-                      <div class="ui-sizes__head-col">Подключение</div>
+                      <div class="ui-sizes__head-col">Диаметр, мм</div>
                     </div>
                     <div class="ui-sizes__body ui-sizes__body_inner">
-
                       <div class="ui-sizes__body-row">
                         <div class="ui-sizes__body-col">10150012</div>
-                        <div class="ui-sizes__body-col">10350012</div>
+                        <div class="ui-sizes__body-col">Удленитель на Weldon</div>
                         <div class="ui-sizes__body-col">12 мм</div>
                       </div>
 
                       <div class="ui-sizes__body-row">
                         <div class="ui-sizes__body-col">10150012</div>
-                        <div class="ui-sizes__body-col">10350012</div>
-                        <div class="ui-sizes__body-col">15 мм</div>
-                      </div>
-
-                    </div>
-                  </div>
-
-                  <!-- 2 -->
-                  <div class="ui-sizes__body-row">
-                    <div class="ui-sizes__body-col">101500XX</div>
-                    <div class="ui-sizes__body-col">
-                      <picture class="ui-sizes__picture">
-                        <source srcset="./assets/images/table-img-7.webp" type="image/webp" />
-                        <img class="ui-sizes__img" src="./assets/images/table-img-7.png" alt="" />
-                      </picture>
-                    </div>
-                    <div class="ui-sizes__body-col">Держатель сверла Weldon
-                      19 MT2*50*19,02</div>
-                    <div class="ui-sizes__body-col">Morse 2/3/4</div>
-                    <div class="ui-sizes__body-col">Внутренее</div>
-                    <div class="ui-sizes__body-col">50 мм</div>
-                    <div class="ui-sizes__body-col"><span class="icon icon-arrow-down ui-sizes__arrow"></span></div>
-                  </div>
-
-                  <div class="ui-sizes__table ui-sizes__table_child">
-                    <div class="ui-sizes__head">
-                      <div class="ui-sizes__head-col">Артикул</div>
-                      <div class="ui-sizes__head-col">Наименование</div>
-                      <div class="ui-sizes__head-col">Подключение</div>
-                    </div>
-                    <div class="ui-sizes__body ui-sizes__body_inner">
-
-                      <div class="ui-sizes__body-row">
-                        <div class="ui-sizes__body-col">10150012</div>
-                        <div class="ui-sizes__body-col">10350012</div>
+                        <div class="ui-sizes__body-col">Удленитель Weldon</div>
                         <div class="ui-sizes__body-col">12 мм</div>
                       </div>
 
                       <div class="ui-sizes__body-row">
                         <div class="ui-sizes__body-col">10150012</div>
-                        <div class="ui-sizes__body-col">10350012</div>
-                        <div class="ui-sizes__body-col">15 мм</div>
+                        <div class="ui-sizes__body-col">Удленитель на Weldon</div>
+                        <div class="ui-sizes__body-col">12 мм</div>
                       </div>
 
+                      <div class="ui-sizes__body-row">
+                        <div class="ui-sizes__body-col">10150012</div>
+                        <div class="ui-sizes__body-col">Удленитель на Weldon</div>
+                        <div class="ui-sizes__body-col">12 мм</div>
+                      </div>
                     </div>
                   </div>
-
                 </div>
               </div>
             </div>
@@ -985,7 +1035,7 @@
             <div class="ui-form__wrapper">
               <p class="ui-form__title">Запросить цены на спиральные сверла HSS</p>
 
-              <form class="ui-form__form">
+              <form data-ui-form class="ui-form__form">
                 <div class="ui-form__fields">
                   <div class="ui-form__field">
                     <label data-required for="orderPriceName" class="ui-form__label">ФИО:</label>
@@ -1007,7 +1057,7 @@
                     <textarea class="custom-input ui-form__input ui-form__input_textarea" placeholder="Текст" id="orderPriceText"></textarea>
                   </div>
                 </div>
-                <button class="btn ui-form__btn-submit">Отправить</button>
+                <button type="button" class="btn ui-form__btn"><span class="ui-form__btn-hide-480">Заполнить форму</span> <span class="ui-form__btn-show-480">Отправить</span></button>
               </form>
             </div>
           </div>

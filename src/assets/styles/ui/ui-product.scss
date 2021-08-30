@@ -168,14 +168,19 @@
     color: #454545;
     &:not(:last-child) {
       margin-bottom: 11px;
+      @media (min-width: 480px) {
+        font-size: 14px;
+      }
       @media (min-width: 540px) {
         margin-bottom: 17px;
       }
       @media (min-width: 640px) {
         margin-bottom: 20px;
+        font-size: 16px;
       }
       @media (min-width: 1020px) {
         margin-bottom: 11px;
+        font-size: 20px;
       }
       @media (min-width: 1430px) {
         margin-bottom: 28px;

@@ -1,4 +1,8 @@
 .ui-materials {
+  &__wrapper {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
   &__title-with-link {
     display: flex;
     align-items: center;

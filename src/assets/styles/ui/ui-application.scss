@@ -25,6 +25,7 @@
     display: grid;
     background-color: #ffffff;
     border: 1px solid #ececec;
+    border-bottom: 0;
     border-radius: 5px;
     grid-template-columns: repeat(2, 1fr);
     @media (min-width: 480px) {
