@@ -4,7 +4,6 @@ export function ourFeatures() {
   console.log("ourFeatures")
   try {
     const featuresSwiper = document.getElementById('featuresSwiper');
-    //console.log(featuresSwiper)
     if (featuresSwiper) {
       const swiperOptions = {
         slidesPerView: 1,
@@ -31,7 +30,6 @@ export function ourFeatures() {
   }
 };
 
-// ourPublications start
 export function ourPublications() {
   try {
     const publicationsSwiper = document.getElementById('publicationsSwiper');
@@ -66,3 +64,157 @@ export function ourPublications() {
     console.log('handle error', error);
   }
 };
+
+export function sverlaSlider() {
+  try {
+    const sverlaSlider = document.getElementById('sverlaSlider');
+    if (sverlaSlider) {
+      const swiperOptions = {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        breakpoints: {
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 15
+          },
+          540: {
+            spaceBetween: 20
+          },
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 10
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 15
+          },
+          1020: {
+            slidesPerView: 3, 
+            spaceBetween: 30
+          },
+        },
+        on: {
+          init: function () {
+            console.log('sverlaSlider initialized');
+          }
+        }
+      };
+      return new Swiper(sverlaSlider, swiperOptions);
+    }
+  } catch (error) {
+    console.log('handle error', error);
+  }
+}
+
+export function ourReviewsSlider() {
+  try {
+    const ourReviews = document.getElementById('ourReviews');
+    if (ourReviews) {
+      const swiperOptions = {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        breakpoints: {
+          1430: {
+            slidesPerView: 2,
+            spaceBetween: 32
+          }
+        },
+        pagination: {
+          el: '#ourReviews .swiper-pagination',
+          type: 'bullets',
+          clickable: true
+        },
+        navigation: {
+          nextEl: '.ui-reviews__navigation .swiper-button-next',
+          prevEl: '.ui-reviews__navigation .swiper-button-prev'
+        },
+        on: {
+          init: function () {
+            console.log('ourReviews initialized');
+          }
+        }
+      };
+      return new Swiper(ourReviews, swiperOptions);
+    }
+  } catch (error) {
+    console.log('handle error', error);
+  }
+};
+
+export function allMaterialsSlider() {
+  try {
+    const allMaterials = document.getElementById('allMaterials');
+    if (allMaterials) {
+      const swiperOptions = {
+        slidesPerView: 1.3,
+        spaceBetween: 10,
+        breakpoints: {
+          480: {
+            spaceBetween: 19
+          },
+          540: {
+            slidesPerView: 2,
+            spaceBetween: 15
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 10
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 15
+          },
+          1020: {
+            slidesPerView: 3,
+            spaceBetween: 15
+          },
+          1430: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          }
+        },
+        on: {
+          init: function () {
+            console.log('allMaterials initialized');
+          }
+        }
+      };
+      return new Swiper(allMaterials, swiperOptions);
+    }
+  } catch (error) {
+    console.log('handle error', error);
+  }
+};
+
+export function ourProductionSlider() {
+  try {
+    const ourProduction = document.getElementById('ourProduction');
+    if (ourProduction && window.innerWidth >= 640) {
+      const swiperOptions = {
+        slidesPerView: 3,
+        spaceBetween: 11,
+        breakpoints: {
+          768: {
+            spaceBetween: 15
+          },
+          1430: {
+            spaceBetween: 30
+          }
+        },
+        on: {
+          init: function () {
+            console.log('ourProduction initialized');
+          }
+        },
+        navigation: {
+          nextEl: '.our-production__navigation .swiper-button-next',
+          prevEl: '.our-production__navigation .swiper-button-prev'
+        },
+      };
+      return new Swiper(ourProduction, swiperOptions);
+    }
+  } catch (error) {
+    console.log('handle error', error);
+  }
+};
+

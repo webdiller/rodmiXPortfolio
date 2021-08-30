@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная</title>
     <meta name="description" content="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
-    <!--<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="./assets/fonts/iconsfonts.css" />-->
     <link rel="stylesheet" href="./assets/styles/main.min.css" />
   </head>
   <body>
@@ -65,14 +62,6 @@
           <p class="welcome__description">Надежный инструмент по доступной цене</p>
         </div>
         <picture class="welcome__picture">
-          <!--<source srcset="./assets/images/welcome-drill@4x.webp" media="(min-width: 1920px)" type="image/webp" />
-          <source srcset="./assets/images/welcome-drill@4x.png" media="(min-width: 1920px)" />
-
-          <source srcset="./assets/images/welcome-drill@3x.webp" media="(min-width: 1400px)" type="image/webp" />
-          <source srcset="./assets/images/welcome-drill@3x.png" media="(min-width: 1400px)" />-->
-
-          <source srcset="./assets/images/welcome-drill.webp" media="(min-width: 1020px)" type="image/webp" />
-          <source srcset="./assets/images/welcome-drill.png" media="(min-width: 1020px)" />
 
           <source srcset="./assets/images/welcome-drill-768.webp" media="(min-width: 768px)" type="image/webp" />
           <source srcset="./assets/images/welcome-drill-768.png" media="(min-width: 768px)" />
@@ -81,12 +70,11 @@
           <source srcset="./assets/images/welcome-drill-640.png" media="(min-width: 640px)" />
 
           <source srcset="./assets/images/welcome-drill.webp" type="image/webp" />
-          <img class="welcome__drill-image" src="./assets/images/welcome-drill.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" loading="lazy" decoding="async" />
+          <img class="welcome__drill-img" src="./assets/images/welcome-drill.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" loading="lazy" decoding="async" />
         </picture>
 
         <div class="welcome__features">
           <div class="welcome__feature">
-            <!-- <img src="./assets/images/icon-shield.svg" alt="" class="welcome__feature-img" /> -->
             <span class="icon icon-icon-shield welcome__feature-icon"></span>
             <div class="welcome__feature-content">
               <p class="welcome__feature-title">8 лет на рынке</p>
@@ -94,7 +82,6 @@
             </div>
           </div>
           <div class="welcome__feature">
-            <!-- <img src="./assets/images/icon-handshake.svg" alt="" class="welcome__feature-img" /> -->
             <span class="icon icon-icon-handshake-alt welcome__feature-icon"></span>
             <div class="welcome__feature-content">
               <p class="welcome__feature-title">90+ <span class="welcome__feature-title-hidden">торговых</span> партнеров</p>
@@ -107,7 +94,7 @@
           <div class="welcome__action welcome__action_red">
             <span class="welcome__action-text">Просмотреть продукцию</span>
             <span class="icon icon-arrow-short welcome__action-icon"></span>
-            <!-- TODO: change color -->
+            
             <span class="icon icon-arrow-wide welcome__action-icon_lg"></span>
           </div>
           <div data-id="callbackModal" class="welcome__action welcome__action_grey">
@@ -115,7 +102,7 @@
             <span class="welcome__action-text welcome__action-text_tablet">Стать нашим партнером</span>
             <span class="welcome__action-text welcome__action-text_desktop">Узнайте как стать нашим партнером</span>
             <span class="icon icon-arrow-short welcome__action-icon"></span>
-            <!-- TODO: change color -->
+            
             <span class="icon icon-arrow-wide welcome__action-icon_lg"></span>
           </div>
         </div>
@@ -126,192 +113,111 @@
       <div class="container our-production__wrapper">
         <div class="title-with-subtitle our-production__title-with-subtitle">
           <h2 class="our-production__subtitle subtitle">Надежность проверенная делом</h2>
-          <p class="our-production__title title1">Наша продукция</p>
+          <p class="our-production__title title1 title1_index">Наша продукция</p>
           <button data-id="orderModal" class="btn-outline title-with-subtitle__btn">запросить цены</button>
         </div>
 
         <nav class="our-production__list">
-          <a href="#" class="our-production__list-item">
-            <span class="our-production__list-title">Корончатые сверла</span>
-            <span class="our-production__list-description">Небольшое описание товара или его характеристика</span>
-            <span class="icon icon-arrow-short our-production__list-icon"></span>
+          <a href="#" class="ui-our-product our-production__list-item">
+            <span class="ui-our-product__title our-production__list-title">Корончатые сверла</span>
+            <span class="ui-our-product__description our-production__list-description">Небольшое описание товара или его характеристика</span>
+            <span class="icon icon-arrow-short ui-our-product__icon our-production__list-icon"></span>
 
-            <picture class="our-production__list-picture">
-              <!--<source srcset="./assets/images/production-list__item@4x.webp" media="(min-width: 1920px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item@4x.png" media="(min-width: 1920px)" />
-
-              <source srcset="./assets/images/production-list__item@3x.webp" media="(min-width: 1400px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item@3x.png" media="(min-width: 1400px)" />
-
-              <source srcset="./assets/images/production-list__item@2x.webp" media="(min-width: 1000px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item@2x.png" media="(min-width: 1000px)" />-->
-
+            <picture class="ui-our-product__picture our-production__list-picture">
               <source srcset="./assets/images/production-list__item.webp" type="image/webp" />
-              <img loading="lazy" decoding="async" class="our-production__list-image" src="./assets/images/production-list__item001.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+              <img loading="lazy" decoding="async" class="ui-our-product__img our-production__list-img" src="./assets/images/production-list__item001.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
             </picture>
           </a>
 
-          <a href="#" class="our-production__list-item">
-            <span class="our-production__list-title">Борфрезы</span>
-            <span class="our-production__list-description">Небольшое описание товара или его характеристика</span>
-            <span class="icon icon-arrow-short our-production__list-icon"></span>
+          <a href="#" class="ui-our-product our-production__list-item">
+            <span class="ui-our-product__title our-production__list-title">Борфрезы</span>
+            <span class="ui-our-product__description our-production__list-description">Небольшое описание товара или его характеристика</span>
+            <span class="icon icon-arrow-short ui-our-product__icon our-production__list-icon"></span>
 
-            <picture class="our-production__list-picture">
-              <!--<source srcset="./assets/images/production-list__item2@4x.webp" media="(min-width: 1920px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item2@4x.png" media="(min-width: 1920px)" />
-
-              <source srcset="./assets/images/production-list__item2@3x.webp" media="(min-width: 1400px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item2@3x.png" media="(min-width: 1400px)" />
-
-              <source srcset="./assets/images/production-list__item2@2x.webp" media="(min-width: 1000px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item2@2x.png" media="(min-width: 1000px)" />-->
-
+            <picture class="ui-our-product__picture our-production__list-picture">
               <source srcset="./assets/images/production-list__item002.webp" type="image/webp" />
-              <img loading="lazy" decoding="async" class="our-production__list-image" src="./assets/images/production-list__item0002.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+              <img loading="lazy" decoding="async" class="ui-our-product__img our-production__list-img" src="./assets/images/production-list__item0002.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
             </picture>
           </a>
 
-          <a href="#" class="our-production__list-item">
-            <span class="our-production__list-title">Твердосплавные диски</span>
-            <span class="our-production__list-description">Небольшое описание товара или его характеристика</span>
-            <span class="icon icon-arrow-short our-production__list-icon"></span>
+          <a href="#" class="ui-our-product our-production__list-item">
+            <span class="ui-our-product__title our-production__list-title">Твердосплавные диски</span>
+            <span class="ui-our-product__description our-production__list-description">Небольшое описание товара или его характеристика</span>
+            <span class="icon icon-arrow-short ui-our-product__icon our-production__list-icon"></span>
 
-            <picture class="our-production__list-picture">
-              <!--<source srcset="./assets/images/production-list__item3@4x.webp" media="(min-width: 1920px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item3@4x.png" media="(min-width: 1920px)" />
-
-              <source srcset="./assets/images/production-list__item3@3x.webp" media="(min-width: 1400px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item3@3x.png" media="(min-width: 1400px)" />
-
-              <source srcset="./assets/images/production-list__item3@2x.webp" media="(min-width: 1000px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item3@2x.png" media="(min-width: 1000px)" />-->
-
+            <picture class="ui-our-product__picture our-production__list-picture">
               <source srcset="./assets/images/production-list__item003.webp" type="image/webp" />
-              <img loading="lazy" decoding="async" class="our-production__list-image" src="./assets/images/production-list__item003.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+              <img loading="lazy" decoding="async" class="ui-our-product__img our-production__list-img" src="./assets/images/production-list__item003.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
             </picture>
           </a>
 
-          <a href="#" class="our-production__list-item">
-            <span class="our-production__list-title">Адаптеры</span>
+          <a href="#" class="ui-our-product our-production__list-item">
+            <span class="ui-our-product__title our-production__list-title">Адаптеры</span>
 
-            <span class="our-production__list-description">Небольшое описание товара или его характеристика</span>
-            <span class="icon icon-arrow-short our-production__list-icon"></span>
+            <span class="ui-our-product__description our-production__list-description">Небольшое описание товара или его характеристика</span>
+            <span class="icon icon-arrow-short ui-our-product__icon our-production__list-icon"></span>
 
-            <picture class="our-production__list-picture">
-              <!--<source srcset="./assets/images/production-list__item4@4x.webp" media="(min-width: 1920px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item4@4x.png" media="(min-width: 1920px)" />
-
-              <source srcset="./assets/images/production-list__item4@3x.webp" media="(min-width: 1400px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item4@3x.png" media="(min-width: 1400px)" />
-
-              <source srcset="./assets/images/production-list__item4@2x.webp" media="(min-width: 1000px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item4@2x.png" media="(min-width: 1000px)" />-->
-
+            <picture class="ui-our-product__picture our-production__list-picture">
               <source srcset="./assets/images/production-list__item004.webp" type="image/webp" />
-              <img loading="lazy" decoding="async" class="our-production__list-image" src="./assets/images/production-list__item004.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+              <img loading="lazy" decoding="async" class="ui-our-product__img our-production__list-img" src="./assets/images/production-list__item004.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
             </picture>
           </a>
 
-          <a href="#" class="our-production__list-item">
-            <span class="our-production__list-title">Концферзы</span>
+          <a href="#" class="ui-our-product our-production__list-item">
+            <span class="ui-our-product__title our-production__list-title">Концферзы</span>
 
-            <span class="our-production__list-description">Небольшое описание товара или его характеристика</span>
-            <span class="icon icon-arrow-short our-production__list-icon"></span>
+            <span class="ui-our-product__description our-production__list-description">Небольшое описание товара или его характеристика</span>
+            <span class="icon icon-arrow-short ui-our-product__icon our-production__list-icon"></span>
 
-            <picture class="our-production__list-picture">
-              <!--<source srcset="./assets/images/production-list__item5@4x.webp" media="(min-width: 1920px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item5@4x.png" media="(min-width: 1920px)" />
-
-              <source srcset="./assets/images/production-list__item5@3x.webp" media="(min-width: 1400px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item5@3x.png" media="(min-width: 1400px)" />
-
-              <source srcset="./assets/images/production-list__item5@2x.webp" media="(min-width: 1000px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item5@2x.png" media="(min-width: 1000px)" />-->
-
+            <picture class="ui-our-product__picture our-production__list-picture">
               <source srcset="./assets/images/production-list__item005.webp" type="image/webp" />
-              <img loading="lazy" decoding="async" class="our-production__list-image" src="./assets/images/production-list__item005.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+              <img loading="lazy" decoding="async" class="ui-our-product__img our-production__list-img" src="./assets/images/production-list__item005.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
             </picture>
           </a>
 
-          <a href="#" class="our-production__list-item">
-            <span class="our-production__list-title">Метчики</span>
+          <a href="#" class="ui-our-product our-production__list-item">
+            <span class="ui-our-product__title our-production__list-title">Метчики</span>
 
-            <span class="our-production__list-description">Небольшое описание товара или его характеристика</span>
-            <span class="icon icon-arrow-short our-production__list-icon"></span>
+            <span class="ui-our-product__description our-production__list-description">Небольшое описание товара или его характеристика</span>
+            <span class="icon icon-arrow-short ui-our-product__icon our-production__list-icon"></span>
 
-            <picture class="our-production__list-picture">
-              <!--<source srcset="./assets/images/production-list__item6@4x.webp" media="(min-width: 1920px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item6@4x.png" media="(min-width: 1920px)" />
-
-              <source srcset="./assets/images/production-list__item6@3x.webp" media="(min-width: 1400px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item6@3x.png" media="(min-width: 1400px)" />
-
-              <source srcset="./assets/images/production-list__item6@2x.webp" media="(min-width: 1000px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item6@2x.png" media="(min-width: 1000px)" />-->
-
+            <picture class="ui-our-product__picture our-production__list-picture">
               <source srcset="./assets/images/production-list__item006.webp" type="image/webp" />
-              <img loading="lazy" decoding="async" class="our-production__list-image" src="./assets/images/production-list__item006.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+              <img loading="lazy" decoding="async" class="ui-our-product__img our-production__list-img" src="./assets/images/production-list__item006.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
             </picture>
           </a>
 
-          <a href="#" class="our-production__list-item">
-            <span class="our-production__list-title">Ступенчатые сверла</span>
-            <span class="our-production__list-description">Небольшое описание товара или его характеристика</span>
-            <span class="icon icon-arrow-short our-production__list-icon"></span>
+          <a href="#" class="ui-our-product our-production__list-item">
+            <span class="ui-our-product__title our-production__list-title">Ступенчатые сверла</span>
+            <span class="ui-our-product__description our-production__list-description">Небольшое описание товара или его характеристика</span>
+            <span class="icon icon-arrow-short ui-our-product__icon our-production__list-icon"></span>
 
-            <picture class="our-production__list-picture">
-              <!--<source srcset="./assets/images/production-list__item7@4x.webp" media="(min-width: 1920px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item7@4x.png" media="(min-width: 1920px)" />
-
-              <source srcset="./assets/images/production-list__item7@3x.webp" media="(min-width: 1400px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item7@3x.png" media="(min-width: 1400px)" />
-
-              <source srcset="./assets/images/production-list__item7@2x.webp" media="(min-width: 1000px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item7@2x.png" media="(min-width: 1000px)" />-->
-
+            <picture class="ui-our-product__picture our-production__list-picture">
               <source srcset="./assets/images/production-list__item007.webp" type="image/webp" />
-              <img loading="lazy" decoding="async" class="our-production__list-image" src="./assets/images/production-list__item007.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+              <img loading="lazy" decoding="async" class="ui-our-product__img our-production__list-img" src="./assets/images/production-list__item007.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
             </picture>
           </a>
 
-          <a href="#" class="our-production__list-item">
-            <span class="our-production__list-title">Магнитные станки</span>
-            <span class="our-production__list-description">Небольшое описание товара или его характеристика</span>
-            <span class="icon icon-arrow-short our-production__list-icon"></span>
+          <a href="#" class="ui-our-product our-production__list-item">
+            <span class="ui-our-product__title our-production__list-title">Магнитные станки</span>
+            <span class="ui-our-product__description our-production__list-description">Небольшое описание товара или его характеристика</span>
+            <span class="icon icon-arrow-short ui-our-product__icon our-production__list-icon"></span>
 
-            <picture class="our-production__list-picture">
-              <!--<source srcset="./assets/images/production-list__item9@4x.webp" media="(min-width: 1920px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item9@4x.png" media="(min-width: 1920px)" />
-
-              <source srcset="./assets/images/production-list__item9@3x.webp" media="(min-width: 1400px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item9@3x.png" media="(min-width: 1400px)" />
-
-              <source srcset="./assets/images/production-list__item9@2x.webp" media="(min-width: 1000px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item9@2x.png" media="(min-width: 1000px)" />-->
-
+            <picture class="ui-our-product__picture our-production__list-picture">
               <source srcset="./assets/images/production-list__item008.webp" type="image/webp" />
-              <img loading="lazy" decoding="async" class="our-production__list-image" src="./assets/images/production-list__item008.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+              <img loading="lazy" decoding="async" class="ui-our-product__img our-production__list-img" src="./assets/images/production-list__item008.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
             </picture>
           </a>
 
-          <a href="#" class="our-production__list-item">
-            <span class="our-production__list-title">Зенкер</span>
+          <a href="#" class="ui-our-product our-production__list-item">
+            <span class="ui-our-product__title our-production__list-title">Зенкер</span>
 
-            <span class="our-production__list-description">Небольшое описание товара или его характеристика</span>
-            <span class="icon icon-arrow-short our-production__list-icon"></span>
+            <span class="ui-our-product__description our-production__list-description">Небольшое описание товара или его характеристика</span>
+            <span class="icon icon-arrow-short ui-our-product__icon our-production__list-icon"></span>
 
-            <picture class="our-production__list-picture">
-              <!--<source srcset="./assets/images/production-list__item9@4x.webp" media="(min-width: 1920px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item9@4x.png" media="(min-width: 1920px)" />
-
-              <source srcset="./assets/images/production-list__item9@3x.webp" media="(min-width: 1400px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item9@3x.png" media="(min-width: 1400px)" />
-
-              <source srcset="./assets/images/production-list__item9@2x.webp" media="(min-width: 1000px)" type="image/webp" />
-              <source srcset="./assets/images/production-list__item9@2x.png" media="(min-width: 1000px)" />-->
-
+            <picture class="ui-our-product__picture our-production__list-picture">
               <source srcset="./assets/images/production-list__item009.webp" type="image/webp" />
-              <img loading="lazy" decoding="async" class="our-production__list-image" src="./assets/images/production-list__item009.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+              <img loading="lazy" decoding="async" class="ui-our-product__img our-production__list-img" src="./assets/images/production-list__item009.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
             </picture>
           </a>
 
@@ -325,11 +231,10 @@
       <div class="container producer__wrapper">
         <div class="title-with-subtitle producer__title-with-subtitle">
           <h3 class="subtitle">Как мы занимаемся разработкой</h3>
-          <p class="title1">О производителе</p>
+          <p class="title1 title1_index">О производителе</p>
         </div>
 
         <div class="producer__body">
-          <!-- TODO: проверить картинки на различных экранах и заменить -->
           <div class="producer__author">
             <picture class="producer__picture">
               <source srcset="./assets/images/producer@4x.webp" media="(min-width: 1920px)" type="image/webp" />
@@ -349,7 +254,7 @@
               <button class="btn btn_arrow producer__btn">
                 Написать директору
                 <span class="icon icon-arrow-short producer__btn-icon"></span>
-                <!-- TODO: change color -->
+                
                 <span class="icon icon-arrow-wide producer__btn-icon"></span>
               </button>
               <div class="producer__name-with-role">
@@ -393,50 +298,45 @@
     <!-- Наши преимущества -->
     <section class="features">
       <div class="container features__wrapper">
+        
         <div class="title-with-subtitle features__title-with-subtitle">
           <h4 class="subtitle">Почему стоит выбрать именно нас</h4>
-          <p class="title1">Наши преимущества</p>
+          <p class="title1 title1_index">Наши преимущества</p>
         </div>
 
         <div id="featuresSwiper" class="swiper-container features__swiper-container">
           <div class="swiper-wrapper features__swiper-wrapper">
             <div class="swiper-slide features__item">
-              <!-- <img src="./assets/images/icon-help.svg" alt="" class="features__item-icon" /> -->
               <span class="icon icon-icon-feature-help features__item-icon"></span>
               <p class="features__item-title">Персональный менеджер и помощь в подборе продукции</p>
               <p class="features__item-description">Индивидуальный подход и забота</p>
             </div>
 
             <div class="swiper-slide features__item">
-              <!-- <img src="./assets/images/icon-stock.svg" alt="" class="features__item-icon" /> -->
               <span class="icon icon-icon-feature-stock features__item-icon"></span>
               <p class="features__item-title">Вся продукция в наличии у дилеров в вашем городе</p>
               <p class="features__item-description">Вы всегда знаете куда обратиться</p>
             </div>
 
             <div class="swiper-slide features__item">
-              <!-- <img src="./assets/images/icon-delivery.svg" alt="" class="features__item-icon" /> -->
               <span class="icon icon-icon-feature-delivery features__item-icon"></span>
               <p class="features__item-title">Бесплатная доставка по РФ и Таможенному союзу</p>
               <p class="features__item-description">Отправка в день заказа в любую точку</p>
             </div>
 
             <div class="swiper-slide features__item">
-              <!-- <img src="./assets/images/icon-process.svg" alt="" class="features__item-icon" /> -->
               <span class="icon icon-icon-feature-process features__item-icon"></span>
               <p class="features__item-title">Любые образцы для тестирования по запросу</p>
               <p class="features__item-description">Проверьте качество и надежность лично</p>
             </div>
 
             <div class="swiper-slide features__item">
-              <!-- <img src="./assets/images/icon-education.svg" alt="" class="features__item-icon" /> -->
               <span class="icon icon-icon-feature-education features__item-icon"></span>
               <p class="features__item-title">Качественное Обучение работе с инструментом</p>
               <p class="features__item-description">Делимся полезной информацией и опытом</p>
             </div>
 
             <div class="swiper-slide features__item">
-              <!-- <img src="./assets/images/icon-award.svg" alt="" class="features__item-icon" /> -->
               <span class="icon icon-icon-feature-award features__item-icon"></span>
               <p class="features__item-title">Независимая экспертиза качества продукции</p>
               <p class="features__item-description">Надежность подтверждена экспертами</p>
@@ -452,7 +352,7 @@
       <div class="container publications__wrapper">
         <div class="title-with-subtitle publications__title-with-subtitle">
           <h5 class="subtitle">Будьте в курсе всех событий</h5>
-          <p class="title1">Наши публикации</p>
+          <p class="title1 title1_index">Наши публикации</p>
         </div>
 
         <div class="publications__video-with-blog">
@@ -470,7 +370,7 @@
           </div>
 
           <div class="publications__title-with-slider">
-            <p class="title1 publications__title1">Новое в нашем блоге</p>
+            <p class="title1 title1_index publications__title1">Новое в нашем блоге</p>
 
             <div id="publicationsSwiper" class="swiper-container publications__swiper-container">
               <div class="swiper-wrapper publications__swiper-wrapper">
@@ -514,7 +414,7 @@
       <div class="container contacts__wrapper">
         <div class="title-with-subtitle contacts__title-with-subtitle">
           <h6 class="subtitle">Работаем по всей стране</h6>
-          <p class="title1">Контакты</p>
+          <p class="title1 title1_index">Контакты</p>
         </div>
 
         <div class="contacts__top">
@@ -551,9 +451,10 @@
       <div class="container warrancy__wrapper">
         <div class="title-with-subtitle warrancy__title-with-subtitle">
           <h6 class="subtitle">У нас - только качественно!</h6>
-          <p class="title1">Гарантийное обслуживание</p>
+          <p class="title1 title1_index">Гарантийное обслуживание</p>
         </div>
 
+        <!-- FIXME: на 600px что то близко блоки прижаты. Проверить -->
         <div class="warrancy__content">
           <div class="warrancy__text-with-contacts">
             <p class="warrancy__description">На всю выпускаемую продукцию <strong>RODMIX</strong> предоставляется гарантия согласно законодательству РФ. Узнать контакты сервисного центра в вашем городе или решить проблему вы можете:</p>
@@ -569,9 +470,9 @@
             </div>
             <button data-id="orderModal" class="btn btn_arrow warrancy__btn-contact">
               Связаться по гарантии
-              <!-- TODO: change color -->
+              
               <span class="icon icon-arrow-short warrancy__btn-icon"></span>
-              <!-- TODO: change color -->
+              
               <span class="icon icon-arrow-wide warrancy__btn-icon"></span>
             </button>
           </div>
@@ -677,13 +578,7 @@
           </p>
         </div>
       </div>
-      
     </div>
-
-    <!-- <script defer src="./assets/scripts/vendors.bundle.js"></script> -->
-    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-
-    <!--<script src="./assets/scripts/vendors.bundle.js"></script>-->
     <script src="./assets/scripts/default.bundle.js"></script>
   </body>
 </html>

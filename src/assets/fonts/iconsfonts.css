@@ -21,126 +21,154 @@
 }
 
 
-.icon-arrow-short:before {
+.icon-arrow-down:before {
 	content: "\E001";
 }
 
-.icon-arrow-wide:before {
+.icon-arrow-short:before {
 	content: "\E002";
 }
 
-.icon-icon-certificate:before {
+.icon-arrow-wide:before {
 	content: "\E003";
 }
 
-.icon-icon-feature-award:before {
+.icon-check-feature:before {
 	content: "\E004";
 }
 
-.icon-icon-feature-delivery:before {
+.icon-icon-certificate:before {
 	content: "\E005";
 }
 
-.icon-icon-feature-education:before {
+.icon-icon-feature-award:before {
 	content: "\E006";
 }
 
-.icon-icon-feature-help:before {
+.icon-icon-feature-delivery:before {
 	content: "\E007";
 }
 
-.icon-icon-feature-process:before {
+.icon-icon-feature-education:before {
 	content: "\E008";
 }
 
-.icon-icon-feature-stock:before {
+.icon-icon-feature-help:before {
 	content: "\E009";
 }
 
-.icon-icon-handshake-alt:before {
+.icon-icon-feature-process:before {
 	content: "\E00A";
 }
 
-.icon-icon-instagram:before {
+.icon-icon-feature-stock:before {
 	content: "\E00B";
 }
 
-.icon-icon-pdf:before {
+.icon-icon-handshake-alt:before {
 	content: "\E00C";
 }
 
-.icon-icon-publications:before {
+.icon-icon-instagram:before {
 	content: "\E00D";
 }
 
-.icon-icon-shield:before {
+.icon-icon-pdf:before {
 	content: "\E00E";
 }
 
-.icon-icon-success:before {
+.icon-icon-publications:before {
 	content: "\E00F";
 }
 
-.icon-icon-triangle-left:before {
+.icon-icon-shield:before {
 	content: "\E010";
 }
 
-.icon-icon-triangle-right:before {
+.icon-icon-success:before {
 	content: "\E011";
 }
 
-.icon-icon-youtube:before {
+.icon-icon-triangle-left:before {
 	content: "\E012";
 }
 
-.icon-logo_black:before {
+.icon-icon-triangle-right:before {
 	content: "\E013";
 }
 
-.icon-logo_red:before {
+.icon-icon-youtube:before {
 	content: "\E014";
 }
 
-.icon-menu_close:before {
+.icon-logo_black:before {
 	content: "\E015";
 }
 
-.icon-menu_open:before {
+.icon-logo_red:before {
 	content: "\E016";
 }
 
-.icon-order:before {
+.icon-loop-plus:before {
 	content: "\E017";
 }
 
-.icon-slider-next:before {
+.icon-menu_close:before {
 	content: "\E018";
 }
 
-.icon-slider-next_disabled:before {
+.icon-menu_open:before {
 	content: "\E019";
 }
 
-.icon-slider-prev:before {
+.icon-order:before {
 	content: "\E01A";
 }
 
-.icon-slider-prev_disabled:before {
+.icon-simple-arrow-left:before {
 	content: "\E01B";
 }
 
-.icon-tapbar-call:before {
+.icon-simple-arrow-right:before {
 	content: "\E01C";
 }
 
-.icon-tapbar-medal:before {
+.icon-simple-short-arrow-right:before {
 	content: "\E01D";
 }
 
-.icon-tapbar-pin:before {
+.icon-slider-next:before {
 	content: "\E01E";
 }
 
-.icon-tapbar-settings:before {
+.icon-slider-next_disabled:before {
 	content: "\E01F";
 }
+
+.icon-slider-prev:before {
+	content: "\E020";
+}
+
+.icon-slider-prev_disabled:before {
+	content: "\E021";
+}
+
+.icon-star:before {
+	content: "\E022";
+}
+
+.icon-tapbar-call:before {
+	content: "\E023";
+}
+
+.icon-tapbar-medal:before {
+	content: "\E024";
+}
+
+.icon-tapbar-pin:before {
+	content: "\E025";
+}
+
+.icon-tapbar-settings:before {
+	content: "\E026";
+}

@@ -1,6 +1,6 @@
-import { yamapInit } from "./modules/yamap.js"
-import {ourFeatures, ourPublications} from "./modules/slider.js"
-import { defaultScripts } from "./modules/base.js"
+import { yamapInit } from './modules/yamap.js';
+import { ourFeatures, ourPublications, ourReviewsSlider, sverlaSlider, allMaterialsSlider, ourProductionSlider } from './modules/slider.js';
+import { defaultScripts } from './modules/base.js';
 
 let counterSwiperFeatures = 0;
 let counterSwiperPublications = 0;
@@ -10,27 +10,32 @@ let publicationsSwiperSlider = null;
 
 window.addEventListener('scroll', function (e) {
   if (window.scrollY > 100) {
-    if(counterMap <= 0){
+    if (counterMap <= 0) {
       counterMap++;
-      yamapInit()
+      yamapInit();
     }
-    if(counterSwiperFeatures <= 0){
+    if (counterSwiperFeatures <= 0) {
       counterSwiperFeatures++;
-      featuresSwiperSlider = ourFeatures()
+      featuresSwiperSlider = ourFeatures();
     }
-    if(counterSwiperPublications <= 0){
+    if (counterSwiperPublications <= 0) {
       counterSwiperPublications++;
-      publicationsSwiperSlider = ourPublications()
+      publicationsSwiperSlider = ourPublications();
     }
   }
 });
 
 window.addEventListener('resize', function (e) {
-  if (!featuresSwiperSlider && window.innerWidth < 640){
+  if (!featuresSwiperSlider && window.innerWidth < 640) {
     featuresSwiperSlider = ourFeatures();
-  }else if(featuresSwiperSlider !== null){
-    featuresSwiperSlider.destroy()
-    featuresSwiperSlider = null
+  } else if (featuresSwiperSlider !== null) {
+    // FIXME: Нет такого метода. Исправить.
+    try {
+      featuresSwiperSlider.destroy();
+    } catch (error) {
+      console.log('исправить');
+    } 
+    featuresSwiperSlider = null;
   }
 });
 
@@ -38,3 +43,22 @@ document.addEventListener(`DOMContentLoaded`, () => {
   defaultScripts();
 });
 
+sverlaSlider();
+ourReviewsSlider();
+allMaterialsSlider();
+ourProductionSlider();
+
+const dataTables = document.querySelectorAll('[data-sizes]');
+if (dataTables.length > 0) {
+  dataTables.forEach((element) => {
+    const rows = element.querySelectorAll('.ui-sizes__body-row');
+    rows.forEach((row) => {
+      if (!row.parentElement.classList.contains('ui-sizes__body_inner')) {
+        row.addEventListener('click', function () {
+          this.classList.toggle('active')
+          row.nextElementSibling.classList.toggle('active');
+        });
+      }
+    });
+  });
+}

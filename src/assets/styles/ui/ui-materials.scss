@@ -1,0 +1,224 @@
+.ui-materials {
+  &__title-with-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    @media (min-width: 480px) {
+      margin-bottom: 18px;
+    }
+    @media (min-width: 640px) {
+      justify-content: space-between;
+    }
+    @media (min-width: 768px) {
+      margin-bottom: 16px;
+    }
+    @media (min-width: 1020px) {
+      margin-bottom: 23px;
+    }
+  }
+
+  &__title1 {
+  }
+
+  &__wrapper {
+    text-align: left;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+
+  &__all-links {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: $red;
+    text-decoration: none;
+    @media (min-width: 480px) {
+      font-size: 12px;
+      line-height: 12px;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      font-size: 14px;
+      line-height: 100%;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+
+  &__all-links_top {
+    text-align: right;
+    display: none;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+      display: block;
+    }
+  }
+
+  &__all-links_bottom {
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+      display: none;
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+
+  &__swiper {
+    margin-bottom: 16px;
+    overflow-x: hidden;
+    @media (min-width: 480px) {
+      margin-bottom: 26px;
+    }
+    @media (min-width: 540px) {
+      margin-bottom: 19px;
+    }
+    @media (min-width: 640px) {
+      margin-bottom: 28px;
+    }
+    @media (min-width: 768px) {
+      margin-bottom: 29px;
+    }
+    @media (min-width: 1020px) {
+      margin-bottom: 0;
+    }
+    @media (min-width: 1430px) {
+      margin-top: 36px;
+    }
+  }
+  &__slide {
+    padding: 23px;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 174px;
+    text-align: left;
+    @media (min-width: 480px) {
+      height: 212px;
+      padding: 22px;
+    }
+    @media (min-width: 540px) {
+      height: 165px;
+      padding: 17px;
+    }
+    @media (min-width: 640px) {
+      height: 200px;
+      padding: 21px;
+    }
+    @media (min-width: 768px) {
+      height: 226px;
+      padding: 17px;
+    }
+    @media (min-width: 1020px) {
+      height: 200px;
+      padding: 19px;
+    }
+    @media (min-width: 1430px) {
+      height: 285px;
+      padding: 29px;
+    }
+  }
+  &__slide-picture {
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+  &__slide-img {
+    display: block;
+    height: 96px;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 11px;
+    object-fit: cover;
+    @media (min-width: 480px) {
+      height: 120px;
+      margin-bottom: 18px;
+    }
+    @media (min-width: 540px) {
+      height: 93px;
+      margin-bottom: 14px;
+    }
+    @media (min-width: 640px) {
+      height: 112px;
+      margin-bottom: 20px;
+    }
+    @media (min-width: 768px) {
+      height: 142px;
+      margin-bottom: 14px;
+    }
+    @media (min-width: 1020px) {
+      height: 121px;
+      margin-bottom: 12px;
+    }
+    @media (min-width: 1430px) {
+      height: 170px;
+      margin-bottom: 21px;
+    }
+  }
+  &__slide-text {
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration-line: underline;
+    color: $red;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    @media (min-width: 768px) {
+      font-size: 16px;
+      line-height: 18px;
+    }
+    @media (min-width: 1020px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    @media (min-width: 1430px) {
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+}

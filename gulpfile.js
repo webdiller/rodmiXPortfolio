@@ -122,8 +122,6 @@ function replaceIcons() {
   return gulp.src(paths.icons.src).pipe(gulp.dest(paths.icons.dest));
 }
 
-// TODO: сделать генерацию иконок, чтобы в dist/assets/fonts/ бии отдельные файлы шрифтовых иконокы
-// icons (генерация шрифтовых иконок из svg) еще не готово
 function createIconsFromSvg() {
   return gulp
     .src(['./src/assets/images/*.svg'])

@@ -1,0 +1,321 @@
+.ui-product {
+  &__wrapper {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    &_mt-0 {
+      margin-top: 0;
+    }
+  }
+
+  &__header {
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+
+  &__title1 {
+    text-align: center;
+    margin-bottom: 20px;
+    @media (min-width: 480px) {
+      margin-bottom: 25px;
+    }
+    @media (min-width: 540px) {
+      margin-bottom: 42px;
+    }
+    @media (min-width: 640px) {
+      text-align: left;
+    }
+    @media (min-width: 768px) {
+      margin-bottom: 48px;
+    }
+    @media (min-width: 1020px) {
+      margin-bottom: 42px;
+    }
+    @media (min-width: 1430px) {
+      margin-bottom: 75px;
+    }
+  }
+  
+  &__title2 {
+    margin-bottom: 39px;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      text-align: left;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+
+  &__subtitle {
+    display: none;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+      text-align: left;
+      display: block;
+      margin-top: 75px;
+      margin-bottom: 42px;
+
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 34px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    margin-bottom: 15px;
+    @media (min-width: 480px) {
+      margin-bottom: 35px;
+    }
+    @media (min-width: 540px) {
+      margin-bottom: 30px;
+    }
+    @media (min-width: 640px) {
+      margin-bottom: 44px;
+    }
+    @media (min-width: 768px) {
+      margin-bottom: 25px;
+    }
+    @media (min-width: 1020px) {
+      margin-bottom: 41px;
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+
+  &__picture {
+  }
+
+  &__img {
+    width: 50px;
+    margin-right: 15px;
+    height: auto;
+    @media (min-width: 480px) {
+      width: 63px;
+    }
+    @media (min-width: 540px) {
+      width: 73px;
+    }
+    @media (min-width: 640px) {
+      width: 100px;
+      margin-right: 41px;
+    }
+    @media (min-width: 768px) {
+      width: 120px;
+      margin-right: 37px;
+    }
+    @media (min-width: 1020px) {
+      width: 131px;
+      margin-right: 71px;
+    }
+    @media (min-width: 1430px) {
+      margin-right: 65px;
+    }
+  }
+
+  &__content {
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+
+  &__text {
+    margin-bottom: 11px;
+    font-size: 12px;
+    line-height: 24px;
+    color: #454545;
+    @media (min-width: 480px) {
+      font-size: 12px;
+      line-height: 19px;
+    }
+    @media (min-width: 540px) {
+      margin-bottom: 17px;
+      line-height: 22px;
+    }
+    @media (min-width: 640px) {
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 26px;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+      margin-bottom: 11px;
+      font-size: 20px;
+      line-height: 40px;
+    }
+    @media (min-width: 1430px) {
+      margin-bottom: 28px;
+      font-size: 18px;
+      line-height: 36px;
+    }
+  }
+
+  &__list-title {
+    margin-bottom: 14px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    color: #454545;
+    @media (min-width: 480px) {
+      margin-bottom: 18px;
+      font-size: 14px;
+      line-height: 28px;
+    }
+    @media (min-width: 540px) {
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 28px;
+    }
+    @media (min-width: 640px) {
+      margin-bottom: 16px;
+      font-size: 16px;
+      line-height: 32px;
+    }
+    @media (min-width: 768px) {
+      margin-bottom: 16px;
+    }
+    @media (min-width: 1020px) {
+      margin-bottom: 15px;
+      font-size: 20px;
+      line-height: 40px;
+    }
+    @media (min-width: 1430px) {
+      margin-bottom: 12px;
+      font-size: 18px;
+      line-height: 36px;
+    }
+  }
+
+  &__list {
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+
+  &__list-item {
+    position: relative;
+    margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 24px;
+    color: #454545;
+    padding-left: 13px;
+    @media (min-width: 480px) {
+      font-size: 14px;
+      line-height: 28px;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      font-size: 16px;
+      line-height: 32px;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+      font-size: 20px;
+      line-height: 40px;
+    }
+    @media (min-width: 1430px) {
+      font-size: 18px;
+      line-height: 36px;
+    }
+    strong {
+      font-weight: 600;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 8px;
+      left: 0;
+      background-color: #e31e25;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+    }
+  }
+
+  &__slider {
+    padding-bottom: 20px;
+    @media (min-width: 480px) {
+      padding-bottom: 23px;
+    }
+    @media (min-width: 540px) {
+      padding-bottom: 20px;
+    }
+    @media (min-width: 640px) {
+      padding-bottom: 27px;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+
+  &__footer {
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+
+  &__footer-link {
+  }
+}

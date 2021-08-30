@@ -1,0 +1,225 @@
+// TODO:LAST закончить верстку таблицы
+.ui-application {
+  &__title2 {
+    margin-bottom: 28px;
+    @media (min-width: 480px) {
+      margin-bottom: 52px;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      margin-bottom: 49px;
+      text-align: left;
+    }
+    @media (min-width: 768px) {
+      margin-bottom: 52px;
+    }
+    @media (min-width: 1020px) {
+      margin-bottom: 43px;
+    }
+    @media (min-width: 1430px) {
+      margin-bottom: 54px;
+    }
+  }
+  &__table {
+    display: grid;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    @media (min-width: 480px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (min-width: 640px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @media (min-width: 1020px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (min-width: 1430px) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+
+  &__col {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid #ececec;
+    font-size: 10px;
+
+    // 320-480
+    &:nth-child(2n + 1) {
+      padding-left: 10px;
+      @media (min-width: 480px) {
+        padding-left: 0;
+      }
+    }
+    &:nth-child(2n + 2) {
+      padding-right: 10px;
+      @media (min-width: 480px) {
+        padding-right: 0;
+      }
+    }
+
+    // 480-640
+    &:nth-child(3n + 1) {
+      @media (min-width: 480px) {
+        padding-left: 10px;
+      }
+      @media (min-width: 640px) {
+        padding-left: 0;
+      }
+    }
+    &:nth-child(3n + 3) {
+      @media (min-width: 480px) {
+        padding-right: 10px;
+      }
+      @media (min-width: 640px) {
+        padding-right: 0;
+      }
+    }
+
+    // 640-1020
+    &:nth-child(4n + 1) {
+      @media (min-width: 640px) {
+        padding-left: 10px;
+      }
+      @media (min-width: 1020px) {
+        padding-left: 0;
+      }
+    }
+    &:nth-child(4n + 4) {
+      @media (min-width: 640px) {
+        padding-right: 10px;
+      }
+      @media (min-width: 1020px) {
+        padding-right: 0;
+      }
+    }
+
+    // 1020-1430
+    &:nth-child(3n + 1) {
+      @media (min-width: 1020px) {
+        padding-left: 10px;
+      }
+      @media (min-width: 1430px) {
+        padding-left: 0;
+      }
+    }
+    &:nth-child(3n + 3) {
+      @media (min-width: 1020px) {
+        padding-right: 10px;
+      }
+      @media (min-width: 1430px) {
+        padding-right: 0;
+      }
+    }
+
+    // 1430-4K
+    &:nth-child(6n + 1) {
+      @media (min-width: 1430px) {
+        padding-left: 10px;
+      }
+    }
+    &:nth-child(6n + 6) {
+      @media (min-width: 1430px) {
+        padding-right: 10px;
+      }
+    }
+  }
+
+  &__col-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__star {
+    position: relative;
+    top: -1px;
+    color: $red;
+    font-size: 10px;
+  }
+
+  &__text {
+    margin-left: 10px;
+    @media (min-width: 480px) {
+      font-size: 12px;
+    }
+    @media (min-width: 768px) {
+      font-size: 14px;
+    }
+    @media (min-width: 1020px) {
+      font-size: 16spx;
+    }
+  }
+
+  &__arrow {
+    position: relative;
+    top: -1px;
+    font-size: 5px;
+    margin: 0 5px;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    @media (min-width: 480px) {
+      margin-bottom: 18px;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      margin-bottom: 20px;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+      margin-bottom: 15px;
+    }
+    @media (min-width: 1430px) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__footer-item {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    @media (min-width: 480px) {
+      margin-right: 26px;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      margin-right: 26px;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+
+  &__footer-text {
+    margin-left: 5px;
+    font-size: 11px;
+    line-height: 13px;
+    color: #9c8c8d;
+    @media (min-width: 480px) {
+      font-size: 14px;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+}
