@@ -1,5 +1,20 @@
 // TODO:LAST закончить верстку таблицы
 .ui-application {
+  &__wrapper {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    &_my-0 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    &_mb-0 {
+      margin-bottom: 0;
+      .ui-application__footer {
+        margin-bottom: 0;
+      }
+    }
+  }
   &__title2 {
     margin-bottom: 28px;
     @media (min-width: 480px) {
@@ -102,7 +117,7 @@
     // 1020-1430
     &:nth-child(3n + 1) {
       @media (min-width: 1020px) {
-        padding-left: 10px;
+        padding-left: 12px;
       }
       @media (min-width: 1430px) {
         padding-left: 0;
@@ -110,7 +125,7 @@
     }
     &:nth-child(3n + 3) {
       @media (min-width: 1020px) {
-        padding-right: 10px;
+        padding-right: 12px;
       }
       @media (min-width: 1430px) {
         padding-right: 0;
@@ -133,6 +148,15 @@
   &__col-wrapper {
     display: flex;
     align-items: center;
+    @media (min-width: 480px) {
+      font-size: 12px;
+    }
+    @media (min-width: 768px) {
+      font-size: 14px;
+    }
+    @media (min-width: 1020px) {
+      font-size: 16px;
+    }
   }
 
   &__star {
@@ -144,15 +168,6 @@
 
   &__text {
     margin-left: 10px;
-    @media (min-width: 480px) {
-      font-size: 12px;
-    }
-    @media (min-width: 768px) {
-      font-size: 14px;
-    }
-    @media (min-width: 1020px) {
-      font-size: 16spx;
-    }
   }
 
   &__arrow {
