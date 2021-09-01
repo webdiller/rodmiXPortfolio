@@ -36,7 +36,7 @@ window.addEventListener('resize', function (e) {
       featuresSwiperSlider.destroy();
     } catch (error) {
       console.log('исправить');
-    } 
+    }
     featuresSwiperSlider = null;
   }
 });
@@ -49,5 +49,14 @@ sverlaSlider();
 ourReviewsSlider();
 allMaterialsSlider();
 ourProductionSlider();
-uiSizes()
+uiSizes();
 uiForms();
+
+// TODO: Удалить при продакшене
+const resizeMode = () => {
+  const resizer = document.getElementById('resizer');
+  window.addEventListener('resize', () => {
+    resizer.innerHTML = window.innerWidth;
+  });
+};
+resizeMode();

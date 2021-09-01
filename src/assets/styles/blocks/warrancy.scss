@@ -251,9 +251,13 @@
       padding-left: 36px;
       padding-right: 26px;
     }
-    @media (min-width: 1400px) {
-    }
     @media (min-width: 1430px) {
+      height: 60px;
+      padding-left: 48px;
+      padding-right: 31px;
+      font-size: 18px;
+    }
+    @media (min-width: 1920px) {
       height: 60px;
       padding-left: 48px;
       padding-right: 31px;
@@ -578,6 +582,34 @@
     @media (min-width: 768px) {
       height: 50px;
       font-size: 14px;
+    }
+  }
+  &_alt {
+    .warrancy__description {
+      @media (min-width: 1020px) {
+        font-size: 18px;
+        line-height: 36px;
+      }
+      @media (min-width: 1430px) {
+      }
+    }
+    .warrancy__btn-contact {
+      @media (min-width: 1020px) {
+        max-width: 394px;
+        font-size: 18px;
+        height: 60px;
+      }
+      @media (min-width: 1430px) {
+        max-width: 371px;
+        font-size: 18px;
+        height: 60px;
+      }
+    }
+    .warrancy__btn-contact span {
+      margin-top: -2px;
+    }
+    .warrancy__btn-contact span::before {
+      font-size: 18px;
     }
   }
 }

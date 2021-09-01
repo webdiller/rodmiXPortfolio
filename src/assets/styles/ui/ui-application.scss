@@ -148,6 +148,9 @@
   &__col-wrapper {
     display: flex;
     align-items: center;
+    strong {
+      font-weight: 700;
+    }
     @media (min-width: 480px) {
       font-size: 12px;
     }
@@ -168,13 +171,32 @@
 
   &__text {
     margin-left: 10px;
+    @media (min-width: 768px) {
+      font-size: 14px;
+    } 
+    @media (min-width: 1020px) {
+      font-size: 16px;
+    }
   }
 
   &__arrow {
     position: relative;
     top: -1px;
-    font-size: 5px;
+    font-size: 6px;
     margin: 0 5px;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      font-size: 8px;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
   }
 
   &__footer {
