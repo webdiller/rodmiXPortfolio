@@ -86,9 +86,11 @@ export function sverlaSlider() {
             spaceBetween: 10
           },
           768: {
+            slidesPerView: 3,
             spaceBetween: 15
           },
           1020: {
+            slidesPerView: 3,
             spaceBetween: 30
           },
         },

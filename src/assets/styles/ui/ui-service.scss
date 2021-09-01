@@ -107,25 +107,31 @@
   }
   &__item-description {
     font-size: 12px;
-    line-height: 24px;
+    line-height: 26px;
     margin-bottom: 25px;
     @media (min-width: 480px) {
-      font-size: 12px;
-      line-height: 24px;
+      font-size: 13px;
+      line-height: 29px;
     }
     @media (min-width: 540px) {
       margin-bottom: 16px;
     }
     @media (min-width: 640px) {
+      font-size: 14px;
+      line-height: 31px;
       margin-bottom: 21px;
     }
     @media (min-width: 768px) {
       margin-bottom: 29px;
     }
     @media (min-width: 1020px) {
+      font-size: 16px;
+      line-height: 35px;
       margin-bottom: 15px;
     }
     @media (min-width: 1430px) {
+      font-size: 18px;
+      line-height: 45px;
       margin-bottom: 40px;
     }
   }
