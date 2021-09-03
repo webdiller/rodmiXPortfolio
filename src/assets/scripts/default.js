@@ -1,5 +1,5 @@
 import { yamapInit } from './modules/yamap.js';
-import { ourFeatures, ourPublications, ourReviewsSlider, sverlaSlider, allMaterialsSlider, ourProductionSlider } from './modules/slider.js';
+import { ourFeatures, ourPublications, ourReviewsSlider, sverlaSlider, allMaterialsSlider, ourProductionSlider, disksSwiper } from './modules/slider.js';
 import { defaultScripts } from './modules/base.js';
 import { uiSizes } from './modules/uiSizes.js';
 import { uiForms } from './modules/uiForm.js';
@@ -51,6 +51,21 @@ allMaterialsSlider();
 ourProductionSlider();
 uiSizes();
 uiForms();
+disksSwiper();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // TODO: Удалить при продакшене
 const resizeMode = () => {

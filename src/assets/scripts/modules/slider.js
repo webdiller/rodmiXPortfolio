@@ -174,6 +174,10 @@ export function allMaterialsSlider() {
             spaceBetween: 30
           }
         },
+        navigation: {
+          nextEl: '.ui-materials__navigation .swiper-button-next',
+          prevEl: '.ui-materials__navigation .swiper-button-prev'
+        },
         on: {
           init: function () {
             console.log('allMaterials initialized');
@@ -189,33 +193,107 @@ export function allMaterialsSlider() {
 
 export function ourProductionSlider() {
   try {
-    const ourProduction = document.getElementById('ourProduction');
-    if (ourProduction && window.innerWidth >= 640) {
-      const swiperOptions = {
+    const ourProductionMobile = document.getElementById('ourProductionMobile');
+    const ourProductionDesktop = document.getElementById('ourProductionDesktop');
+
+    if (ourProductionMobile && window.innerWidth <= 639) {
+      const swiperOptionsMobile = {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        breakpoints: {
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 15
+          }
+        },
+        on: {
+          init: function () {
+            console.log('ourProductionMobile initialized');
+          }
+        }
+      };
+      return new Swiper(ourProductionMobile, swiperOptionsMobile);
+    }
+
+    if (ourProductionDesktop && window.innerWidth >= 640) {
+      const swiperOptionsDesktop = {
         slidesPerView: 3,
         spaceBetween: 11,
         breakpoints: {
           768: {
+            slidesPerView: 3,
             spaceBetween: 15
           },
           1430: {
             spaceBetween: 30
           }
         },
-        on: {
-          init: function () {
-            console.log('ourProduction initialized');
-          }
-        },
         navigation: {
           nextEl: '.our-production__navigation .swiper-button-next',
           prevEl: '.our-production__navigation .swiper-button-prev'
         },
+        on: {
+          init: function () {
+            console.log('ourProductionDesktop initialized');
+          }
+        },
       };
-      return new Swiper(ourProduction, swiperOptions);
+      return new Swiper(ourProductionDesktop, swiperOptionsDesktop);
     }
   } catch (error) {
     console.log('handle error', error);
   }
 };
+
+export function disksSwiper() {
+  try {
+  const disksSwiperElement = document.getElementById('disksSwiperElement');
+  if (disksSwiperElement) {
+    const disksSwiperOptions = {
+      slidesPerView: 1.4,
+      spaceBetween: 16,
+      loop: true,
+      breakpoints: {
+        540: {
+          slidesPerView: 2.1,
+          spaceBetween: 15
+        },
+        640: {
+          slidesPerView: 2.3,
+          spaceBetween: 10
+        },
+        768: {
+          slidesPerView: 2.6,
+          spaceBetween: 24
+        },
+        1020: {
+          slidesPerView: 3.5,
+          spaceBetween: 24
+        },
+        1430: {
+          slidesPerView: 5,
+          spaceBetween: 24
+        }
+      },
+      pagination: {
+        el: '#disksSwiperElement .swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.ui-disk-sizes__navigation .swiper-button-next',
+        prevEl: '.ui-disk-sizes__navigation .swiper-button-prev'
+      },
+      on: {
+        init: function () {
+          console.log('disksSwiperElement initialized');
+        }
+      },
+    };
+    return new Swiper(disksSwiperElement, disksSwiperOptions);
+  }
+  } catch (error) {
+    
+  }
+}
 
