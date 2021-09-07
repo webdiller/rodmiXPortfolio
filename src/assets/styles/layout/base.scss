@@ -692,12 +692,20 @@ input:focus {
   }
 }
 
+.show-block-1140 {
+  display: none;
+  @media (min-width: 1140px) {
+    display: block;
+  }
+}
+
 .show-block-1200 {
   display: none;
   @media (min-width: 1200px) {
     display: block;
   }
 }
+
 
 .disable-mb {
   margin-bottom: 0;

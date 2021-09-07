@@ -160,6 +160,9 @@
   &__item-text a {
     text-decoration: underline;
     color: $red;
+    &:hover {
+      text-decoration: none;
+    }
   }
   &__list {
     margin-bottom: 20px;

@@ -51,6 +51,9 @@
     @media (min-width: 1020px) {
       grid-template-columns: repeat(3, 1fr);
     }
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
     @media (min-width: 1430px) {
       grid-template-columns: repeat(6, 1fr);
     }
@@ -113,17 +116,35 @@
       }
     }
 
-    // 1020-1430
+    // 1020-1200
     &:nth-child(3n + 1) {
       @media (min-width: 1020px) {
+        padding-left: 12px;
+      }
+      @media (min-width: 1200px) {
+        padding-left: 0;
+      }
+    }
+    &:nth-child(3n + 3) {
+      @media (min-width: 1020px) {
+        padding-right: 12px;
+      }
+      @media (min-width: 1200px) {
+        padding-right: 0;
+      }
+    }
+
+    // 1200-1430
+    &:nth-child(4n + 1) {
+      @media (min-width: 1200px) {
         padding-left: 12px;
       }
       @media (min-width: 1430px) {
         padding-left: 0;
       }
     }
-    &:nth-child(3n + 3) {
-      @media (min-width: 1020px) {
+    &:nth-child(4n + 4) {
+      @media (min-width: 1200px) {
         padding-right: 12px;
       }
       @media (min-width: 1430px) {

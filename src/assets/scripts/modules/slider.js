@@ -115,7 +115,7 @@ export function ourReviewsSlider() {
         slidesPerView: 1,
         spaceBetween: 10,
         breakpoints: {
-          1430: {
+          1140: {
             slidesPerView: 2,
             spaceBetween: 32
           }
