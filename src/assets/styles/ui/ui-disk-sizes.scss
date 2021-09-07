@@ -1,11 +1,27 @@
 .ui-disk-sizes {
   &__wrapper {
+    margin-bottom: 40px;
     padding: 0 0 0 15px;
+    @media (min-width: 480px) {
+      margin-bottom: 50px;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      margin-bottom: 40px;
+    }
+    @media (min-width: 768px) {
+      margin-bottom: 50px;
+    }
+    @media (min-width: 1020px) {
+      margin-bottom: 70px;
+    }
     @media (min-width: 1430px) {
       padding-left: 0;
       width: 1400px;
       margin-left: auto;    
       margin-right: auto;
+      margin-bottom: 140px;
     }
   }
   &__title2 {
@@ -92,17 +108,17 @@
   }
   &__navigation {
     position: absolute;
-    top: 50%;
+    top: calc(50% - 30px);
     right: 50%;
     transform: translate(50%, -50%);
-    z-index: 100;
-
-    justify-content: space-between;
     width: calc(100% + 124px);
     z-index: 100;
 
+    justify-content: space-between;
+    z-index: 100;
+
     display: none;
-    @media (min-width: 1430px) {
+    @media (min-width: 1600px) {
       display: flex;
     }
   }
@@ -123,7 +139,6 @@
     @media (min-width: 1020px) {
     }
     @media (min-width: 1430px) {
-      display: none;
     }
   }
   .swiper-pagination-bullet-active {
@@ -135,7 +150,7 @@
     width: 11px;
     height: 11px;
     &:not(:last-child) {
-      margin-right: 2px;
+      margin-right: 4px;
     }
   }
   .swiper-button-prev {

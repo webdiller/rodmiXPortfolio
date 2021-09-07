@@ -302,13 +302,17 @@
       }
     }
     .features__title2 {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      @media (min-width: 768px) {
+        margin-top: 50px;
+        margin-bottom: 30px;
+      }
       @media (min-width: 1140px) {
-        margin-bottom: 58px;
         font-size: 40px;
         line-height: 100%;
       }
       @media (min-width: 1430px) {
-        margin-bottom: 58px;
         font-size: 30px;
         line-height: 100%;
       }

@@ -185,55 +185,6 @@ input:focus {
   align-items: center;
 }
 
-.title1 {
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 34px;
-  color: #454545;
-  text-align: center;
-  @media (min-width: 480px) {
-    font-size: 36px;
-    line-height: 41px;
-  }
-  @media (min-width: 640px) {
-    text-align: left;
-  }
-  @media (min-width: 768px) {
-    font-size: 40px;
-    line-height: 46px;
-  }
-  @media (min-width: 1020px) {
-    font-size: 46px;
-    line-height: 53px;
-  }
-  @media (min-width: 1430px) {
-    font-size: 46px;
-    line-height: 53px;
-  }
-  &_index {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    color: #454545;
-    @media (min-width: 480px) {
-      font-size: 30px;
-      line-height: 34px;
-    }
-    @media (min-width: 640px) {
-      font-size: 36px;
-      line-height: 41px;
-    }
-    @media (min-width: 1020px) {
-      font-size: 36px;
-      line-height: 41px;
-    }
-    @media (min-width: 1430px) {
-      font-size: 46px;
-      line-height: 53px;
-    }
-  }
-}
-
 .btn-outline {
   @include reset-link;
   @include reset-btn;
@@ -484,7 +435,62 @@ input:focus {
   }
 }
 
+.title1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 34px;
+  color: #454545;
+  text-align: center;
+  @media (min-width: 480px) {
+    font-size: 36px;
+    line-height: 41px;
+  }
+  @media (min-width: 640px) {
+    text-align: left;
+  }
+  @media (min-width: 768px) {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    line-height: 46px;
+  }
+  @media (min-width: 1020px) {
+    font-size: 46px;
+    line-height: 53px;
+  }
+  @media (min-width: 1430px) {
+    font-size: 46px;
+    line-height: 53px;
+  }
+  &_index {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #454545;
+    @media (min-width: 480px) {
+      font-size: 30px;
+      line-height: 34px;
+    }
+    @media (min-width: 640px) {
+      font-size: 36px;
+      line-height: 41px;
+    }
+    @media (min-width: 1020px) {
+      font-size: 36px;
+      line-height: 41px;
+    }
+    @media (min-width: 1430px) {
+      font-size: 46px;
+      line-height: 53px;
+    }
+  }
+}
+
 .title2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
   font-weight: 500;
   color: #454545;
   font-size: 24px;
@@ -498,7 +504,12 @@ input:focus {
   @media (min-width: 640px) {
     text-align: left;
   }
+  @media (min-width: 768px) {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
   @media (min-width: 1020px) {
+    margin-top: 75px;
     font-size: 40px;
     line-height: 46px;
   }
@@ -807,6 +818,14 @@ input:focus {
       margin: 96px 0 69px 0;
     }
   }
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
 }
 
 .hide-on-640 {

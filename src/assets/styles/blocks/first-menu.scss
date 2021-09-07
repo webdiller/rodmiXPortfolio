@@ -1,9 +1,10 @@
 .first-menu {
   &__wrapper {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 26px;
     margin-bottom: 21px;
+    row-gap: 5px;
     @media (min-width: 480px) {
       margin-top: 20px;
       margin-bottom: 45px;
@@ -15,8 +16,9 @@
     @media (min-width: 640px) {
     }
     @media (min-width: 768px) {
-      flex-wrap: nowrap;
+      grid-template-columns: repeat(4, 1fr);
       margin-top: 50px;
+      row-gap: 0;
     }
     @media (min-width: 1020px) {
       margin-top: 100px;
@@ -31,7 +33,6 @@
     font-size: 12px;
     line-height: 29px;
     color: #454545;
-    margin-bottom: 5px;
     transition: all 0.3s ease;
     @media (min-width: 480px) {
       font-size: 16px;
@@ -42,7 +43,6 @@
     }
     @media (min-width: 768px) {
       flex: 0 0 25%;
-      margin-bottom: 0;
       white-space: nowrap;
       font-size: 14px;
     }

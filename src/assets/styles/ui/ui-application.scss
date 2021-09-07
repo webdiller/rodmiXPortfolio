@@ -15,24 +15,18 @@
     }
   }
   &__title2 {
-    margin-bottom: 28px;
     @media (min-width: 480px) {
-      margin-bottom: 52px;
     }
     @media (min-width: 540px) {
     }
     @media (min-width: 640px) {
-      margin-bottom: 49px;
       text-align: left;
     }
     @media (min-width: 768px) {
-      margin-bottom: 52px;
     }
     @media (min-width: 1020px) {
-      margin-bottom: 43px;
     }
     @media (min-width: 1430px) {
-      margin-bottom: 54px;
     }
   }
   &__table {
