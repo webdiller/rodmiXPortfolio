@@ -368,7 +368,7 @@
         margin-top: 0;
       }
       @media (min-width: 1020px) {
-        margin: 0 auto 0 calc(65px + 32px);
+        margin: 0 0 0 calc(65px + 32px);
         color: $red;
         text-transform: none;
         font-size: 24px;
@@ -386,7 +386,7 @@
         margin-top: auto;
       }
       @media (min-width: 1020px) {
-        margin: 0 auto 0 calc(65px + 32px);
+        margin: 0 0 0 calc(65px + 32px);
         color: #454545;
         font-size: 20px;
         line-height: 30px;
