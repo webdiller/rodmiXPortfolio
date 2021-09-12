@@ -52,7 +52,7 @@
         margin-right: 46px;
       }
       &::before {
-        content: '\E017';
+        content: '\E01A';
         position: absolute;
         font-family: Icons;
         font-size: 22px;
@@ -183,11 +183,10 @@
       top: 284px;
       display: flex;
       @media (min-width: 480px) {
-        top: 94px;
+        top: 60px;
         right: 20px;
       }
       @media (min-width: 540px) {
-        top: 90px;
       }
       @media (min-width: 640px) {
         top: 0;

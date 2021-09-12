@@ -59,16 +59,19 @@
     height: 60px;
     border-bottom: 1px solid #ececec;
     font-size: 10px;
+    white-space: nowrap;
 
     // 320-480
     &:nth-child(2n + 1) {
       padding-left: 10px;
+      padding-right: 15px;
       @media (min-width: 480px) {
         padding-left: 0;
+        padding-right: 0;
       }
     }
     &:nth-child(2n + 2) {
-      padding-right: 10px;
+      padding-right: 5px;
       @media (min-width: 480px) {
         padding-right: 0;
       }
@@ -96,9 +99,11 @@
     &:nth-child(4n + 1) {
       @media (min-width: 640px) {
         padding-left: 10px;
+        padding-right: 10px;
       }
       @media (min-width: 1020px) {
         padding-left: 0;
+        padding-right: 0;
       }
     }
     &:nth-child(4n + 4) {
@@ -162,11 +167,18 @@
   &__col-wrapper {
     display: flex;
     align-items: center;
+    font-size: 10px;
     strong {
       font-weight: 700;
     }
     @media (min-width: 480px) {
+      font-size: 11px;
+    }
+    @media (min-width: 540px) {
       font-size: 12px;
+    }
+    @media (min-width: 680px) {
+      font-size: 11px;
     }
     @media (min-width: 768px) {
       font-size: 14px;
@@ -181,15 +193,41 @@
     top: -1px;
     color: $red;
     font-size: 10px;
+    &_disabled {
+      opacity: 0;
+      visibility: hidden;
+    }
+    @media (min-width: 480px) {
+      font-size: 9px;
+    }
+    @media (min-width: 540px) {
+      font-size: 10px;
+    }
+    @media (min-width: 640px) {
+      font-size: 9px;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+      font-size: 10px;
+    }
+    @media (min-width: 1430px) {
+    }
   }
 
   &__text {
     margin-left: 10px;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
     @media (min-width: 768px) {
-      font-size: 14px;
     } 
     @media (min-width: 1020px) {
-      font-size: 16px;
+    }
+    @media (min-width: 1430px) {
     }
   }
 

@@ -3,6 +3,7 @@
     &__item {
       @include reset-link();
       display: block;
+      max-width: fit-content;
       font-style: normal;
       font-weight: normal;
       font-size: 12px;

@@ -247,6 +247,39 @@
     }
   }
 
+  &_available-sizes {
+    .ui-sizes__head {
+      @media (min-width: 640px) {
+        grid-template-columns: 1fr 1fr 170px 1fr 1fr;
+      }
+      @media (min-width: 768px) {
+        grid-template-columns: 145px 115px 1fr 130px 80px 60px;
+      }
+      @media (min-width: 1020px) {
+        grid-template-columns: 1fr 1fr 210px 1fr 1fr 60px;
+      }
+    }
+    .ui-sizes__body-row {
+      @media (min-width: 640px) {
+        grid-template-columns: 1fr 1fr 170px 1fr 1fr;
+      }
+      @media (min-width: 768px) {
+        grid-template-columns: 145px 115px 1fr 130px 80px 60px;
+      }
+      @media (min-width: 1020px) {
+        grid-template-columns: 1fr 1fr 210px 1fr 1fr 60px;
+      }
+    }
+    .ui-sizes__img {
+      @media (min-width: 768px) {
+        max-width: 100%;
+      }
+      @media (min-width: 1020px) {
+        max-width: 170px;
+      }
+    }
+  }
+
   &_three {
     .ui-sizes__head {
       grid-template-columns: repeat(3, 1fr);
@@ -406,15 +439,12 @@
       }
     }
 
-
     .ui-sizes__body-row {
+      height: 80px;
       grid-template-columns: repeat(5, 1fr);
       @media (min-width: 768px) {
         grid-template-columns: 80px 100px 180px 1fr 1fr 60px 60px;
       }
-    }
-    .ui-sizes__body-row {
-      height: 80px;
     }
     .ui-sizes__body_inner .ui-sizes__body-row {
       height: 30px;
@@ -440,6 +470,13 @@
   }
 
   &_three-accessories {
+
+    .ui-sizes__title2 {
+      @media (min-width: 1020px) {
+        margin-top: 50px;
+      }
+    }
+
     .ui-sizes__head {
       grid-template-columns: 100px 1fr;
       @media (min-width: 540px) {
@@ -447,6 +484,9 @@
       }
       @media (min-width: 768px) {
         grid-template-columns: 120px 110px 1fr 30px;
+      }
+      @media (min-width: 1430px) {
+        grid-template-columns: 120px 150px 1fr 30px;
       }
     }
     .ui-sizes__head-col:nth-child(2) {
@@ -474,6 +514,9 @@
       @media (min-width: 768px) {
         grid-template-columns: 120px 110px 1fr 30px;
       }
+      @media (min-width: 1430px) {
+        grid-template-columns: 120px 150px 1fr 30px;
+      }
     }
     .ui-sizes__body-col:nth-child(2) {
       display: none;
@@ -491,6 +534,23 @@
         display: inline-flex;
       }
     }
-  }
 
+    .ui-sizes__img {
+      @media (min-width: 540px) {
+        max-width: 100%;
+        height: 31px;
+      }
+      @media (min-width: 640px) {
+      }
+      @media (min-width: 768px) {
+        height: 40px;
+      }
+      @media (min-width: 1020px) {
+        height: 39px;
+      }
+      @media (min-width: 1430px) {
+        height: 48px;
+      }
+    }
+  }
 }

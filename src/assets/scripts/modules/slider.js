@@ -178,6 +178,11 @@ export function allMaterialsSlider() {
           nextEl: '.ui-materials__navigation .swiper-button-next',
           prevEl: '.ui-materials__navigation .swiper-button-prev'
         },
+        pagination: {
+          el: '#allMaterials .swiper-pagination',
+          type: 'bullets',
+          clickable: true
+        },
         on: {
           init: function () {
             console.log('allMaterials initialized');

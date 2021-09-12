@@ -131,16 +131,23 @@ function createIconsFromSvg() {
         normalize: true,
         path: './src/assets/styles/_icons.css', // path to config file
         fontPath: '../fonts/', // path for root path
-        targetPath: './iconsfonts.css'
+        targetPath: './iconsfonts.css',
+        appendCodepoints: true
       })
     )
     .pipe(
       iconfont({
         fontName,
         normalize: true,
-        prependUnicode: true
+        prependUnicode: true,
+        appendCodepoints: true
       })
     )
+    .on('codepoints', function(codepoints, options) {
+      codepoints.forEach(function(glyph, idx, arr) {
+        arr[idx].codepoint = glyph.codepoint.toString(16)
+      });
+    })
     .pipe(gulp.dest('./src/assets/fonts/'));
 }
 
