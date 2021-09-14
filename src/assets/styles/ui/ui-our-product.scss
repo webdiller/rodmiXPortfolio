@@ -157,6 +157,7 @@
       width: 190px;
     }
   }
+
   &_sm {
     .ui-our-product__title {
       font-size: 18px;
@@ -182,8 +183,100 @@
         line-height: 21px;
       }
       @media (min-width: 1430px) {
+        margin: 22px 0 0 16px;
         font-size: 18px;
         line-height: 21px;
+      }
+    }
+  }
+
+  &_disk {
+    @media (min-width: 480px) {
+      height: 130px;
+    }
+    @media (min-width: 540px) {
+      height: 147px;
+    }
+    @media (min-width: 640px) {
+      height: 147px;
+    }
+    @media (min-width: 768px) {
+      height: 156px;
+    }
+    @media (min-width: 1020px) {
+      height: 156px;
+    }
+    @media (min-width: 1430px) {
+      height: 156px;
+    }
+    .ui-our-product__title { 
+      @media (min-width: 1430px) {
+        margin: 30px 0 0 30px;
+      }
+    }
+    .ui-our-product__picture {
+      top: 15px;
+      bottom: unset;
+      right: -15px;
+      @media (min-width: 480px) {
+      }
+      @media (min-width: 540px) {
+        bottom: unset;
+        top: 17px;
+        right: -20px;
+      }
+      @media (min-width: 640px) {
+        bottom: unset;
+        top: 17px;
+        right: -20px;
+      }
+      @media (min-width: 768px) {
+        bottom: unset;
+        top: 18px;
+        right: -24px;
+      }
+      @media (min-width: 1020px) {
+      }
+      @media (min-width: 1430px) {
+      }
+    }
+    .ui-our-product__img {
+      position: absolute;
+      top: 0;
+      bottom: unset;
+      right: 0;
+      width: 140px;
+      @media (min-width: 480px) {
+        bottom: unset;
+        top: 0;
+        right: 0px;
+      }
+      @media (min-width: 540px) {
+        width: 161px;
+        bottom: unset;
+        top: 0;
+        right: 0px;
+      }
+      @media (min-width: 640px) {
+        bottom: unset;
+        top: 0;
+        right: 0px;
+      }
+      @media (min-width: 768px) {
+        width: 172px;
+        bottom: unset;
+        top: 0;
+        right: 0px;
+      }
+      @media (min-width: 1020px) {
+        bottom: unset;
+        top: 0;
+        right: 0px;
+      }
+      @media (min-width: 1430px) {
+        bottom: unset;
+        top: 0;
+        right: 0px;
       }
     }
   }

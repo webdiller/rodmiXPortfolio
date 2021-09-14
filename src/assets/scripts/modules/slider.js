@@ -259,6 +259,10 @@ export function disksSwiper() {
       spaceBetween: 16,
       loop: true,
       breakpoints: {
+        480: {
+          slidesPerView: 2.1,
+          spaceBetween: 15
+        },
         540: {
           slidesPerView: 2.1,
           spaceBetween: 15

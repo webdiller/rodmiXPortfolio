@@ -158,12 +158,13 @@
       line-height: 27px;
     }
     @media (min-width: 1020px) {
-      font-size: 16px;
-      line-height: 40px;
+      font-size: 18px;
+      line-height: 27px;
     }
     @media (min-width: 1430px) {
-      font-size: 14px;
-      line-height: 250%;
+      font-size: 18px;
+      // line-height: 150%;
+      line-height: 40px;
     }
   }
 
@@ -312,7 +313,7 @@
     justify-content: space-between;
 
     &::before {
-      content:"";
+      content: '';
       position: absolute;
       bottom: 15px;
       width: calc(100% - 5px);
@@ -356,8 +357,10 @@
     @media (min-width: 768px) {
     }
     @media (min-width: 1020px) {
+      font-size: 16px;
     }
     @media (min-width: 1430px) {
+      font-size: 16px;
     }
   }
 
@@ -379,8 +382,12 @@
     @media (min-width: 768px) {
     }
     @media (min-width: 1020px) {
+      font-size: 16px;
     }
     @media (min-width: 1430px) {
+      position: relative;
+      top: 3px;
+      font-size: 14px;
     }
   }
 

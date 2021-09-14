@@ -4,6 +4,7 @@
     margin-top: 50px;
     margin-bottom: 50px;
     @media (min-width: 1020px) {
+      margin-top: 100px;
       margin-bottom: 50px;
     }
   }
@@ -37,12 +38,12 @@
     top: 9px;
     right: 0;
     display: none;
-    @media (min-width: 640px) {
-      display: flex;
-    }
-    @media (min-width: 1430px) {
-      display: none;
-    }
+    // @media (min-width: 640px) {
+    //   display: flex;
+    // }
+    // @media (min-width: 1430px) {
+    //   display: none;
+    // }
   }
 
   .swiper-button-prev {
@@ -210,9 +211,9 @@
     @media (min-width: 768px) {
     }
     @media (min-width: 1020px) {
+      display: block;
     }
     @media (min-width: 1430px) {
-      display: block;
     }
   }
 
@@ -260,6 +261,9 @@
     border-radius: 5px;
     height: 174px;
     text-align: left;
+    
+    text-decoration-line: underline;
+    text-decoration-color: $red;
     @media (min-width: 480px) {
       height: 212px;
       padding: 22px;
@@ -334,9 +338,9 @@
   &__slide-text {
     font-size: 12px;
     line-height: 14px;
+    color: $red;
     text-decoration-line: underline;
     text-decoration-color: $red;
-    color: $red;
     @media (min-width: 480px) {
     }
     @media (min-width: 540px) {
