@@ -10,12 +10,10 @@ let counterMap = 0;
 let featuresSwiperSlider = null;
 let publicationsSwiperSlider = null;
 
+yamapInit()
+
 window.addEventListener('scroll', function (e) {
   if (window.scrollY > 100) {
-    if (counterMap <= 0) {
-      counterMap++;
-      yamapInit();
-    }
     if (counterSwiperFeatures <= 0) {
       counterSwiperFeatures++;
       featuresSwiperSlider = ourFeatures();
@@ -52,26 +50,3 @@ ourProductionSlider();
 uiSizes();
 uiForms();
 disksSwiper();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// TODO: Удалить при продакшене
-const resizeMode = () => {
-  const resizer = document.getElementById('resizer');
-  window.addEventListener('resize', () => {
-    resizer.innerHTML = window.innerWidth;
-  });
-};
-resizeMode();

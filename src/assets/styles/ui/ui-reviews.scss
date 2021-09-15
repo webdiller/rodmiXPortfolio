@@ -31,6 +31,15 @@
       position: relative;
       text-align: center;
       margin-bottom: 67px;
+
+      &:hover,
+      &:focus {
+        cursor: pointer;
+        .ui-reviews__slide-icon {
+          color: $redHover;
+        }
+      }
+
       @media (min-width: 480px) {
         align-self: flex-start;
         margin-bottom: 0;
@@ -50,25 +59,6 @@
       }
       @media (min-width: 1430px) {
         margin-right: 46px;
-      }
-      &::before {
-        content: '\E01A';
-        position: absolute;
-        font-family: Icons;
-        font-size: 22px;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: 400;
-        text-decoration: none;
-        text-transform: none;
-        color: #e31e25;
-        top: 50%;
-        right: 50%;
-        -webkit-transform: translate(50%, -50%);
-        transform: translate(50%, -50%);
-        z-index: 10;
       }
     }
   
@@ -96,6 +86,31 @@
       }
       @media (min-width: 1430px) {
         height: 267px;
+      }
+    }
+
+    &__slide-icon {
+      position: absolute;
+      font-size: 22px;
+      text-decoration: none;
+      text-transform: none;
+      color: $red;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+      z-index: 10;
+      transition: all 0.3s ease;
+      @media (min-width: 480px) {
+      }
+      @media (min-width: 540px) {
+      }
+      @media (min-width: 640px) {
+      }
+      @media (min-width: 768px) {
+      }
+      @media (min-width: 1020px) {
+      }
+      @media (min-width: 1430px) {
       }
     }
   
