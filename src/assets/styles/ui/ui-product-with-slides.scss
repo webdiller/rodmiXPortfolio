@@ -1,0 +1,183 @@
+.ui-product-with-slides {
+  &__wrapper {
+    margin-bottom: 22px;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+      margin-bottom: 20px;
+    }
+    @media (min-width: 640px) {
+      margin-bottom: 13px;
+    }
+    @media (min-width: 768px) {
+      margin-bottom: 19px;
+    }
+    @media (min-width: 1020px) {
+      margin-bottom: 40px;
+    }
+    @media (min-width: 1430px) {
+      margin-bottom: 28px;
+    }
+  }
+  &__top {
+    margin-bottom: 13px;
+
+    @media (min-width: 480px) {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      column-gap: 38px;
+      margin-bottom: 18px;
+    }
+    @media (min-width: 540px) {
+      column-gap: 30px;
+      grid-template-columns: 145px 1fr;
+      margin-bottom: 20px;
+    }
+    @media (min-width: 640px) {
+      column-gap: 10px;
+      margin-bottom: 10px;
+    }
+    @media (min-width: 768px) {
+      grid-template-columns: 173px 1fr;
+      column-gap: 15px;
+      margin-bottom: 20px;
+    }
+    @media (min-width: 1020px) {
+      grid-template-columns: 231px 1fr;
+      column-gap: 16px;
+      margin-bottom: 24px;
+    }
+    @media (min-width: 1430px) {
+      grid-template-columns: 210px 1fr;
+      column-gap: 30px;
+      margin-bottom: 22px;
+    }
+  }
+  &__picture {
+  }
+  &__img {
+    display: block;
+    margin: 0 auto 29px auto;
+    width: 172px;
+    height: auto;
+    @media (min-width: 480px) {
+      width: 100%;
+      margin: 0;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+  &__content {
+    text-align: left;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+  &__content-title {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1;
+    @media (min-width: 480px) {
+      max-width: 150px;
+      margin-bottom: 16px;
+      font-size: 18px;
+    }
+    @media (min-width: 540px) {
+      margin-bottom: 19px;
+      max-width: unset;
+      font-size: 18px;
+    }
+    @media (min-width: 640px) {
+      margin-bottom: 17px;
+      font-size: 20px;
+    }
+    @media (min-width: 768px) {
+      font-size: 24px;
+      margin-bottom: 13px;
+    }
+    @media (min-width: 1020px) {
+      margin-top: 15px;
+      margin-bottom: 14px;
+    }
+    @media (min-width: 1430px) {
+      margin-bottom: 13px;
+    }
+    strong {
+      color: $red;
+    }
+  }
+  &__content-text {
+    font-size: 12px;
+    line-height: 140%;
+    @media (min-width: 480px) {
+      font-size: 14px;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      font-size: 16px;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+      font-size: 18px;
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+  &__slides {
+    @media (min-width: 480px) {
+      max-width: 300px;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+      max-width: 362px;
+    }
+    @media (min-width: 1020px) {
+      max-width: 642px;
+    }
+    @media (min-width: 1430px) {
+      max-width: unset;
+    }
+    .ui-slider__slide {
+      height: 84px;
+      @media (min-width: 480px) {
+      }
+      @media (min-width: 540px) {
+        height: 86px;
+      }
+      @media (min-width: 640px) {
+      }
+      @media (min-width: 768px) {
+        height: 88px;
+      }
+      @media (min-width: 1020px) {
+          height: 121px;
+      }
+      @media (min-width: 1430px) {
+        height: 153px;
+      }
+    }
+  }
+}

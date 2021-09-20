@@ -107,6 +107,144 @@ export function sverlaSlider() {
   }
 }
 
+export function burnersSlider1() {
+  try {
+    const burnersSlider1 = document.getElementById('burnersSlider1');
+    if (burnersSlider1) {
+      const swiperOptions = {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        breakpoints: {
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 10
+          },
+          540: {
+            slidesPerView: 3,
+            spaceBetween: 10
+          },
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 10
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 15
+          },
+          1020: {
+            slidesPerView: 4,
+            spaceBetween: 14  
+          },
+          1430: {
+            slidesPerView: 4,
+            spaceBetween: 17  
+          },
+        },
+        on: {
+          init: function () {
+            console.log('burnersSlider1 initialized');
+          }
+        }
+      };
+      return new Swiper(burnersSlider1, swiperOptions);
+    }
+  } catch (error) {
+    console.log('handle error', error);
+  }
+}
+
+export function burnersSlider2() {
+  try {
+    const burnersSlider2 = document.getElementById('burnersSlider2');
+    if (burnersSlider2) {
+      const swiperOptions = {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        breakpoints: {
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 10
+          },
+          540: {
+            slidesPerView: 3,
+            spaceBetween: 10
+          },
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 10
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 15
+          },
+          1020: {
+            slidesPerView: 4,
+            spaceBetween: 14  
+          },
+          1430: {
+            slidesPerView: 4,
+            spaceBetween: 17  
+          },
+        },
+        on: {
+          init: function () {
+            console.log('burnersSlider2 initialized');
+          }
+        }
+      };
+      return new Swiper(burnersSlider2, swiperOptions);
+    }
+  } catch (error) {
+    console.log('handle error', error);
+  }
+}
+
+export function burnersSlider3() {
+  try {
+    const burnersSlider3 = document.getElementById('burnersSlider3');
+    if (burnersSlider3) {
+      const swiperOptions = {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        breakpoints: {
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 10
+          },
+          540: {
+            slidesPerView: 3,
+            spaceBetween: 10
+          },
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 10
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 15
+          },
+          1020: {
+            slidesPerView: 4,
+            spaceBetween: 14  
+          },
+          1430: {
+            slidesPerView: 4,
+            spaceBetween: 17  
+          },
+        },
+        on: {
+          init: function () {
+            console.log('burnersSlider3 initialized');
+          }
+        }
+      };
+      return new Swiper(burnersSlider3, swiperOptions);
+    }
+  } catch (error) {
+    console.log('handle error', error);
+  }
+}
+
 export function ourReviewsSlider() {
   try {
     const ourReviews = document.getElementById('ourReviews');

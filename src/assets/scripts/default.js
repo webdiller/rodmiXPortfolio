@@ -1,5 +1,5 @@
 import { yamapInit } from './modules/yamap.js';
-import { ourFeatures, ourPublications, ourReviewsSlider, sverlaSlider, allMaterialsSlider, ourProductionSlider, disksSwiper } from './modules/slider.js';
+import { ourFeatures, ourPublications, ourReviewsSlider, sverlaSlider, allMaterialsSlider, ourProductionSlider, disksSwiper, burnersSlider1, burnersSlider2, burnersSlider3 } from './modules/slider.js';
 import { defaultScripts } from './modules/base.js';
 import { uiSizes } from './modules/uiSizes.js';
 import { uiForms } from './modules/uiForm.js';
@@ -44,6 +44,9 @@ document.addEventListener(`DOMContentLoaded`, () => {
 });
 
 sverlaSlider();
+burnersSlider1()
+burnersSlider2()
+burnersSlider3()
 ourReviewsSlider();
 allMaterialsSlider();
 ourProductionSlider();

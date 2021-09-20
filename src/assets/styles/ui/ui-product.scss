@@ -396,6 +396,9 @@
     @media (min-width: 1430px) {
       margin-bottom: 109px;
     }
+    .ui-product__title1 {
+      text-align: left;
+    }
     .ui-product__img {
       width: 89px;
       margin-right: 11px;
@@ -421,6 +424,42 @@
       }
       @media (min-width: 1430px) {
         width: 209px;
+        margin-right: 31px;
+      }
+    }
+  }
+  &_burners {
+    @media (min-width: 1430px) {
+      margin-bottom: 109px;
+    }
+    .ui-product__title1 {
+      text-align: left;
+    }
+    .ui-product__img {
+      width: 35px;
+      margin-right: 11px;
+      @media (min-width: 480px) {
+        width: 76px;
+        margin-right: 15px;
+      }
+      @media (min-width: 540px) {
+        width: 96px;
+        margin-right: 18px;
+      }
+      @media (min-width: 640px) {
+        width: 96px;
+        margin-right: 10px;
+      }
+      @media (min-width: 768px) {
+        width: 114px;
+        margin-right: 15px;
+      }
+      @media (min-width: 1020px) {
+        width: 141px;
+        margin-right: 15px;
+      }
+      @media (min-width: 1430px) {
+        width: 185px;
         margin-right: 31px;
       }
     }

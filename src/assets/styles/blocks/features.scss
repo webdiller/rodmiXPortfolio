@@ -398,4 +398,117 @@
       }
     }
   }
+
+  &_burners {
+    .features__swiper-wrapper {
+      @media (min-width: 1020px) {
+        position: relative;
+        display: block;
+        &::before {
+          content: '';
+          position: absolute;
+          left: 32px;
+          top: 30px;
+          bottom: 30px;
+          width: 2px;
+          background-color: $red;
+        }
+      }
+    }
+    .features__title2 {
+      margin-top: 30px;
+      @media (min-width: 768px) {
+        margin-top: 50px;
+        margin-bottom: 30px;
+      }
+      @media (min-width: 1140px) {
+        display: block;
+        width: auto;
+        font-size: 30px;
+      }
+      @media (min-width: 1430px) {
+      }
+    }
+    .features .swiper-item,
+    .features__item {
+      @media (min-width: 1020px) {
+        position: relative;
+        display: flex;
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        margin-bottom: 57px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      @media (min-width: 1430px) {
+        margin-bottom: 54px;
+      }
+    }
+    .features__item-title {
+      @media (min-width: 1140px) {
+        margin-bottom: 5px;
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+
+    .features__item-description {
+      @media (min-width: 1140px) {
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+
+    .features__item-icon {
+      font-size: 30px;
+      @media (min-width: 1020px) {
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 65px;
+        height: 65px;
+        min-width: 65px;
+        min-height: 65px;
+        font-size: 30px;
+        background-color: #fafafa;
+      }
+    }
+    .features__item-title {
+      max-width: unset;
+      @media (min-width: 768px) {
+        margin-top: 0;
+      }
+      @media (min-width: 1020px) {
+        margin: 0 0 0 calc(65px + 32px);
+        color: $red;
+        text-transform: none;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: left;
+      }
+      @media (min-width: 1430px) {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+    .features__item-description {
+      max-width: unset;
+      @media (min-width: 768px) {
+        margin-top: auto;
+      }
+      @media (min-width: 1020px) {
+        margin: 0 0 0 calc(65px + 32px);
+        color: #454545;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: left;
+      }
+      @media (min-width: 1430px) {
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+  }
 }

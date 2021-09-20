@@ -1,0 +1,234 @@
+.ui-rating {
+  &__wrapper {
+    margin-bottom: 76px;
+    @media (min-width: 480px) {
+      margin-bottom: 51px;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      margin-bottom: 50px;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__title {
+    text-align: left;
+    margin-bottom: 20px;
+    @media (min-width: 480px) {
+      margin-bottom: 44px;
+    }
+    @media (min-width: 540px) {
+      margin-bottom: 44px;
+    }
+    @media (min-width: 640px) {
+      margin-bottom: 34px;
+    }
+    @media (min-width: 768px) {
+      margin-bottom: 34px;
+    }
+    @media (min-width: 1020px) {
+      margin-bottom: 34px;
+    }
+    @media (min-width: 1430px) {
+      margin-bottom: 34px;
+    }
+  }
+
+  &__scroll-wrapper {
+    overflow-x: scroll;
+    @media (min-width: 540px) {
+      overflow-x: inherit;
+    }
+    .ui-rating__table {
+      min-width: 500px;
+    }
+  }
+
+  &__table {
+  }
+
+  &__head {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: 1px solid transparent;
+  }
+
+  &__head-col {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+    font-weight: bold;
+    font-size: 12px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    &:first-child {
+      padding-left: 30px;
+    }
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+        font-size: 14px;
+        height: 50px;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+
+  &__body {
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 12px;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+        font-size: 14px;
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+        font-size: 16px;
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #fff;
+    &:nth-child(odd) {
+      background-color: #fdfdfd;
+    }
+    &:not(:last-child) {
+      border-bottom: 1px solid #ececec;
+    }
+  }
+
+  &__col {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+    white-space: nowrap;
+    box-sizing: border-box;
+
+    padding-left: 15px;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+    &:first-child {
+      padding-left: 30px;
+    }
+  }
+
+  &__star {
+    position: relative;
+    top: -1px;
+    color: $red;
+    font-size: 10px;
+    &_disabled {
+      opacity: 0;
+      visibility: hidden;
+    }
+    @media (min-width: 480px) {
+      font-size: 9px;
+    }
+    @media (min-width: 540px) {
+      font-size: 10px;
+    }
+    @media (min-width: 640px) {
+      font-size: 9px;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+      font-size: 10px;
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    margin-top: 19px;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+
+  &__footer-item {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    @media (min-width: 480px) {
+      margin-right: 26px;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      margin-right: 26px;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+
+  &__footer-text {
+    margin-left: 5px;
+    font-size: 11px;
+    line-height: 13px;
+    color: #9c8c8d;
+    @media (min-width: 480px) {
+      font-size: 14px;
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+}

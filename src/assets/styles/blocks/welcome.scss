@@ -42,7 +42,7 @@
     @media (min-width: 768px) {
       text-align: left;
       margin-top: 45px;
-      margin-bottom: 104px;
+      margin-bottom: 140px;
     }
     @media (min-width: 1020px) {
       margin-top: 70px;
@@ -714,6 +714,157 @@
       @media (min-width: 1430px) {
         height: 605px;
         bottom: 0px;
+      }
+    }
+    .welcome__action:last-child {
+      @media (min-width: 480px) {
+        width: 234px;
+      }
+      @media (min-width: 540px) {
+        width: 263px;
+      }
+      @media (min-width: 640px) {
+        width: 332px;
+      }
+    }
+    .welcome__actions {
+      @media (min-width: 480px) {
+        position: relative;
+        z-index: 10;
+      }
+    }
+  }
+
+  &_burners {
+    .welcome__wrapper {
+      @media (min-width: 640px) {
+        overflow: visible;
+      }
+      @media (min-width: 1020px) {
+        margin-bottom: 90px;
+      }
+    }
+    .welcome__title {
+      font-size: 20px;
+      margin-bottom: 6px;
+      @media (min-width: 480px) {
+        text-align: center;
+        font-size: 31px;
+        line-height: 36px;
+      }
+      @media (min-width: 540px) {
+        text-align: left;
+        margin-bottom: 40px;
+        font-size: 35px;
+        line-height: 44px;
+      }
+      @media (min-width: 640px) {
+        order: 1;
+        font-size: 42px;
+        line-height: 53px;
+      }
+      @media (min-width: 768px) {
+        font-size: 51px;
+        line-height: 62px;
+        margin-bottom: 30px;
+      }
+      @media (min-width: 1020px) {
+        margin-bottom: 5px;
+        font-size: 60px;
+        max-width: 900px;
+        margin-bottom: 20px;
+      }
+      @media (min-width: 1430px) {
+        max-width: 1100px;
+        font-size: 70px;
+        line-height: 80px;
+      }
+    }
+
+    .welcome__actions {
+      background-color: transparent;
+    }
+    .welcome__features {
+      @media (min-width: 640px) {
+        margin-bottom: 50px;
+      }
+      @media (min-width: 1430px) {
+        display: grid;
+        grid-template-columns: 350px 350px;
+        row-gap: 40px;
+      }
+    }
+    .welcome__feature:nth-child(2) ~ .welcome__feature {
+      display: none;
+      @media (min-width: 1430px) {
+        display: inline-flex;
+      }
+    }
+    .welcome__feature-title {
+      @media (min-width: 1430px) {
+        white-space: nowrap;
+      }
+    }
+    .welcome__text-content {
+      @media (min-width: 480px) {
+        margin-bottom: -50px;
+      }
+      @media (min-width: 540px) {
+        margin-bottom: -110px;
+      }
+      @media (min-width: 640px) {
+        margin-bottom: 121px;
+      }
+      @media (min-width: 768px) {
+        margin-bottom: 160px;
+      }
+      @media (min-width: 1020px) {
+        margin-bottom: 105px;
+      }
+      @media (min-width: 1430px) {
+        margin-top: 210px;
+        margin-bottom: 130px;
+      }
+    }
+    .welcome__picture {
+      @media (min-width: 480px) {
+        margin-bottom: -65px;
+      }
+      @media (min-width: 480px) {
+        margin-bottom: 0;
+      }
+    }
+    .welcome__drill-img {
+      height: 256px;
+      margin-bottom: -20px;
+      @media (min-width: 480px) {
+        height: 373px;
+        position: relative;
+        margin-bottom: 0;
+        margin-right: 0;
+      }
+      @media (min-width: 540px) {
+        height: 534px;
+      }
+      @media (min-width: 640px) {
+        position: absolute;
+        margin-bottom: 0;
+        height: 542px;
+        bottom: -15px;
+      }
+      @media (min-width: 768px) {
+        height: 585px;
+        bottom: 0;
+      }
+      @media (min-width: 1020px) {
+        height: 585px;
+        bottom: -60px;
+        right: 90px;
+      }
+      @media (min-width: 1430px) {
+        height: 809px;
+        bottom: 0px;
+        right: 0;
       }
     }
     .welcome__action:last-child {
