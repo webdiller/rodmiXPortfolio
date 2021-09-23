@@ -3,10 +3,10 @@ import { ourFeatures, ourPublications, ourReviewsSlider, sverlaSlider, allMateri
 import { defaultScripts } from './modules/base.js';
 import { uiSizes } from './modules/uiSizes.js';
 import { uiForms } from './modules/uiForm.js';
+import { uiTabs } from './modules/uiTabs.js';
 
 let counterSwiperFeatures = 0;
 let counterSwiperPublications = 0;
-let counterMap = 0;
 let featuresSwiperSlider = null;
 let publicationsSwiperSlider = null;
 
@@ -52,4 +52,5 @@ allMaterialsSlider();
 ourProductionSlider();
 uiSizes();
 uiForms();
+uiTabs();
 disksSwiper();

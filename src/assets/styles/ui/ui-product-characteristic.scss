@@ -137,6 +137,115 @@
     }
   }
 
+  &__images {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      margin-bottom: 40px;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+      margin-bottom: 48px;
+    }
+    @media (min-width: 1430px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__images-item {
+    position: relative;
+    width: 67px;
+    height: 57px;
+    margin-right: 9px;
+    border: 1px solid $red;
+    border-radius: 5px;
+    text-align: right;
+    cursor: pointer;
+
+    &::before {
+      content: attr(data-description);
+      position: absolute;
+
+      top: calc(100% + 3px);
+      left: -20px;
+
+      width: 100%;
+      min-width: 127px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-align: center;
+
+      background-color: #fff;
+
+      opacity: 0;
+      visibility: hidden;
+      z-index: -1;
+
+      transition: all 0.3s ease;
+      @media (min-width: 768px) {
+        left: 20px
+      }
+    }
+
+    &:hover::before {
+      opacity: 1;
+      visibility: visible;
+      z-index: 1;
+    }
+
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+      width: 76px;
+      height: 65px;
+      margin-right: 10px;
+    }
+    @media (min-width: 640px) {
+      width: 80px;
+      height: 68px;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+      width: 71px;
+      height: 60px;
+    }
+    @media (min-width: 1430px) {
+      width: 80px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__images-picture {
+
+  }
+
+  &__images-image {
+    max-height: 100%;
+    height: 100%;
+    width: auto;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+  }
+
   &__description {
     margin-bottom: 20px;
     font-size: 14px;
@@ -285,9 +394,35 @@
     }
     @media (min-width: 1430px) {
     }
+    span {
+      display: inline-block;
+      cursor: pointer;
+      color: $red;
+      transition: all 0.3s ease;
+      &.active {
+        color: #454545;
+      }
+      &:not(:last-child) {
+        margin-right: 25px;
+        @media (min-width: 480px) {
+        }
+        @media (min-width: 540px) {
+          margin-right: 35px;
+        }
+        @media (min-width: 640px) {
+        }
+        @media (min-width: 768px) {
+        }
+        @media (min-width: 1020px) {
+        }
+        @media (min-width: 1430px) {
+          margin-right: 45px;
+        }
+      }
+    }
   }
 
-  &__list {
+  &__tabs {
     margin-bottom: 10px;
     @media (min-width: 480px) {
     }
@@ -304,6 +439,75 @@
     }
     @media (min-width: 1430px) {
       margin-bottom: 0;
+    }
+  }
+
+  &__tabs {
+    margin-bottom: 10px;
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      margin-bottom: 15px;
+    }
+    @media (min-width: 768px) {
+      margin-bottom: 23px;
+    }
+    @media (min-width: 1020px) {
+      margin-bottom: 18px;
+    }
+    @media (min-width: 1430px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__tab {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+
+  &__list {
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+    }
+    &_complectation {
+      .ui-product-characteristic__item-value {
+        flex-basis: 10%;
+        text-align: left;
+        min-width: 53px;
+      }
+    }
+  }
+
+  &__list-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #efefef;
+  }
+  &__list-head-item {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 250%;
+    color: #9c8c8d;
+    &:last-child {
+      flex-basis: 10%;
+      text-align: left;
     }
   }
 
@@ -389,6 +593,9 @@
       top: 3px;
       font-size: 14px;
     }
+    span {
+      color: $red;
+    }
   }
 
   &__btn {
@@ -417,6 +624,35 @@
     }
     @media (min-width: 1200px) {
       display: none;
+    }
+  }
+
+  &_magnetic-machines {
+    .ui-product-characteristic__img {
+      width: 155px;
+      @media (min-width: 480px) {
+        width: 100%;
+      }
+    }
+    .ui-product-characteristic__wrapper {
+      @media (min-width: 480px) {
+        grid-template-columns: 136px 1fr;
+      }
+      @media (min-width: 540px) {
+        grid-template-columns: 155px 1fr;
+      }
+      @media (min-width: 640px) {
+        grid-template-columns: 195px 1fr;
+      }
+      @media (min-width: 768px) {
+        grid-template-columns: 236px 1fr;
+      }
+      @media (min-width: 1020px) {
+        grid-template-columns: 295px 1fr;
+      }
+      @media (min-width: 1430px) {
+        grid-template-columns: 330px 1fr;
+      }
     }
   }
 }
