@@ -105,6 +105,39 @@
     }
   }
 
+  &_aside-burners {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    @media (min-width: 480px) {
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+    @media (min-width: 540px) {
+      margin-top: 40px;
+    }
+    @media (min-width: 640px) {
+      margin-top: 60px;
+      margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+      margin-top: 0;
+      margin-bottom: 70px;
+    }
+    @media (min-width: 1200px) {
+      position: sticky;
+      top: 10px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    @media (min-width: 1430px) {
+      margin-top: 150px;
+    }
+    @media (min-width: 1920px) {
+      margin-top: 140px;
+      top: calc(119px + 20px);
+    }
+  }
+
   &__wrapper {
     padding: 28px 16px 21px 16px;
     border-radius: 5px;

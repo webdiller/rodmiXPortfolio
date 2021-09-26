@@ -107,7 +107,7 @@
     }
     @media (min-width: 1430px) {
     }
-    strong {
+    .ui-strong {
       color: #454545;
     }
   }
@@ -172,31 +172,72 @@
       content: attr(data-description);
       position: absolute;
 
-      top: calc(100% + 3px);
-      left: -20px;
+      bottom: calc(100% + 5px);
+      left: 50%;
+      transform: translateX(-50%);
 
       width: 100%;
       min-width: 127px;
-      padding: 10px 20px;
+      padding: 10px 20px 8px 20px;
       border-radius: 5px;
       text-align: center;
 
-      background-color: #fff;
+      background-color: #000;
+      color: #fff;
 
       opacity: 0;
       visibility: hidden;
       z-index: -1;
 
       transition: all 0.3s ease;
-      @media (min-width: 768px) {
-        left: 20px
-      }
+      z-index: 10;
     }
 
-    &:hover::before {
-      opacity: 1;
-      visibility: visible;
-      z-index: 1;
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   top: -15px;
+    //   left: 50%;
+    //   transform: translateX(-50%) rotate(45deg);
+    //   width: 10px;
+    //   height: 10px;
+    //   background-color: #000;
+
+    //   opacity: 0;
+    //   visibility: hidden;
+    //   z-index: -1;
+    //   transition: all 0.3s ease;
+    // }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -15px;
+        width: 100%;
+        min-width: 127px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 15px;
+        padding: 0 20px;
+        background-color: transparent;
+
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+    }
+
+    &:hover {
+      &::before {
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+        bottom: calc(100% + 10px);
+      }
+      &::after {
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+      }
     }
 
     @media (min-width: 480px) {
@@ -557,14 +598,13 @@
     @media (min-width: 540px) {
     }
     @media (min-width: 640px) {
+      font-size: 16px;
     }
     @media (min-width: 768px) {
     }
     @media (min-width: 1020px) {
-      font-size: 16px;
     }
     @media (min-width: 1430px) {
-      font-size: 16px;
     }
   }
 
@@ -652,6 +692,7 @@
       }
       @media (min-width: 1430px) {
         grid-template-columns: 330px 1fr;
+        column-gap: 30px;
       }
     }
   }

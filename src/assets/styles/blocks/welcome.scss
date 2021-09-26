@@ -649,7 +649,7 @@
     }
     .welcome__text-content {
       max-width: unset;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
     .welcome__actions {
       background-color: transparent;
@@ -885,4 +885,131 @@
       }
     }
   }
+
+  &_magnetic {
+    .welcome__wrapper {
+      @media (min-width: 640px) {
+        overflow: visible;
+      }
+    }
+    .welcome__title {
+      font-size: 23px;
+      margin-bottom: 6px;
+      @media (min-width: 480px) {
+        font-size: 32px;
+        line-height: 36px;
+      }
+      @media (min-width: 540px) {
+        font-size: 38px;
+        line-height: 44px;
+      }
+      @media (min-width: 640px) {
+        order: 1;
+        font-size: 44px;
+        line-height: 53px;
+      }
+      @media (min-width: 768px) {
+        font-size: 54px;
+        line-height: 62px;
+        margin-bottom: 10px;
+      }
+      @media (min-width: 1020px) {
+        margin-bottom: 5px;
+      }
+      @media (min-width: 1430px) {
+        font-size: 70px;
+        line-height: 80px;
+      }
+      @media (min-width: 1430px) {
+        max-width: 950px;
+      }
+    }
+    .welcome__text-content {
+      max-width: unset;
+      margin-bottom: 20px;
+    }
+    .welcome__actions {
+      background-color: transparent;
+    }
+    .welcome__features {
+      @media (min-width: 640px) {
+        margin-bottom: 50px;
+      }
+      @media (min-width: 1430px) {
+        display: grid;
+        grid-template-columns: 350px 350px;
+        row-gap: 40px;
+      }
+    }
+    .welcome__feature:nth-child(2) ~ .welcome__feature {
+      display: none;
+      @media (min-width: 1430px) {
+        display: inline-flex;
+      }
+    }
+    .welcome__feature-title {
+      @media (min-width: 1430px) {
+        white-space: nowrap;
+      }
+    }
+    .welcome__text-content {
+      @media (min-width: 540px) {
+        margin-bottom: 0;
+      }
+      @media (min-width: 640px) {
+        margin-bottom: 121px;
+      }
+      @media (min-width: 1430px) {
+        margin-top: 210px;
+        margin-bottom: 115px;
+      }
+    }
+    .welcome__drill-img {
+      height: 256px;
+      margin-bottom: -30px;
+      @media (min-width: 480px) {
+        height: 272px;
+        position: relative;
+        margin-bottom: -60px;
+        margin-right: 0;
+      }
+      @media (min-width: 540px) {
+      }
+      @media (min-width: 640px) {
+        position: absolute;
+        margin-bottom: 0;
+        height: 337px;
+        bottom: 5px;
+      }
+      @media (min-width: 768px) {
+        height: 403px;
+      }
+      @media (min-width: 1020px) {
+        height: 518px;
+        bottom: 0;
+      }
+      @media (min-width: 1430px) {
+        height: 605px;
+        bottom: 0px;
+      }
+    }
+    .welcome__action:last-child {
+      @media (min-width: 480px) {
+        width: 234px;
+      }
+      @media (min-width: 540px) {
+        width: 263px;
+      }
+      @media (min-width: 640px) {
+        width: 332px;
+      }
+    }
+    .welcome__actions {
+      @media (min-width: 480px) {
+        position: relative;
+        z-index: 10;
+      }
+    }
+  }
+
 }
