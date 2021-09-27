@@ -693,13 +693,9 @@ input:focus {
 
   &__arrow-short {
     position: absolute;
-    content: '\E002';
     top: 50%;
     right: 30px;
     transform: translateY(-50%);
-    font-family: Icons;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
@@ -721,22 +717,18 @@ input:focus {
     }
   }
   &__arrow-wide {
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     top: 50%;
     right: 30px;
     transform: translateY(-50%);
-    font-size: 12px;
-    @media (min-width: 480px) {
-      display: flex;
-    }
+    font-size: 10px;
     @media (min-width: 768px) {
-      font-size: 10px;
     }
     @media (min-width: 1430px) {
-      font-size: 15px;
+      font-size: 16px;
     }
   }
 }
