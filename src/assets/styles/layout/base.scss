@@ -8,6 +8,30 @@ html {
 }
 
 html {
+  scroll-behavior: smooth;
+}
+
+:target:before {
+  content: "";
+  display: block;
+  height: 10px;
+  margin: -10px 0 0;
+  @media (min-width: 480px) {
+  }
+  @media (min-width: 540px) {
+  }
+  @media (min-width: 640px) {
+  }
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 1020px) {
+  }
+  @media (min-width: 1430px) {
+  }
+  @media (min-width: 1920px) {
+    height: 122px;
+    margin: -122px 0 0;
+  }
 }
 
 body {
