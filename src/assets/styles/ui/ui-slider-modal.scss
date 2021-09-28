@@ -1,0 +1,133 @@
+.ui-slider-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: hsla(0, 0%, 6%, 0.6);
+  transition: all 0.3s ease;
+
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 100;
+  }
+  &__wrapper {
+  }
+
+  &__navigation {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .swiper-slide {
+      text-align: center;
+  }
+
+  &__slide-img {
+    max-height: 90vh;
+    width: auto;
+  }
+
+  .swiper-button-prev {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    outline: none;
+    margin-right: 6px;
+    margin-top: 0;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #e31e25;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
+    &:hover {
+      border-color: $redHover;
+      background-color: $redHover;
+      span {
+        color: #fff;
+      }
+    }
+    &.swiper-button-disabled {
+      border-color: #e1e1e1;
+      span {
+        color: #cdcdcd;
+      }
+    }
+    @media (min-width: 1020px) {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+    &::after {
+      display: none;
+    }
+    span {
+      font-size: 10.5px;
+      color: #e31e25;
+      transition: all 0.3s ease;
+      @media (min-width: 1020px) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .swiper-button-next {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    outline: none;
+    margin-top: 0;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #e31e25;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
+    &:hover {
+      border-color: $redHover;
+      background-color: $redHover;
+      span {
+        color: #fff;
+      }
+    }
+    &.swiper-button-disabled {
+      border-color: #e1e1e1;
+      span {
+        color: #cdcdcd;
+      }
+    }
+    @media (min-width: 1020px) {
+      width: 30px;
+      height: 30px;
+    }
+    &::after {
+      display: none;
+    }
+    span {
+      font-size: 10.5px;
+      color: #e31e25;
+      transition: all 0.3s ease;
+      @media (min-width: 1020px) {
+        font-size: 12px;
+      }
+    }
+  }
+
+}

@@ -11,6 +11,17 @@ export function defaultScripts() {
   const callbackSuccess = document.getElementById('callbackSuccess');
 
   const callbackForm = document.getElementById('callbackForm');
+  const modals = document.querySelectorAll('[data-type="modal"]');
+
+  if (modals) {
+    modals.forEach(modal=>{
+      modal.addEventListener('click', function(e) {
+        if (e.target === this) {
+          modal.classList.remove('active')
+        }
+      })
+    })
+  }
 
   if (callbackForm) {
     callbackForm.addEventListener('submit', function (e) {

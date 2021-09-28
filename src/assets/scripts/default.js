@@ -1,5 +1,5 @@
 import { yamapInit } from './modules/yamap.js';
-import { ourFeatures, ourPublications, ourReviewsSlider, sverlaSlider, allMaterialsSlider, ourProductionSlider, disksSwiper, burnersSlider1, burnersSlider2, burnersSlider3 } from './modules/slider.js';
+import { ourFeatures, ourPublications, ourReviewsSlider, sverlaSlider, allMaterialsSlider, ourProductionSlider, disksSwiper, burners1, burners2, burners3, ourReviewsSliderModal, sverlaSliderModal, burners1SliderModal, burners2SliderModal, burners3SliderModal, magneticSlider, magneticSliderModal } from './modules/slider.js';
 import { defaultScripts } from './modules/base.js';
 import { uiSizes } from './modules/uiSizes.js';
 import { uiForms } from './modules/uiForm.js';
@@ -44,9 +44,10 @@ document.addEventListener(`DOMContentLoaded`, () => {
 });
 
 sverlaSlider();
-burnersSlider1()
-burnersSlider2()
-burnersSlider3()
+magneticSlider();
+burners1()
+burners2()
+burners3()
 ourReviewsSlider();
 allMaterialsSlider();
 ourProductionSlider();
@@ -54,3 +55,9 @@ uiSizes();
 uiForms();
 uiTabs();
 disksSwiper();
+ourReviewsSliderModal();
+sverlaSliderModal();
+magneticSliderModal();
+burners1SliderModal()
+burners2SliderModal()
+burners3SliderModal()
