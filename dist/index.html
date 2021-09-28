@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- TODO: Убрать noindex в продакшене -->
-    <meta name="robots" content="noindex">
+    <meta name="robots" content="noindex" />
     <title>Главная</title>
     <meta name="description" content="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
     <link rel="stylesheet" href="./assets/styles/main.min.css" />
@@ -64,7 +64,6 @@
           <p class="welcome__description">Надежный инструмент по доступной цене</p>
         </div>
         <picture class="welcome__picture">
-
           <source srcset="./assets/images/welcome-drill-768.webp" media="(min-width: 768px)" type="image/webp" />
           <source srcset="./assets/images/welcome-drill-768.png" media="(min-width: 768px)" />
 
@@ -96,7 +95,7 @@
           <div class="welcome__action welcome__action_red">
             <span class="welcome__action-text">Просмотреть продукцию</span>
             <span class="icon icon-arrow-short welcome__action-icon"></span>
-            
+
             <span class="icon icon-arrow-wide welcome__action-icon_lg"></span>
           </div>
           <div data-id="callbackModal" class="welcome__action welcome__action_grey">
@@ -104,7 +103,7 @@
             <span class="welcome__action-text welcome__action-text_tablet">Стать нашим партнером</span>
             <span class="welcome__action-text welcome__action-text_desktop">Узнайте как стать нашим партнером</span>
             <span class="icon icon-arrow-short welcome__action-icon"></span>
-            
+
             <span class="icon icon-arrow-wide welcome__action-icon_lg"></span>
           </div>
         </div>
@@ -256,7 +255,7 @@
               <button class="btn btn_arrow-producer producer__btn">
                 Написать директору
                 <span class="icon icon-arrow-short producer__btn-icon"></span>
-                
+
                 <span class="icon icon-arrow-wide producer__btn-icon"></span>
               </button>
               <div class="producer__name-with-role">
@@ -269,11 +268,12 @@
           <div class="producer__content">
             <div class="producer__texts">
               <p class="producer__text">
-                Инструмент под брендом <span class="ui-strong">RODMIX</span> объединяет отличное качество и доступность. Ежедневно мы работаем как над качеством нашей продукции, так и над качеством обслуживания. Мы идем в ногу со временем, прислушиваемся к потребителям и постоянно расширяем ассортимент новыми
-                позициями.
+                Инструмент под брендом <span class="ui-strong">RODMIX</span> объединяет отличное качество и доступность. Ежедневно мы работаем как над качеством нашей продукции, так и над качеством обслуживания. Мы идем в ногу со временем, прислушиваемся к потребителям и постоянно расширяем
+                ассортимент новыми позициями.
               </p>
               <p class="producer__text">
-                Мы работаем по всей РФ и Таможенному союзу. Организовали гибкую систему доставки и оплаты. Вы в любой момент сможете найти представителей <span class="ui-strong">торговой марки RODMIX</span> в вашем регионе. А наши менеджеры без проблем проконсультируют по любым вопросам и помогут c выбором.
+                Мы работаем по всей РФ и Таможенному союзу. Организовали гибкую систему доставки и оплаты. Вы в любой момент сможете найти представителей <span class="ui-strong">торговой марки RODMIX</span> в вашем регионе. А наши менеджеры без проблем проконсультируют по любым вопросам и помогут c
+                выбором.
               </p>
             </div>
             <div class="producer__certifications">
@@ -300,7 +300,6 @@
     <!-- Наши преимущества -->
     <section class="features">
       <div class="container features__wrapper">
-        
         <div class="title-with-subtitle features__title-with-subtitle">
           <h4 class="subtitle">Почему стоит выбрать именно нас</h4>
           <p class="title1 title1_index mt-0">Наши преимущества</p>
@@ -357,7 +356,7 @@
           <p class="title1 title1_index mt-0">Наши публикации</p>
         </div>
 
-        <div class="publications__video-with-blog">
+        <div id="youtubeTrigger" class="publications__video-with-blog">
           <div class="publications__video">
             <picture class="publications__picture">
               <source srcset="./assets/images/publications.webp" type="image/webp" />
@@ -472,9 +471,9 @@
             </div>
             <button data-id="orderModal" class="btn btn_arrow warrancy__btn-contact">
               Связаться по гарантии
-              
+
               <span class="icon icon-arrow-short warrancy__btn-icon"></span>
-              
+
               <span class="icon icon-arrow-wide warrancy__btn-icon"></span>
             </button>
           </div>
@@ -549,7 +548,7 @@
       </nav>
     </div>
 
-    <div id="callbackModal" class="modal callback-modal">
+    <div data-type="modal" id="callbackModal" class="modal callback-modal">
       <div class="modal-wrapper callback-modal__wrapper">
         <!-- callback -->
         <span data-id="callbackModal" class="icon icon-menu_close modal-icon-close callback-modal__close"></span>
@@ -581,6 +580,13 @@
         </div>
       </div>
     </div>
+
+    <div data-type="modal" id="youtubeTarget" class="modal callback-modal">
+      <div class="modal-wrapper modal-wrapper_youtube container mb-0 callback-modal__wrapper">
+        <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/8AwIJZj07s8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
     <script src="./assets/scripts/default.bundle.js"></script>
   </body>
 </html>

@@ -6,7 +6,7 @@ export function defaultScripts() {
 
   const callbackModal = document.getElementById('callbackModal');
   const callbackModalClose = document.getElementById('callbackModalClose');
-  
+
   const callbackModalButtons = document.querySelectorAll('[data-id="callbackModal"]');
   const callbackSuccess = document.getElementById('callbackSuccess');
 
@@ -14,14 +14,23 @@ export function defaultScripts() {
   const modals = document.querySelectorAll('[data-type="modal"]');
 
   if (modals) {
-    modals.forEach(modal=>{
-      modal.addEventListener('click', function(e) {
+    modals.forEach((modal) => {
+      modal.addEventListener('click', function (e) {
         if (e.target === this) {
-          modal.classList.remove('active')
+          modal.classList.remove('active');
         }
-      })
-    })
+      });
+    });
   }
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+      console.log('Escape');
+      modals.forEach((modal) => {
+        modal.classList.remove('active');
+      });
+    }
+  });
 
   if (callbackForm) {
     callbackForm.addEventListener('submit', function (e) {
@@ -47,10 +56,9 @@ export function defaultScripts() {
   }
 
   callbackModalClose.addEventListener('click', function (e) {
-    callbackSuccess.classList.remove('active')
-    callbackModal.classList.remove('active')
-  })
-
+    callbackSuccess.classList.remove('active');
+    callbackModal.classList.remove('active');
+  });
 
   window.addEventListener('scroll', function (e) {
     if (window.scrollY > 0 && window.innerWidth >= 1915) {
@@ -75,4 +83,4 @@ export function defaultScripts() {
       }
     });
   }
-};
+}

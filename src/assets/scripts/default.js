@@ -4,6 +4,7 @@ import { defaultScripts } from './modules/base.js';
 import { uiSizes } from './modules/uiSizes.js';
 import { uiForms } from './modules/uiForm.js';
 import { uiTabs } from './modules/uiTabs.js';
+import { youtube } from './modules/youtube.js';
 
 let counterSwiperFeatures = 0;
 let counterSwiperPublications = 0;
@@ -61,3 +62,4 @@ magneticSliderModal();
 burners1SliderModal()
 burners2SliderModal()
 burners3SliderModal()
+youtube();
