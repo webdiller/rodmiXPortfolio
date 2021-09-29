@@ -55,28 +55,23 @@ body {
     object-fit: cover;
     background: linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%), url('../../assets/images/welcome-bg-320.webp') no-repeat center / cover;
     background: -webkit-linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%), url('../../assets/images/welcome-bg-320.webp') no-repeat center / cover;
-    background: -webkit-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%), url('../../assets/images/welcome-bg-320.webp') no-repeat center / cover;
     @media not all and (min-resolution: 0.001dpcm) {
       @supports (-webkit-appearance: none) and (stroke-color: transparent) {
         background: linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%), image-set(url('../../assets/images/welcome-bg-320.png') 1x);
         background: -webkit-linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%), image-set(url('../../assets/images/welcome-bg-320.png') 1x);
-        background: -webkit-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%), image-set(url('../../assets/images/welcome-bg-320.png') 1x);
-      }
+       }
     }
     @media (min-width: 480px) {
       background: linear-gradient(360deg, #fafafa -6.44%, rgba(250, 250, 250, 0) 23.43%), linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%),
         url('../../assets/images/welcome-bg-480.webp') no-repeat center / cover;
       background: -webkit-linear-gradient(360deg, #fafafa -6.44%, rgba(250, 250, 250, 0) 23.43%), linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%),
         url('../../assets/images/welcome-bg-480.webp') no-repeat center / cover;
-      background: -webkit-gradient(360deg, #fafafa -6.44%, rgba(250, 250, 250, 0) 23.43%), linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%),
-        url('../../assets/images/welcome-bg-480.webp') no-repeat center / cover;
       @media not all and (min-resolution: 0.001dpcm) {
         @supports (-webkit-appearance: none) and (stroke-color: transparent) {
           background: linear-gradient(360deg, #fafafa -6.44%, rgba(250, 250, 250, 0) 23.43%), linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%), image-set(url('../../assets/images/welcome-bg-480.png') 1px);
           background: -webkit-linear-gradient(360deg, #fafafa -6.44%, rgba(250, 250, 250, 0) 23.43%), linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%),
             image-set(url('../../assets/images/welcome-bg-480.png') 1px);
-          background: -webkit-gradient(360deg, #fafafa -6.44%, rgba(250, 250, 250, 0) 23.43%), linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%), image-set(url('../../assets/images/welcome-bg-480.png') 1px);
-        }
+          }
       }
       height: 490px;
     }
@@ -85,14 +80,11 @@ body {
         url('../../assets/images/welcome-bg-540.webp') no-repeat center / cover;
       background: -webkit-linear-gradient(356.31deg, #fafafa -2.52%, rgba(250, 250, 250, 0) 28.55%), linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%),
         url('../../assets/images/welcome-bg-540.webp') no-repeat center / cover;
-      background: -webkit-gradient(356.31deg, #fafafa -2.52%, rgba(250, 250, 250, 0) 28.55%), linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%),
-        url('../../assets/images/welcome-bg-540.webp') no-repeat center / cover;
       @media not all and (min-resolution: 0.001dpcm) {
         @supports (-webkit-appearance: none) and (stroke-color: transparent) {
           background: linear-gradient(356.31deg, #fafafa -2.52%, rgba(250, 250, 250, 0) 28.55%), linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%), image-set(url('../../assets/images/welcome-bg-540.png') 1x);
           background: -webkit-linear-gradient(356.31deg, #fafafa -2.52%, rgba(250, 250, 250, 0) 28.55%), linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%),
             image-set(url('../../assets/images/welcome-bg-540.png') 1x);
-          background: -webkit-gradient(356.31deg, #fafafa -2.52%, rgba(250, 250, 250, 0) 28.55%), linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%), image-set(url('../../assets/images/welcome-bg-540.png') 1x);
         }
       }
       height: 631px;
@@ -103,14 +95,11 @@ body {
         url('../../assets/images/welcome-bg-640.webp') no-repeat center / cover;
       background: -webkit-linear-gradient(359.39deg, #fafafa -2.5%, rgba(250, 250, 250, 0) 16.09%), linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%),
         url('../../assets/images/welcome-bg-640.webp') no-repeat center / cover;
-      background: -webkit-gradient(359.39deg, #fafafa -2.5%, rgba(250, 250, 250, 0) 16.09%), linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%),
-        url('../../assets/images/welcome-bg-640.webp') no-repeat center / cover;
       @media not all and (min-resolution: 0.001dpcm) {
         @supports (-webkit-appearance: none) and (stroke-color: transparent) {
           background: linear-gradient(359.39deg, #fafafa -2.5%, rgba(250, 250, 250, 0) 16.09%), linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%), image-set(url('../../assets/images/welcome-bg-640.png') 1x);
           background: -webkit-linear-gradient(359.39deg, #fafafa -2.5%, rgba(250, 250, 250, 0) 16.09%), linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%),
             image-set(url('../../assets/images/welcome-bg-640.png') 1x);
-          background: -webkit-gradient(359.39deg, #fafafa -2.5%, rgba(250, 250, 250, 0) 16.09%), linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%), image-set(url('../../assets/images/welcome-bg-640.png') 1x);
         }
       }
       height: 703px;
@@ -119,13 +108,11 @@ body {
       background: linear-gradient(0deg, #fafafa -3.47%, rgba(250, 250, 250, 0) 19.95%), linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%), url('../../assets/images/welcome-bg-768.webp') no-repeat center / cover;
       background: -webkit-linear-gradient(0deg, #fafafa -3.47%, rgba(250, 250, 250, 0) 19.95%), linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%),
         url('../../assets/images/welcome-bg-768.webp') no-repeat center / cover;
-      background: -webkit-gradient(0deg, #fafafa -3.47%, rgba(250, 250, 250, 0) 19.95%), linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%),
-        url('../../assets/images/welcome-bg-768.webp') no-repeat center / cover;
       @media not all and (min-resolution: 0.001dpcm) {
         @supports (-webkit-appearance: none) and (stroke-color: transparent) {
           background: linear-gradient(0deg, #fafafa -3.47%, rgba(250, 250, 250, 0) 19.95%), linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%), image-set(url('../../assets/images/welcome-bg-768.png') 1x);
           background: -webkit-linear-gradient(0deg, #fafafa -3.47%, rgba(250, 250, 250, 0) 19.95%), linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%), image-set(url('../../assets/images/welcome-bg-768.png') 1x);
-          background: -webkit-gradient(0deg, #fafafa -3.47%, rgba(250, 250, 250, 0) 19.95%), linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%), image-set(url('../../assets/images/welcome-bg-768.png') 1x);
+         background: -webkit-gradient(0deg, #fafafa -3.47%, rgba(250, 250, 250, 0) 19.95%), linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%), image-set(url('../../assets/images/welcome-bg-768.png') 1x);
         }
       }
       height: 767px;
@@ -135,8 +122,6 @@ body {
       background: linear-gradient(0deg, #fafafa -3.47%, rgba(250, 250, 250, 0) 19.95%), linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(360deg, #ffffff 4.01%, rgba(250, 250, 250, 0) 24.24%),
         url('../../assets/images/welcome-bg-1000.webp') no-repeat center / cover;
       background: -webkit-linear-gradient(0deg, #fafafa -3.47%, rgba(250, 250, 250, 0) 19.95%), linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(360deg, #ffffff 4.01%, rgba(250, 250, 250, 0) 24.24%),
-        url('../../assets/images/welcome-bg-1000.webp') no-repeat center / cover;
-      background: -webkit-gradient(0deg, #fafafa -3.47%, rgba(250, 250, 250, 0) 19.95%), linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(360deg, #ffffff 4.01%, rgba(250, 250, 250, 0) 24.24%),
         url('../../assets/images/welcome-bg-1000.webp') no-repeat center / cover;
       @media not all and (min-resolution: 0.001dpcm) {
         @supports (-webkit-appearance: none) and (stroke-color: transparent) {
@@ -150,12 +135,10 @@ body {
     @media (min-width: 1430px) {
       background: linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%), url('../../assets/images/welcome-bg-1920.webp') no-repeat center / cover;
       background: -webkit-linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%), url('../../assets/images/welcome-bg-1920.webp') no-repeat center / cover;
-      background: -webkit-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%), url('../../assets/images/welcome-bg-1920.webp') no-repeat center / cover;
       @media not all and (min-resolution: 0.001dpcm) {
         @supports (-webkit-appearance: none) and (stroke-color: transparent) {
           background: linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%), image-set(url('../../assets/images/welcome-bg-1920.png') 1x);
           background: -webkit-linear-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%), image-set(url('../../assets/images/welcome-bg-1920.png') 1x);
-          background: -webkit-gradient(90deg, #fafafa 3.73%, rgba(250, 250, 250, 0) 25.18%), linear-gradient(270deg, #fafafa 4.01%, rgba(250, 250, 250, 0) 24.24%), image-set(url('../../assets/images/welcome-bg-1920.png') 1x);
         }
       }
       height: 900px;
