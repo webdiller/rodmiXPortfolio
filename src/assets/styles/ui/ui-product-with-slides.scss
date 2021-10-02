@@ -19,6 +19,76 @@
       margin-bottom: 28px;
     }
   }
+  &__pins {
+    margin: 20px 0;
+  }
+  &__list {}
+  &__list-item {
+    position: relative;
+    margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #454545;
+    padding-left: 13px;
+    @media (min-width: 480px) {
+      font-size: 14px;
+      line-height: 21px;
+      padding-left: calc(11px + 7px);
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    @media (min-width: 1430px) {
+      font-size: 18px;
+      line-height: 27px;
+    }
+    .ui-strong {
+      font-weight: 600;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 4.5px;
+      left: 0;
+      background-color: #e31e25;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      @media (min-width: 480px) {
+        top: 5px;
+        width: 7px;
+        height: 7px;
+      }
+      @media (min-width: 540px) {
+      }
+      @media (min-width: 640px) {
+        top: 5.5px;
+      }
+      @media (min-width: 768px) {
+        top: 6.5px;
+      }
+      @media (min-width: 1020px) {
+        top: 9px;
+      }
+      @media (min-width: 1430px) {
+        top: 8px;
+      }
+    }
+  }
   &__top {
     margin-bottom: 13px;
 

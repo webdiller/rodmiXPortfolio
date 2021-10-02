@@ -530,6 +530,9 @@ export function ourReviewsSliderModal() {
         slidesPerView: 1,
         spaceBetween: 10,
         centeredSlides: true,
+        freeMode: {
+          enabled: false,
+        },
         navigation: {
           nextEl: '#ourReviewsSliderModal .swiper-button-next',
           prevEl: '#ourReviewsSliderModal .swiper-button-prev'

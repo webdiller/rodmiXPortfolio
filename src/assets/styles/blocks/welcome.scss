@@ -916,6 +916,9 @@
       @media (min-width: 1020px) {
         margin-bottom: 5px;
       }
+      @media (min-width: 1200px) {
+        max-width: 900px;
+      }
       @media (min-width: 1430px) {
         font-size: 70px;
         line-height: 80px;

@@ -1,0 +1,118 @@
+.ui-pins {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35px, 35px));
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+
+  &__item {
+    position: relative;
+    height: 35px;
+    border: 2px solid $red;
+    border-radius: 7px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+
+    font-weight: bold;
+    font-size: 11px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    cursor: pointer;
+    sup {
+      pointer-events: none;
+    }
+    img {
+        pointer-events: none;
+    }
+    &.active {
+      background-color: $red;
+      color: #fff;
+      &::before {
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+        bottom: calc(100% + 10px);
+      }
+      &::after {
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+      }
+    }
+
+    &::before {
+      content: attr(data-description);
+      position: absolute;
+
+      bottom: calc(100% + 5px);
+      left: 50%;
+      transform: translateX(-50%);
+
+      width: 100%;
+      min-width: 127px;
+      padding: 10px 20px 8px 20px;
+      border-radius: 5px;
+      text-align: center;
+
+      background-color: #000;
+      color: #fff;
+
+      opacity: 0;
+      visibility: hidden;
+      z-index: -1;
+
+      transition: all 0.3s ease;
+      z-index: 10;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -15px;
+      width: 100%;
+      min-width: 127px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 15px;
+      padding: 0 20px;
+      background-color: transparent;
+
+      opacity: 0;
+      visibility: hidden;
+      z-index: -1;
+    }
+
+    &:hover {
+      background-color: $red;
+      color: #fff;
+      &::before {
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+        bottom: calc(100% + 10px);
+      }
+      &::after {
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+      }
+    }
+
+    &_degree {
+    }
+    
+    &_alt {
+      border-color: transparent;
+      &.active {
+        border-color: transparent;
+      }
+      &:hover {
+        border-color: transparent;
+      }
+    }
+  }
+}

@@ -30,6 +30,14 @@
     @media (min-width: 1430px) {
     }
   }
+  &__top {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #9C8C8D;
+    @media (min-width: 1020px) {
+      margin-bottom: 18px;
+    }
+  }
   &__table {
     display: grid;
     background-color: #ffffff;

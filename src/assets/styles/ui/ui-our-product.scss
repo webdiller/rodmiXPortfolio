@@ -223,7 +223,7 @@
     }
     .ui-our-product__title { 
       @media (min-width: 1430px) {
-        margin: 30px 0 0 30px;
+        margin: 22px 0 0 16px;
       }
     }
     .ui-our-product__picture {
@@ -465,12 +465,12 @@
         height: 100%;
       }
       @media (min-width: 1430px) {
-        top: 0;
+        top: 5px;
         right: 0;
         bottom: 0;
         left: unset;
         width: auto;
-        height: 100%;
+        height: calc(100% - 10px)
       }
     }
   }
