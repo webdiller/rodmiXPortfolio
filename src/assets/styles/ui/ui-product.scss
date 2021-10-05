@@ -543,4 +543,21 @@
       }
     }
   }
+  &_tapers {
+    .ui-product__wrapper {
+      @media (min-width: 480px) {
+      }
+      @media (min-width: 540px) {
+      }
+      @media (min-width: 640px) {
+      }
+      @media (min-width: 768px) {
+      }
+      @media (min-width: 1020px) {
+      }
+      @media (min-width: 1430px) {
+        margin-bottom: 100px;
+      }
+    }
+  }
 }

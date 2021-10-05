@@ -474,4 +474,106 @@
       }
     }
   }
+
+  &_end-mils {
+    @media (min-width: 480px) {
+      height: 130px;
+    }
+    @media (min-width: 540px) {
+      height: 147px;
+    }
+    @media (min-width: 640px) {
+      height: 147px;
+    }
+    @media (min-width: 768px) {
+      height: 156px;
+    }
+    @media (min-width: 1020px) {
+      height: 156px;
+    }
+    @media (min-width: 1430px) {
+      height: 156px;
+    }
+    .ui-our-product__title { 
+      @media (min-width: 1430px) {
+        margin: 30px 0 0 30px;
+      }
+    }
+    .ui-our-product__picture {
+      position: static;
+      @media (min-width: 480px) {
+        position: static;
+      }
+      @media (min-width: 540px) {
+        position: static;
+      }
+      @media (min-width: 640px) {
+        position: static;
+      }
+      @media (min-width: 768px) {
+        position: static;
+      }
+      @media (min-width: 1020px) {
+        position: static;
+      }
+      @media (min-width: 1430px) {
+        position: static;
+      }
+    }
+    .ui-our-product__img {
+      position: absolute;
+      top: unset;
+      bottom: 0;
+      max-height: calc(100% - 10px);
+      object-fit: contain;
+      @media (min-width: 480px) {
+        top: unset;
+        right: 0;
+        bottom: 0;
+        left: unset;
+        width: auto;
+        height: 100%;
+      }
+      @media (min-width: 540px) {
+        top: unset;
+        right: 0;
+        bottom: 0;
+        left: unset;
+        width: auto;
+        height: 100%;
+      }
+      @media (min-width: 640px) {
+        top: unset;
+        right: 0;
+        bottom: 0;
+        left: unset;
+        width: auto;
+        height: 100%;
+      }
+      @media (min-width: 768px) {
+        top: unset;
+        right: 0;
+        bottom: 0;
+        left: unset;
+        width: auto;
+        height: 100%;
+      }
+      @media (min-width: 1020px) {
+        top: unset;
+        right: 0;
+        bottom: 0;
+        left: unset;
+        width: auto;
+        height: 100%;
+      }
+      @media (min-width: 1430px) {
+        top: unset;
+        right: 0;
+        bottom: 0;
+        left: unset;
+        width: auto;
+        height: calc(100% - 10px)
+      }
+    }
+  }
 }

@@ -34,6 +34,13 @@ export async function yamapInit() {
             center: [-8.369326, 115.166023],
             zoom: 8
           });
+
+          // Временное решение
+          // Удаляем вторую карту, если сгенерировалась
+          const d = mapWrapper.querySelectorAll('div ymaps');
+          if (d.length > 1) {
+            mapWrapper.querySelector('div ymaps:nth-child(1)').remove();
+          }
         }, 1000)
       } catch (error) {}
     });

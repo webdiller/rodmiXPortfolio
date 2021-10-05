@@ -1,5 +1,8 @@
 // компонент инструкции
 .ui-instruction {
+  &_tapers {
+    margin: 32px 0 38px 0
+  }
     &__item {
       @include reset-link();
       display: block;
