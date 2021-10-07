@@ -13,25 +13,6 @@ export function defaultScripts() {
   const callbackForm = document.getElementById('callbackForm');
   const modals = document.querySelectorAll('[data-type="modal"]');
 
-  const pins = document.querySelectorAll("[data-type='pin'][data-description]");
-  pins.forEach((pin) => {
-    pin.addEventListener('click', function (e) {
-      const childElements = Array.from(e.target.parentElement.children);
-      const filtered = [];
-      childElements.forEach((el) => {
-        if (el !== e.target) filtered.push(el);
-      });
-      filtered.forEach(el=>el.classList.remove('active'))
-      e.target.classList.toggle('active');
-    });
-  });
-
-  const pinChilds = document.querySelectorAll('[data-pins] [data-description]');
-  pinChilds.forEach((el) => {
-    el.addEventListener('click', function (e) {
-      e.target.classList.toggle('active');
-    });
-  });
 
   if (modals) {
     modals.forEach((modal) => {

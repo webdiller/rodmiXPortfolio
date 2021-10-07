@@ -1,3 +1,9 @@
+function isTouchDevice() {
+  return (('ontouchstart' in window) ||
+     (navigator.maxTouchPoints > 0) ||
+     (navigator.msMaxTouchPoints > 0));
+}
+
 import { yamapInit } from './modules/yamap.js';
 import { ourFeatures, ourPublications, ourReviewsSlider, sverlaSlider, allMaterialsSlider, ourProductionSlider, disksSwiper, burners1, burners2, burners3, ourReviewsSliderModal, sverlaSliderModal, burners1SliderModal, burners2SliderModal, burners3SliderModal, magneticSlider, magneticSliderModal } from './modules/slider.js';
 import { defaultScripts } from './modules/base.js';
@@ -5,29 +11,30 @@ import { uiSizes } from './modules/uiSizes.js';
 import { uiForms } from './modules/uiForm.js';
 import { uiTabs } from './modules/uiTabs.js';
 import { youtube } from './modules/youtube.js';
+import { initPins } from './modules/pins.js';
 
-let counterSwiperFeatures = 0;
-let counterSwiperPublications = 0;
 let featuresSwiperSlider = null;
 let publicationsSwiperSlider = null;
 
-yamapInit()
+document.addEventListener(`DOMContentLoaded`, () => {
+  defaultScripts();
+});
 
 window.addEventListener('scroll', function (e) {
-  if (window.scrollY > 100) {
-    if (counterSwiperFeatures <= 0) {
-      counterSwiperFeatures++;
+  if(!window["scrollInit"]){  // если еще не инициализирован scroll
+      console.log("StartInitScroll")
       featuresSwiperSlider = ourFeatures();
-    }
-    if (counterSwiperPublications <= 0) {
-      counterSwiperPublications++;
       publicationsSwiperSlider = ourPublications();
-    }
+      yamapInit();
+      if(isTouchDevice()){ // для устройств с тачем
+        initPins()
+      }
+    window["scrollInit"] = true
   }
 });
 
 window.addEventListener('resize', function (e) {
-  if (!featuresSwiperSlider && window.innerWidth < 640) {
+  if (featuresSwiperSlider === null && window.innerWidth < 640) {
     featuresSwiperSlider = ourFeatures();
   } else if (featuresSwiperSlider !== null) {
     // FIXME: Нет такого метода. Исправить.
@@ -38,10 +45,6 @@ window.addEventListener('resize', function (e) {
     }
     featuresSwiperSlider = null;
   }
-});
-
-document.addEventListener(`DOMContentLoaded`, () => {
-  defaultScripts();
 });
 
 sverlaSlider();
@@ -62,4 +65,4 @@ magneticSliderModal();
 burners1SliderModal()
 burners2SliderModal()
 burners3SliderModal()
-youtube();
+youtube(); 
