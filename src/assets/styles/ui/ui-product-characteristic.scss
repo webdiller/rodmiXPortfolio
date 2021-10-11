@@ -459,6 +459,9 @@
       &.active {
         color: #454545;
       }
+      &:hover {
+        color: $redHover;
+      }
       &:not(:last-child) {
         margin-right: 25px;
         @media (min-width: 480px) {

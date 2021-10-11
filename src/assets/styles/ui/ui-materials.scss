@@ -181,6 +181,10 @@
     text-transform: uppercase;
     color: $red;
     text-decoration: none;
+    transition: all .3s ease;
+    &:hover {
+      color: $redHover;
+    }
     @media (min-width: 480px) {
       font-size: 12px;
       line-height: 12px;
@@ -263,9 +267,18 @@
     border-radius: 5px;
     height: 174px;
     text-align: left;
+    border: 1px solid transparent;
     
+    transition: all .3s ease;
     text-decoration-line: underline;
     text-decoration-color: $red;
+    &:hover {
+      border-color: $red;
+      .ui-materials__slide-text {
+        text-decoration: none;
+        color: $redHover;
+      }
+    }
     @media (min-width: 480px) {
       height: 212px;
       padding: 22px;
@@ -343,6 +356,7 @@
     color: $red;
     text-decoration-line: underline;
     text-decoration-color: $red;
+    transition: all .3s ease;
     @media (min-width: 480px) {
     }
     @media (min-width: 540px) {

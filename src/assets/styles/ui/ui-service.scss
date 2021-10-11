@@ -160,8 +160,10 @@
   &__item-text a {
     text-decoration: underline;
     color: $red;
+    transition: all .3s ease;
     &:hover {
       text-decoration: none;
+      color: $redHover;
     }
   }
   &__list {

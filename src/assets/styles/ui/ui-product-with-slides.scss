@@ -250,4 +250,16 @@
       }
     }
   }
+  &_tapers {
+    .ui-product-with-slides__content-title {
+      @media (min-width: 1430px) {
+        margin-bottom: 30px;
+      }
+    }
+    .ui-product-with-slides__pins {
+      @media (min-width: 1430px) {
+        margin-top: 30px;
+      }
+    }
+  }
 }

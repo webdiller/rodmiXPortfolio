@@ -12,8 +12,11 @@
       font-size: 12px;
       line-height: 24px;
       color: $red;
+
+      transition: all .3s eaes;
       &:hover {
         .ui-instruction__item-parent {
+          color: $redHover;
           text-decoration: none;
         }
       }

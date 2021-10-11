@@ -120,18 +120,26 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 130%;
+    padding-left: 15px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    text-align: left;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     align-items: center;
-    text-align: center;
     height: 30px;
     text-transform: uppercase;
     color: #9c8c8d;
     top: 3px;
     z-index: 5;
     margin-top: -3px;
+    @media (min-width: 640px) {
+      padding-left: 20px;
+    }
+    @media (min-width: 1430px) {
+      padding-left: 0;
+      justify-content: center;
+    }
     span {
       position: relative;
       top: 2px;
@@ -273,6 +281,10 @@
     line-height: 200%;
     text-decoration-line: underline;
     color: $red;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $redHover;
+    }
     @media (min-width: 480px) {
       font-size: 14px;
     }
