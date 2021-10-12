@@ -609,7 +609,6 @@ export function ourProductionSlider() {
     const ourProductionMobile = document.getElementById('ourProductionMobile');
     const ourProductionDesktop = document.getElementById('ourProductionDesktop');
 
-    if (ourProductionMobile && window.innerWidth <= 639) {
       const swiperOptionsMobile = {
         slidesPerView: 1,
         spaceBetween: 10,
@@ -625,10 +624,7 @@ export function ourProductionSlider() {
           }
         }
       };
-      return new Swiper(ourProductionMobile, swiperOptionsMobile);
-    }
 
-    if (ourProductionDesktop && window.innerWidth >= 640) {
       const swiperOptionsDesktop = {
         slidesPerView: 3,
         spaceBetween: 11,
@@ -651,8 +647,8 @@ export function ourProductionSlider() {
           }
         }
       };
-      return new Swiper(ourProductionDesktop, swiperOptionsDesktop);
-    }
+      
+      return (new Swiper(ourProductionMobile, swiperOptionsMobile), new Swiper(ourProductionDesktop, swiperOptionsDesktop))
   } catch (error) {
     console.log('handle error', error);
   }

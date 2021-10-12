@@ -52,9 +52,13 @@
   }
 
   &__menu-close {
-    color: $red;
     font-size: 16px;
     cursor: pointer;
+    transition: all .3s ease;
+    color: $red;
+    &:hover {
+      color: $redHover;
+    }
     @media (min-width: 480px) {
       font-size: 21px;
     }
@@ -87,6 +91,10 @@
     font-size: 14px;
     line-height: 1;
     color: #e31e25;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $redHover;
+    }
     @media (min-width: 480px) {
       font-size: 20px;
     }
