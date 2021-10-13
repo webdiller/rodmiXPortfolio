@@ -65,24 +65,30 @@ export function ourPublications() {
   }
 }
 
-export function sverlaSlider() {
+/** Слайдер для сверл с модалкой */
+export function sliderWithThumbnailsAndModal() {
   try {
-    const sverlaSlider = document.getElementById('sverlaSlider');
-    const sverlaSliderItem = document.querySelectorAll('#sverlaSlider .swiper-slide picture');
+    const mainSlider = document.querySelectorAll('[data-slider-with-modal]');
+    const swiperModal = document.getElementById('swiperModal');
+    const swiperModalClose = document.getElementById('swiperModalClose');
+    const slideSelector = '.swiper-slide';
 
-    const sverlaModal = document.getElementById('sverlaModal');
-    const sverlaSliderModal = document.getElementById('sverlaSliderModal');
+    swiperModalClose.addEventListener('click', function () {
+      swiperModal.classList.remove('active');
+    });
 
-    if (sverlaSliderModal) {
-      sverlaSliderItem.forEach((el) =>
-        el.addEventListener('click', function () {
-          sverlaModal.classList.add('active');
-        })
-      );
-    }
+    var swiperModalInstance = new Swiper('#swiperModal .swiper', {
+      navigation: {
+        nextEl: '#swiperModal .swiper-button-next',
+        prevEl: '#swiperModal .swiper-button-prev'
+      },
+      observer: true
+    });
 
-    if (sverlaSlider) {
-      const swiperOptions = {
+    // new Swiper(swiperModal, swiperModalOptions);
+
+    if (mainSlider.length > 0) {
+      const swiperOptionsThumbnails = {
         slidesPerView: 2,
         spaceBetween: 10,
         breakpoints: {
@@ -109,139 +115,45 @@ export function sverlaSlider() {
         },
         on: {
           init: function () {
-            console.log('sverlaSlider initialized');
+            console.log('sliderWithThumbnailsAndModal initialized');
           }
         }
       };
-      return new Swiper(sverlaSlider, swiperOptions);
-    }
-  } catch (error) {
-    console.log('handle error', error);
-  }
-}
-// sverlaSlider modal
-export function sverlaSliderModal() {
-  try {
-    const sverlaSliderModal = document.getElementById('sverlaSliderModal');
-    if (sverlaSliderModal) {
-      const swiperOptions = {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        centeredSlides: true,
-        navigation: {
-          nextEl: '#sverlaSliderModal .swiper-button-next',
-          prevEl: '#sverlaSliderModal .swiper-button-prev'
-        },
-        on: {
-          init: function () {
-            console.log('sverlaSliderModal initialized');
-          }
-        }
-      };
-      return new Swiper(sverlaSliderModal, swiperOptions);
-    }
-  } catch (error) {
-    console.log('handle error', error);
-  }
-}
 
-// 1
-export function magneticSlider() {
-  try {
-    const magneticSlider = document.getElementById('magneticSlider');
-    const magneticSliderItem = document.querySelectorAll('#magneticSlider .swiper-slide picture');
+      mainSlider.forEach((slider) => {
+        new Swiper(slider, swiperOptionsThumbnails);
+        const slides = slider.querySelectorAll(slideSelector);
+        slides.forEach((sliderElement) => {
+          sliderElement.addEventListener('click', function (e) {
 
-    const magneticModal = document.getElementById('magneticModal');
-    const magneticSliderModal = document.getElementById('magneticSliderModal');
+            /**
+             * Забираем массив с картинками из маленького слайдера
+             */
+            const imgElements = [];
+            const nodeElements = Array.from(e.target.parentElement.children);
+            nodeElements.forEach((el) => imgElements.push(el.dataset.sliderSrc));
 
-    if (magneticSliderModal) {
-      magneticSliderItem.forEach((el) =>
-        el.addEventListener('click', function () {
-          magneticModal.classList.add('active');
-        })
-      );
+            /**
+             * Создаем html со слайдами и картинками для слайдера-модалки
+             * Открываем слайдер-модалку
+             */
+            let html = '';
+            for(let i = 0; i < imgElements.length; i++) {
+              html += `<div class="swiper-slide"><img src=${imgElements[i]} alt=""/></div>`
+            }
+            document.querySelector("#swiperModal .swiper-wrapper").innerHTML = "";
+            document.querySelector("#swiperModal .swiper-wrapper").insertAdjacentHTML( 'beforeend', html );
+            swiperModal.classList.add('active');
+          });
+        });
+      });
     }
-
-    if (magneticSlider) {
-      const swiperOptions = {
-        slidesPerView: 2,
-        spaceBetween: 10,
-        breakpoints: {
-          480: {
-            slidesPerView: 2,
-            spaceBetween: 15
-          },
-          540: {
-            slidesPerView: 2,
-            spaceBetween: 20
-          },
-          640: {
-            slidesPerView: 3,
-            spaceBetween: 10
-          },
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 15
-          },
-          1020: {
-            slidesPerView: 3,
-            spaceBetween: 30
-          }
-        },
-        on: {
-          init: function () {
-            console.log('magneticSlider initialized');
-          }
-        }
-      };
-      return new Swiper(magneticSlider, swiperOptions);
-    }
-  } catch (error) {
-    console.log('handle error', error);
-  }
+  } catch (error) {}
 }
-// magneticSlider modal
-export function magneticSliderModal() {
-  try {
-    const magneticSliderModal = document.getElementById('magneticSliderModal');
-    if (magneticSliderModal) {
-      const swiperOptions = {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        centeredSlides: true,
-        navigation: {
-          nextEl: '#magneticSliderModal .swiper-button-next',
-          prevEl: '#magneticSliderModal .swiper-button-prev'
-        },
-        on: {
-          init: function () {
-            console.log('magneticSliderModal initialized');
-          }
-        }
-      };
-      return new Swiper(magneticSliderModal, swiperOptions);
-    }
-  } catch (error) {
-    console.log('handle error', error);
-  }
-}
-// 1
 
 export function burners1() {
   try {
     const burners1 = document.getElementById('burners1');
-    const burners1Item = document.querySelectorAll('#burners1 .swiper-slide picture');
-    
-    const burners1SliderModal = document.getElementById('burners1SliderModal');
-    const burners1Modal = document.getElementById('burners1Modal');
-
-    if (burners1SliderModal) {
-      burners1Item.forEach((el) =>
-        el.addEventListener('click', function () {
-          burners1Modal.classList.add('active');
-        })
-      );
-    }
 
     if (burners1) {
       const swiperOptions = {
@@ -285,46 +197,10 @@ export function burners1() {
     console.log('handle error', error);
   }
 }
-// burners1 modal
-export function burners1SliderModal() {
-  try {
-    const burners1SliderModal = document.getElementById('burners1SliderModal');
-    if (burners1SliderModal) {
-      const swiperOptions = {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        centeredSlides: true,
-        navigation: {
-          nextEl: '#burners1SliderModal .swiper-button-next',
-          prevEl: '#burners1SliderModal .swiper-button-prev'
-        },
-        on: {
-          init: function () {
-            console.log('burners1SliderModal initialized');
-          }
-        }
-      };
-      return new Swiper(burners1SliderModal, swiperOptions);
-    }
-  } catch (error) {
-    console.log('handle error', error);
-  }
-}
 
 export function burners2() {
   try {
     const burners2 = document.getElementById('burners2');
-    const burners2Item = document.querySelectorAll('#burners2 .swiper-slide picture');
-    const burners2SliderModal = document.getElementById('burners2SliderModal');
-    const burners2Modal = document.getElementById('burners2Modal');
-
-    if (burners2SliderModal) {
-      burners2Item.forEach((el) =>
-        el.addEventListener('click', function () {
-          burners2Modal.classList.add('active');
-        })
-      );
-    }
 
     if (burners2) {
       const swiperOptions = {
@@ -368,46 +244,10 @@ export function burners2() {
     console.log('handle error', error);
   }
 }
-// burners2 modal
-export function burners2SliderModal() {
-  try {
-    const burners2SliderModal = document.getElementById('burners2SliderModal');
-    if (burners2SliderModal) {
-      const swiperOptions = {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        centeredSlides: true,
-        navigation: {
-          nextEl: '#burners2SliderModal .swiper-button-next',
-          prevEl: '#burners2SliderModal .swiper-button-prev'
-        },
-        on: {
-          init: function () {
-            console.log('burners2SliderModal initialized');
-          }
-        }
-      };
-      return new Swiper(burners2SliderModal, swiperOptions);
-    }
-  } catch (error) {
-    console.log('handle error', error);
-  }
-}
 
 export function burners3() {
   try {
     const burners3 = document.getElementById('burners3');
-    const burners3Item = document.querySelectorAll('#burners3 .swiper-slide picture');
-    const burners3SliderModal = document.getElementById('burners3SliderModal');
-    const burners3Modal = document.getElementById('burners3Modal');
-
-    if (burners3SliderModal) {
-      burners3Item.forEach((el) =>
-        el.addEventListener('click', function () {
-          burners3Modal.classList.add('active');
-        })
-      );
-    }
 
     if (burners3) {
       const swiperOptions = {
@@ -451,50 +291,17 @@ export function burners3() {
     console.log('handle error', error);
   }
 }
-// burners3 modal
-export function burners3SliderModal() {
-  try {
-    const burners3SliderModal = document.getElementById('burners3SliderModal');
-    if (burners3SliderModal) {
-      const swiperOptions = {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        centeredSlides: true,
-        navigation: {
-          nextEl: '#burners3SliderModal .swiper-button-next',
-          prevEl: '#burners3SliderModal .swiper-button-prev'
-        },
-        on: {
-          init: function () {
-            console.log('burners3SliderModal initialized');
-          }
-        }
-      };
-      return new Swiper(burners3SliderModal, swiperOptions);
-    }
-  } catch (error) {
-    console.log('handle error', error);
-  }
-}
 
 export function ourReviewsSlider() {
   try {
     const ourReviews = document.getElementById('ourReviews');
-    const ourReviewsItem = document.querySelectorAll('#ourReviews .swiper-slide picture');
-    const ourReviewsModal = document.getElementById('ourReviewsModal');
 
     if (ourReviews) {
-      if (ourReviewsModal) {
-        ourReviewsItem.forEach((el) =>
-          el.addEventListener('click', function () {
-            ourReviewsModal.classList.add('active');
-          })
-        );
-      }
-
+      
       const swiperOptions = {
         slidesPerView: 1,
         spaceBetween: 10,
+        loop: false,
         breakpoints: {
           1140: {
             slidesPerView: 2,
@@ -517,33 +324,6 @@ export function ourReviewsSlider() {
         }
       };
       return new Swiper(ourReviews, swiperOptions);
-    }
-  } catch (error) {
-    console.log('handle error', error);
-  }
-}
-export function ourReviewsSliderModal() {
-  try {
-    const ourReviewsSliderModal = document.getElementById('ourReviewsSliderModal');
-    if (ourReviewsSliderModal) {
-      const swiperOptions = {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        centeredSlides: true,
-        freeMode: {
-          enabled: false,
-        },
-        navigation: {
-          nextEl: '#ourReviewsSliderModal .swiper-button-next',
-          prevEl: '#ourReviewsSliderModal .swiper-button-prev'
-        },
-        on: {
-          init: function () {
-            console.log('ourReviewsSliderModal initialized');
-          }
-        }
-      };
-      return new Swiper(ourReviewsSliderModal, swiperOptions);
     }
   } catch (error) {
     console.log('handle error', error);
@@ -609,46 +389,46 @@ export function ourProductionSlider() {
     const ourProductionMobile = document.getElementById('ourProductionMobile');
     const ourProductionDesktop = document.getElementById('ourProductionDesktop');
 
-      const swiperOptionsMobile = {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        breakpoints: {
-          480: {
-            slidesPerView: 2,
-            spaceBetween: 15
-          }
-        },
-        on: {
-          init: function () {
-            console.log('ourProductionMobile initialized');
-          }
+    const swiperOptionsMobile = {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      breakpoints: {
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 15
         }
-      };
+      },
+      on: {
+        init: function () {
+          console.log('ourProductionMobile initialized');
+        }
+      }
+    };
 
-      const swiperOptionsDesktop = {
-        slidesPerView: 3,
-        spaceBetween: 11,
-        breakpoints: {
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 15
-          },
-          1430: {
-            spaceBetween: 30
-          }
+    const swiperOptionsDesktop = {
+      slidesPerView: 3,
+      spaceBetween: 11,
+      breakpoints: {
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 15
         },
-        navigation: {
-          nextEl: '.our-production__navigation .swiper-button-next',
-          prevEl: '.our-production__navigation .swiper-button-prev'
-        },
-        on: {
-          init: function () {
-            console.log('ourProductionDesktop initialized');
-          }
+        1430: {
+          spaceBetween: 30
         }
-      };
-      
-      return (new Swiper(ourProductionMobile, swiperOptionsMobile), new Swiper(ourProductionDesktop, swiperOptionsDesktop))
+      },
+      navigation: {
+        nextEl: '.our-production__navigation .swiper-button-next',
+        prevEl: '.our-production__navigation .swiper-button-prev'
+      },
+      on: {
+        init: function () {
+          console.log('ourProductionDesktop initialized');
+        }
+      }
+    };
+
+    return new Swiper(ourProductionMobile, swiperOptionsMobile), new Swiper(ourProductionDesktop, swiperOptionsDesktop);
   } catch (error) {
     console.log('handle error', error);
   }

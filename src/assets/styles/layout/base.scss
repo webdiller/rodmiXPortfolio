@@ -124,6 +124,11 @@ body {
   @media (min-width: 1920px) {
     padding-top: 112px;
   }
+  &.body-basic {
+    &::before {
+      display: none;
+    }
+  }
 }
 
 // Затемненный фон для модалки ютуба

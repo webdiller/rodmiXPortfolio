@@ -149,23 +149,23 @@
                 </div>
               </div>
 
-              <div id="sverlaSlider" class="ui-product__slider swiper-container ui-slider">
+              <div data-slider-with-modal class="ui-product__slider swiper-container ui-slider">
                 <div class="swiper-wrapper ui-slider__wrapper">
-                  <div class="swiper-slide ui-slider__slide">
+                  <div data-slider-src="https://images.pexels.com/photos/9687902/pexels-photo-9687902.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="swiper-slide ui-slider__slide">
                     <picture class="ui-slider__slide-picture">
                       <source srcset="./assets/images/product-img-1.webp" type="image/webp" />
                       <img src="./assets/images/product-img-1.png" alt="" class="ui-slider__slide-img" />
                     </picture>
                     <span class="ui-slider__slide-icon icon icon-loop-plus"></span>
                   </div>
-                  <div class="swiper-slide ui-slider__slide">
+                  <div data-slider-src="https://images.pexels.com/photos/6913569/pexels-photo-6913569.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="swiper-slide ui-slider__slide">
                     <picture class="ui-slider__slide-picture">
                       <source srcset="./assets/images/product-img-2.webp" type="image/webp" />
                       <img src="./assets/images/product-img-2.png" alt="" class="ui-slider__slide-img" />
                     </picture>
                     <span class="ui-slider__slide-icon icon icon-loop-plus"></span>
                   </div>
-                  <div class="swiper-slide ui-slider__slide">
+                  <div data-slider-src="https://images.pexels.com/photos/9420611/pexels-photo-9420611.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="swiper-slide ui-slider__slide">
                     <picture class="ui-slider__slide-picture">
                       <source srcset="./assets/images/product-img-3.webp" type="image/webp" />
                       <img src="./assets/images/product-img-3.png" alt="" class="ui-slider__slide-img" />
@@ -791,9 +791,9 @@
           <div class="swiper-button-prev"><span class="icon icon-icon-triangle-left"></span></div>
           <div class="swiper-button-next"><span class="icon icon-icon-triangle-right"></span></div>
         </div>
-        <div id="ourReviews" class="ui-reviews__swiper swiper-container">
+        <div data-slider-with-modal id="ourReviews" class="ui-reviews__swiper swiper-container">
           <div class="swiper-wrapper">
-            <div class="swiper-slide our-production__slide">
+            <div data-slider-src="./assets/images/2000x2000.png" class="swiper-slide our-production__slide">
               <div class="ui-reviews__img-wrapper">
                 <picture class="ui-reviews__picture">
                   <source srcset="./assets/images/doc-img.webp" type="image/webp" />
@@ -808,7 +808,7 @@
               </div>
             </div>
 
-            <div class="swiper-slide our-production__slide">
+            <div data-slider-src="./assets/images/2000x2000.png" class="swiper-slide our-production__slide">
               <div class="ui-reviews__img-wrapper">
                 <picture class="ui-reviews__picture">
                   <source srcset="./assets/images/doc-img.webp" type="image/webp" />
@@ -823,7 +823,7 @@
               </div>
             </div>
 
-            <div class="swiper-slide our-production__slide">
+            <div data-slider-src="./assets/images/2000x2000.png" class="swiper-slide our-production__slide">
               <div class="ui-reviews__img-wrapper">
                 <picture class="ui-reviews__picture">
                   <source srcset="./assets/images/doc-img.webp" type="image/webp" />
@@ -838,7 +838,7 @@
               </div>
             </div>
 
-            <div class="swiper-slide our-production__slide">
+            <div data-slider-src="./assets/images/2000x2000.png" class="swiper-slide our-production__slide">
               <div class="ui-reviews__img-wrapper">
                 <picture class="ui-reviews__picture">
                   <source srcset="./assets/images/doc-img.webp" type="image/webp" />
@@ -853,7 +853,7 @@
               </div>
             </div>
 
-            <div class="swiper-slide our-production__slide">
+            <div data-slider-src="./assets/images/2000x2000.png" class="swiper-slide our-production__slide">
               <div class="ui-reviews__img-wrapper">
                 <picture class="ui-reviews__picture">
                   <source srcset="./assets/images/doc-img.webp" type="image/webp" />
@@ -1919,7 +1919,6 @@
 
     <div id="callbackModal" class="modal callback-modal">
       <div class="modal-wrapper callback-modal__wrapper">
-        <!-- callback -->
         <span data-id="callbackModal" class="icon icon-menu_close modal-icon-close callback-modal__close"></span>
         <p class="modal-title  callback-modal__title">Оставьте свой вопрос</p>
         <p class="modal-subtitle callback-modal__subtitle">
@@ -1950,78 +1949,20 @@
       </div>
     </div>
 
-    <!-- 
-      Отзывы модалка 
-      ourReviews - главный слайдер
-      ourReviewsModal - контейнер модалки
-      ourReviewsSliderModal - слайдер в модалке
-    -->
-    <div id="ourReviewsModal" data-type="modal" class="ui-slider-modal">
-      <div class="mb-0 ui-slider-modal__wrapper">
-        <div id="ourReviewsSliderModal" class="swiper-container">
+    <div id="swiperModal" class="ui-swiper-modal">
+      <div class="ui-swiper-modal__wrapper">
+        <span id="swiperModalClose" class="icon icon-close-circle ui-swiper-modal__close"></span>
+        <div  class="swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <picture class="ui-slider-modal__slide-picture">
-                <source srcset="./assets/images/2000x2000.webp" type="image/webp" />
-                <img src="./assets/images/2000x2000.png" alt="" class="ui-slider-modal__slide-img" />
-              </picture>
-            </div>
-            <div class="swiper-slide">
-              <picture class="ui-slider-modal__slide-picture">
-                <source srcset="./assets/images/2000x300.webp" type="image/webp" />
-                <img src="./assets/images/2000x300.png" alt="" class="ui-slider-modal__slide-img" />
-              </picture>
-            </div>
-            <div class="swiper-slide">
-              <picture class="ui-slider-modal__slide-picture">
-                <source srcset="./assets/images/300x2000.webp" type="image/webp" />
-                <img src="./assets/images/300x2000.png" alt="" class="ui-slider-modal__slide-img" />
-              </picture>
-            </div>
-          </div>
-          
-          <div class="ui-slider-modal__navigation">
-            <div class="swiper-button-prev"><span class="icon icon-icon-triangle-left"></span></div>
-            <div class="swiper-button-next"><span class="icon icon-icon-triangle-right"></span></div>
+            <div class="swiper-slide"><img src="./assets/images/2000x300.png" alt="" /></div>
+            <div class="swiper-slide"><img src="./assets/images/2000x2000.png" alt="" /></div>
+            <div class="swiper-slide"><img src="./assets/images/300x2000.png" alt="" /></div>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- 
-      Rodmix HSS надежные сверла 
-      sverlaSlider - главный слайдер
-      sverlaModal - контейнер модалки
-      sverlaSliderModal - слайдер в модалке
-    -->
-    <div id="sverlaModal" data-type="modal" class="ui-slider-modal">
-      <div class="container mb-0 ui-slider-modal__wrapper">
-        <div id="sverlaSliderModal" class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <picture class="ui-slider-modal__slide-picture">
-                <source srcset="./assets/images/product-img-1.webp" type="image/webp" />
-                <img src="./assets/images/product-img-1.png" alt="" class="ui-slider-modal__slide-img" />
-              </picture>
-            </div>
-            <!-- <div class="swiper-slide">
-              <picture class="ui-slider-modal__slide-picture">
-                <source srcset="./assets/images/product-img-2.webp" type="image/webp" />
-                <img src="./assets/images/product-img-2.png" alt="" class="ui-slider-modal__slide-img" />
-              </picture>
-            </div>
-            <div class="swiper-slide">
-              <picture class="ui-slider-modal__slide-picture">
-                <source srcset="./assets/images/product-img-3.webp" type="image/webp" />
-                <img src="./assets/images/product-img-3.png" alt="" class="ui-slider-modal__slide-img" />
-              </picture>
-            </div> -->
-          </div>
-          <div class="ui-slider-modal__navigation">
-            <div class="swiper-button-prev"><span class="icon icon-icon-triangle-left"></span></div>
-            <div class="swiper-button-next"><span class="icon icon-icon-triangle-right"></span></div>
-          </div>
-        </div>
+      <div class="ui-swiper-modal__navs">
+        <div class="swiper-button-prev"><span class="icon icon-arrow-left"></span></div>
+        <div class="swiper-button-next"><span class="icon icon-arrow-right"></span></div>
       </div>
     </div>
 

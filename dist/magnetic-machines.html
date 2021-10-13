@@ -144,23 +144,23 @@
                 </div>
               </div>
 
-              <div id="magneticSlider" class="ui-product__slider swiper-container ui-slider">
+              <div data-slider-with-modal class="ui-product__slider swiper-container ui-slider">
                 <div class="swiper-wrapper ui-slider__wrapper">
-                  <div class="swiper-slide ui-slider__slide">
+                  <div data-slider-src="./assets/images/300x2000.png" class="swiper-slide ui-slider__slide">
                     <picture class="ui-slider__slide-picture">
                       <source srcset="./assets/images/ui-product-characteristic-8.webp" type="image/webp" />
                       <img src="./assets/images/ui-product-characteristic-8.png" alt="" class="ui-slider__slide-img" />
                     </picture>
                     <span class="ui-slider__slide-icon icon icon-loop-plus"></span>
                   </div>
-                  <div class="swiper-slide ui-slider__slide">
+                  <div data-slider-src="./assets/images/300x2000.png" class="swiper-slide ui-slider__slide">
                     <picture class="ui-slider__slide-picture">
                       <source srcset="./assets/images/ui-product-characteristic-8.webp" type="image/webp" />
                       <img src="./assets/images/ui-product-characteristic-8.png" alt="" class="ui-slider__slide-img" />
                     </picture>
                     <span class="ui-slider__slide-icon icon icon-loop-plus"></span>
                   </div>
-                  <div class="swiper-slide ui-slider__slide">
+                  <div data-slider-src="./assets/images/300x2000.png" class="swiper-slide ui-slider__slide">
                     <picture class="ui-slider__slide-picture">
                       <source srcset="./assets/images/ui-product-characteristic-8.webp" type="image/webp" />
                       <img src="./assets/images/ui-product-characteristic-8.png" alt="" class="ui-slider__slide-img" />
@@ -1526,34 +1526,20 @@
       </div>
     </div>
 
-    <div id="magneticModal" data-type="modal" class="ui-slider-modal">
-      <div class="container mb-0 ui-slider-modal__wrapper">
-        <div id="magneticSliderModal" class="swiper-container">
+    <div id="swiperModal" class="ui-swiper-modal">
+      <div class="ui-swiper-modal__wrapper">
+        <span id="swiperModalClose" class="icon icon-close-circle ui-swiper-modal__close"></span>
+        <div  class="swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <picture class="ui-slider-modal__slide-picture">
-                <source srcset="./assets/images/ui-product-characteristic-8.webp" type="image/webp" />
-                <img src="./assets/images/ui-product-characteristic-8.png" alt="" class="ui-slider-modal__slide-img" />
-              </picture>
-            </div>
-            <div class="swiper-slide">
-              <picture class="ui-slider-modal__slide-picture">
-                <source srcset="./assets/images/ui-product-characteristic-9.webp" type="image/webp" />
-                <img src="./assets/images/ui-product-characteristic-9.png" alt="" class="ui-slider-modal__slide-img" />
-              </picture>
-            </div>
-            <div class="swiper-slide">
-              <picture class="ui-slider-modal__slide-picture">
-                <source srcset="./assets/images/ui-product-characteristic-9.webp" type="image/webp" />
-                <img src="./assets/images/ui-product-characteristic-9.png" alt="" class="ui-slider-modal__slide-img" />
-              </picture>
-            </div>
-          </div>
-          <div class="ui-slider-modal__navigation">
-            <div class="swiper-button-prev"><span class="icon icon-icon-triangle-left"></span></div>
-            <div class="swiper-button-next"><span class="icon icon-icon-triangle-right"></span></div>
+            <div class="swiper-slide"><img src="./assets/images/2000x300.png" alt="" /></div>
+            <div class="swiper-slide"><img src="./assets/images/2000x2000.png" alt="" /></div>
+            <div class="swiper-slide"><img src="./assets/images/300x2000.png" alt="" /></div>
           </div>
         </div>
+      </div>
+      <div class="ui-swiper-modal__navs">
+        <div class="swiper-button-prev"><span class="icon icon-arrow-left"></span></div>
+        <div class="swiper-button-next"><span class="icon icon-arrow-right"></span></div>
       </div>
     </div>
 
