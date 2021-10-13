@@ -48,9 +48,6 @@ window.addEventListener('resize', function (e) {
 });
 
 sliderWithThumbnailsAndModal();
-burners1()
-burners2()
-burners3()
 ourReviewsSlider();
 allMaterialsSlider();
 ourProductionSlider();

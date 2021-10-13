@@ -26,7 +26,6 @@ export function defaultScripts() {
 
   document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') {
-      console.log('Escape');
       modals.forEach((modal) => {
         modal.classList.remove('active');
       });

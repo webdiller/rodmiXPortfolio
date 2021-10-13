@@ -101,11 +101,11 @@ export function sliderWithThumbnailsAndModal() {
             spaceBetween: 20
           },
           640: {
-            slidesPerView: 3,
+            slidesPerView: 4,
             spaceBetween: 10
           },
           768: {
-            slidesPerView: 3,
+            slidesPerView: 4,
             spaceBetween: 15
           },
           1020: {
@@ -149,147 +149,6 @@ export function sliderWithThumbnailsAndModal() {
       });
     }
   } catch (error) {}
-}
-
-export function burners1() {
-  try {
-    const burners1 = document.getElementById('burners1');
-
-    if (burners1) {
-      const swiperOptions = {
-        slidesPerView: 3,
-        spaceBetween: 10,
-        breakpoints: {
-          480: {
-            slidesPerView: 3,
-            spaceBetween: 10
-          },
-          540: {
-            slidesPerView: 3,
-            spaceBetween: 10
-          },
-          640: {
-            slidesPerView: 3,
-            spaceBetween: 10
-          },
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 15
-          },
-          1020: {
-            slidesPerView: 4,
-            spaceBetween: 14
-          },
-          1430: {
-            slidesPerView: 4,
-            spaceBetween: 17
-          }
-        },
-        on: {
-          init: function () {
-            console.log('burners1 initialized');
-          }
-        }
-      };
-      return new Swiper(burners1, swiperOptions);
-    }
-  } catch (error) {
-    console.log('handle error', error);
-  }
-}
-
-export function burners2() {
-  try {
-    const burners2 = document.getElementById('burners2');
-
-    if (burners2) {
-      const swiperOptions = {
-        slidesPerView: 3,
-        spaceBetween: 10,
-        breakpoints: {
-          480: {
-            slidesPerView: 3,
-            spaceBetween: 10
-          },
-          540: {
-            slidesPerView: 3,
-            spaceBetween: 10
-          },
-          640: {
-            slidesPerView: 3,
-            spaceBetween: 10
-          },
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 15
-          },
-          1020: {
-            slidesPerView: 4,
-            spaceBetween: 14
-          },
-          1430: {
-            slidesPerView: 4,
-            spaceBetween: 17
-          }
-        },
-        on: {
-          init: function () {
-            console.log('burners2 initialized');
-          }
-        }
-      };
-      return new Swiper(burners2, swiperOptions);
-    }
-  } catch (error) {
-    console.log('handle error', error);
-  }
-}
-
-export function burners3() {
-  try {
-    const burners3 = document.getElementById('burners3');
-
-    if (burners3) {
-      const swiperOptions = {
-        slidesPerView: 3,
-        spaceBetween: 10,
-        breakpoints: {
-          480: {
-            slidesPerView: 3,
-            spaceBetween: 10
-          },
-          540: {
-            slidesPerView: 3,
-            spaceBetween: 10
-          },
-          640: {
-            slidesPerView: 3,
-            spaceBetween: 10
-          },
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 15
-          },
-          1020: {
-            slidesPerView: 4,
-            spaceBetween: 14
-          },
-          1430: {
-            slidesPerView: 4,
-            spaceBetween: 17
-          }
-        },
-        on: {
-          init: function () {
-            console.log('burners3 initialized');
-          }
-        }
-      };
-      return new Swiper(burners3, swiperOptions);
-    }
-  } catch (error) {
-    console.log('handle error', error);
-  }
 }
 
 export function ourReviewsSlider() {
