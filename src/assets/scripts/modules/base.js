@@ -1,4 +1,5 @@
 export function defaultScripts() {
+  const html = document.documentElement;
   const sidebar = document.getElementById('sidebar');
   const header = document.getElementById('header');
   const menuOpen = document.getElementById('menuOpen');
@@ -71,15 +72,18 @@ export function defaultScripts() {
   if (sidebar && header && menuOpen && menuClose) {
     menuOpen.addEventListener('click', function (e) {
       sidebar.classList.add('active');
+      html.classList.add('disabled');
     });
 
     menuClose.addEventListener('click', function (e) {
       sidebar.classList.remove('active');
+      html.classList.remove('disabled');
     });
 
     sidebar.addEventListener('click', function (e) {
       if (e.target === this) {
         sidebar.classList.remove('active');
+        html.classList.remove('disabled');
       }
     });
   }
