@@ -36,7 +36,7 @@ window.addEventListener('scroll', function (e) {
 window.addEventListener('resize', function (e) {
   if (featuresSwiperSlider === null && window.innerWidth < 640) {
     featuresSwiperSlider = ourFeatures();
-  } else if (featuresSwiperSlider !== null) {
+  } else if (featuresSwiperSlider !== null && window.innerWidth >= 640) {
     // FIXME: Нет такого метода. Исправить.
     try {
       featuresSwiperSlider.destroy();
