@@ -172,6 +172,11 @@
     z-index: 1500;
   }
 
+  @media (min-width: 760px) and (max-height: 360px) {
+    max-width: 70vw;
+    overflow-y: hidden;
+  }
+
   &__wrapper {
     position: relative;
   }

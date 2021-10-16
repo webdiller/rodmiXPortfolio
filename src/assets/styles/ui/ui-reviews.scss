@@ -28,14 +28,6 @@
 
   .swiper-slide {
     cursor: pointer;
-  }
-
-  &__img-wrapper {
-    position: relative;
-    text-align: center;
-    margin-bottom: 67px;
-    pointer-events: none;
-
     &:hover,
     &:focus {
       cursor: pointer;
@@ -43,6 +35,13 @@
         color: $redHover;
       }
     }
+  }
+
+  &__img-wrapper {
+    position: relative;
+    text-align: center;
+    margin-bottom: 67px;
+    pointer-events: none;
 
     @media (min-width: 480px) {
       align-self: flex-start;
@@ -247,6 +246,11 @@
   .swiper-pagination-bullet,
   .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
     margin-left: 0;
+       
+    transition: all .3s ease;
+    &:hover {
+      opacity: .6;
+    }
     &:not(:last-child) {
       margin-right: 4px;
     }
