@@ -30,6 +30,13 @@ export function defaultScripts() {
       modals.forEach((modal) => {
         modal.classList.remove('active');
       });
+      try {
+        youtubeTarget.classList.remove('active');
+        youtubeIframe.src = youtubeIframe.src;
+        youtubeOverlay.classList.remove('active');
+      } catch (error) {
+        
+      }
     }
   });
 

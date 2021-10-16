@@ -144,6 +144,10 @@ export function sliderWithThumbnailsAndModal() {
             document.querySelector("#swiperModal .swiper-wrapper").innerHTML = "";
             document.querySelector("#swiperModal .swiper-wrapper").insertAdjacentHTML( 'beforeend', html );
             swiperModal.classList.add('active');
+
+            let indexTarget = e.target.getAttribute('aria-label').replaceAll(' ', '').split('/')[0];
+            indexTarget = Number(indexTarget)
+            swiperModalInstance.slideTo(indexTarget)
           });
         });
       });

@@ -401,6 +401,11 @@
   .swiper-pagination-bullet,
   .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
     margin-left: 0;
+       
+    transition: all .3s ease;
+    &:hover {
+      opacity: .6;
+    }
     &:not(:last-child) {
       margin-right: 4px;
     }
