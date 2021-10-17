@@ -133,12 +133,14 @@
     top: 3px;
     z-index: 5;
     margin-top: -3px;
-    @media (min-width: 640px) {
+    @media (min-width: 540px) {
       padding-left: 20px;
-    }
-    @media (min-width: 1430px) {
       padding-left: 0;
       justify-content: center;
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 1430px) {
     }
     span {
       position: relative;
