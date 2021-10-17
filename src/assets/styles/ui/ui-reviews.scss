@@ -1,7 +1,9 @@
 .ui-reviews {
   &__wrapper {
     position: relative;
+    margin-top: 50px;
   }
+
 
   &__title2 {
     @media (min-width: 480px) {
@@ -248,8 +250,10 @@
     margin-left: 0;
        
     transition: all .3s ease;
-    &:hover {
-      opacity: .6;
+    &:not(.swiper-pagination-bullet-active) {
+      &:hover {
+        opacity: .6;
+      }
     }
     &:not(:last-child) {
       margin-right: 4px;
@@ -351,4 +355,12 @@
       }
     }
   }
+  &_tapers {
+    .ui-reviews__wrapper {
+      @media (min-width: 1020px) {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
 }

@@ -109,7 +109,15 @@ export function sliderWithThumbnailsAndModal() {
             spaceBetween: 15
           },
           1020: {
-            slidesPerView: 3,
+            slidesPerView: 4,
+            spaceBetween: 30
+          },
+          1200: {
+            slidesPerView: 4,
+            spaceBetween: 30
+          },
+          1430: {
+            slidesPerView: 4,
             spaceBetween: 30
           }
         },
@@ -147,7 +155,7 @@ export function sliderWithThumbnailsAndModal() {
 
             let indexTarget = e.target.getAttribute('aria-label').replaceAll(' ', '').split('/')[0];
             indexTarget = Number(indexTarget)
-            swiperModalInstance.slideTo(indexTarget)
+            swiperModalInstance.slideTo(indexTarget - 1)
           });
         });
       });
