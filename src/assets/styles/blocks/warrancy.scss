@@ -840,4 +840,21 @@
       }
     }
   }
+  &_partner {
+    .warrancy__content {
+      @media (min-width: 640px) {
+        display: block;
+      }
+      @media (min-width: 768px) {
+        display: flex;
+      }
+      @media (min-width: 1430px) {
+      }
+    }
+    .warrancy__text-with-contacts {
+      @media (min-width: 1430px) {
+        max-width: 890px;
+      }
+    }
+  }
 }

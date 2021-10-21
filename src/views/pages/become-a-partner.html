@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TODO: Убрать noindex в продакшене -->
+    <meta name="robots" content="noindex" />
+    <title>Стать партнером</title>
+    <meta name="description" content="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+    <link rel="stylesheet" href="./assets/styles/main.min.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="header" class="header">
+      <div class="container header__top">
+        <a href="#" class="header__logo" title="Родмикс"><img src="./assets/images/logo_red.svg" alt="" class="header__logo-img" loading="lazy" decoding="async" /></a>
+        <nav class="header__nav">
+          <a href="#" class="header__nav-item">О НАС</a>
+          <a href="#" class="header__nav-item">НАША ПРОДУКЦИЯ</a>
+          <a href="#" class="header__nav-item">НАШИ ПУБЛИКАЦИИ</a>
+          <a href="#" class="header__nav-item">ГДЕ КУПИТЬ</a>
+          <a href="#" class="header__nav-item">КОНТАКТЫ</a>
+        </nav>
+        <a href="tel:+74994440625" class="header__phone">+7 (499) 444-06-25</a>
+        <button data-id="callbackModal" class="header__callback">ПЕРЕЗВОНИТЬ МНЕ</button>
+        <button aria-label="Открыть меню" id="menuOpen" class="header__bar">
+          <span class="icon icon-menu_open header__bar-open"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- HEADER SIDEBAR -->
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar__menu">
+        <p class="sidebar__menu-title">Меню <span id="menuClose" class="icon icon-menu_close sidebar__menu-close"></span></p>
+        <nav class="sidebar__menu-list">
+          <a href="#" class="sidebar__menu-item">О Нас</a>
+          <a href="#" class="sidebar__menu-item">Наша продукция</a>
+          <a href="#" class="sidebar__menu-item">Наши публикации</a>
+          <a href="#" class="sidebar__menu-item">Где купить</a>
+          <a href="#" class="sidebar__menu-item">Контакты</a>
+        </nav>
+        <p class="sidebar__menu-title">Наша продукция</p>
+        <nav class="sidebar__menu-list sidebar__menu-list_last">
+          <a href="#" class="sidebar__menu-item">Сверла</a>
+          <a href="#" class="sidebar__menu-item">Борфрезы</a>
+          <a href="#" class="sidebar__menu-item">Твердосплавные диски</a>
+          <a href="#" class="sidebar__menu-item">Адаптеры</a>
+          <a href="#" class="sidebar__menu-item">Концферзы</a>
+          <a href="#" class="sidebar__menu-item">Метчики</a>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- FIRST SCREEN -->
+    <section class="welcome">
+      <div class="container welcome__wrapper">
+        <div class="welcome__text-content">
+          <h1>
+            <span class="welcome__title">Стань часть Rodmix</span>
+            <span class="welcome__subtitle">ищем партнеров в команду</span>
+          </h1>
+          <p class="welcome__description">Зарабатывай на самых выгодных условиях</p>
+        </div>
+        <picture class="welcome__picture">
+          <source srcset="./assets/images/welcome-drill-768.webp" media="(min-width: 768px)" type="image/webp" />
+          <source srcset="./assets/images/welcome-drill-768.png" media="(min-width: 768px)" />
+
+          <source srcset="./assets/images/welcome-drill-640.webp" media="(min-width: 640px)" type="image/webp" />
+          <source srcset="./assets/images/welcome-drill-640.png" media="(min-width: 640px)" />
+
+          <source srcset="./assets/images/welcome-drill.webp" type="image/webp" />
+          <img class="welcome__drill-img" src="./assets/images/welcome-drill.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" loading="lazy" decoding="async" />
+        </picture>
+
+        <div class="welcome__features">
+          <div class="welcome__feature">
+            <span class="icon icon-icon-shield welcome__feature-icon"></span>
+            <div class="welcome__feature-content">
+              <p class="welcome__feature-title">Эксклюзивное представительство в регионе</p>
+              <p class="welcome__feature-subtitle">Передаем даже наших клиентов</p>
+            </div>
+          </div>
+          <div class="welcome__feature">
+            <span class="icon icon-icon-handshake-alt welcome__feature-icon"></span>
+            <div class="welcome__feature-content">
+              <p class="welcome__feature-title">Всегда в наличии на складе</p>
+              <p class="welcome__feature-subtitle">Доставка в день оформления заявки</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="welcome__actions">
+          <div class="welcome__action welcome__action_red">
+            <span class="welcome__action-text">Просмотреть продукцию</span>
+            <span class="icon icon-arrow-short welcome__action-icon"></span>
+
+            <span class="icon icon-arrow-wide welcome__action-icon_lg"></span>
+          </div>
+          <div data-id="callbackModal" class="welcome__action welcome__action_grey">
+            <span class="welcome__action-text welcome__action-text_mobile">Стать партнером</span>
+            <span class="welcome__action-text welcome__action-text_tablet">Стать нашим партнером</span>
+            <span class="welcome__action-text welcome__action-text_desktop">Узнайте как стать нашим партнером</span>
+            <span class="icon icon-arrow-short welcome__action-icon"></span>
+
+            <span class="icon icon-arrow-wide welcome__action-icon_lg"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-production">
+      <div class="container our-production__wrapper">
+        <div class="title-with-subtitle our-production__title-with-subtitle">
+          <div class="our-production__subtitle subtitle">Надежность проверенная делом</div>
+          <p class="our-production__title title1 title1_index mt-0">Наша продукция</p>
+          <button data-id="orderModal" class="btn-outline title-with-subtitle__btn">запросить цены</button>
+        </div>
+
+        <nav class="our-production__list">
+          <a href="#" class="ui-our-product our-production__list-item">
+            <span class="ui-our-product__title our-production__list-title">Корончатые сверла</span>
+            <span class="ui-our-product__description our-production__list-description">Небольшое описание товара или его характеристика</span>
+            <span class="icon icon-arrow-short ui-our-product__icon our-production__list-icon"></span>
+
+            <picture class="ui-our-product__picture our-production__list-picture">
+              <source srcset="./assets/images/production-list__item.webp" type="image/webp" />
+              <img loading="lazy" decoding="async" class="ui-our-product__img our-production__list-img" src="./assets/images/production-list__item001.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+            </picture>
+          </a>
+
+          <a href="#" class="ui-our-product our-production__list-item">
+            <span class="ui-our-product__title our-production__list-title">Борфрезы</span>
+            <span class="ui-our-product__description our-production__list-description">Небольшое описание товара или его характеристика</span>
+            <span class="icon icon-arrow-short ui-our-product__icon our-production__list-icon"></span>
+
+            <picture class="ui-our-product__picture our-production__list-picture">
+              <source srcset="./assets/images/production-list__item002.webp" type="image/webp" />
+              <img loading="lazy" decoding="async" class="ui-our-product__img our-production__list-img" src="./assets/images/production-list__item0002.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+            </picture>
+          </a>
+
+          <a href="#" class="ui-our-product our-production__list-item">
+            <span class="ui-our-product__title our-production__list-title">Твердосплавные диски</span>
+            <span class="ui-our-product__description our-production__list-description">Небольшое описание товара или его характеристика</span>
+            <span class="icon icon-arrow-short ui-our-product__icon our-production__list-icon"></span>
+
+            <picture class="ui-our-product__picture our-production__list-picture">
+              <source srcset="./assets/images/production-list__item003.webp" type="image/webp" />
+              <img loading="lazy" decoding="async" class="ui-our-product__img our-production__list-img" src="./assets/images/production-list__item003.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+            </picture>
+          </a>
+
+          <a href="#" class="ui-our-product our-production__list-item">
+            <span class="ui-our-product__title our-production__list-title">Адаптеры</span>
+
+            <span class="ui-our-product__description our-production__list-description">Небольшое описание товара или его характеристика</span>
+            <span class="icon icon-arrow-short ui-our-product__icon our-production__list-icon"></span>
+
+            <picture class="ui-our-product__picture our-production__list-picture">
+              <source srcset="./assets/images/production-list__item004.webp" type="image/webp" />
+              <img loading="lazy" decoding="async" class="ui-our-product__img our-production__list-img" src="./assets/images/production-list__item004.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+            </picture>
+          </a>
+
+          <a href="#" class="ui-our-product our-production__list-item">
+            <span class="ui-our-product__title our-production__list-title">Концферзы</span>
+
+            <span class="ui-our-product__description our-production__list-description">Небольшое описание товара или его характеристика</span>
+            <span class="icon icon-arrow-short ui-our-product__icon our-production__list-icon"></span>
+
+            <picture class="ui-our-product__picture our-production__list-picture">
+              <source srcset="./assets/images/production-list__item005.webp" type="image/webp" />
+              <img loading="lazy" decoding="async" class="ui-our-product__img our-production__list-img" src="./assets/images/production-list__item005.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+            </picture>
+          </a>
+
+          <a href="#" class="ui-our-product our-production__list-item">
+            <span class="ui-our-product__title our-production__list-title">Метчики</span>
+
+            <span class="ui-our-product__description our-production__list-description">Небольшое описание товара или его характеристика</span>
+            <span class="icon icon-arrow-short ui-our-product__icon our-production__list-icon"></span>
+
+            <picture class="ui-our-product__picture our-production__list-picture">
+              <source srcset="./assets/images/production-list__item006.webp" type="image/webp" />
+              <img loading="lazy" decoding="async" class="ui-our-product__img our-production__list-img" src="./assets/images/production-list__item006.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+            </picture>
+          </a>
+
+          <a href="#" class="ui-our-product our-production__list-item">
+            <span class="ui-our-product__title our-production__list-title">Ступенчатые сверла</span>
+            <span class="ui-our-product__description our-production__list-description">Небольшое описание товара или его характеристика</span>
+            <span class="icon icon-arrow-short ui-our-product__icon our-production__list-icon"></span>
+
+            <picture class="ui-our-product__picture our-production__list-picture">
+              <source srcset="./assets/images/production-list__item007.webp" type="image/webp" />
+              <img loading="lazy" decoding="async" class="ui-our-product__img our-production__list-img" src="./assets/images/production-list__item007.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+            </picture>
+          </a>
+
+          <a href="#" class="ui-our-product our-production__list-item">
+            <span class="ui-our-product__title our-production__list-title">Магнитные станки</span>
+            <span class="ui-our-product__description our-production__list-description">Небольшое описание товара или его характеристика</span>
+            <span class="icon icon-arrow-short ui-our-product__icon our-production__list-icon"></span>
+
+            <picture class="ui-our-product__picture our-production__list-picture">
+              <source srcset="./assets/images/production-list__item008.webp" type="image/webp" />
+              <img loading="lazy" decoding="async" class="ui-our-product__img our-production__list-img" src="./assets/images/production-list__item008.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+            </picture>
+          </a>
+
+          <a href="#" class="ui-our-product our-production__list-item">
+            <span class="ui-our-product__title our-production__list-title">Зенкер</span>
+
+            <span class="ui-our-product__description our-production__list-description">Небольшое описание товара или его характеристика</span>
+            <span class="icon icon-arrow-short ui-our-product__icon our-production__list-icon"></span>
+
+            <picture class="ui-our-product__picture our-production__list-picture">
+              <source srcset="./assets/images/production-list__item009.webp" type="image/webp" />
+              <img loading="lazy" decoding="async" class="ui-our-product__img our-production__list-img" src="./assets/images/production-list__item009.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+            </picture>
+          </a>
+
+          <a href="#" class="btn-outline our-production__list-btn">запросить цены </a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Наши преимущества -->
+    <section class="features">
+      <div class="container features__wrapper">
+        <div class="title-with-subtitle features__title-with-subtitle">
+          <div class="subtitle">Почему стоит выбрать именно нас</div>
+          <p class="title1 title1_index mt-0">Наши преимущества</p>
+        </div>
+
+        <div id="featuresSwiper" class="swiper-container features__swiper-container">
+          <div class="swiper-wrapper features__swiper-wrapper">
+            <div class="swiper-slide features__item">
+              <span class="icon icon-icon-feature-help features__item-icon"></span>
+              <p class="features__item-title">Персональный менеджер и помощь в подборе продукции</p>
+              <p class="features__item-description">Индивидуальный подход и забота</p>
+            </div>
+
+            <div class="swiper-slide features__item">
+              <span class="icon icon-icon-feature-stock features__item-icon"></span>
+              <p class="features__item-title">Вся продукция в наличии у дилеров в вашем городе</p>
+              <p class="features__item-description">Вы всегда знаете куда обратиться</p>
+            </div>
+
+            <div class="swiper-slide features__item">
+              <span class="icon icon-icon-feature-delivery features__item-icon"></span>
+              <p class="features__item-title">Бесплатная доставка по РФ и Таможенному союзу</p>
+              <p class="features__item-description">Отправка в день заказа в любую точку</p>
+            </div>
+
+            <div class="swiper-slide features__item">
+              <span class="icon icon-icon-feature-process features__item-icon"></span>
+              <p class="features__item-title">Любые образцы для тестирования по запросу</p>
+              <p class="features__item-description">Проверьте качество и надежность лично</p>
+            </div>
+
+            <div class="swiper-slide features__item">
+              <span class="icon icon-icon-feature-education features__item-icon"></span>
+              <p class="features__item-title">Качественное Обучение работе с инструментом</p>
+              <p class="features__item-description">Делимся полезной информацией и опытом</p>
+            </div>
+
+            <div class="swiper-slide features__item">
+              <span class="icon icon-icon-feature-award features__item-icon"></span>
+              <p class="features__item-title">Независимая экспертиза качества продукции</p>
+              <p class="features__item-description">Надежность подтверждена экспертами</p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ГАРАНТИЯ -->
+    <section class="warrancy warrancy_partner">
+      <div class="container warrancy__wrapper">
+        <div class="title-with-subtitle warrancy__title-with-subtitle">
+          <div class="subtitle">У нас - только качественно!</div>
+          <p class="title1 title1_index mt-0">Станьте нашим партнером</p>
+        </div>
+        <div class="warrancy__content">
+          <div class="warrancy__text-with-contacts">
+            <p class="warrancy__description">
+              На всю выпускаемую продукцию <span class="ui-strong">RODMIX</span>
+              <br />
+              предоставляется гарантия согласно законодательству РФ.
+              <br />
+              Узнать контакты сервисного центра в вашем 0городе или решить проблему вы можете:
+            </p>
+            <p class="warrancy__description">
+              На всю выпускаемую продукцию <span class="ui-strong">RODMIX</span>
+              <br />
+              предоставляется гарантия согласно законодательству РФ.
+              <br />
+              Узнать контакты сервисного центра в вашем 0городе или решить проблему вы можете:
+            </p>
+            <p class="warrancy__description">
+              На всю выпускаемую продукцию <span class="ui-strong">RODMIX</span>
+              <br />
+              предоставляется гарантия согласно законодательству РФ.
+              <br />
+              Узнать контакты сервисного центра в вашем 0городе или решить проблему вы можете:
+            </p>
+            <div class="warrancy__contacts">
+              <div class="warrancy__contact-item">
+                <p class="warrancy__contact-title">По телефону:</p>
+                <a href="phone:+74852680021" class="warrancy__contact-subtitle warrancy__contact-subtitle_phone">+7(4852) 68-00-21</a>
+              </div>
+              <div class="warrancy__contact-item">
+                <p class="warrancy__contact-title">Электронной почте:</p>
+                <a href="mailto:info@rodmix.ru" class="warrancy__contact-subtitle warrancy__contact-subtitle_email">info@rodmix.ru</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="ui-form ui-form_partner">
+            <div class="ui-form__wrapper">
+              <p class="ui-form__title">Запросить цены на спиральные сверла HSS</p>
+
+              <form data-ui-form="" class="ui-form__form">
+                <div class="ui-form__fields">
+                  <div class="ui-form__field">
+                    <label data-required="" for="orderPriceName4" class="ui-form__label">ФИО:</label>
+                    <input id="orderPriceName4" placeholder="Иванов Иван" type="text" class="custom-input ui-form__input">
+                  </div>
+
+                  <div class="ui-form__field">
+                    <label data-required="" for="orderPricePhone4" class="ui-form__label">Телефон:</label>
+                    <input id="orderPricePhone4" placeholder="+7 999 999 99 99" type="text" class="custom-input ui-form__input">
+                  </div>
+
+                  <div class="ui-form__field">
+                    <label data-required="" for="orderPriceEmail4" class="ui-form__label">Электронная почта:</label>
+                    <input id="orderPriceEmail4" placeholder="ivanov@mail.ru" type="text" class="custom-input ui-form__input">
+                  </div>
+
+                  <div class="ui-form__field">
+                    <label for="orderPriceText4" class="ui-form__label">Комментарий:</label>
+                    <textarea class="custom-input ui-form__input ui-form__input_textarea" placeholder="Текст" id="orderPriceText4"></textarea>
+                  </div>
+                </div>
+                <button type="button" class="btn ui-form__btn"><span class="ui-form__btn-hide-480">Заполнить форму</span> <span class="ui-form__btn-show-480">Отправить</span></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- О производителе -->
+    <section class="producer">
+      <div class="container producer__wrapper">
+        <div class="title-with-subtitle producer__title-with-subtitle">
+          <div class="subtitle">Как мы занимаемся разработкой</div>
+          <p class="title1 title1_index mt-0">О производителе</p>
+        </div>
+
+        <div class="producer__body">
+          <div class="producer__author">
+            <picture class="producer__picture">
+              <source srcset="./assets/images/producer@4x.webp" media="(min-width: 1920px)" type="image/webp" />
+              <source srcset="./assets/images/producer@4x.jpg" media="(min-width: 1920px)" />
+
+              <source srcset="./assets/images/producer@3x.webp" media="(min-width: 1400px)" type="image/webp" />
+              <source srcset="./assets/images/producer@3x.jpg" media="(min-width: 1400px)" />
+
+              <source srcset="./assets/images/producer@2x.webp" media="(min-width: 1000px)" type="image/webp" />
+              <source srcset="./assets/images/producer@2x.jpg" media="(min-width: 1000px)" />
+
+              <source srcset="./assets/images/producer.webp" type="image/webp" />
+              <img loading="lazy" decoding="async" class="producer__image" src="./assets/images/producer.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+            </picture>
+
+            <div class="producer__btn-with-name">
+              <button class="btn btn_arrow-producer producer__btn">
+                Написать директору
+                <span class="icon icon-arrow-short producer__btn-icon"></span>
+
+                <span class="icon icon-arrow-wide producer__btn-icon"></span>
+              </button>
+              <div class="producer__name-with-role">
+                <p class="producer__name">Мулеев А.В</p>
+                <p class="producer__role">Генеральный Директор ООО «РОДМИКС»</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="producer__content">
+            <div class="producer__texts">
+              <p class="producer__text">
+                Инструмент под брендом <span class="ui-strong">RODMIX</span> объединяет отличное качество и доступность. Ежедневно мы работаем как над качеством нашей продукции, так и над качеством обслуживания. Мы идем в ногу со временем, прислушиваемся к потребителям и постоянно расширяем
+                ассортимент новыми позициями.
+              </p>
+              <p class="producer__text">
+                Мы работаем по всей РФ и Таможенному союзу. Организовали гибкую систему доставки и оплаты. Вы в любой момент сможете найти представителей <span class="ui-strong">торговой марки RODMIX</span> в вашем регионе. А наши менеджеры без проблем проконсультируют по любым вопросам и помогут c
+                выбором.
+              </p>
+            </div>
+            <div class="producer__certifications">
+              <a href="#" class="producer__certification producer__certification_certificate">
+                <img src="./assets/images/icon-pdf.svg" alt="" class="producer__certification-img" loading="lazy" decoding="async" />
+                <div class="producer__certification-content">
+                  <p class="producer__certification-title">Скачать каталог с товарами</p>
+                  <p class="producer__certification-size">PDF (45МB)</p>
+                </div>
+              </a>
+              <a href="#" class="producer__certification">
+                <img src="./assets/images/icon-certificate.svg" alt="" class="producer__certification-img" loading="lazy" decoding="async" />
+                <div class="producer__certification-content">
+                  <p class="producer__certification-title">Наши Сертификаты</p>
+                  <p class="producer__certification-size">PDF (120МB)</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__wrapper mb-0">
+        <div class="footer__top">
+          <a href="#" class="footer__logo" title="Родмикс"><img src="./assets/images/logo_black.svg" loading="lazy" decoding="async" alt="" class="footer__logo-img" /></a>
+          <nav class="footer__nav">
+            <a href="#" class="footer__nav-item">О НАС</a>
+            <a href="#" class="footer__nav-item">НАША ПРОДУКЦИЯ</a>
+            <a href="#" class="footer__nav-item">НАШИ ПУБЛИКАЦИИ</a>
+            <a href="#" class="footer__nav-item">ГДЕ КУПИТЬ</a>
+            <a href="#" class="footer__nav-item">КОНТАКТЫ</a>
+          </nav>
+          <a href="tel:+74994440625" class="footer__phone">+7 (499) 444-06-25</a>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__questions">
+            <p class="footer__questions-title">Остались вопросы?</p>
+            <p class="footer__questions-subtitle">Оставьте заявку и наш менеджер перезвонит Вам</p>
+            <button data-id="orderModal" class="btn footer__questions-btn">Оставить заявку</button>
+          </div>
+          <div class="footer__menus">
+            <nav class="footer__menu">
+              <a href="#" class="footer__menu-item">Сверла</a>
+              <a href="#" class="footer__menu-item">Борфрезы</a>
+              <a href="#" class="footer__menu-item">Твердосплавные диски</a>
+              <a href="#" class="footer__menu-item">Адаптеры</a>
+              <a href="#" class="footer__menu-item">Концферзы</a>
+            </nav>
+            <nav class="footer__menu">
+              <a href="#" class="footer__menu-item">Метчики</a>
+              <a href="#" class="footer__menu-item">Корончатые сверла</a>
+              <a href="#" class="footer__menu-item">Переходники</a>
+              <a href="#" class="footer__menu-item">Удлинители</a>
+            </nav>
+          </div>
+          <div class="footer__address">
+            <p class="footer__address-location">Россия, г. Калининград, ул. Ленина д.56</p>
+            <a href="mailto:pochta@yandex.ru" class="footer__address-email">pochta@yandex.ru</a>
+            <div class="footer__address-socials">
+              <a href="#" class="footer__address-social"><span class="icon icon-icon-instagram footer__address-social-icon"></span></a>
+              <a href="#" class="footer__address-social"><span class="icon icon-icon-youtube footer__address-social-icon"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__rules">
+          Все материалы данного сайта являются объектами авторского права (в том числе дизайн). Запрещается копирование, распространение <br />
+          (в том числе путем копирования на другие сайты и ресурсы в Интернете) или любое иное использование информации <a class="footer__rules-link" href="#">Правила сайта</a> и <a class="footer__rules-link" href="#">Политика конфеденциальности</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="tapbar">
+      <nav class="tapbar__wrapper">
+        <button class="tapbar__item"><span class="icon icon-tapbar-settings tapbar__item-icon"></span> <span class="tapbar__item-text">Продукция</span></button>
+        <button class="tapbar__item"><span class="icon icon-tapbar-medal tapbar__item-icon"></span> <span class="tapbar__item-text">Гарантия</span></button>
+        <button data-id="callbackModal" class="tapbar__item"><span class="icon icon-tapbar-call tapbar__item-icon"></span> <span class="tapbar__item-text">Перезвонить</span></button>
+        <button class="tapbar__item"><span class="icon icon-tapbar-pin tapbar__item-icon"></span> <span class="tapbar__item-text">Контакты</span></button>
+      </nav>
+    </div>
+
+    <div data-type="modal" id="callbackModal" class="modal callback-modal">
+      <div class="modal-wrapper callback-modal__wrapper">
+        <!-- callback -->
+        <span data-id="callbackModal" class="icon icon-menu_close modal-icon-close callback-modal__close"></span>
+        <p class="modal-title  callback-modal__title">Оставьте свой вопрос</p>
+        <p class="modal-subtitle callback-modal__subtitle">
+          И наш менеджер свяжется с Вами <br />
+          для уточнения информации
+        </p>
+        <form id="callbackForm" class="callback-modal__form">
+          <input placeholder="Имя *" type="text" class="custom-input callback-modal__input" />
+          <input placeholder="Номер телефона *" type="text" class="custom-input callback-modal__input" />
+          <textarea placeholder="Вопрос *" class="custom-textarea callback-modal__textarea"></textarea>
+          <button type="submit" class="btn callback-modal__submit-btn">Оставить вопрос</button>
+          <p class="callback-modal__rules">
+            Оставляя вопрос, вы подтверждаете что ознакомлены <br />
+            с <a href="#">политикой конфиденциальности</a> и согласны на обработку <br />
+            персональных данных
+          </p>
+        </form>
+        <!-- Success -->
+        <div id="callbackSuccess" class="modal-wrapper callback-success-modal__wrapper">
+          <span id="callbackModalClose" class="icon icon-menu_close modal-icon-close callback-success-modal__close"></span>
+          <span class="icon icon-icon-success callback-success-modal__img"></span>
+          <p class="modal-title callback-success-modal__title">Спасибо</p>
+          <p class="modal-subtitle callback-success-modal__subtitle">
+            Ваша заявка принята! <br />
+            В ближайшее время с Вами свяжется наш специалист
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="youtubeTarget" class="modal callback-modal callback-modal_youtube">
+      <span id="youtubeClose" class="icon icon-menu_close modal-wrapper__close"></span>
+      <div class="modal-wrapper modal-wrapper_youtube mb-0 callback-modal__wrapper">
+        <iframe id="youtubeIframe" width="560" height="315" src="https://www.youtube.com/embed/8AwIJZj07s8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
+      </div>
+    </div>
+    <div id="youtubeOverlay" class="overlay-youtube"></div>
+
+    <script src="./assets/scripts/default.bundle.js"></script>
+  </body>
+</html>

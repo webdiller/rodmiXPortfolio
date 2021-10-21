@@ -374,4 +374,29 @@
       display: inline-block;
     }
   }
+
+  &_partner {
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+      margin-left: auto;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1200px) {
+    }
+    @media (min-width: 1430px) {
+    }
+    @media (min-width: 1920px) {
+    }
+    .ui-form__fields {
+      @media (min-width: 768px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
 }
