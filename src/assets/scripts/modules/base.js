@@ -14,8 +14,22 @@ export function defaultScripts() {
   const callbackForm = document.getElementById('callbackForm');
   const modals = document.querySelectorAll('[data-type="modal"]');
 
+  const lists = document.querySelectorAll('[data-type="dropdown"]');
+  const buttons = document.querySelectorAll('[data-type="dropdown] div');
 
-  if (modals) {
+  if (lists && lists.length > 0) {
+    try {
+      lists.forEach((list) => {
+        list.addEventListener('click', function (e) {
+          e.target.classList.toggle('active');
+        });
+      });
+    } catch (error) {
+      console.log('Handle error uiDropdown: ', error);
+    }
+  }
+
+  if (modals && modals.length > 0) {
     modals.forEach((modal) => {
       modal.addEventListener('click', function (e) {
         if (e.target === this) {
@@ -34,39 +48,42 @@ export function defaultScripts() {
         youtubeTarget.classList.remove('active');
         youtubeIframe.src = youtubeIframe.src;
         youtubeOverlay.classList.remove('active');
-      } catch (error) {
-        
-      }
+      } catch (error) {}
     }
   });
 
   if (callbackForm) {
-    callbackForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      setTimeout(() => {
-        callbackSuccess.classList.add('active');
-      }, 250);
-    });
+    try {
+      callbackForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        setTimeout(() => {
+          callbackSuccess.classList.add('active');
+        }, 250);
+      });
+    } catch (error) {}
   }
 
   if (callbackModalButtons && callbackModal) {
-    callbackModalButtons.forEach((element) => {
-      element.addEventListener('click', function () {
-        callbackModal.classList.toggle('active');
+    try {
+      callbackModalButtons.forEach((element) => {
+        element.addEventListener('click', function () {
+          callbackModal.classList.toggle('active');
+        });
       });
-    });
 
-    callbackModal.addEventListener('click', function (e) {
-      if (e.target === this) {
-        callbackModal.classList.remove('active');
-      }
-    });
+      callbackModal.addEventListener('click', function (e) {
+        if (e.target === this) {
+          callbackModal.classList.remove('active');
+        }
+      });
+    } catch (error) {}
   }
-
-  callbackModalClose.addEventListener('click', function (e) {
-    callbackSuccess.classList.remove('active');
-    callbackModal.classList.remove('active');
-  });
+  try {
+    callbackModalClose.addEventListener('click', function (e) {
+      callbackSuccess.classList.remove('active');
+      callbackModal.classList.remove('active');
+    });
+  } catch (error) {}
 
   window.addEventListener('scroll', function (e) {
     if (window.scrollY > 0 && window.innerWidth >= 1915) {

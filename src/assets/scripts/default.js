@@ -5,7 +5,7 @@ function isTouchDevice() {
 }
 
 import { yamapInit } from './modules/yamap.js';
-import { ourFeatures, ourPublications, ourReviewsSlider, sliderWithThumbnailsAndModal, allMaterialsSlider, ourProductionSlider, disksSwiper, burners1, burners2, burners3, ourReviewsSliderModal, burners1SliderModal, burners2SliderModal, burners3SliderModal } from './modules/slider.js';
+import { ourFeatures, ourPublications, ourReviewsSlider, sliderWithThumbnailsAndModal, allMaterialsSlider, ourProductionSlider, disksSwiper } from './modules/slider.js';
 import { defaultScripts } from './modules/base.js';
 import { uiSizes } from './modules/uiSizes.js';
 import { uiForms } from './modules/uiForm.js';

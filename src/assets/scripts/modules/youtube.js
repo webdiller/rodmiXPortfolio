@@ -8,16 +8,20 @@ export const youtube = () => {
   
   if (youtubeTrigger && youtubeTarget) {
 
-    youtubeTrigger.addEventListener('click', function (e) {
-      youtubeTarget.classList.add('active');
-      youtubeOverlay.classList.add('active');
-    });
-
-    youtubeClose.addEventListener('click', function (e) {
-      youtubeTarget.classList.remove('active');
-      youtubeIframe.src = youtubeIframe.src;
-      youtubeOverlay.classList.remove('active');
-    });
+    try {
+      youtubeTrigger.addEventListener('click', function (e) {
+        youtubeTarget.classList.add('active');
+        youtubeOverlay.classList.add('active');
+      });
+  
+      youtubeClose.addEventListener('click', function (e) {
+        youtubeTarget.classList.remove('active');
+        youtubeIframe.src = youtubeIframe.src;
+        youtubeOverlay.classList.remove('active');
+      });
+    } catch (error) {
+      console.log('Handle error: youtube: ', error);
+    }
     
   }
 };
