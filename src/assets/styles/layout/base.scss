@@ -1135,22 +1135,19 @@ input:focus {
     justify-content: center;
     align-items: center;
 
-    height: 60px;
-    padding-top: 3px;
-    padding-left: 30px;
-    padding-right: 30px;
-    min-width: 328px;
-
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 21px;
-
     text-transform: uppercase;
     color: #ffffff;
     background-color: $red;
     border-radius: 5px;
     border: 0;
     outline: none;
+    padding-top: 3px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    height: 45px;
+    font-size: 14px;
+    line-height: 16px;
 
     transition: all 0.3s ease;
     &:hover,
@@ -1163,6 +1160,28 @@ input:focus {
       &:hover {
         background-color: $grey;
       }
+    }
+
+    @media (min-width: 480px) {
+    }
+    @media (min-width: 540px) {
+    }
+    @media (min-width: 640px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1020px) {
+    }
+    @media (min-width: 1430px) {
+      height: 60px;
+      padding-top: 3px;
+      padding-left: 30px;
+      padding-right: 30px;
+      min-width: 328px;
+
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 21px;
     }
   }
 
@@ -1345,18 +1364,21 @@ input:focus {
       position: relative;
       display: flex;
       align-items: center;
-      justify-content: flex-start;
+      justify-content: space-between;
       text-align: left;
 
-      height: 60px;
+      height: 45px;
       padding: 3px 17px 0 33px;
-      background-color: transparent;
       border: 1px solid $red;
       border-radius: 5px;
       color: $text-color;
       font-weight: normal;
       background-color: #fff;
       pointer-events: none;
+
+      @media (min-width: 1430px) {
+        height: 60px;
+      }
     }
     button:first-child {
       position: relative;
@@ -1365,8 +1387,8 @@ input:focus {
         display: inline-block;
         margin-left: auto;
         color: $red;
-        font-size: 32px;
-        padding-top: 3px;
+        font-size: 20px;
+        margin-left: 20px;
 
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1389,6 +1411,10 @@ input:focus {
         -ms-flex-align: center;
         align-items: center;
 
+        @media (min-width: 1430px) {
+          font-size: 32px;
+        }
+
         &::before {
           content: '\E001';
 
@@ -1408,20 +1434,26 @@ input:focus {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      top: 55px;
+      top: 40px;
       transition: all 0.3s ease;
       opacity: 0;
       visibility: hidden;
       z-index: -1;
+      width: 100%;
+      @media (min-width: 1430px) {
+        top: 55px;
+      }
       button {
         border-color: #dddddd;
         background-color: #fff;
         border-radius: 0;
         pointer-events: auto;
         transition: all 0.3s ease;
+        width: 100%;
         &:hover {
           background-color: $redHover;
           border-color: $redHover;
+          color: #fff;
         }
         &:not(:last-child) {
           margin-bottom: -1px;
@@ -1482,6 +1514,22 @@ input:focus {
       cite {
         font-weight: 400;
       }
+    }
+  }
+
+  [data-type='iframe'] {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
     }
   }
 }

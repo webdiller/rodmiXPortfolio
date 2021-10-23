@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TODO: Убрать noindex в продакшене -->
+    <meta name="robots" content="noindex" />
+    <title>Списковая страница блога</title>
+    <meta name="description" content="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+    <link rel="stylesheet" href="./assets/styles/main.min.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="header" class="header">
+      <div class="container header__top">
+        <a href="#" class="header__logo" title="Родмикс"><img src="./assets/images/logo_red.svg" alt="" class="header__logo-img" loading="lazy" decoding="async" /></a>
+        <nav class="header__nav">
+          <a href="#" class="header__nav-item">О НАС</a>
+          <a href="#" class="header__nav-item">НАША ПРОДУКЦИЯ</a>
+          <a href="#" class="header__nav-item">НАШИ ПУБЛИКАЦИИ</a>
+          <a href="#" class="header__nav-item">ГДЕ КУПИТЬ</a>
+          <a href="#" class="header__nav-item">КОНТАКТЫ</a>
+        </nav>
+        <a href="tel:+74994440625" class="header__phone">+7 (499) 444-06-25</a>
+        <button data-id="callbackModal" class="header__callback">ПЕРЕЗВОНИТЬ МНЕ</button>
+        <button aria-label="Открыть меню" id="menuOpen" class="header__bar">
+          <span class="icon icon-menu_open header__bar-open"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- HEADER SIDEBAR -->
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar__menu">
+        <p class="sidebar__menu-title">Меню <span id="menuClose" class="icon icon-menu_close sidebar__menu-close"></span></p>
+        <nav class="sidebar__menu-list">
+          <a href="#" class="sidebar__menu-item">О Нас</a>
+          <a href="#" class="sidebar__menu-item">Наша продукция</a>
+          <a href="#" class="sidebar__menu-item">Наши публикации</a>
+          <a href="#" class="sidebar__menu-item">Где купить</a>
+          <a href="#" class="sidebar__menu-item">Контакты</a>
+        </nav>
+        <p class="sidebar__menu-title">Наша продукция</p>
+        <nav class="sidebar__menu-list sidebar__menu-list_last">
+          <a href="#" class="sidebar__menu-item">Сверла</a>
+          <a href="#" class="sidebar__menu-item">Борфрезы</a>
+          <a href="#" class="sidebar__menu-item">Твердосплавные диски</a>
+          <a href="#" class="sidebar__menu-item">Адаптеры</a>
+          <a href="#" class="sidebar__menu-item">Концферзы</a>
+          <a href="#" class="sidebar__menu-item">Метчики</a>
+        </nav>
+      </div>
+    </aside>
+
+    <div class="blog">
+      <div class="container blog__wrapper">
+        <!-- Меню -->
+        <div class="blog__aside">
+          <div class="blog__aside-wrapper">
+            <p class="blog__aside-title">Разделы</p>
+            <nav class="blog__aside-list">
+              <a href="#" class="blog__aside-item">О Нас</a>
+              <a href="#" class="blog__aside-item">Наша продукция</a>
+              <a href="#" class="blog__aside-item">Наши публикации</a>
+              <a href="#" class="blog__aside-item">Где купить</a>
+              <a href="#" class="blog__aside-item">Контакты</a>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Контент -->
+        <div class="blog__content">
+          <div class="blog__items">
+            <a href="#" class="blog__item">
+              <picture class="blog__item-picture">
+                <source srcset="./assets/images/publications.webp" type="image/webp" />
+                <img loading="lazy" decoding="async" class="blog__item-img" src="./assets/images/publications.jpg" alt="Блог" />
+              </picture>
+              <div class="blog__item-content">
+                <p class="blog__item-title">Виды сверл для сверления рельс</p>
+                <p class="blog__item-description">
+                  Сверла серии Rail используются для сверления таких материалов, как железнодорожные рельсы, а также могут применяться при сверлении нержавеющий стали, меди, никеля, магния, цинка, чугуна. Благодаря высокому качеству и инновационным техническим решениям, твердосплавные корончатые
+                  сверла для рельс заслужили популярность у многих пользователей.
+                </p>
+                <span class="blog__item-date">01.10.2021</span>
+              </div>
+            </a>
+
+            <a href="#" class="blog__item">
+              <picture class="blog__item-picture">
+                <source srcset="./assets/images/publications.webp" type="image/webp" />
+                <img loading="lazy" decoding="async" class="blog__item-img" src="./assets/images/publications.jpg" alt="Блог" />
+              </picture>
+              <div class="blog__item-content">
+                <p class="blog__item-title">Виды сверл для сверления рельс</p>
+                <p class="blog__item-description">
+                  Сверла серии Rail используются для сверления таких материалов, как железнодорожные рельсы, а также могут применяться при сверлении нержавеющий стали, меди, никеля, магния, цинка, чугуна. Благодаря высокому качеству и инновационным техническим решениям, твердосплавные корончатые
+                  сверла для рельс заслужили популярность у многих пользователей.
+                </p>
+                <span class="blog__item-date">01.10.2021</span>
+              </div>
+            </a>
+
+            <a href="#" class="blog__item">
+              <picture class="blog__item-picture">
+                <source srcset="./assets/images/publications.webp" type="image/webp" />
+                <img loading="lazy" decoding="async" class="blog__item-img" src="./assets/images/publications.jpg" alt="Блог" />
+              </picture>
+              <div class="blog__item-content">
+                <p class="blog__item-title">Виды сверл для сверления рельс</p>
+                <p class="blog__item-description">
+                  Сверла серии Rail используются для сверления таких материалов, как железнодорожные рельсы, а также могут применяться при сверлении нержавеющий стали, меди, никеля, магния, цинка, чугуна. Благодаря высокому качеству и инновационным техническим решениям, твердосплавные корончатые
+                  сверла для рельс заслужили популярность у многих пользователей.
+                </p>
+                <span class="blog__item-date">01.10.2021</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="our-production">
+      <div class="container our-production__wrapper">
+        <div class="title-with-subtitle our-production__title-with-subtitle">
+          <div class="our-production__subtitle subtitle">Надежность проверенная делом</div>
+          <p class="our-production__title title1 title1_index mt-0">Наша продукция</p>
+          <button data-id="orderModal" class="btn-outline title-with-subtitle__btn">запросить цены</button>
+        </div>
+
+        <nav class="our-production__list">
+          <a href="#" class="ui-our-product our-production__list-item">
+            <span class="ui-our-product__title our-production__list-title">Корончатые сверла</span>
+            <span class="ui-our-product__description our-production__list-description">Небольшое описание товара или его характеристика</span>
+            <span class="icon icon-arrow-short ui-our-product__icon our-production__list-icon"></span>
+
+            <picture class="ui-our-product__picture our-production__list-picture">
+              <source srcset="./assets/images/production-list__item.webp" type="image/webp" />
+              <img loading="lazy" decoding="async" class="ui-our-product__img our-production__list-img" src="./assets/images/production-list__item001.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+            </picture>
+          </a>
+
+          <a href="#" class="ui-our-product our-production__list-item">
+            <span class="ui-our-product__title our-production__list-title">Борфрезы</span>
+            <span class="ui-our-product__description our-production__list-description">Небольшое описание товара или его характеристика</span>
+            <span class="icon icon-arrow-short ui-our-product__icon our-production__list-icon"></span>
+
+            <picture class="ui-our-product__picture our-production__list-picture">
+              <source srcset="./assets/images/production-list__item002.webp" type="image/webp" />
+              <img loading="lazy" decoding="async" class="ui-our-product__img our-production__list-img" src="./assets/images/production-list__item0002.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+            </picture>
+          </a>
+
+          <a href="#" class="ui-our-product our-production__list-item">
+            <span class="ui-our-product__title our-production__list-title">Твердосплавные диски</span>
+            <span class="ui-our-product__description our-production__list-description">Небольшое описание товара или его характеристика</span>
+            <span class="icon icon-arrow-short ui-our-product__icon our-production__list-icon"></span>
+
+            <picture class="ui-our-product__picture our-production__list-picture">
+              <source srcset="./assets/images/production-list__item003.webp" type="image/webp" />
+              <img loading="lazy" decoding="async" class="ui-our-product__img our-production__list-img" src="./assets/images/production-list__item003.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+            </picture>
+          </a>
+
+          <a href="#" class="ui-our-product our-production__list-item">
+            <span class="ui-our-product__title our-production__list-title">Адаптеры</span>
+
+            <span class="ui-our-product__description our-production__list-description">Небольшое описание товара или его характеристика</span>
+            <span class="icon icon-arrow-short ui-our-product__icon our-production__list-icon"></span>
+
+            <picture class="ui-our-product__picture our-production__list-picture">
+              <source srcset="./assets/images/production-list__item004.webp" type="image/webp" />
+              <img loading="lazy" decoding="async" class="ui-our-product__img our-production__list-img" src="./assets/images/production-list__item004.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+            </picture>
+          </a>
+
+          <a href="#" class="ui-our-product our-production__list-item">
+            <span class="ui-our-product__title our-production__list-title">Концферзы</span>
+
+            <span class="ui-our-product__description our-production__list-description">Небольшое описание товара или его характеристика</span>
+            <span class="icon icon-arrow-short ui-our-product__icon our-production__list-icon"></span>
+
+            <picture class="ui-our-product__picture our-production__list-picture">
+              <source srcset="./assets/images/production-list__item005.webp" type="image/webp" />
+              <img loading="lazy" decoding="async" class="ui-our-product__img our-production__list-img" src="./assets/images/production-list__item005.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+            </picture>
+          </a>
+
+          <a href="#" class="ui-our-product our-production__list-item">
+            <span class="ui-our-product__title our-production__list-title">Метчики</span>
+
+            <span class="ui-our-product__description our-production__list-description">Небольшое описание товара или его характеристика</span>
+            <span class="icon icon-arrow-short ui-our-product__icon our-production__list-icon"></span>
+
+            <picture class="ui-our-product__picture our-production__list-picture">
+              <source srcset="./assets/images/production-list__item006.webp" type="image/webp" />
+              <img loading="lazy" decoding="async" class="ui-our-product__img our-production__list-img" src="./assets/images/production-list__item006.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+            </picture>
+          </a>
+
+          <a href="#" class="ui-our-product our-production__list-item">
+            <span class="ui-our-product__title our-production__list-title">Ступенчатые сверла</span>
+            <span class="ui-our-product__description our-production__list-description">Небольшое описание товара или его характеристика</span>
+            <span class="icon icon-arrow-short ui-our-product__icon our-production__list-icon"></span>
+
+            <picture class="ui-our-product__picture our-production__list-picture">
+              <source srcset="./assets/images/production-list__item007.webp" type="image/webp" />
+              <img loading="lazy" decoding="async" class="ui-our-product__img our-production__list-img" src="./assets/images/production-list__item007.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+            </picture>
+          </a>
+
+          <a href="#" class="ui-our-product our-production__list-item">
+            <span class="ui-our-product__title our-production__list-title">Магнитные станки</span>
+            <span class="ui-our-product__description our-production__list-description">Небольшое описание товара или его характеристика</span>
+            <span class="icon icon-arrow-short ui-our-product__icon our-production__list-icon"></span>
+
+            <picture class="ui-our-product__picture our-production__list-picture">
+              <source srcset="./assets/images/production-list__item008.webp" type="image/webp" />
+              <img loading="lazy" decoding="async" class="ui-our-product__img our-production__list-img" src="./assets/images/production-list__item008.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+            </picture>
+          </a>
+
+          <a href="#" class="ui-our-product our-production__list-item">
+            <span class="ui-our-product__title our-production__list-title">Зенкер</span>
+
+            <span class="ui-our-product__description our-production__list-description">Небольшое описание товара или его характеристика</span>
+            <span class="icon icon-arrow-short ui-our-product__icon our-production__list-icon"></span>
+
+            <picture class="ui-our-product__picture our-production__list-picture">
+              <source srcset="./assets/images/production-list__item009.webp" type="image/webp" />
+              <img loading="lazy" decoding="async" class="ui-our-product__img our-production__list-img" src="./assets/images/production-list__item009.png" alt="ВЕДУЩИЙ ПРОИЗВОДИТЕЛЬ металлорежущего инструмента" />
+            </picture>
+          </a>
+
+          <a href="#" class="btn-outline our-production__list-btn">запросить цены </a>
+        </nav>
+      </div>
+    </section>
+
+    <script src="./assets/scripts/default.bundle.js"></script>
+  </body>
+</html>
