@@ -78,12 +78,14 @@ export function defaultScripts() {
       });
     } catch (error) {}
   }
-  try {
-    callbackModalClose.addEventListener('click', function (e) {
-      callbackSuccess.classList.remove('active');
-      callbackModal.classList.remove('active');
-    });
-  } catch (error) {}
+  if(callbackModalClose){
+    try {
+      callbackModalClose.addEventListener('click', function (e) {
+        callbackSuccess.classList.remove('active');
+        callbackModal.classList.remove('active');
+      });
+    } catch (error) {}
+  }
 
   window.addEventListener('scroll', function (e) {
     if (window.scrollY > 0 && window.innerWidth >= 1915) {
