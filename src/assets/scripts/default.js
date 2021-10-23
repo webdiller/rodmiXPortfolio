@@ -18,6 +18,11 @@ let publicationsSwiperSlider = null;
 
 document.addEventListener(`DOMContentLoaded`, () => {
   defaultScripts();
+  
+  uiSizes();
+  uiForms();
+  uiTabs();
+
 });
 
 window.addEventListener('scroll', function (e) {
@@ -29,6 +34,13 @@ window.addEventListener('scroll', function (e) {
       if(isTouchDevice()){ // для устройств с тачем
         initPins()
       }
+      sliderWithThumbnailsAndModal();
+      ourReviewsSlider();
+      allMaterialsSlider();
+      ourProductionSlider();
+      disksSwiper();
+      youtube();  
+
     window["scrollInit"] = true
   }
 });
@@ -47,12 +59,3 @@ window.addEventListener('resize', function (e) {
   }
 });
 
-sliderWithThumbnailsAndModal();
-ourReviewsSlider();
-allMaterialsSlider();
-ourProductionSlider();
-uiSizes();
-uiForms();
-uiTabs();
-disksSwiper();
-youtube();  

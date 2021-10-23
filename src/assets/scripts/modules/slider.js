@@ -127,8 +127,9 @@ export function sliderWithThumbnailsAndModal() {
           }
         }
       };
-
+      console.log("mainSlider", mainSlider)
       mainSlider.forEach((slider) => {
+        console.log("slider, swiperOptionsThumbnails", slider, swiperOptionsThumbnails)
         new Swiper(slider, swiperOptionsThumbnails);
         const slides = slider.querySelectorAll(slideSelector);
         slides.forEach((sliderElement) => {
