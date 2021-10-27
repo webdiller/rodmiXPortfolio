@@ -436,7 +436,7 @@
     line-height: 18px;
     text-decoration: none;
     color: #454545;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     @media (min-width: 480px) {
       font-size: 24px;
       line-height: 28px;
@@ -846,6 +846,8 @@
         display: block;
       }
       @media (min-width: 768px) {
+      }
+      @media (min-width: 1020px) {
         display: flex;
       }
       @media (min-width: 1430px) {
@@ -854,6 +856,55 @@
     .warrancy__text-with-contacts {
       @media (min-width: 1430px) {
         max-width: 890px;
+      }
+    }
+    .warrancy__contact-item {
+      text-align: left;
+      &:hover {
+        .warrancy__registration-form-item-link {
+          color: $redHover;
+        }
+      }
+      &:not(:last-child) {
+        margin-right: 25px;
+        @media (min-width: 480px) {
+          margin-right: 73px;
+        }
+        @media (min-width: 540px) {
+        }
+        @media (min-width: 640px) {
+          margin-right: 15px;
+        }
+      }
+      @media (min-width: 480px) {
+      }
+      @media (min-width: 540px) {
+      }
+      @media (min-width: 640px) {
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 15px;
+      }
+      @media (min-width: 768px) {
+        min-width: 174px;
+      }
+      @media (min-width: 1020px) {
+        padding: 37px;
+        flex: 1 1 auto;
+        max-width: unset;
+      }
+      @media (min-width: 1430px) {
+        padding: 32px;
+      }
+    }
+    .warrancy__contact-subtitle {
+      white-space: nowrap;
+    }
+    .warrancy__contacts {
+      @media (min-width: 1020px) {
+        max-width: unset;
+        justify-content: flex-start;
+        margin-bottom: 0;
       }
     }
   }
