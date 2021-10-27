@@ -1207,4 +1207,12 @@
       }
     }
   }
+
+  &_partner {
+    .welcome__text-content {
+      @media (min-width: 1020px) {
+        max-width: 800px;
+      }
+    }
+  }
 }
