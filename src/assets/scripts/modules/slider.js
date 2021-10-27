@@ -161,7 +161,9 @@ export function sliderWithThumbnailsAndModal() {
         });
       });
     }
-  } catch (error) {}
+  } catch (error) {
+    console.log("sliderWithThumbnailsAndModal error", error)
+  }
 }
 
 export function ourReviewsSlider() {

@@ -71,6 +71,7 @@
   }
 
   &__swiper-wrapper {
+    
     @media (min-width: 640px) {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;

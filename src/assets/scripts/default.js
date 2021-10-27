@@ -34,6 +34,7 @@ window.addEventListener('scroll', function (e) {
       if(isTouchDevice()){ // для устройств с тачем
         initPins()
       }
+      console.log("sliderWithThumbnailsAndModal");
       sliderWithThumbnailsAndModal();
       ourReviewsSlider();
       allMaterialsSlider();
