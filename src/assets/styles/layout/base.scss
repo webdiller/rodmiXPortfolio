@@ -135,6 +135,14 @@ body {
   }
 }
 
+.body {
+  &_default {
+    &::before {
+      display: none;
+    }
+  }
+}
+
 // Затемненный фон для модалки ютуба
 .overlay-youtube {
   position: fixed;

@@ -397,6 +397,8 @@
     }
     .ui-form__fields {
       @media (min-width: 768px) {
+      }
+      @media (min-width: 991px) {
         grid-template-columns: 1fr;
       }
     }
