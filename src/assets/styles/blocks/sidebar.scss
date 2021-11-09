@@ -54,7 +54,7 @@
   &__menu-close {
     font-size: 16px;
     cursor: pointer;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     color: $red;
     &:hover {
       color: $redHover;
@@ -78,8 +78,12 @@
     columns: 1 88px;
     column-gap: 13px;
     &_last {
-      columns: 2 90px;
+      columns: 1;
       border-bottom: 0;
+      @media (min-width: 1020px) {
+        columns: 2;
+        border-bottom: 0;
+      }
     }
   }
 

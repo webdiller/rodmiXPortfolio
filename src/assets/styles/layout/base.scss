@@ -1058,19 +1058,15 @@ input:focus {
 }
 
 .details {
-  &__img-with-text {
-    display: flex;
-    flex-direction: column;
-    @media (min-width: 576px) {
-      flex-direction: row;
-    }
-    img {
-      margin-bottom: 15px;
-      @media (min-width: 576px) {
-        margin-right: 15px;
-        margin-bottom: 0;
-      }
-    }
+  table p {
+    margin: 5px 0;
+  }
+  table .info {
+    background-color: #ececec;
+    padding-left: 10px;
+  }
+  table tr:first-child.info td {
+    padding-left: 10px;
   }
   div[data-type='table-scroll'] {
     overflow-x: auto;
@@ -1096,7 +1092,7 @@ input:focus {
           border-bottom-right-radius: 6px;
         }
       }
-      tr:nth-child(odd):not(.info) {
+      tr:nth-child(even):not(.info) {
         background-color: #fff;
         border-radius: 6px;
       }
@@ -1119,6 +1115,9 @@ input:focus {
     font-size: 30px;
     line-height: 35px;
     color: #454545;
+    @media (min-width: 640px) {
+      font-weight: 500;
+    }
   }
   h4 {
     font-size: 24px;
@@ -1526,17 +1525,25 @@ input:focus {
     border-radius: 10px;
   }
 
-  p {
+  p:not(.tags__item-tag-title) {
     margin: 15px 0;
+    @media (min-width: 640px) {
+      font-size: 16px;
+      line-height: 1.5;
+    }
   }
 
-  div {
+  div:not(.tags) {
     p {
       display: block;
       font-weight: 300;
       font-size: 14px;
       line-height: 250%;
       color: #1d1d1b;
+      @media (min-width: 640px) {
+        font-size: 16px;
+        line-height: 1.5;
+      }
     }
     a {
       display: block;
@@ -1591,6 +1598,41 @@ input:focus {
       right: 0;
       width: 100%;
       height: 100%;
+    }
+  }
+}
+
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  width: 100%;
+  flex: 1 1 100%;
+  &_details {
+    margin-top: 20px;
+  }
+  &__item-tag-title {
+    position: relative;
+    font-weight: 600;
+    margin-right: 10px;
+    top: -14px;
+  }
+  &__item-tag {
+    padding: 5px 15px;
+    border-radius: 6px;
+    background-color: #fff;
+    text-align: center;
+    color: $text-color;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+    &:hover {
+      text-decoration: none;
+      color: #ff545a;
+    }
+    &:not(:last-child) {
+      margin-right: 10px;
     }
   }
 }
