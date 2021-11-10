@@ -5,19 +5,19 @@ export async function yamapInit() {
 
   if(mapWrapper){
   try { 
-      const maps = await yamap.load();
+      const maps = await yamap.load('https://api-maps.yandex.ru/2.1/?lang=ru_RU');
       const mapContainer = document.createElement('div');
       mapContainer.style.height = `100%`;
       mapContainer.style.width = `100%`;
       mapWrapper.appendChild(mapContainer);
       let map = new maps.Map(mapContainer, {
-        center: [-8.369326, 115.166023],
-        zoom: 8
+        center: [57.631575, 39.873934],
+        zoom: 15
       });
       map.container.fitToViewport();
       // console.log(yamap.Placemark)
-      map.geoObjects.add(new maps.Placemark([-8.369326, 115.166023], {
-          balloonContent: 'Наша компания здесь'
+      map.geoObjects.add(new maps.Placemark([57.631575, 39.873934], {
+          balloonContent: '<h5 style="font-weight: bold;">Родмикс</h5><div>Россия, г. Ярославль, ул. Некрасова, д. 39Б</div>'
       }, {
           preset: 'islands#red',
       }))
