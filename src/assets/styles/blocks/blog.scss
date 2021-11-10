@@ -25,7 +25,7 @@
     }
     @media (min-width: 1020px) {
       margin-right: auto;
-      flex-direction: row;
+      flex-direction: row-reverse;
     }
     @media (min-width: 1430px) {
     }
@@ -44,7 +44,7 @@
     @media (min-width: 1020px) {
       width: 35%;
       flex: 0 0 35%;
-      margin-right: 30px;
+      margin-left: 30px;
       margin-top: 0;
     }
     @media (min-width: 1430px) {
@@ -52,7 +52,7 @@
       flex: 1 1 auto;
       max-width: 400px;
       min-width: 400px;
-      margin-right: 100px;
+      margin-left: 100px;
     }
   }
 
@@ -77,11 +77,11 @@
     }
     @media (min-width: 1020px) {
       flex: 1 1 auto;
-      margin-left: auto;
+      margin-right: auto;
     }
     @media (min-width: 1430px) {
       max-width: 800px;
-      margin-left: auto;
+      margin-right: auto;
     }
   }
 
@@ -105,9 +105,7 @@
   }
 
   &__item {
-    display: flex;
-    flex-wrap: wrap;
-    color: $text-color;
+    
     &:not(:last-child) {
       margin-bottom: 40px;
     }
@@ -122,6 +120,20 @@
     @media (min-width: 1020px) {
     }
     @media (min-width: 1430px) {
+    }
+  }
+
+  &__item-img-with-content {
+    display: flex;
+    flex-wrap: wrap;
+    color: $text-color;
+    
+    &:hover {
+      text-decoration: none;
+      text-decoration-color: $redHover;
+      .blog__item-title {
+        color: $redHover;
+      }
     }
   }
 
@@ -168,14 +180,6 @@
     flex: 1 1 calc(65% - 15px);
     text-decoration: none;
 
-    &:hover {
-      text-decoration: underline;
-      text-decoration-color: $redHover;
-      .blog__item-title,
-      .blog__item-description {
-        color: $redHover;
-      }
-    }
 
     @media (min-width: 480px) {
     }
@@ -222,8 +226,6 @@
       line-height: 34px;
     }
     @media (min-width: 1430px) {
-      font-size: 20px;
-      line-height: 26px;
     }
   }
 
@@ -264,39 +266,11 @@
   }
 
   &__item-tags {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
     margin-top: 10px;
-    width: 100%;
-    flex: 1 1 100%;
     margin-bottom: -10px;
     @media (min-width: 1430px) {
       margin-top: 15px;
     }
-  }
-  &__item-tag {
-    padding: 5px 15px;
-    border-radius: 6px;
-    background-color: #fff;
-    text-align: center;
-    color: $text-color;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    margin-bottom: 10px;
-    &:hover {
-      text-decoration: none;
-      background-color: #f3f3f3;
-    }
-    &:not(:last-child) {
-      margin-right: 10px;
-    }
-  }
-  &__item-tag-title {
-    position: relative;
-    font-weight: 600;
-    margin-right: 10px;
-    top: -7px;
   }
 
   &__pagination {
@@ -307,6 +281,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-top: 10px;
       border-radius: 5px;
       width: 26px;
       height: 26px;
@@ -315,26 +290,26 @@
       font-size: 12px;
       background-color: #fff;
       text-decoration: none;
+      color: $text-color;
       &:not(:last-child) {
         margin-right: 10px;
       }
       &:hover,
       &:focus {
-        background-color: #f3f3f3;
-        color: $text-color;
+        color: #ff545a;
       }
       &.active {
         text-decoration: none;
         color: #fff;
         background-color: $red;
       }
+      @media (min-width: 640px) {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+      }
       @media (min-width: 768px) {
         margin-top: 50px;
-      }
-      @media (min-width: 1430px) {
-        width: 40px;
-        height: 40px;
-        font-size: 14px;
       }
       &_dots {
         &:hover,
