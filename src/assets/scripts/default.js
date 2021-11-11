@@ -60,3 +60,4 @@ window.addEventListener('resize', function (e) {
   }
 });
 
+console.log('Верстка сайта от Евгения Буткова. https://github.com/webdiller');
