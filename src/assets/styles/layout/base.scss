@@ -1607,7 +1607,7 @@ input:focus {
     }
   }
 
-  &__img-align-right {
+  .right {
     float: right;
     display: block;
     width: 100%;
@@ -1619,7 +1619,7 @@ input:focus {
     }
   }
 
-  &__img-align-left {
+  .left {
     float: left;
     display: block;
     width: 100%;
