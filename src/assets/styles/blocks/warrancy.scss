@@ -869,7 +869,7 @@
         @media (min-width: 640px) {
           padding-left: 0;
         }
-        @media (min-width: 991px) {
+        @media (min-width: 1020px) {
           padding-left: 37px;
         }
         @media (min-width: 1430px) {
@@ -917,7 +917,7 @@
     }
     .warrancy__contact-subtitle {
       white-space: nowrap;
-      @media (min-width: 540px) and (max-width: 768px) {
+      @media (min-width: 540px) and (max-width: 1020px) {
         font-size: 20px;
         line-height: 23px;
       }

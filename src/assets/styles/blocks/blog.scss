@@ -32,7 +32,7 @@
   }
 
   &__form {
-    margin-top: 30px;
+    margin-top: 50px;
     @media (min-width: 480px) {
     }
     @media (min-width: 540px) {
@@ -127,6 +127,7 @@
     display: flex;
     flex-wrap: wrap;
     color: $text-color;
+    text-decoration: none;
     
     &:hover {
       text-decoration: none;
@@ -148,6 +149,7 @@
     @media (min-width: 640px) {
     }
     @media (min-width: 768px) {
+      margin-right: 15px;
     }
     @media (min-width: 1020px) {
     }
@@ -276,7 +278,7 @@
   &__pagination {
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 20px;
     &-item {
       display: flex;
       justify-content: center;
@@ -297,6 +299,7 @@
       &:hover,
       &:focus {
         color: #ff545a;
+        background-color: #efefef;
       }
       &.active {
         text-decoration: none;
@@ -309,7 +312,6 @@
         font-size: 14px;
       }
       @media (min-width: 768px) {
-        margin-top: 50px;
       }
       &_dots {
         &:hover,

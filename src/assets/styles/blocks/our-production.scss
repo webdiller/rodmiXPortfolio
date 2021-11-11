@@ -1,5 +1,4 @@
 .our-production {
-
   &__wrapper {
     position: relative;
     margin-top: 50px;
@@ -227,7 +226,6 @@
   }
 
   &__swiper-wrapper {
-    
     @media (min-width: 480px) {
     }
     @media (min-width: 640px) {
@@ -384,7 +382,7 @@
     background: #efefef;
     text-transform: uppercase;
 
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     &:hover {
       background-color: $greyHover;
     }
@@ -463,7 +461,7 @@
     &_red {
       background-color: $red;
       color: #fff;
-      transition: all .3s ease;
+      transition: all 0.3s ease;
       &:hover {
         background-color: $redHover;
       }
@@ -484,6 +482,17 @@
     @media (min-width: 1430px) {
       display: inline-block;
       margin-right: 5px;
+    }
+  }
+
+  &_details {
+    .our-production__wrapper {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      @media (min-width: 1020px) {
+        margin-top: 100px;
+        margin-bottom: 50px;
+      }
     }
   }
 }

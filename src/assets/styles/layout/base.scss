@@ -1058,15 +1058,22 @@ input:focus {
 }
 
 .details {
-  table p {
-    margin: 5px 0;
-  }
   table .info {
     background-color: #ececec;
     padding-left: 10px;
   }
+  table td {
+    padding: 5px 0;
+  }
   table tr:first-child.info td {
     padding-left: 10px;
+  }
+  p:not(.tags__item-tag-title) {
+    margin: 15px 0;
+    overflow: hidden;
+  }
+  table p {
+    margin: 0;
   }
   div[data-type='table-scroll'] {
     overflow-x: auto;
@@ -1526,7 +1533,6 @@ input:focus {
   }
 
   p:not(.tags__item-tag-title) {
-    margin: 15px 0;
     @media (min-width: 640px) {
       font-size: 16px;
       line-height: 1.5;
@@ -1600,6 +1606,30 @@ input:focus {
       height: 100%;
     }
   }
+
+  &__img-align-right {
+    float: right;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    @media (min-width: 480px) {
+      width: auto;
+      margin-left: 15px;
+    }
+  }
+
+  &__img-align-left {
+    float: left;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    @media (min-width: 480px) {
+      width: auto;
+      margin-right: 15px;
+    }
+  }
 }
 
 
@@ -1609,6 +1639,7 @@ input:focus {
   align-items: flex-end;
   width: 100%;
   flex: 1 1 100%;
+  margin-bottom: -10px;
   &_details {
     margin-top: 20px;
   }
@@ -1616,7 +1647,7 @@ input:focus {
     position: relative;
     font-weight: 600;
     margin-right: 10px;
-    top: -14px;
+    top: -15px;
   }
   &__item-tag {
     padding: 5px 15px;
@@ -1630,6 +1661,7 @@ input:focus {
     &:hover {
       text-decoration: none;
       color: #ff545a;
+      background-color: #efefef;
     }
     &:not(:last-child) {
       margin-right: 10px;
