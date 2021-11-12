@@ -1068,12 +1068,18 @@ input:focus {
   table tr:first-child.info td {
     padding-left: 10px;
   }
-  p:not(.tags__item-tag-title) {
+  p {
     margin: 15px 0;
     overflow: hidden;
   }
+  p.tags__item-tag-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
   table p {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   div[data-type='table-scroll'] {
     overflow-x: auto;
